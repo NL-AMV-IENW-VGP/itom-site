@@ -52,7 +52,10 @@ async function sendMagicLink() {
 
   const { error } = await sb.auth.signInWithOtp({
     email,
-    options: { shouldCreateUser: true }
+    options: {
+      shouldCreateUser: true,
+      emailRedirectTo: 'https://nl-amv-ienw-vgp.github.io/itom-site/'
+    }
   });
 
   if (error) {
