@@ -1,0 +1,63 @@
+{
+  "key": "phoenix-project",
+  "category": "Training — Bedrijfssimulatie",
+  "title": "The Phoenix Project",
+  "lead": "Een interactieve DevOps-bedrijfssimulatie gebaseerd op de bestseller — ervaar de uitdagingen van IT-operations en DevOps-transformatie aan den lijve.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "The Phoenix Project is een serieuze bedrijfssimulatie gebaseerd op het gelijknamige boek van Gene Kim, Kevin Behr en George Spafford. Deelnemers spelen rollen binnen 'Parts Unlimited', een worsteld retailbedrijf dat kampt met de klassieke spanning tussen Development en Operations. In drie rondes beheren teams IT-projecten, behandelen ze incidenten en leren ze DevOps-principes toe te passen onder realistische bedrijfsdruk. De simulatie laat zien dat DevOps niet alleen een technologische verschuiving is — het vereist fundamentele veranderingen in hoe mensen zich gedragen, samenwerken en waarde leveren."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De Phoenix Project-simulatie is een krachtig instrument in ITOM-trajecten omdat het de 'waarom' achter operating model verandering tastbaar maakt. Deelnemers ervaren aan den lijve wat er gebeurt wanneer development en operations in silo's werken, wanneer governance te zwaar is, en wanneer flow wordt geblokkeerd. Deze gedeelde ervaring creëert draagvlak en urgentie voor de operating model transformatie — waardoor daaropvolgende ITOM-ontwerpbeslissingen makkelijker landen omdat stakeholders de pijn hebben beleefd én het alternatief hebben gezien."
+    },
+    {
+      "heading": "Hoe Het Werkt",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "deelnemers nemen rollen aan in zowel business (Retail Operations, HR, Finance) als IT (VP of IT Operations, IT Team) binnen Parts Unlimited" },
+        { "term": "Drie rondes", "desc": "elke ronde vertegenwoordigt een fase in de DevOps-reis — van chaos en brandjes blussen naar gestructureerde flow en continue verbetering" },
+        { "term": "Realistische druk", "desc": "teams worden geconfronteerd met concurrerende eisen: achterstanden van incidenten en features, bedrijfsverzoeken, SLA-doelen en externe verstoringen" },
+        { "term": "The Phoenix Project", "desc": "een kritisch bedrijfsproject dat op tijd moet worden opgeleverd terwijl alle operationele eisen worden beheerd — net als in het echte leven" },
+        { "term": "Debrief", "desc": "gestructureerde reflectie na elke ronde verbindt de simulatie-ervaring met DevOps- en operating model-principes uit de praktijk" }
+      ]
+    },
+    {
+      "heading": "Leerdoelen",
+      "type": "list",
+      "items": [
+        { "desc": "DevOps-principes (flow, feedback, continu leren) toepassen in realistische scenario's" },
+        { "desc": "SLA-vereisten balanceren met projectdeadlines" },
+        { "desc": "De bedrijfswaarde van DevOps aantonen aan niet-technische stakeholders" },
+        { "desc": "De efficiëntie van de IT-afdeling verbeteren door teamflow te optimaliseren en verspilling te verminderen" },
+        { "desc": "De gedrags- en culturele vaardigheden ontwikkelen die nodig zijn voor DevOps-omgevingen" },
+        { "desc": "Business- en IT-verantwoordelijkheden afstemmen op gedeelde resultaten" }
+      ]
+    },
+    {
+      "heading": "Praktische Details",
+      "type": "list",
+      "items": [
+        { "term": "Duur", "desc": "1 dag (volledige dagworkshop)" },
+        { "term": "Deelnemers", "desc": "8–12 personen per sessie" },
+        { "term": "Voorkennis", "desc": "geen voorkennis van DevOps vereist — geschikt voor zowel IT- als businessrollen" },
+        { "term": "Format", "desc": "beschikbaar als fysieke workshop en als online virtuele simulatie" },
+        { "term": "Certificering", "desc": "Atos is gecertificeerd trainer voor de Phoenix Project-simulatie" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "Neem voor meer informatie over deze training contact op met arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "Agile", "key": "agile" }
+  ]
+}

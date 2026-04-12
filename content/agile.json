@@ -1,0 +1,56 @@
+{
+  "key": "agile",
+  "category": "03 Frameworks",
+  "title": "Agile",
+  "lead": "Iterative, value-driven delivery approach used to shape both the design process and the target operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Agile is a philosophy and set of practices for delivering value iteratively and incrementally. Originating in software development (Agile Manifesto, 2001), it has evolved into a broad operating approach that shapes how teams are structured, how work is planned, and how organisations deliver change. Within the ITOM context, Agile underpins the design approach itself — ITOM engagements are run iteratively — and is often embedded in the target operating model as a foundational way of working."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Agile methodologies serve as a foundational approach within the IT Operating Model for delivering value iteratively. When an organisation adopts an Agile-oriented ITOM, it shifts from project-based delivery to continuous product-centric flow. This affects team topology (cross-functional product teams), governance (lightweight steering, OKRs over gate reviews), toolchain (boards, backlogs, CI/CD), and culture (psychological safety, experimentation)."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Iterative delivery", "desc": "work in short cycles (sprints or flows), validate regularly, adapt based on feedback" },
+        { "term": "Cross-functional teams", "desc": "stable, empowered teams own outcomes end-to-end, reducing hand-offs" },
+        { "term": "Product mindset", "desc": "shift from project to product thinking; teams own a service or capability continuously" },
+        { "term": "Inspect & adapt", "desc": "regular retrospectives and reviews drive continuous improvement at team and system level" },
+        { "term": "Lean governance", "desc": "lightweight planning, rolling roadmaps, and value-stream funding replace annual budgets and stage gates" }
+      ]
+    },
+    {
+      "heading": "Common Frameworks",
+      "type": "list",
+      "items": [
+        { "term": "Scrum", "desc": "the most widely used Agile framework; sprints, ceremonies, roles (PO, SM, team)" },
+        { "term": "Kanban", "desc": "flow-based work management; visualise, limit WIP, manage flow" },
+        { "term": "SAFe", "desc": "Scaled Agile Framework for large programmes and portfolio management" },
+        { "term": "LeSS", "desc": "Large Scale Scrum; minimal scaffolding for multi-team product development" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "Agile Maturity Scan — assess where you are today" },
+        { "desc": "Agile in Practice — hands-on training for teams" },
+        { "desc": "Introduction to Agile — awareness training for stakeholders" },
+        { "desc": "Agile Transformation — end-to-end operating model shift" },
+        { "desc": "Coaching en Training — sustained behavioural change" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "SAFe", "key": "safe" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "Agile Transformation", "key": "agile-transformation" }
+  ]
+}

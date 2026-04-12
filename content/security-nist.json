@@ -1,0 +1,57 @@
+{
+  "key": "security-nist",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "Security Scan NIST",
+  "lead": "A structured security assessment aligned to the NIST Cybersecurity Framework — evaluating security posture across five core functions.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Security Scan NIST is a structured assessment that evaluates an organisation's cybersecurity posture using the NIST Cybersecurity Framework (CSF) as the benchmark. The NIST CSF is one of the most widely adopted security frameworks globally, providing a technology-neutral, risk-based approach to managing cybersecurity risk. The scan produces a maturity profile across five core functions, identifies gaps, and delivers a prioritised improvement roadmap — essential input for security-aware ITOM design."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Security is a cross-cutting concern in every IT Operating Model. An ITOM that doesn't account for security governance, security operations, and security architecture will fail in practice — or worse, create risk. The NIST Security Scan provides the evidence base for embedding security into the operating model: which security capabilities need strengthening, where security responsibilities sit, how security monitoring integrates with IT operations, and how compliance requirements shape process design."
+    },
+    {
+      "heading": "NIST CSF Core Functions",
+      "type": "list",
+      "items": [
+        { "term": "Identify", "desc": "asset management, risk assessment, governance — understand what you need to protect and the risks you face" },
+        { "term": "Protect", "desc": "access control, training, data security, protective technology — implement safeguards for critical services" },
+        { "term": "Detect", "desc": "continuous monitoring, detection processes, anomaly identification — discover cybersecurity events in a timely manner" },
+        { "term": "Respond", "desc": "response planning, communications, analysis, mitigation — take action when a cybersecurity incident occurs" },
+        { "term": "Recover", "desc": "recovery planning, improvements, communications — restore capabilities after an incident" }
+      ]
+    },
+    {
+      "heading": "Scan Output",
+      "type": "list",
+      "items": [
+        { "desc": "Current profile — maturity score per NIST function and category" },
+        { "desc": "Target profile — desired maturity levels based on risk appetite and compliance requirements" },
+        { "desc": "Gap analysis — differences between current and target profiles with risk-weighted prioritisation" },
+        { "desc": "Quick wins — immediate actions that improve security posture with minimal investment" },
+        { "desc": "Roadmap — phased improvement plan aligned to ITOM transformation timeline" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "NIST CSF assessment — structured evaluation against the full NIST Cybersecurity Framework" },
+        { "desc": "Security architecture design — design security layers aligned to the target operating model" },
+        { "desc": "Security operations design — SOC, SIEM, incident response, and threat intelligence integration" },
+        { "desc": "Compliance framework alignment — map NIST CSF to regulatory requirements (NIS2, ISO 27001, BIO)" },
+        { "desc": "Security awareness programme — training and culture change to embed security mindset" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "COBIT", "key": "cobit" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "Cloud Readiness Scan", "key": "cloud-readiness" }
+  ]
+}

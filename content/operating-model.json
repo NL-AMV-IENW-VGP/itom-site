@@ -1,0 +1,59 @@
+{
+  "key": "operating-model",
+  "category": "01 Purpose",
+  "title": "Operating Model",
+  "lead": "The blueprint for how an organisation delivers its strategy — covering processes, people, technology, and governance.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "An Operating Model is the bridge between strategy and execution. It describes how an organisation organises its people, processes, technology, and governance to deliver on its strategic objectives. While strategy answers 'what do we want to achieve?', the operating model answers 'how do we organise ourselves to achieve it?'. An IT Operating Model (ITOM) is a specialisation that focuses on the IT function — but always in service of the broader business operating model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The operating model is the central concept in every ITOM engagement. It is the 'thing' being designed. An ITOM takes the generic operating model concept and applies it specifically to the IT function: how IT services are delivered, how IT is governed, how teams are structured, how vendors are managed, and how technology enables business outcomes. The ITOM is not a static document — it evolves as strategy shifts, technology changes, and the organisation matures."
+    },
+    {
+      "heading": "Key Dimensions",
+      "type": "list",
+      "items": [
+        { "term": "Organisation & People", "desc": "team structures, roles, capabilities, culture, and ways of working" },
+        { "term": "Process & Practices", "desc": "how work gets done — from strategic planning to operational delivery and improvement" },
+        { "term": "Technology & Tooling", "desc": "platforms, applications, automation, and the toolchain that enables delivery" },
+        { "term": "Governance & Decision Rights", "desc": "who decides what, how performance is measured, and how risk is managed" },
+        { "term": "Sourcing & Partners", "desc": "which capabilities are internal, outsourced, or cloud-sourced — and how providers are managed" },
+        { "term": "Information & Data", "desc": "how data flows, how insights are generated, and how information supports decision-making" }
+      ]
+    },
+    {
+      "heading": "Operating Model Archetypes",
+      "type": "list",
+      "items": [
+        { "term": "Centralised", "desc": "IT is a single, central function serving the whole organisation — strong governance, economies of scale" },
+        { "term": "Decentralised", "desc": "IT capabilities sit within business units — high responsiveness, risk of duplication and inconsistency" },
+        { "term": "Federated", "desc": "central standards and governance with local execution — balances control and agility" },
+        { "term": "Platform-based", "desc": "a central platform team provides shared capabilities; product teams build on top — cloud-native, DevOps-oriented" },
+        { "term": "SIAM-based", "desc": "a service integration layer manages multiple providers — common in outsourced environments" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "Operating Model assessment — analyse the current operating model across all dimensions" },
+        { "desc": "Target Operating Model design — design the future-state ITOM aligned to strategy" },
+        { "desc": "Operating Model Canvas workshops — facilitated sessions to co-create the operating model with stakeholders" },
+        { "desc": "Transformation roadmap — plan the transition from current to target operating model" },
+        { "desc": "Change management — drive adoption and cultural shift needed for the new operating model" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITOM Core", "key": "itom-core" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "COBIT", "key": "cobit" }
+  ]
+}

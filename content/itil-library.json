@@ -1,0 +1,52 @@
+{
+  "key": "itil-library",
+  "category": "03 Frameworks",
+  "title": "ITIL Library",
+  "lead": "Best practice library for IT service management; foundational for process design in ITSM-based operating models.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "ITIL (Information Technology Infrastructure Library) is the world's most widely adopted IT service management framework. It provides guidance on how to design, deliver, manage, and improve IT services throughout their lifecycle. Originally developed for the UK government in the 1980s, ITIL has evolved into a global best practice library now in its fourth edition (ITIL 4), which emphasises value co-creation, Agile integration, and a service value system."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "ITIL provides the process vocabulary and governance patterns that form the backbone of most ITSM-based IT operating models. When designing an ITOM, ITIL practices inform how incidents are managed, how changes are controlled, how services are catalogued, and how continual improvement is structured. ITIL 4 is particularly relevant because it explicitly positions ITSM within a broader operating model context — moving beyond processes to culture, value, and organisational design."
+    },
+    {
+      "heading": "ITIL 4 Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Service Value System (SVS)", "desc": "the holistic model showing how all components work together to enable value" },
+        { "term": "Service Value Chain", "desc": "six interconnected activities: Plan, Improve, Engage, Design & Transition, Obtain/Build, Deliver & Support" },
+        { "term": "34 Management Practices", "desc": "covering general, service, and technical management (replaces the old \"processes\")" },
+        { "term": "Guiding Principles", "desc": "Focus on value, Start where you are, Progress iteratively with feedback, Collaborate & promote visibility, Think & work holistically, Keep it simple & practical, Optimise & automate" },
+        { "term": "Four Dimensions", "desc": "Organisations & People, Information & Technology, Partners & Suppliers, Value Streams & Processes" }
+      ]
+    },
+    {
+      "heading": "Core Practices in ITOM Design",
+      "type": "list",
+      "items": [
+        { "term": "Incident Management", "desc": "restore service quickly; foundation of operational SLA performance" },
+        { "term": "Change Enablement", "desc": "control risk while enabling speed; key tension point in DevOps transformations" },
+        { "term": "Service Catalogue Management", "desc": "define what IT delivers; essential for SIAM and sourcing models" },
+        { "term": "Continual Improvement", "desc": "embed structured improvement at every level of the operating model" },
+        { "term": "Service Level Management", "desc": "agree, monitor, and report on service quality commitments" }
+      ]
+    },
+    {
+      "heading": "ITIL vs. Agile",
+      "type": "text",
+      "body": "A common concern in ITOM design is the perceived tension between ITIL's governance rigour and Agile's speed. ITIL 4 explicitly addresses this: the framework is designed to work alongside Agile, DevOps, and Lean — it's a set of principles and practices, not a rigid process prescription. Successful operating models integrate both: Agile delivery within a well-governed service framework."
+    }
+  ],
+  "related": [
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL4 Training", "key": "itil4" },
+    { "label": "YaSM", "key": "yasm" },
+    { "label": "FitSM", "key": "fitsm" }
+  ]
+}

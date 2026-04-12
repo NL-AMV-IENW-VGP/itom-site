@@ -1,0 +1,57 @@
+{
+  "key": "cobit",
+  "category": "03 Frameworks",
+  "title": "COBIT",
+  "lead": "Governance and management framework for enterprise IT — used to establish control objectives and align IT with organisational goals.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "COBIT (Control Objectives for Information and Related Technologies) is a framework developed by ISACA for the governance and management of enterprise IT. Now in its 2019 edition, COBIT provides a comprehensive set of governance and management objectives organised around 40 processes, covering everything from strategic alignment and value delivery to risk management and resource optimisation. It is widely used in regulated industries and by organisations seeking to establish clear IT governance structures."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "COBIT addresses the governance layer of an IT Operating Model — the 'who decides what' and 'how do we ensure IT delivers value and manages risk'. While frameworks like ITIL focus on operational processes and Agile focuses on delivery, COBIT provides the overarching governance structure that ensures IT is aligned with business objectives, risks are managed, and resources are used responsibly. In ITOM engagements, COBIT is particularly relevant when designing governance bodies, decision rights, and control frameworks."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Governance vs. Management", "desc": "COBIT clearly separates governance (evaluate, direct, monitor) from management (plan, build, run, monitor) — a critical distinction in ITOM design" },
+        { "term": "40 Governance & Management Objectives", "desc": "structured across 5 domains: EDM (governance), APO, BAI, DSS, MEA (management)" },
+        { "term": "Design Factors", "desc": "11 factors (enterprise strategy, IT role, threat landscape, etc.) that tailor COBIT implementation to organisational context" },
+        { "term": "Capability Levels", "desc": "0–5 maturity scale based on CMMI, used to assess and target process maturity" },
+        { "term": "Goals Cascade", "desc": "mechanism linking enterprise goals → IT-related goals → governance/management objectives, ensuring traceability" }
+      ]
+    },
+    {
+      "heading": "COBIT Domains",
+      "type": "list",
+      "items": [
+        { "term": "EDM — Evaluate, Direct, Monitor", "desc": "the governance domain; sets direction, monitors compliance, evaluates outcomes" },
+        { "term": "APO — Align, Plan, Organise", "desc": "strategic planning, architecture, innovation, risk, and portfolio management" },
+        { "term": "BAI — Build, Acquire, Implement", "desc": "solution development, change management, asset management, and transition" },
+        { "term": "DSS — Deliver, Service, Support", "desc": "operations, service requests, incident management, and continuity" },
+        { "term": "MEA — Monitor, Evaluate, Assess", "desc": "performance monitoring, internal controls, and regulatory compliance" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "IT Governance assessment — evaluate current governance maturity using COBIT as benchmark" },
+        { "desc": "Governance model design — define decision rights, governance bodies, and escalation paths" },
+        { "desc": "COBIT-ITIL integration — align governance (COBIT) with operational processes (ITIL) in a coherent operating model" },
+        { "desc": "Compliance framework design — build control frameworks for regulated environments" },
+        { "desc": "Risk management integration — embed IT risk management into the operating model governance layer" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}

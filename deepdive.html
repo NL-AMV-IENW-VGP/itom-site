@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading… — ITOM Deep-dive</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/auth.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/auth.js"></script>
+<style>
+  /* Toolbar buttons */
+  .toolbar-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+  .toolbar-btn:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    box-shadow: 0 2px 8px rgba(26,23,20,0.1);
+  }
+  .toolbar-btn svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .toolbar-btn.save {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+  }
+  .toolbar-btn.save:hover {
+    background: #14508a;
+    box-shadow: 0 2px 8px rgba(26,95,168,0.3);
+  }
+  .toolbar-btn.cancel {
+    color: var(--gray);
+  }
+  .toolbar-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Loading state */
+  .loading {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+
+  /* Error state */
+  .error {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--gray);
+  }
+  .error h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  /* Language switch */
+  .lang-switch {
+    display: none;
+    align-items: center;
+    gap: 6px;
+    justify-self: flex-end;
+  }
+  .lang-switch.visible { display: inline-flex; }
+  .lang-switch span {
+    font-size: 0.78rem;
+    color: var(--gray);
+    font-weight: 500;
+  }
+  .lang-switch span.active { color: var(--ink); font-weight: 600; }
+  .lang-toggle {
+    width: 36px;
+    height: 20px;
+    background: var(--gray);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.25s;
+    border: none;
+    padding: 0;
+  }
+  .lang-toggle.nl { background: var(--blue); }
+  .lang-toggle-thumb {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .lang-toggle.nl .lang-toggle-thumb { transform: translateX(16px); }
+
+  /* Header with toolbar */
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .header-row header { flex: 1; }
+  .toolbar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .toolbar {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    margin-top: -4px;
+  }
+
+  /* Edit mode styling */
+  .editing [contenteditable="true"] {
+    outline: 2px dashed var(--blue);
+    outline-offset: 4px;
+    border-radius: 4px;
+    min-height: 1.2em;
+  }
+  .editing [contenteditable="true"]:focus {
+    outline-style: solid;
+    background: rgba(26,95,168,0.04);
+  }
+  .editing .card {
+    position: relative;
+  }
+
+  /* Edit mode banner */
+  .edit-banner {
+    background: var(--blue-light);
+    border: 1.5px solid rgba(26,95,168,0.25);
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: var(--blue);
+    display: none;
+  }
+  .editing .edit-banner { display: block; }
+
+  /* Token modal */
+  .token-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,23,20,0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .token-modal {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 32px;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 24px 80px rgba(26,23,20,0.22);
+  }
+  .token-modal h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  .token-modal p {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .token-modal input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    background: var(--bg);
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+  .token-modal input:focus {
+    outline: none;
+    border-color: var(--blue);
+  }
+  .token-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  /* Status toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--ink);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-family: 'DM Sans', sans-serif;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    z-index: 2000;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.25s;
+    pointer-events: none;
+  }
+  .toast.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .toast.error-toast {
+    background: #c0392b;
+  }
+  .toast.success-toast {
+    background: #2e7d52;
+  }
+</style>
+</head>
+<body>
+
+<!-- Auth overlay — verborgen nadat gebruiker is ingelogd -->
+<div id="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <h2>ITOM Framework</h2>
+    <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
+    <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
+    <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+</div>
+
+<!-- Hoofdinhoud — verborgen totdat gebruiker is ingelogd -->
+<div id="main-content" style="display:none">
+
+<div class="page">
+
+  <a href="index.html" class="back-link">← Back to ITOM Map</a>
+
+  <div id="content">
+    <div class="loading">Loading deep-dive…</div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+</div><!-- /main-content -->
+
+<script>
+"use strict";
+
+const GITHUB_REPO = "NL-AMV-IENW-VGP/ITOM";
+const GITHUB_BRANCH = "main";
+const TOKEN_KEY = "itom_github_token";
+
+let currentData = null;
+let currentDataNl = null;
+let isEditing = false;
+let fileSha = null;
+let currentLang = "en";
+let hasNlVersion = false;
+
+function getPageKey() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("page");
+}
+
+function contentPath(key, lang) {
+  if (lang && lang !== "en") return `docs/content/${key}.${lang}.json`;
+  return `docs/content/${key}.json`;
+}
+
+function localContentPath(key, lang) {
+  if (lang && lang !== "en") return `content/${key}.${lang}.json`;
+  return `content/${key}.json`;
+}
+
+function editUrl(key) {
+  return `https://github.com/${GITHUB_REPO}/edit/${GITHUB_BRANCH}/${contentPath(key, currentLang)}`;
+}
+
+// --- Toast notifications ---
+
+function showToast(msg, type, duration) {
+  const toast = document.getElementById("toast");
+  toast.className = "toast visible" + (type ? ` ${type}-toast` : "");
+  toast.textContent = msg;
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => { toast.className = "toast"; }, duration || 3000);
+}
+
+// --- Escape HTML ---
+
+function esc(str) {
+  const el = document.createElement("span");
+  el.textContent = str;
+  return el.innerHTML;
+}
+
+// --- Render ---
+
+function renderList(items) {
+  return items.map(item => {
+    if (item.term) {
+      return `<li><strong>${esc(item.term)}</strong> — ${esc(item.desc)}</li>`;
+    }
+    return `<li>${esc(item.desc)}</li>`;
+  }).join("\n");
+}
+
+function renderPage(data) {
+  const container = document.getElementById("content");
+  document.title = `${data.title} — ITOM Deep-dive`;
+
+  let sectionsHtml = "";
+  for (let i = 0; i < data.sections.length; i++) {
+    const section = data.sections[i];
+    sectionsHtml += `<div class="card" data-section="${i}">\n  <h2 data-field="heading">${esc(section.heading)}</h2>\n`;
+    if (section.type === "text") {
+      sectionsHtml += `  <p data-field="body">${esc(section.body)}</p>\n`;
+    } else if (section.type === "list") {
+      sectionsHtml += `  <ul data-field="items">\n    ${renderList(section.items)}\n  </ul>\n`;
+    }
+    sectionsHtml += `</div>\n`;
+  }
+
+  let relatedHtml = "";
+  if (data.related && data.related.length > 0) {
+    const chips = data.related.map(r => {
+      const href = `deepdive.html?page=${encodeURIComponent(r.key)}`;
+      return `<a href="${href}" class="related-chip">${esc(r.label)}</a>`;
+    }).join("\n      ");
+    relatedHtml = `
+    <div class="card card-related">
+      <h2>Related Elements</h2>
+      <div class="related-grid">
+        ${chips}
+        <a href="index.html" class="related-chip">← All elements</a>
+      </div>
+    </div>`;
+  }
+
+  container.innerHTML = `
+    <div class="header-row">
+      <header>
+        <div class="category-label" data-field="category">${esc(data.category)}</div>
+        <h1 data-field="title">${esc(data.title)}</h1>
+        <p class="lead" data-field="lead">${esc(data.lead)}</p>
+      </header>
+      <div class="toolbar-col">
+        <div class="lang-switch" id="lang-switch">
+          <span id="lang-en" class="active">EN</span>
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+            <div class="lang-toggle-thumb"></div>
+          </button>
+          <span id="lang-nl">NL</span>
+        </div>
+        <div class="toolbar" id="toolbar">
+          <button class="toolbar-btn" id="btn-edit" title="Edit this page inline">
+            <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Edit
+          </button>
+          <button class="toolbar-btn save" id="btn-save" style="display:none">Save</button>
+          <button class="toolbar-btn cancel" id="btn-cancel" style="display:none">Cancel</button>
+          <a href="${editUrl(data.key)}" target="_blank" rel="noopener" class="toolbar-btn" id="btn-github" title="Edit JSON on GitHub" style="display:none">
+            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="edit-banner" id="edit-banner">
+      You are editing this page. Click on any text to modify it. Press <strong>Save</strong> to commit your changes to GitHub.
+    </div>
+    ${sectionsHtml}
+    ${relatedHtml}
+  `;
+
+  document.getElementById("btn-edit").addEventListener("click", enterEditMode);
+  document.getElementById("btn-save").addEventListener("click", saveChanges);
+  document.getElementById("btn-cancel").addEventListener("click", cancelEdit);
+}
+
+// --- Edit mode ---
+
+function enterEditMode() {
+  isEditing = true;
+  document.querySelector(".page").classList.add("editing");
+  document.getElementById("btn-edit").style.display = "none";
+  document.getElementById("btn-save").style.display = "";
+  document.getElementById("btn-cancel").style.display = "";
+  document.getElementById("btn-github").style.display = "";
+
+  // Make header fields editable
+  document.querySelectorAll("[data-field='category'], [data-field='title'], [data-field='lead']").forEach(el => {
+    el.contentEditable = "true";
+  });
+
+  // Make section content editable
+  document.querySelectorAll(".card[data-section]").forEach(card => {
+    card.querySelector("[data-field='heading']").contentEditable = "true";
+    const body = card.querySelector("[data-field='body']");
+    if (body) body.contentEditable = "true";
+    const ul = card.querySelector("[data-field='items']");
+    if (ul) ul.contentEditable = "true";
+  });
+}
+
+function cancelEdit() {
+  isEditing = false;
+  renderPage(currentLang === "nl" ? currentDataNl : currentData);
+  updateLangSwitch();
+}
+
+// --- Extract edited content back to JSON ---
+
+function extractData() {
+  const data = JSON.parse(JSON.stringify(currentData));
+
+  data.category = document.querySelector("[data-field='category']").textContent.trim();
+  data.title = document.querySelector("[data-field='title']").textContent.trim();
+  data.lead = document.querySelector("[data-field='lead']").textContent.trim();
+
+  document.querySelectorAll(".card[data-section]").forEach(card => {
+    const idx = parseInt(card.dataset.section);
+    const section = data.sections[idx];
+
+    section.heading = card.querySelector("[data-field='heading']").textContent.trim();
+
+    if (section.type === "text") {
+      section.body = card.querySelector("[data-field='body']").textContent.trim();
+    } else if (section.type === "list") {
+      const lis = card.querySelectorAll("[data-field='items'] li");
+      section.items = Array.from(lis).map(li => {
+        const strong = li.querySelector("strong");
+        if (strong) {
+          const term = strong.textContent.trim();
+          // Get text after the strong element, removing leading " — "
+          let desc = "";
+          let node = strong.nextSibling;
+          while (node) {
+            desc += node.textContent;
+            node = node.nextSibling;
+          }
+          desc = desc.replace(/^\s*—\s*/, "").trim();
+          return { term, desc };
+        }
+        return { desc: li.textContent.trim() };
+      });
+    }
+  });
+
+  return data;
+}
+
+// --- GitHub API ---
+
+function getToken() {
+  return localStorage.getItem(TOKEN_KEY);
+}
+
+function setToken(token) {
+  localStorage.setItem(TOKEN_KEY, token);
+}
+
+function clearToken() {
+  localStorage.removeItem(TOKEN_KEY);
+}
+
+function promptForToken() {
+  return new Promise((resolve, reject) => {
+    const overlay = document.createElement("div");
+    overlay.className = "token-overlay";
+    overlay.innerHTML = `
+      <div class="token-modal">
+        <h3>GitHub Access Token</h3>
+        <p>
+          To save changes, a GitHub Personal Access Token with <strong>repo</strong> scope is needed.
+          Create one at <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github.com/settings/tokens</a>.
+          Your token is stored locally in your browser only.
+        </p>
+        <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off">
+        <div class="token-actions">
+          <button class="toolbar-btn cancel" id="token-cancel">Cancel</button>
+          <button class="toolbar-btn save" id="token-ok">Save token</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    const input = document.getElementById("token-input");
+    input.focus();
+
+    document.getElementById("token-ok").addEventListener("click", () => {
+      const val = input.value.trim();
+      if (val) {
+        setToken(val);
+        overlay.remove();
+        resolve(val);
+      }
+    });
+
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const val = input.value.trim();
+        if (val) {
+          setToken(val);
+          overlay.remove();
+          resolve(val);
+        }
+      }
+    });
+
+    document.getElementById("token-cancel").addEventListener("click", () => {
+      overlay.remove();
+      reject(new Error("Cancelled"));
+    });
+  });
+}
+
+async function getFileSha(token, path) {
+  const resp = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}?ref=${GITHUB_BRANCH}`, {
+    headers: {
+      "Authorization": `Bearer ${token}`,
+      "Accept": "application/vnd.github.v3+json"
+    }
+  });
+  if (!resp.ok) {
+    if (resp.status === 401) {
+      clearToken();
+      throw new Error("Invalid token. Please try again.");
+    }
+    throw new Error(`GitHub API error: ${resp.status}`);
+  }
+  const info = await resp.json();
+  return info.sha;
+}
+
+async function commitFile(token, path, content, sha, message) {
+  const encoded = btoa(unescape(encodeURIComponent(content)));
+  const resp = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${path}`, {
+    method: "PUT",
+    headers: {
+      "Authorization": `Bearer ${token}`,
+      "Accept": "application/vnd.github.v3+json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message,
+      content: encoded,
+      sha,
+      branch: GITHUB_BRANCH
+    })
+  });
+  if (!resp.ok) {
+    if (resp.status === 401) {
+      clearToken();
+      throw new Error("Invalid token. Please try again.");
+    }
+    if (resp.status === 409) {
+      throw new Error("Conflict: the file was modified by someone else. Reload and try again.");
+    }
+    const body = await resp.json().catch(() => ({}));
+    throw new Error(body.message || `GitHub API error: ${resp.status}`);
+  }
+  return resp.json();
+}
+
+// --- Save flow ---
+
+async function saveChanges() {
+  let token = getToken();
+  if (!token) {
+    try {
+      token = await promptForToken();
+    } catch {
+      return;
+    }
+  }
+
+  const saveBtn = document.getElementById("btn-save");
+  saveBtn.disabled = true;
+  saveBtn.textContent = "Saving…";
+
+  try {
+    const newData = extractData();
+    const path = contentPath(newData.key);
+    const jsonStr = JSON.stringify(newData, null, 2) + "\n";
+
+    // Get current SHA
+    const sha = await getFileSha(token, path);
+
+    // Commit
+    await commitFile(token, path, jsonStr, sha, `Update ${newData.title} deepdive content`);
+
+    currentData = newData;
+    isEditing = false;
+    renderPage(newData);
+    showToast("Saved and committed to GitHub", "success");
+  } catch (err) {
+    if (err.message.includes("Invalid token")) {
+      showToast("Invalid token — cleared. Click Save to re-enter.", "error", 5000);
+    } else {
+      showToast(`Save failed: ${err.message}`, "error", 5000);
+    }
+  } finally {
+    saveBtn.disabled = false;
+    saveBtn.textContent = "Save";
+  }
+}
+
+// --- Error view ---
+
+function showError(msg) {
+  document.getElementById("content").innerHTML = `
+    <div class="error">
+      <h2>Page not found</h2>
+      <p>${esc(msg)}</p>
+      <p style="margin-top:20px"><a href="index.html" class="back-link">← Back to ITOM Map</a></p>
+    </div>
+  `;
+}
+
+// --- Language switch ---
+
+// Update the visual state of the toggle after each render (no listener added here).
+function updateLangSwitch() {
+  const sw = document.getElementById("lang-switch");
+  if (!sw || !hasNlVersion) return;
+  sw.classList.add("visible");
+  document.getElementById("lang-toggle").classList.toggle("nl", currentLang === "nl");
+  document.getElementById("lang-en").classList.toggle("active", currentLang === "en");
+  document.getElementById("lang-nl").classList.toggle("active", currentLang === "nl");
+}
+
+// --- Init ---
+
+async function init() {
+  const key = getPageKey();
+  if (!key) {
+    showError("No page specified. Use ?page=agile to load a deep-dive.");
+    return;
+  }
+
+  try {
+    const resp = await fetch(localContentPath(key, "en"));
+    if (!resp.ok) {
+      showError(`Deep-dive "${key}" not found. It may not exist yet.`);
+      return;
+    }
+    currentData = await resp.json();
+
+    // Check if a Dutch version exists
+    try {
+      const nlResp = await fetch(localContentPath(key, "nl"));
+      if (nlResp.ok) {
+        currentDataNl = await nlResp.json();
+        hasNlVersion = true;
+      }
+    } catch (_) { /* no NL version, that's fine */ }
+
+    renderPage(currentData);
+    updateLangSwitch();
+  } catch (err) {
+    showError(`Failed to load deep-dive: ${err.message}`);
+  }
+
+  // Single delegated listener — survives re-renders because it's on document
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest("#lang-toggle") || !hasNlVersion) return;
+    currentLang = currentLang === "en" ? "nl" : "en";
+    renderPage(currentLang === "nl" ? currentDataNl : currentData);
+    updateLangSwitch();
+  });
+}
+
+init();
+initAuth();
+</script>
+</body>
+</html>

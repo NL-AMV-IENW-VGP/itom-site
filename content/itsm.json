@@ -1,0 +1,60 @@
+{
+  "key": "itsm",
+  "category": "03 Frameworks",
+  "title": "ITSM",
+  "lead": "IT Service Management — the set of processes and practices that align IT services with business needs.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "IT Service Management (ITSM) is the discipline of designing, delivering, managing, and improving IT services to meet business requirements. It encompasses the entire lifecycle of IT services — from strategy and design through transition, operation, and continual improvement. ITSM is not a single framework but rather a domain that draws on multiple frameworks (ITIL, FitSM, VeriSM, ISO/IEC 20000) to create a structured, repeatable approach to service delivery."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "ITSM is often the operational backbone of an IT Operating Model. While ITOM defines the broader blueprint — covering governance, organisation, sourcing, and culture — ITSM provides the process layer that makes the operating model work day-to-day. In an ITOM engagement, ITSM design covers which processes to implement, how mature they need to be, which tooling supports them, and how they integrate across provider boundaries (SIAM). The shift from ITIL v3's process-centric view to ITIL 4's value-centric approach has brought ITSM closer to Agile and DevOps ways of working."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Service lifecycle", "desc": "strategy, design, transition, operation, and continual improvement — the end-to-end journey of a service" },
+        { "term": "Process maturity", "desc": "assessing how well-defined, measured, and optimised service management processes are" },
+        { "term": "Service catalogue", "desc": "the authoritative list of services IT provides, with defined service levels and ownership" },
+        { "term": "Operational Level Agreements (OLAs)", "desc": "internal agreements that underpin external SLAs and ensure cross-team accountability" },
+        { "term": "Continual Service Improvement (CSI)", "desc": "systematic approach to identifying and implementing improvements across all ITSM processes" },
+        { "term": "Shift-left", "desc": "moving resolution capability closer to the user — self-service, automation, and empowered L1 support" }
+      ]
+    },
+    {
+      "heading": "Core ITSM Processes",
+      "type": "list",
+      "items": [
+        { "term": "Incident Management", "desc": "restore normal service operation as quickly as possible, minimising business impact" },
+        { "term": "Problem Management", "desc": "identify and address root causes to prevent recurring incidents" },
+        { "term": "Change Management", "desc": "control the lifecycle of changes to minimise risk while enabling business agility" },
+        { "term": "Service Request Management", "desc": "handle standard, pre-approved requests efficiently through catalogues and automation" },
+        { "term": "Configuration Management", "desc": "maintain an accurate view of IT assets and their relationships (CMDB)" },
+        { "term": "Service Level Management", "desc": "define, agree, monitor, and report on service quality targets" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "ITSM Maturity Scan — benchmark current process maturity and identify gaps" },
+        { "desc": "ITSM process redesign — align processes with ITIL 4 and the target operating model" },
+        { "desc": "ServiceNow enablement — implement and optimise the ITSM toolchain" },
+        { "desc": "ITSM-to-DevOps integration — bridge the gap between service management and agile delivery" },
+        { "desc": "Service catalogue design — define and structure the IT service portfolio" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "ITSM Maturity Scan", "key": "itsm-scan" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" },
+    { "label": "FitSM", "key": "fitsm" }
+  ]
+}

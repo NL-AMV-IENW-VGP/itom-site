@@ -1,0 +1,109 @@
+{
+  "key": "safe",
+  "category": "03 Frameworks",
+  "title": "SAFe",
+  "lead": "Scaled Agile Framework — enables Agile at scale across large programmes and product portfolios.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Scaled Agile Framework (SAFe) is a comprehensive framework for implementing Agile practices at enterprise scale. It addresses the challenges that emerge when multiple teams need to coordinate, when portfolio-level planning is required, and when large organisations want to move from project-based delivery to product-centric flow. SAFe integrates principles from Agile, Lean, systems thinking, and DevOps into a structured, scalable model with defined roles, events, and artefacts at team, programme, and portfolio levels."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "When an ITOM engagement calls for Agile at scale — beyond a handful of Scrum teams — SAFe is often the framework of choice. It provides the governance structure that traditional organisations need to feel confident in an Agile transformation, while still enabling the speed and adaptability that Agile promises. In ITOM design, SAFe influences team topology (Agile Release Trains), planning cadence (PI Planning), funding models (Lean Portfolio Management), and the way work flows from strategy to delivery."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile Release Train (ART)",
+          "desc": "a long-lived team of Agile teams (50–125 people) that plans, commits, and delivers together in a synchronised cadence"
+        },
+        {
+          "term": "Program Increment (PI)",
+          "desc": "a fixed timebox (typically 8–12 weeks) during which an ART delivers incremental value; starts with PI Planning"
+        },
+        {
+          "term": "PI Planning",
+          "desc": "a face-to-face (or virtual) event where all teams on an ART align on objectives and dependencies for the upcoming PI"
+        },
+        {
+          "term": "Lean Portfolio Management",
+          "desc": "aligning strategy with execution through value stream funding, Lean budgets, and Agile portfolio operations"
+        },
+        {
+          "term": "Value Streams",
+          "desc": "the end-to-end flow of value from concept to delivery — SAFe organises around these rather than project hierarchies"
+        },
+        {
+          "term": "Built-in Quality",
+          "desc": "ensuring quality is embedded at every level through TDD, CI/CD, architecture runway, and compliance automation"
+        }
+      ]
+    },
+    {
+      "heading": "SAFe Configurations",
+      "type": "list",
+      "items": [
+        {
+          "term": "Essential SAFe",
+          "desc": "the minimum viable framework — team and ART level only; suitable for organisations starting their scaling journey"
+        },
+        {
+          "term": "Large Solution SAFe",
+          "desc": "adds coordination across multiple ARTs for large, complex systems development"
+        },
+        {
+          "term": "Portfolio SAFe",
+          "desc": "adds Lean portfolio management for strategic alignment and investment funding across value streams"
+        },
+        {
+          "term": "Full SAFe",
+          "desc": "the complete framework combining all levels — used by large enterprises with complex, multi-portfolio environments"
+        }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        {
+          "desc": "SAFe readiness assessment — evaluate organisational readiness for scaled Agile adoption"
+        },
+        {
+          "desc": "ART launch — design and launch the first Agile Release Train with facilitated PI Planning"
+        },
+        {
+          "desc": "SAFe coaching — embedded SPCs and RTEs to guide the transformation"
+        },
+        {
+          "desc": "Lean Portfolio Management setup — align funding, governance, and strategy to Agile flow"
+        },
+        {
+          "desc": "SAFe training — Leading SAFe, SAFe for Teams, SAFe Scrum Master, and other certifications"
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "key": "it4it",
+  "category": "03 Frameworks",
+  "title": "IT4IT",
+  "lead": "A reference architecture for managing the business of IT — structuring the IT value chain and supporting toolchain decisions.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "IT4IT is a reference architecture published by The Open Group that provides a prescriptive model for managing the business of IT. Unlike ITIL (which focuses on service management processes) or TOGAF (which focuses on enterprise architecture), IT4IT focuses on the IT value chain — the end-to-end flow of activities through which IT creates and delivers value. It defines a standard data model, functional components, and integration points that guide toolchain decisions and IT management platform architecture."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "IT4IT is especially valuable in ITOM engagements when organisations need to rationalise their IT management toolchain or design the 'IT-for-IT' layer — the platforms and tools that IT uses to manage itself. While ITIL tells you what processes to implement and COBIT tells you how to govern them, IT4IT tells you how to structure the supporting systems and data. It prevents the common pattern of disconnected tools (one for ITSM, one for DevOps, one for portfolio management) by providing an integrated reference architecture."
+    },
+    {
+      "heading": "The Four Value Streams",
+      "type": "list",
+      "items": [
+        { "term": "Strategy to Portfolio (S2P)", "desc": "translates business strategy into an IT portfolio — demand management, portfolio planning, and investment decisions" },
+        { "term": "Requirement to Deploy (R2D)", "desc": "takes requirements through design, build, test, and deployment — the development and delivery pipeline" },
+        { "term": "Request to Fulfill (R2F)", "desc": "handles service consumption — catalogue, request, provisioning, and fulfilment of IT services" },
+        { "term": "Detect to Correct (D2C)", "desc": "covers operational monitoring, incident detection, diagnosis, and resolution — the operations value stream" }
+      ]
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Service backbone", "desc": "the data objects (service, IT investment, requirement, etc.) that flow across all four value streams, providing integration" },
+        { "term": "Functional components", "desc": "building blocks within each value stream that can be mapped to specific tools or platform capabilities" },
+        { "term": "Data object model", "desc": "standardised data model that ensures consistency across the IT management landscape" },
+        { "term": "Integration architecture", "desc": "defines how ITSM, DevOps, portfolio management, and monitoring tools connect and share data" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "IT management landscape assessment — map current toolchain against IT4IT reference architecture" },
+        { "desc": "Toolchain rationalisation — consolidate and integrate IT management platforms" },
+        { "desc": "IT4IT-aligned ServiceNow design — structure ServiceNow around IT4IT value streams" },
+        { "desc": "DevOps-ITSM integration — connect development and operations toolchains using IT4IT patterns" },
+        { "desc": "IT value chain workshops — use IT4IT to facilitate discussions about end-to-end IT delivery" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "COBIT", "key": "cobit" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" }
+  ]
+}

@@ -1,0 +1,134 @@
+/* ITOM Deepdive shared styles */
+:root {
+  --bg: #f5f2ed;
+  --ink: #1a1714;
+  --gray: #6b6560;
+  --border: rgba(26,23,20,0.12);
+  --card-bg: #ffffff;
+  --shadow: 0 2px 12px rgba(26,23,20,0.09);
+  --radius: 10px;
+  --blue: #1a5fa8;
+  --blue-light: #e8f0fb;
+  --orange: #c47a1e;
+  --orange-light: #fdf3e3;
+}
+
+[data-theme="dark"] {
+  --bg: #141210;
+  --ink: #f0ece6;
+  --gray: #9a9490;
+  --border: rgba(240,236,230,0.12);
+  --card-bg: #1e1c18;
+  --shadow: 0 2px 12px rgba(0,0,0,0.35);
+  --blue: #5b9bd5;
+  --blue-light: #0d1e35;
+  --orange: #e09a3a;
+  --orange-light: #271a08;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  padding: 32px 24px 60px;
+}
+
+.page { max-width: 800px; margin: 0 auto; }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 32px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--ink); }
+
+header {
+  margin-bottom: 40px;
+}
+.category-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+header p.lead {
+  font-size: 1.05rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+.card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--orange);
+}
+.card ul {
+  padding-left: 18px;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--gray);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.tag {
+  background: var(--blue-light);
+  color: var(--blue);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+
+.related-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.related-chip {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  color: var(--ink);
+  text-decoration: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.related-chip:hover {
+  border-color: var(--blue);
+  box-shadow: var(--shadow);
+}

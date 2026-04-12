@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITOM Framework — Interactive Map</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/auth.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/auth.js"></script>
+<style>
+  :root {
+    --bg: #f5f2ed;
+    --ink: #1a1714;
+    --red: #c0392b;
+    --red-light: #fdecea;
+    --red-mid: #f5c6c2;
+    --green: #2e7d52;
+    --green-light: #e8f5ee;
+    --blue: #1a5fa8;
+    --blue-light: #e8f0fb;
+    --orange: #c47a1e;
+    --orange-light: #fdf3e3;
+    --yellow-light: #fefae8;
+    --purple: #6b3fa0;
+    --purple-light: #f3eefe;
+    --gray: #6b6560;
+    --card-bg: #ffffff;
+    --border: rgba(26,23,20,0.12);
+    --shadow: 0 2px 12px rgba(26,23,20,0.09);
+    --shadow-hover: 0 8px 32px rgba(26,23,20,0.18);
+    --radius: 10px;
+    --transition: all 0.22s cubic-bezier(.4,0,.2,1);
+  }
+
+  [data-theme="dark"] {
+    --bg: #141210;
+    --ink: #f0ece6;
+    --red: #e05c4b;
+    --red-light: #2a1412;
+    --red-mid: #4a1f1a;
+    --green: #4caf7d;
+    --green-light: #0f2419;
+    --blue: #5b9bd5;
+    --blue-light: #0d1e35;
+    --orange: #e09a3a;
+    --orange-light: #271a08;
+    --yellow-light: #1e1c08;
+    --purple: #a67dd4;
+    --purple-light: #1a1028;
+    --gray: #9a9490;
+    --card-bg: #1e1c18;
+    --border: rgba(240,236,230,0.12);
+    --shadow: 0 2px 12px rgba(0,0,0,0.35);
+    --shadow-hover: 0 8px 32px rgba(0,0,0,0.55);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 32px 24px 60px;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 6px;
+    font-weight: 300;
+  }
+
+  /* LAYOUT */
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* SECTION WRAPPER */
+  .section {
+    border-radius: 14px;
+    padding: 20px 22px 22px;
+    position: relative;
+  }
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    opacity: 0.55;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+
+  /* TOP ROW: Purpose + Usecases */
+  .top-row {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 20px;
+  }
+
+  /* PURPOSE — 3-row layout */
+  .section-purpose {
+    background: var(--red-light);
+    border: 1.5px solid var(--red-mid);
+  }
+  .section-purpose .section-title { color: var(--red); }
+
+  .strategy-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Row 1: 4 equal strategy chips */
+  .strategy-row-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  /* Row 2: full-width Value Proposition */
+  .strategy-row-vp {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .strategy-row-vp .chip {
+    width: 100%;
+    text-align: center;
+    padding: 9px 16px;
+  }
+
+  /* Row 3: Operating Model + ITOM, equal size and emphasis */
+  .strategy-row-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+  }
+  .strategy-row-bottom .chip {
+    width: 100%;
+    text-align: center;
+    padding: 22px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .strategy-row-bottom .chip.itom-core {
+    padding: 22px 16px;
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+
+  /* USECASES */
+  .section-usecases {
+    background: var(--green-light);
+    border: 1.5px solid #b2d8c3;
+  }
+  .section-usecases .section-title { color: var(--green); }
+  .usecase-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* FRAMEWORKS */
+  .section-frameworks {
+    background: var(--blue-light);
+    border: 1.5px solid #b3cef5;
+  }
+  .section-frameworks .section-title { color: var(--blue); }
+
+  /* Atos ITOM hero chip */
+  .chip.framework-hero {
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 18px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(26,95,168,0.28);
+    text-align: center;
+    width: 100%;
+    margin-top: 14px;
+  }
+  .chip.framework-hero:hover {
+    background: #14508a;
+    box-shadow: 0 8px 28px rgba(26,95,168,0.38);
+  }
+
+  /* Framework subgroups row */
+  .framework-subgroups {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .framework-group {
+    background: rgba(26,95,168,0.06);
+    border: 1px solid rgba(26,95,168,0.18);
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  [data-theme="dark"] .framework-group {
+    background: rgba(91,155,213,0.08);
+    border-color: rgba(91,155,213,0.2);
+  }
+  .framework-group-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  .framework-group-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  .framework-group .chip.framework {
+    white-space: normal;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  /* ACCELERATORS */
+  .section-accelerators {
+    background: var(--orange-light);
+    border: 1.5px solid #f0d09a;
+  }
+  .section-accelerators .section-title { color: var(--orange); }
+
+  /* Sub-groups inside section 04: 2-row layout */
+  .accel-row-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .accel-row-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .accel-group {
+    background: rgba(196,122,30,0.07);
+    border: 1px solid rgba(196,122,30,0.2);
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  [data-theme="dark"] .accel-group {
+    background: rgba(196,122,30,0.1);
+    border-color: rgba(196,122,30,0.25);
+  }
+  .accel-group-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 8px;
+  }
+  /* 2-column chip grid inside large groups */
+  .accel-group-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  /* Single-column chip list for smaller groups */
+  .accel-group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .accel-group .chip.accel {
+    white-space: normal;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  /* VISUAL TOOLKIT */
+  .section-toolkit {
+    background: var(--yellow-light);
+    border: 1.5px solid #e8dfa0;
+  }
+  .section-toolkit .section-title { color: #9a7c10; }
+  .toolkit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* BOTTOM ROW */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .section-reference {
+    background: #f0ece6;
+    border: 1.5px dashed #ccc5bc;
+  }
+  .section-reference .section-title { color: var(--gray); }
+  .section-training {
+    background: var(--purple-light);
+    border: 1.5px solid #d0b8f5;
+  }
+  .section-training .section-title { color: var(--purple); }
+
+  .ref-grid, .training-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Training subgroup */
+  .training-group {
+    background: rgba(107,63,160,0.07);
+    border: 1px solid rgba(107,63,160,0.2);
+    border-radius: 10px;
+    padding: 10px 12px;
+    width: 100%;
+    margin-top: 6px;
+  }
+  [data-theme="dark"] .training-group {
+    background: rgba(166,125,212,0.08);
+    border-color: rgba(166,125,212,0.2);
+  }
+  .training-group-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--purple);
+    margin-bottom: 8px;
+  }
+  .training-group-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  /* CHIP / CARD */
+  .chip {
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 7px 13px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+    text-align: center;
+    user-select: none;
+    position: relative;
+  }
+  .chip:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: transparent;
+    z-index: 2;
+  }
+  .chip.itom-core {
+    background: var(--red);
+    color: #fff;
+    border-color: var(--red);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 10px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(192,57,43,0.28);
+  }
+  .chip.itom-core:hover {
+    background: #a93226;
+    box-shadow: 0 8px 28px rgba(192,57,43,0.38);
+  }
+
+  .chip.purpose  { border-color: var(--red-mid); }
+  .chip.purpose:hover  { background: var(--red); color: #fff; }
+
+  .chip.usecase  { border-color: #b2d8c3; }
+  .chip.usecase:hover  { background: var(--green); color: #fff; }
+
+  .chip.framework { border-color: #b3cef5; }
+  .chip.framework:hover { background: var(--blue); color: #fff; }
+
+  .chip.accel { border-color: #f0d09a; }
+  .chip.accel:hover { background: var(--orange); color: #fff; }
+
+  .chip.toolkit { border-color: #e8dfa0; }
+  .chip.toolkit:hover { background: #9a7c10; color: #fff; }
+
+  .chip.training-item { border-color: #d0b8f5; }
+  .chip.training-item:hover { background: var(--purple); color: #fff; }
+
+  .chip.placeholder {
+    opacity: 0.4;
+    cursor: default;
+    background: #f0ece6;
+    border-style: dashed;
+    pointer-events: none;
+  }
+
+  /* TOOLTIP */
+  .chip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: #fff;
+    font-size: 0.72rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+    z-index: 100;
+  }
+  .chip:hover::after {
+    opacity: 1;
+  }
+
+  /* MODAL */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(26,23,20,0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal {
+    background: #fff;
+    border-radius: 18px;
+    padding: 36px 40px;
+    max-width: 520px;
+    width: 90%;
+    box-shadow: 0 24px 80px rgba(26,23,20,0.22);
+    transform: translateY(16px) scale(0.97);
+    transition: transform 0.22s cubic-bezier(.4,0,.2,1);
+    position: relative;
+  }
+  .modal-overlay.active .modal {
+    transform: translateY(0) scale(1);
+  }
+  .modal-category {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .modal h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 14px;
+  }
+  .modal p {
+    color: var(--gray);
+    line-height: 1.65;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+  .modal-tag {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: var(--transition);
+  }
+  .btn-primary:hover { background: #333; }
+  .btn-secondary {
+    background: transparent;
+    color: var(--gray);
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: var(--transition);
+  }
+  .btn-secondary:hover { border-color: var(--ink); color: var(--ink); }
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 18px;
+    background: none; border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--gray);
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: var(--transition);
+  }
+  .modal-close:hover { background: var(--bg); color: var(--ink); }
+
+  /* Modal image */
+  .modal-img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--bg);
+    margin-bottom: 16px;
+  }
+
+  /* External link button */
+  .btn-external {
+    background: transparent;
+    color: var(--blue);
+    border: 1.5px solid var(--blue);
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .btn-external:hover { background: var(--blue); color: #fff; }
+
+  /* Training chip with thumbnail */
+  .chip.training-sim {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+  }
+  .chip.training-sim img {
+    width: 40px;
+    height: 23px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  /* DARK/LIGHT TOGGLE */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    z-index: 500;
+    background: var(--card-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    padding: 6px 14px 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--ink);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    user-select: none;
+  }
+  .theme-toggle:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+  }
+  .toggle-track {
+    width: 32px;
+    height: 18px;
+    background: var(--gray);
+    border-radius: 9px;
+    position: relative;
+    transition: background 0.25s;
+    flex-shrink: 0;
+  }
+  [data-theme="dark"] .toggle-track {
+    background: var(--blue);
+  }
+  .toggle-thumb {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  [data-theme="dark"] .toggle-thumb {
+    transform: translateX(14px);
+  }
+  .toggle-icon { font-size: 1rem; line-height: 1; }
+
+  /* ensure modal bg adapts */
+  .modal { background: var(--card-bg); color: var(--ink); }
+  .modal p { color: var(--gray); }
+  .modal-tag { background: var(--bg); color: var(--ink); }
+  .btn-secondary { color: var(--gray); border-color: var(--border); }
+  .btn-secondary:hover { border-color: var(--ink); color: var(--ink); }
+  .modal-close { color: var(--gray); }
+  .modal-close:hover { background: var(--bg); color: var(--ink); }
+
+  /* section border fix for dark */
+  .section-reference { background: var(--bg); border-color: var(--border); }
+
+
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: -8px 0;
+    color: var(--gray);
+    font-size: 0.75rem;
+    opacity: 0.5;
+  }
+  .arrow-row svg { width: 18px; height: 18px; }
+
+  /* BADGE */
+  .badge-new {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 2px 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 4px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- Auth overlay — verborgen nadat gebruiker is ingelogd -->
+<div id="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <h2>ITOM Framework</h2>
+    <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
+    <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
+    <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+</div>
+
+<!-- Hoofdinhoud — verborgen totdat gebruiker is ingelogd -->
+<div id="main-content" style="display:none">
+
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+  <div class="toggle-track"><div class="toggle-thumb"></div></div>
+  <span class="toggle-icon" id="toggle-icon">🌙</span>
+  <span id="toggle-label">Dark</span>
+</button>
+
+<header>
+  <h1>ITOM Framework</h1>
+  <p>Interactive overview — click any element to explore deep-dive content</p>
+</header>
+
+<div class="map">
+
+  <!-- TOP ROW: Purpose + Usecases -->
+  <div class="top-row">
+
+    <!-- 01 PURPOSE -->
+    <div class="section section-purpose">
+      <div class="section-label">01 Purpose</div>
+      <div class="section-title">Purpose of the ITOM is to deliver your strategy</div>
+      <div class="strategy-grid">
+
+        <!-- Row 1: 4 equal strategy topics -->
+        <div class="strategy-row-top">
+          <div class="chip purpose" data-key="corporate-strategy" data-tooltip="Click to explore">Corporate Strategy</div>
+          <div class="chip purpose" data-key="digital-strategy" data-tooltip="Click to explore">Digital Strategy</div>
+          <div class="chip purpose" data-key="it-strategy" data-tooltip="Click to explore">IT-Strategy</div>
+          <div class="chip purpose" data-key="cloud-strategy" data-tooltip="Click to explore">Cloud Strategy</div>
+        </div>
+
+        <!-- Row 2: full-width Value Proposition -->
+        <div class="strategy-row-vp">
+          <div class="chip purpose" data-key="value-proposition" data-tooltip="Click to explore">Value Proposition (VP)</div>
+        </div>
+
+        <!-- Row 3: Operating Model + ITOM, equal size -->
+        <div class="strategy-row-bottom">
+          <div class="chip purpose" data-key="operating-model" data-tooltip="Click to explore">Operating Model</div>
+          <div class="chip itom-core" data-key="itom-core" data-tooltip="Core framework">ITOM</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 02 USECASES -->
+    <div class="section section-usecases">
+      <div class="section-label">02 Plays / Usecases</div>
+      <div class="section-title">Usecases</div>
+      <div class="usecase-list">
+        <div class="chip usecase" data-key="post-merger" data-tooltip="Click to explore">Post merger integration</div>
+        <div class="chip usecase" data-key="cloud-transformation" data-tooltip="Click to explore">Cloud transformation</div>
+        <div class="chip usecase" data-key="agile-transformation" data-tooltip="Click to explore">Agile transformation</div>
+        <div class="chip usecase" data-key="outsourcing" data-tooltip="Click to explore">Outsourcing</div>
+        <div class="chip usecase placeholder">• • •</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="arrow-row">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <span>Frameworks &amp; methods inform the ITOM approach</span>
+  </div>
+
+  <!-- 03 FRAMEWORKS -->
+  <div class="section section-frameworks">
+    <div class="section-label">03 Frameworks and methods</div>
+    <div class="section-title">Market frameworks</div>
+
+    <!-- Grouped frameworks -->
+    <div class="framework-subgroups">
+      <div class="framework-group">
+        <div class="framework-group-label">📋 ITSM Frameworks</div>
+        <div class="framework-group-chips">
+          <div class="chip framework" data-key="itsm" data-tooltip="IT Service Management">ITSM</div>
+          <div class="chip framework" data-key="yasm" data-tooltip="Yet Another Service Model">YaSM</div>
+          <div class="chip framework" data-key="itil" data-tooltip="ITIL library">ITIL library</div>
+          <div class="chip framework" data-key="fitsm" data-tooltip="Lightweight ITSM">FitSM</div>
+          <div class="chip framework" data-key="iso-iec" data-tooltip="International standard">ISO/IEC 20000</div>
+          <div class="chip framework" data-key="verism" data-tooltip="Value-driven ITSM">VeriSM</div>
+        </div>
+      </div>
+      <div class="framework-group">
+        <div class="framework-group-label">🏛️ Architecture</div>
+        <div class="framework-group-chips">
+          <div class="chip framework" data-key="it4it" data-tooltip="IT4IT reference architecture">IT4IT</div>
+          <div class="chip framework" data-key="togaf" data-tooltip="Enterprise architecture framework">TOGAF</div>
+          <div class="chip framework" data-key="nora" data-tooltip="Nederlandse Overheid Referentie Architectuur">NORA</div>
+          <div class="chip framework" data-key="rora" data-tooltip="Rijksoverheid Referentie Architectuur">RORA</div>
+        </div>
+      </div>
+      <div class="framework-group">
+        <div class="framework-group-label">🔧 Other Frameworks &amp; Methods</div>
+        <div class="framework-group-chips">
+          <div class="chip framework" data-key="agile" data-tooltip="Agile methodology">Agile</div>
+          <div class="chip framework" data-key="siam" data-tooltip="Service Integration &amp; Management">SIAM</div>
+          <div class="chip framework" data-key="safe" data-tooltip="Scaled Agile">SAFe</div>
+          <div class="chip framework" data-key="ism" data-tooltip="Information Security Management">ISM</div>
+          <div class="chip framework" data-key="cobit" data-tooltip="Governance framework">COBIT</div>
+          <div class="chip framework" data-key="sfia" data-tooltip="Skills framework (planned)" style="opacity:0.5;border-style:dashed">SFIA</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero: Atos ITOM Framework -->
+    <div class="chip framework-hero" data-key="eviden-itom" data-tooltip="Proprietary Atos framework">Atos ITOM Framework</div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="arrow-row">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <span>Supported by tools, accelerators &amp; services</span>
+  </div>
+
+  <!-- 04 ACCELERATORS -->
+  <div class="section section-accelerators">
+    <div class="section-label">04 Tools, accelerators and services</div>
+    <div class="section-title">Atos Service components and accelerators</div>
+
+    <!-- Row 1: two large groups with 2-column chip grids -->
+    <div class="accel-row-top">
+      <div class="accel-group">
+        <div class="accel-group-label">🔍 Assessments &amp; Scans</div>
+        <div class="accel-group-chips">
+          <div class="chip accel" data-key="agile-scan" data-tooltip="Maturity assessment">Agile maturity scan</div>
+          <div class="chip accel" data-key="security-nist" data-tooltip="NIST security assessment" style="border-color:var(--red);color:var(--red)">Security scan NIST <span class="badge-new">New</span></div>
+          <div class="chip accel" data-key="devops-scan" data-tooltip="Capability assessment">DevOps capability scan</div>
+          <div class="chip accel" data-key="cloud-scan" data-tooltip="Cloud adoption assessment">Cloud scan</div>
+          <div class="chip accel" data-key="itsm-scan" data-tooltip="Maturity assessment">ITSM maturity scan</div>
+          <div class="chip accel" data-key="cloud-readiness" data-tooltip="Cloud migration readiness">Cloud readiness scan</div>
+        </div>
+      </div>
+      <div class="accel-group">
+        <div class="accel-group-label">🧭 Exploration &amp; Design</div>
+        <div class="accel-group-chips">
+          <div class="chip accel" data-key="playbooks" data-tooltip="Digital / Agile / DevOps">Playbooks Digital / Agile / DevOps</div>
+          <div class="chip accel" data-key="biz-simulations" data-tooltip="Business simulations">Business simulations</div>
+          <div class="chip accel" data-key="process-redesign" data-tooltip="Process improvement">Process redesign</div>
+          <div class="chip accel" data-key="facilitation" data-tooltip="Facilitation games">Facilitation Games</div>
+          <div class="chip accel" data-key="design-thinking" data-tooltip="Workshops">Design thinking workshops</div>
+          <div class="chip accel" data-key="inspiration" data-tooltip="Inspiration sessions">Inspiration sessions</div>
+          <div class="chip accel" data-key="system-thinking" data-tooltip="Systems approach">System thinking</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: three smaller groups with single-column lists -->
+    <div class="accel-row-bottom">
+      <div class="accel-group">
+        <div class="accel-group-label">🛠️ Platform, Advisory &amp; Support</div>
+        <div class="accel-group-list">
+          <div class="chip accel" data-key="servicenow" data-tooltip="ServiceNow enablement">Service Now enablement</div>
+          <div class="chip accel" data-key="platform-pipeline" data-tooltip="Platform support">Platform and pipeline support</div>
+          <div class="chip accel" data-key="cloud-services" data-tooltip="Cloud services">Cloud services</div>
+          <div class="chip accel" data-key="cloud-advisory" data-tooltip="Cloud advisory">Cloud advisory</div>
+        </div>
+      </div>
+      <div class="accel-group">
+        <div class="accel-group-label">🏛️ Architecture &amp; Strategy</div>
+        <div class="accel-group-list">
+          <div class="chip accel" data-key="it-strategy-svc" data-tooltip="IT Transformation Strategy">IT (Transformation) Strategy</div>
+          <div class="chip accel" data-key="enterprise-arch" data-tooltip="Enterprise Architecture">Enterprise Architecture</div>
+        </div>
+      </div>
+      <div class="accel-group">
+        <div class="accel-group-label">🔄 Delivery &amp; Change</div>
+        <div class="accel-group-list">
+          <div class="chip accel" data-key="ppm" data-tooltip="Project &amp; Program Management">Project and program management</div>
+          <div class="chip accel" data-key="transformation-mgmt" data-tooltip="Transformation management">Transformation and transition management</div>
+          <div class="chip accel" data-key="coaching" data-tooltip="Coaching &amp; training">Coaching en training</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05 VISUAL TOOLKIT -->
+  <div class="section section-toolkit">
+    <div class="section-label">05 Visual aids</div>
+    <div class="section-title">Visual toolkit</div>
+    <div class="toolkit-grid">
+      <div class="chip toolkit" data-key="bmc" data-tooltip="Business Model Canvas">Business Model Canvas</div>
+      <div class="chip toolkit" data-key="vpc" data-tooltip="Value Proposition Canvas">Value Proposition Canvas</div>
+      <div class="chip toolkit" data-key="itom-canvas" data-tooltip="(IT)OM Canvas">(IT)OM Canvas</div>
+    </div>
+  </div>
+
+  <!-- BOTTOM ROW -->
+  <div class="bottom-row">
+    <div class="section section-reference">
+      <div class="section-label">Reference cases</div>
+      <div class="section-title" style="color:var(--gray)">Reference cases</div>
+      <div class="ref-grid">
+        <div class="chip placeholder">• • •</div>
+        <div class="chip placeholder">• • •</div>
+        <div class="chip placeholder">• • •</div>
+      </div>
+    </div>
+    <div class="section section-training">
+      <div class="section-label">Training</div>
+      <div class="section-title">Training</div>
+      <div class="training-grid">
+        <div class="chip training-item" data-key="itil4" data-tooltip="ITIL4 training">ITIL4</div>
+        <div class="chip training-item" data-key="agile-practice" data-tooltip="Agile in practice">Agile in practice</div>
+        <div class="chip training-item" data-key="intro-agile" data-tooltip="Introduction to Agile">Introduction to Agile</div>
+        <div class="training-group">
+          <div class="training-group-label">🎮 Business Simulations</div>
+          <div class="training-group-chips">
+            <div class="chip training-item training-sim" data-key="phoenix-project" data-tooltip="Business simulation"><img src="assets/img/phoenix-project.png" alt="">The Phoenix Project</div>
+            <div class="chip training-item training-sim" data-key="marslander" data-tooltip="Business simulation"><img src="assets/img/marslander.png" alt="">MarsLander</div>
+            <div class="chip training-item training-sim" data-key="hollywood-dreams" data-tooltip="Business simulation"><img src="assets/img/hollywood-dreams.png" alt="">Hollywood Dreams</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /map -->
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" id="modal-close">✕</button>
+    <img class="modal-img" id="modal-img" src="" alt="" style="display:none">
+    <div class="modal-category" id="modal-cat"></div>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+    <p id="modal-cert" style="display:none;font-size:0.85rem;font-weight:600;color:var(--purple);margin-bottom:16px"></p>
+    <div class="modal-tags" id="modal-tags"></div>
+    <div class="modal-actions">
+      <button class="btn-primary" id="modal-deepdive">Open deep-dive →</button>
+      <a class="btn-external" id="modal-external" href="#" target="_blank" rel="noopener" style="display:none">Visit website ↗</a>
+      <button class="btn-secondary" id="modal-close2">Close</button>
+    </div>
+  </div>
+</div>
+
+</div><!-- /main-content -->
+
+<script>
+"use strict";
+const content = {
+  "corporate-strategy": {
+    cat: "01 Purpose",
+    title: "Corporate Strategy",
+    desc: "The overarching strategy of the organisation that defines goals, direction, and priorities. ITOM translates corporate strategy into executable IT operating models.",
+    tags: ["Strategy", "Executive", "Direction"]
+  },
+  "value-proposition": {
+    cat: "01 Purpose",
+    title: "Value Proposition (VP)",
+    desc: "Defines the unique value that IT and digital capabilities deliver to customers and stakeholders. All sub-strategies carry a VP dimension that informs ITOM design.",
+    tags: ["Value", "Business case", "Stakeholder"]
+  },
+  "operating-model": {
+    cat: "01 Purpose",
+    title: "Operating Model",
+    desc: "The blueprint for how an organisation delivers its strategy — covering processes, people, technology, and governance. ITOM specialises this for IT-intensive organisations.",
+    tags: ["Operating model", "Blueprint", "Governance"]
+  },
+  "digital-strategy": {
+    cat: "01 Purpose",
+    title: "Digital Strategy",
+    desc: "Sets the direction for digital transformation, data, and platform capabilities. Feeds directly into the ITOM as a specialised variant driving digital change.",
+    tags: ["Digital", "Transformation", "Platform"]
+  },
+  "it-strategy": {
+    cat: "01 Purpose",
+    title: "IT-Strategy",
+    desc: "The multi-year plan for IT capabilities, architecture, and sourcing. Provides the foundation from which the ITOM is designed and periodically updated.",
+    tags: ["IT Strategy", "Architecture", "Roadmap"]
+  },
+  "cloud-strategy": {
+    cat: "01 Purpose",
+    title: "Cloud Strategy",
+    desc: "Defines the cloud adoption path — multi-cloud, hybrid, or cloud-native — and feeds into an ITOM-for-Cloud variant with dedicated governance and tooling.",
+    tags: ["Cloud", "Multi-cloud", "Hybrid"]
+  },
+  "itom-core": {
+    cat: "Core",
+    title: "IT Operating Model (ITOM)",
+    desc: "The ITOM is the central framework that integrates corporate strategy, digital ambition, IT strategy, and cloud direction into a coherent operating model. It can be specialised (product-based, SIAM, ITOM-for-Cloud, merging/redesign) to fit the context.",
+    tags: ["ITOM", "Core", "Framework", "Operating Model"]
+  },
+  "post-merger": {
+    cat: "02 Usecases",
+    title: "Post Merger Integration",
+    desc: "Using ITOM to integrate IT landscapes, processes, and organisations after a merger or acquisition — aligning operating models and eliminating duplication.",
+    tags: ["M&A", "Integration", "Change"]
+  },
+  "cloud-transformation": {
+    cat: "02 Usecases",
+    title: "Cloud Transformation",
+    desc: "Applying ITOM to orchestrate a structured move to cloud — governance, toolchain, sourcing, and process redesign all shaped by ITOM-for-Cloud principles.",
+    tags: ["Cloud", "Transformation", "Migration"]
+  },
+  "agile-transformation": {
+    cat: "02 Usecases",
+    title: "Agile Transformation",
+    desc: "Using ITOM to shift the organisation toward product-centric, agile ways of working — embedding DevOps, cross-functional teams, and iterative delivery.",
+    tags: ["Agile", "DevOps", "Culture"]
+  },
+  "outsourcing": {
+    cat: "02 Usecases",
+    title: "Outsourcing",
+    desc: "Redesigning the IT operating model to accommodate SIAM structures, multi-vendor management, and retained organisation design in outsourcing scenarios.",
+    tags: ["SIAM", "Outsourcing", "Governance"]
+  },
+  "eviden-itom": { cat: "03 Frameworks", title: "Atos ITOM Framework", desc: "The proprietary Atos framework that structures how an IT Operating Model is analysed, designed, and implemented — integrating market frameworks with Atos IP and delivery methodology.", tags: ["Proprietary", "Atos", "IP"] },
+  "togaf": { cat: "03 Frameworks — Architecture", title: "TOGAF", desc: "The Open Group Architecture Framework — the most widely adopted methodology for enterprise architecture development and governance.", tags: ["Architecture", "TOGAF", "Enterprise"] },
+  "nora": { cat: "03 Frameworks — Architecture", title: "NORA", desc: "Nederlandse Overheid Referentie Architectuur — the reference architecture for Dutch government organisations, providing principles, standards, and building blocks for interoperable public services.", tags: ["Architecture", "Dutch Government", "Reference"] },
+  "rora": { cat: "03 Frameworks — Architecture", title: "RORA", desc: "Rijksoverheid Referentie Architectuur — the reference architecture specifically for Rijkswaterstaat and central government departments, building on NORA with domain-specific guidance.", tags: ["Architecture", "Rijksoverheid", "Reference"] },
+  "agile": { cat: "03 Frameworks", title: "Agile", desc: "Iterative, value-driven delivery approach used to shape both the design process and the target operating model.", tags: ["Agile", "Iterative", "Sprints"] },
+  "siam": { cat: "03 Frameworks", title: "SIAM", desc: "Service Integration and Management — a framework for managing multiple service providers in a consistent, value-driven way.", tags: ["SIAM", "Multi-sourcing", "Governance"] },
+  "itsm": { cat: "03 Frameworks", title: "ITSM", desc: "IT Service Management — the set of processes and practices that align IT services with business needs.", tags: ["ITSM", "Service", "Processes"] },
+  "ism": { cat: "03 Frameworks", title: "ISM", desc: "Information Security Management — ensures that security is embedded in the operating model.", tags: ["Security", "ISM", "Risk"] },
+  "iso-iec": { cat: "03 Frameworks", title: "ISO/IEC 20000", desc: "The international standard for IT service management, used as a certification and baseline framework.", tags: ["Standard", "Certification", "ISO"] },
+  "cobit": { cat: "03 Frameworks", title: "COBIT", desc: "Governance and management framework for enterprise IT — used to establish control objectives and align IT with organisational goals.", tags: ["Governance", "COBIT", "Control"] },
+  "safe": { cat: "03 Frameworks", title: "SAFe", desc: "Scaled Agile Framework — enables Agile at scale across large programmes and product portfolios.", tags: ["SAFe", "Scale", "Agile"] },
+  "itil": { cat: "03 Frameworks", title: "ITIL Library", desc: "Best practice library for IT service management; foundational for process design in ITSM-based operating models.", tags: ["ITIL", "Best practice", "Processes"] },
+  "yasm": { cat: "03 Frameworks", title: "YaSM", desc: "Yet Another Service Model — a pragmatic, simplified ITSM framework suitable for smaller organisations.", tags: ["YaSM", "ITSM", "Lightweight"] },
+  "fitsm": { cat: "03 Frameworks", title: "FitSM", desc: "A lightweight, free ITSM standard designed to make service management achievable in federated environments.", tags: ["FitSM", "Lightweight", "Federation"] },
+  "verism": { cat: "03 Frameworks", title: "VeriSM", desc: "A service management approach for the digital age — flexible, value-driven, and technology-aware.", tags: ["VeriSM", "Digital", "Value"] },
+  "it4it": { cat: "03 Frameworks", title: "IT4IT", desc: "A reference architecture for managing the business of IT — structuring the IT value chain and supporting toolchain decisions.", tags: ["IT4IT", "Architecture", "Value chain"] },
+  "agile-scan": { cat: "04 Accelerators", title: "Agile Maturity Scan", desc: "A structured assessment that measures agile maturity across teams, leadership, and delivery — producing a prioritised improvement roadmap.", tags: ["Assessment", "Agile", "Maturity"] },
+  "devops-scan": { cat: "04 Accelerators", title: "DevOps Capability Scan", desc: "Evaluates the organisation's DevOps capabilities across people, process, and toolchain dimensions.", tags: ["DevOps", "Scan", "Capability"] },
+  "itsm-scan": { cat: "04 Accelerators", title: "ITSM Maturity Scan", desc: "Benchmarks ITSM processes against best practice frameworks, identifying gaps and quick wins.", tags: ["ITSM", "Maturity", "Assessment"] },
+  "playbooks": { cat: "04 Accelerators", title: "Playbooks Digital / Agile / DevOps", desc: "Curated, ready-to-use playbooks for running agile, digital, and DevOps transformations — reducing design time significantly.", tags: ["Playbooks", "Digital", "Agile"] },
+  "process-redesign": { cat: "04 Accelerators", title: "Process Redesign", desc: "Structured approach to analyse, simplify, and redesign IT processes in line with the new operating model.", tags: ["Process", "Redesign", "Lean"] },
+  "design-thinking": { cat: "04 Accelerators", title: "Design Thinking Workshops", desc: "Facilitated sessions using design thinking to co-create solutions with stakeholders — driving innovation and buy-in.", tags: ["Design thinking", "Workshop", "Co-creation"] },
+  "system-thinking": { cat: "04 Accelerators", title: "System Thinking", desc: "Applying systems thinking to understand interdependencies and design resilient, coherent operating models.", tags: ["Systems", "Complexity", "Design"] },
+  "biz-simulations": { cat: "04 Accelerators", title: "Business Simulations", desc: "Immersive simulation exercises that help teams experience and learn new ways of working in a safe environment.", tags: ["Simulation", "Learning", "Change"] },
+  "facilitation": { cat: "04 Accelerators", title: "Facilitation Games", desc: "Game-based facilitation techniques for workshops and training that accelerate learning and engagement.", tags: ["Games", "Facilitation", "Engagement"] },
+  "inspiration": { cat: "04 Accelerators", title: "Inspiration Sessions", desc: "Curated sessions featuring case studies, trends, and innovations to spark ideas and build a shared vision.", tags: ["Inspiration", "Vision", "Innovation"] },
+  "servicenow": { cat: "04 Accelerators", title: "Service Now Enablement", desc: "Expertise in implementing and optimising ServiceNow as the toolchain backbone of the new operating model.", tags: ["ServiceNow", "Toolchain", "ITSM"] },
+  "platform-pipeline": { cat: "04 Accelerators", title: "Platform and Pipeline Support", desc: "Technical support for setting up and optimising CI/CD pipelines and platform engineering environments.", tags: ["Platform", "CI/CD", "DevOps"] },
+  "cloud-services": { cat: "04 Accelerators", title: "Cloud Services", desc: "Managed and professional cloud services supporting the cloud transformation journey.", tags: ["Cloud", "Managed services", "Ops"] },
+  "cloud-advisory": { cat: "04 Accelerators", title: "Cloud Advisory", desc: "Strategic advisory on cloud adoption, architecture, and governance — aligned to ITOM-for-Cloud.", tags: ["Advisory", "Cloud", "Strategy"] },
+  "it-strategy-svc": { cat: "04 Accelerators", title: "IT (Transformation) Strategy", desc: "Service offering to define or refresh the IT strategy — linking business ambition to technology roadmap.", tags: ["IT Strategy", "Roadmap", "Advisory"] },
+  "enterprise-arch": { cat: "04 Accelerators", title: "Enterprise Architecture", desc: "Designing and governing the enterprise architecture that underpins the new operating model.", tags: ["EA", "Architecture", "Governance"] },
+  "ppm": { cat: "04 Accelerators", title: "Project and Program Management", desc: "Programme management expertise to deliver the operating model transformation reliably.", tags: ["PMO", "Programme", "Delivery"] },
+  "transformation-mgmt": { cat: "04 Accelerators", title: "Transformation and Transition Management", desc: "End-to-end management of transformation programmes — covering change management, transition planning, and benefits realisation.", tags: ["Change", "Transition", "Benefits"] },
+  "coaching": { cat: "04 Accelerators", title: "Coaching en Training", desc: "Structured coaching programmes and training interventions to build lasting capability in the organisation.", tags: ["Coaching", "Training", "Capability"] },
+  "security-nist": { cat: "04 Accelerators — New", title: "Security Scan NIST", desc: "A structured security assessment aligned to the NIST cybersecurity framework — to be added to the accelerator portfolio.", tags: ["Security", "NIST", "New"] },
+  "cloud-scan": { cat: "04 Accelerators", title: "Cloud Scan", desc: "A rapid assessment of cloud readiness and adoption maturity across governance, architecture, and operations.", tags: ["Cloud", "Assessment"] },
+  "cloud-readiness": { cat: "04 Accelerators", title: "Cloud Readiness Scan", desc: "Targeted scan to determine organisational and technical readiness for a cloud migration programme.", tags: ["Cloud", "Readiness"] },
+  "bmc": { cat: "05 Visual Toolkit", title: "Business Model Canvas", desc: "Visual tool for mapping and redesigning business models — used in ITOM engagements to connect IT operating model choices to business model imperatives.", tags: ["BMC", "Visual", "Business model"] },
+  "vpc": { cat: "05 Visual Toolkit", title: "Value Proposition Canvas", desc: "Tool to articulate the value IT delivers to internal and external customers — driving the 'why' behind ITOM design choices.", tags: ["VPC", "Value", "Customer"] },
+  "itom-canvas": { cat: "05 Visual Toolkit", title: "(IT)OM Canvas", desc: "A bespoke canvas combining the Operating Model and ITOM dimensions — used to facilitate workshops and document design decisions.", tags: ["Canvas", "ITOM", "Workshop"] },
+  "itil4": { cat: "Training", title: "ITIL4", desc: "Foundation and practitioner training in ITIL version 4 — preparing teams to work with modern service management practices.", tags: ["ITIL4", "Certification", "Training"] },
+  "agile-practice": { cat: "Training", title: "Agile in Practice", desc: "Hands-on training that moves beyond theory — giving teams the tools and practice to apply Agile in real delivery contexts.", tags: ["Agile", "Practical", "Team"] },
+  "intro-agile": { cat: "Training", title: "Introduction to Agile", desc: "Introductory training for stakeholders and teams new to Agile — covering principles, mindset, and key practices.", tags: ["Agile", "Introduction", "Awareness"] },
+  "phoenix-project": { cat: "Training — Business Simulation", title: "The Phoenix Project", desc: "An interactive business simulation based on the bestselling novel. Teams experience the challenges of IT operations and DevOps transformation first-hand — learning to break down silos, improve flow, and deliver value faster. A powerful tool for building shared understanding across development, operations, and business teams.", tags: ["Simulation", "DevOps", "IT Operations"], img: "assets/img/phoenix-project.png", url: "https://www.gamingworks.nl/business-simulations/the-phoenix-project/" },
+  "marslander": { cat: "Training — Business Simulation", title: "MarsLander", desc: "An Agile and IT Service Management simulation where teams must land a spacecraft on Mars. Participants learn to apply Agile principles, manage services, and collaborate under pressure — experiencing the impact of governance, communication, and iterative improvement in a fun, competitive setting.", tags: ["Simulation", "Agile", "ITSM"], img: "assets/img/marslander.png", url: "https://www.gamingworks.nl/business-simulations/marslander-agile-service-management/" },
+  "hollywood-dreams": { cat: "Training — Business Simulation", title: "Hollywood Dreams", desc: "A creative business simulation focused on collaboration, stakeholder management, and value delivery. Teams run a movie studio, making strategic decisions about projects, resources, and partnerships — learning how operating model choices affect business outcomes in an engaging, memorable format.", tags: ["Simulation", "Collaboration", "Value"], img: "assets/img/hollywood-dreams.png", url: "https://www.gamingworks.nl/business-simulations/hollywood-dreams/" },
+};
+
+const catColors = {
+  "01 Purpose": "#c0392b",
+  "Core": "#c0392b",
+  "02 Usecases": "#2e7d52",
+  "03 Frameworks": "#1a5fa8",
+  "03 Frameworks — Architecture": "#1a5fa8",
+  "04 Accelerators": "#c47a1e",
+  "04 Accelerators — New": "#c47a1e",
+  "05 Visual Toolkit": "#9a7c10",
+  "Training": "#6b3fa0",
+  "Training — Business Simulation": "#6b3fa0",
+};
+
+const overlay = document.getElementById('modal');
+const closeBtn = document.getElementById('modal-close');
+const closeBtn2 = document.getElementById('modal-close2');
+const deepdiveBtn = document.getElementById('modal-deepdive');
+
+const deepdivePages = {
+  "agile": "deepdive.html?page=agile",
+  "enterprise-arch": "deepdive.html?page=enterprise-architecture",
+  "devops-scan": "deepdive.html?page=devops-capability-scan",
+  "itil": "deepdive.html?page=itil-library",
+  "siam": "deepdive.html?page=siam",
+  "itsm": "deepdive.html?page=itsm",
+  "safe": "deepdive.html?page=safe",
+  "cobit": "deepdive.html?page=cobit",
+  "cloud-transformation": "deepdive.html?page=cloud-transformation",
+  "post-merger": "deepdive.html?page=post-merger",
+  "operating-model": "deepdive.html?page=operating-model",
+  "it4it": "deepdive.html?page=it4it",
+  "servicenow": "deepdive.html?page=servicenow",
+  "bmc": "deepdive.html?page=bmc",
+  "design-thinking": "deepdive.html?page=design-thinking",
+  "security-nist": "deepdive.html?page=security-nist",
+  "phoenix-project": "deepdive.html?page=phoenix-project",
+};
+
+let currentKey = null;
+
+function openModal(key) {
+  const d = content[key];
+  if (!d) return;
+  currentKey = key;
+
+  // Image
+  const imgEl = document.getElementById('modal-img');
+  if (d.img) {
+    imgEl.src = d.img;
+    imgEl.alt = d.title;
+    imgEl.style.display = '';
+  } else {
+    imgEl.style.display = 'none';
+  }
+
+  document.getElementById('modal-cat').textContent = d.cat;
+  document.getElementById('modal-cat').style.color = catColors[d.cat] || '#555';
+  document.getElementById('modal-title').textContent = d.title;
+  document.getElementById('modal-desc').textContent = d.desc;
+  const certEl = document.getElementById('modal-cert');
+  if (d.url) {
+    certEl.textContent = `Atos is certified trainer for ${d.title}.`;
+    certEl.style.display = '';
+  } else {
+    certEl.style.display = 'none';
+  }
+  const tagsEl = document.getElementById('modal-tags');
+  tagsEl.innerHTML = d.tags.map(t => `<span class="modal-tag">${t}</span>`).join('');
+
+  // Deep-dive button
+  if (deepdivePages[key]) {
+    deepdiveBtn.textContent = 'Open deep-dive →';
+    deepdiveBtn.disabled = false;
+    deepdiveBtn.style.opacity = '1';
+  } else {
+    deepdiveBtn.textContent = 'Deep-dive coming soon';
+    deepdiveBtn.disabled = true;
+    deepdiveBtn.style.opacity = '0.45';
+  }
+
+  // External link button
+  const extBtn = document.getElementById('modal-external');
+  if (d.url) {
+    extBtn.href = d.url;
+    extBtn.style.display = '';
+  } else {
+    extBtn.style.display = 'none';
+  }
+
+  overlay.classList.add('active');
+}
+
+document.querySelectorAll('.chip:not(.placeholder):not(.itom-core)').forEach(chip => {
+  chip.addEventListener('click', () => openModal(chip.getAttribute('data-key')));
+});
+
+document.querySelector('.chip.itom-core').addEventListener('click', () => openModal('itom-core'));
+
+closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+closeBtn2.addEventListener('click', () => overlay.classList.remove('active'));
+overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('active'); });
+
+deepdiveBtn.addEventListener('click', () => {
+  if (currentKey && deepdivePages[currentKey]) {
+    window.location.href = deepdivePages[currentKey];
+  }
+});
+
+// THEME TOGGLE
+const toggleBtn = document.getElementById('theme-toggle');
+const toggleIcon = document.getElementById('toggle-icon');
+const toggleLabel = document.getElementById('toggle-label');
+const htmlEl = document.documentElement;
+
+// Default is light mode — no auto-detection
+
+toggleBtn.addEventListener('click', () => {
+  const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    htmlEl.removeAttribute('data-theme');
+    toggleIcon.textContent = '🌙';
+    toggleLabel.textContent = 'Dark';
+  } else {
+    htmlEl.setAttribute('data-theme', 'dark');
+    toggleIcon.textContent = '☀️';
+    toggleLabel.textContent = 'Light';
+  }
+});
+
+initAuth();
+</script>
+</body>
+</html>

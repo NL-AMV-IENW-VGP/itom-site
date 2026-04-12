@@ -1,0 +1,50 @@
+{
+  "key": "bmc",
+  "category": "05 Visual Toolkit",
+  "title": "Business Model Canvas",
+  "lead": "Visual tool for mapping and redesigning business models — used in ITOM engagements to connect IT operating model choices to business model imperatives.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Business Model Canvas (BMC) is a strategic management tool developed by Alexander Osterwalder that visualises the nine building blocks of a business model on a single page. It provides a shared language for describing, designing, and challenging how an organisation creates, delivers, and captures value. In ITOM engagements, the BMC is used to ensure that IT operating model decisions are grounded in business model reality — connecting technology choices to customer segments, value propositions, and revenue streams."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Before designing an IT Operating Model, you need to understand the business model it serves. The BMC makes this explicit. It helps ITOM consultants ask the right questions: Which customer segments does IT need to support? What value propositions depend on IT capabilities? Which key activities and resources are IT-intensive? The BMC is typically used in the discovery phase of an ITOM engagement — as a workshop tool to align business and IT stakeholders on what the operating model must enable."
+    },
+    {
+      "heading": "The Nine Building Blocks",
+      "type": "list",
+      "items": [
+        { "term": "Customer Segments", "desc": "the different groups of people or organisations the business serves" },
+        { "term": "Value Propositions", "desc": "the bundle of products and services that create value for each customer segment" },
+        { "term": "Channels", "desc": "how the organisation reaches and communicates with its customer segments" },
+        { "term": "Customer Relationships", "desc": "the types of relationships established with each customer segment" },
+        { "term": "Revenue Streams", "desc": "the cash generated from each customer segment" },
+        { "term": "Key Resources", "desc": "the most important assets required to make the business model work" },
+        { "term": "Key Activities", "desc": "the most important things the organisation must do to operate successfully" },
+        { "term": "Key Partnerships", "desc": "the network of suppliers and partners that make the business model work" },
+        { "term": "Cost Structure", "desc": "all costs incurred to operate the business model" }
+      ]
+    },
+    {
+      "heading": "How We Use It in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "Discovery workshops — map the current business model to identify IT-intensive building blocks" },
+        { "desc": "Stakeholder alignment — create shared understanding between business and IT on priorities" },
+        { "desc": "Operating model scoping — determine which business model elements the ITOM must support" },
+        { "desc": "Transformation prioritisation — focus ITOM design on building blocks with highest business impact" },
+        { "desc": "Value proposition validation — ensure IT operating model choices support (not hinder) customer value" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Value Proposition Canvas", "key": "vpc" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" }
+  ]
+}

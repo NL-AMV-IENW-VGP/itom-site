@@ -1,0 +1,59 @@
+{
+  "key": "cloud-transformation",
+  "category": "02 Usecases",
+  "title": "Cloud Transformation",
+  "lead": "Applying ITOM to orchestrate a structured move to cloud — governance, toolchain, sourcing, and process redesign all shaped by ITOM-for-Cloud principles.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Cloud Transformation is one of the most common triggers for redesigning an IT Operating Model. Moving to cloud is not just a technology migration — it fundamentally changes how IT is governed, how services are sourced, how teams are organised, and how costs are managed. An ITOM-for-Cloud addresses these dimensions holistically, ensuring that the operating model evolves alongside the technology landscape rather than lagging behind it."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Many organisations adopt cloud technology but retain their legacy operating model — leading to 'cloud chaos': uncontrolled spending, inconsistent security posture, and teams working around governance rather than with it. An ITOM-for-Cloud designs the operating model around cloud-native principles: self-service provisioning, FinOps-driven cost management, platform engineering, and DevOps-enabled delivery. It bridges the gap between cloud strategy (what we want to achieve) and cloud operations (how we run it day-to-day)."
+    },
+    {
+      "heading": "Key Dimensions",
+      "type": "list",
+      "items": [
+        { "term": "Cloud governance", "desc": "landing zones, policies, guardrails, and compliance frameworks that enable safe self-service consumption" },
+        { "term": "FinOps", "desc": "financial management discipline for cloud — cost visibility, allocation, optimisation, and accountability" },
+        { "term": "Platform engineering", "desc": "internal platforms that abstract cloud complexity and provide golden paths for development teams" },
+        { "term": "Cloud operating model", "desc": "roles, processes, and tooling for running cloud at scale — including CCoE (Cloud Centre of Excellence)" },
+        { "term": "Migration strategy", "desc": "the 6 R's (Rehost, Replatform, Refactor, Repurchase, Retain, Retire) and how they shape the transformation roadmap" },
+        { "term": "Multi-cloud management", "desc": "operating consistently across AWS, Azure, GCP, and private cloud with unified governance and tooling" }
+      ]
+    },
+    {
+      "heading": "Transformation Phases",
+      "type": "list",
+      "items": [
+        { "term": "Assess", "desc": "cloud readiness scan, application portfolio analysis, business case development" },
+        { "term": "Design", "desc": "target cloud architecture, landing zone design, operating model blueprint, migration waves" },
+        { "term": "Migrate", "desc": "wave-based migration execution, automated tooling, testing, and validation" },
+        { "term": "Optimise", "desc": "FinOps implementation, performance tuning, modernisation of migrated workloads" },
+        { "term": "Operate", "desc": "steady-state cloud operations, CCoE maturation, continual improvement" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "Cloud Readiness Scan — assess organisational and technical readiness for cloud adoption" },
+        { "desc": "Cloud Strategy & Roadmap — define the cloud adoption path aligned to business objectives" },
+        { "desc": "Landing Zone design — implement secure, governed cloud foundations (Azure, AWS, GCP)" },
+        { "desc": "Cloud migration services — wave-based migration with automated tooling and validation" },
+        { "desc": "FinOps enablement — implement cost management practices and tooling" },
+        { "desc": "Managed cloud services — ongoing operations, monitoring, and optimisation" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Cloud Advisory", "key": "cloud-advisory" },
+    { "label": "Cloud Readiness Scan", "key": "cloud-readiness" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" }
+  ]
+}

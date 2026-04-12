@@ -1,0 +1,63 @@
+{
+  "key": "phoenix-project",
+  "category": "Training — Business Simulation",
+  "title": "The Phoenix Project",
+  "lead": "An interactive DevOps business simulation based on the bestselling novel — experience the challenges of IT operations and DevOps transformation first-hand.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Phoenix Project is a serious business simulation based on the book of the same name by Gene Kim, Kevin Behr, and George Spafford. Participants role-play within 'Parts Unlimited', a struggling retail company facing the classic tension between Development and Operations. Over three rounds, teams manage IT projects, handle incidents, and learn to apply DevOps principles under realistic business pressure. The simulation demonstrates that DevOps is not just a technology shift — it requires fundamental changes in how people behave, collaborate, and deliver value."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The Phoenix Project simulation is a powerful tool in ITOM engagements because it makes the 'why' behind operating model change tangible. Participants experience first-hand what happens when development and operations are siloed, when governance is too heavy, and when flow is blocked. This shared experience creates alignment and urgency for the operating model transformation — making subsequent ITOM design decisions easier to land because stakeholders have lived the pain and seen the alternative."
+    },
+    {
+      "heading": "How It Works",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "participants assume roles across business (Retail Operations, HR, Finance) and IT (VP of IT Operations, IT Team members) within Parts Unlimited" },
+        { "term": "Three rounds", "desc": "each round represents a phase in the DevOps journey — from chaos and firefighting to structured flow and continuous improvement" },
+        { "term": "Realistic pressure", "desc": "teams face competing demands: backlogs of issues and features, business requests, SLA targets, and external disruptions" },
+        { "term": "The Phoenix Project", "desc": "a critical business project that must be delivered on time while managing all operational demands — just like in real life" },
+        { "term": "Debrief", "desc": "structured reflection after each round connects the simulation experience to real-world DevOps and operating model principles" }
+      ]
+    },
+    {
+      "heading": "Learning Objectives",
+      "type": "list",
+      "items": [
+        { "desc": "Apply DevOps principles (flow, feedback, continuous learning) in realistic scenarios" },
+        { "desc": "Balance SLA requirements with project delivery deadlines" },
+        { "desc": "Demonstrate the business value of DevOps to non-technical stakeholders" },
+        { "desc": "Improve IT department efficiency by optimising team flow and reducing waste" },
+        { "desc": "Develop the behavioural and cultural skills needed for DevOps environments" },
+        { "desc": "Align business and IT responsibilities around shared outcomes" }
+      ]
+    },
+    {
+      "heading": "Practical Details",
+      "type": "list",
+      "items": [
+        { "term": "Duration", "desc": "1 day (full-day workshop)" },
+        { "term": "Participants", "desc": "8–12 people per session" },
+        { "term": "Prerequisites", "desc": "no prior DevOps knowledge required — suitable for both IT and business roles" },
+        { "term": "Format", "desc": "available in-person and as online virtual simulation" },
+        { "term": "Certification", "desc": "Atos is certified trainer for The Phoenix Project simulation" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "For more information about this training, contact arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "Agile", "key": "agile" }
+  ]
+}

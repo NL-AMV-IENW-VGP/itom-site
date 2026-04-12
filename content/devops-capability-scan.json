@@ -1,0 +1,47 @@
+{
+  "key": "devops-capability-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "DevOps Capability Scan",
+  "lead": "Evaluates the organisation's DevOps capabilities across people, process, and toolchain dimensions.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The DevOps Capability Scan is a structured assessment that measures an organisation's maturity in DevOps practices. It examines how well teams integrate development and operations, how automated the delivery pipeline is, and how culture, tooling, and governance support fast, reliable software delivery. The output is a scored baseline and a prioritised improvement roadmap — input for designing the target IT operating model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Before designing a DevOps-oriented operating model, you need to know where you stand. The DevOps Capability Scan creates the evidence base for ITOM design decisions: which teams are ready for autonomous delivery, where automation is missing, and what governance changes are needed. It prevents over-engineering (designing for a maturity level you haven't reached yet) and under-engineering (not accounting for the transformation effort required)."
+    },
+    {
+      "heading": "Scan Dimensions",
+      "type": "list",
+      "items": [
+        { "term": "Culture & collaboration", "desc": "psychological safety, shared ownership, blameless post-mortems" },
+        { "term": "Continuous Integration (CI)", "desc": "frequency of integration, automated testing, build quality" },
+        { "term": "Continuous Delivery (CD)", "desc": "deployment frequency, lead time, change failure rate, MTTR" },
+        { "term": "Infrastructure as Code", "desc": "automation of provisioning, configuration management, immutable infrastructure" },
+        { "term": "Monitoring & observability", "desc": "metrics, logging, tracing, alerting, and incident response" },
+        { "term": "Security (DevSecOps)", "desc": "shift-left security practices, vulnerability scanning, compliance automation" }
+      ]
+    },
+    {
+      "heading": "Output",
+      "type": "list",
+      "items": [
+        { "desc": "Maturity score per dimension (1–5 scale, benchmarked against industry)" },
+        { "desc": "Top-5 improvement priorities with rationale" },
+        { "desc": "Quick wins vs. structural improvements" },
+        { "desc": "Recommended toolchain changes" },
+        { "desc": "Input for ITOM target design and transformation roadmap" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Agile", "key": "agile" },
+    { "label": "Agile Maturity Scan", "key": "agile-scan" },
+    { "label": "Platform & Pipeline Support", "key": "platform-pipeline" },
+    { "label": "Playbooks", "key": "playbooks" }
+  ]
+}

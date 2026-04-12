@@ -1,0 +1,69 @@
+{
+  "key": "siam",
+  "category": "03 Frameworks",
+  "title": "SIAM",
+  "lead": "Service Integration and Management — a framework for managing multiple service providers in a consistent, value-driven way.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "SIAM (Service Integration and Management) is a management methodology that addresses the challenges of managing and integrating services from multiple service providers. As organisations increasingly rely on a mix of internal teams, outsourced providers, cloud platforms, and specialist vendors, SIAM provides the governance, coordination, and integration layer that ensures these parties work together to deliver coherent, end-to-end IT services. SIAM is not a product or toolset — it is a capability that sits at the heart of a multi-sourced operating model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "In many ITOM engagements, the operating model must accommodate multiple service providers. SIAM defines how the retained organisation (the client's internal IT function) governs, integrates, and orchestrates these providers. Without a SIAM layer, multi-sourced environments suffer from finger-pointing, duplicated effort, inconsistent service levels, and a lack of end-to-end accountability. ITOM designs that include outsourcing, managed services, or cloud adoption almost always require a SIAM capability — making it one of the most practically relevant frameworks in the ITOM toolkit."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Service integrator", "desc": "the function (internal or external) that coordinates across all service providers, ensuring end-to-end service delivery" },
+        { "term": "Retained organisation", "desc": "the client's internal team that retains strategic control, vendor management, and demand management" },
+        { "term": "End-to-end service management", "desc": "managing service quality across provider boundaries, not just within individual contracts" },
+        { "term": "Cross-provider processes", "desc": "incident, change, and problem management processes that span all providers with clear handoff rules" },
+        { "term": "Governance model", "desc": "layered governance (strategic, tactical, operational) that aligns provider behaviour with business outcomes" },
+        { "term": "Toolchain integration", "desc": "shared or federated ITSM tooling that enables visibility and workflow across provider boundaries" }
+      ]
+    },
+    {
+      "heading": "SIAM Models",
+      "type": "list",
+      "items": [
+        { "term": "Internally sourced SI", "desc": "the retained organisation acts as service integrator — maximum control, but requires strong internal capability" },
+        { "term": "Externally sourced SI", "desc": "a lead provider or specialist integrator performs the SI role — faster to stand up, but creates dependency" },
+        { "term": "Hybrid SI", "desc": "integration responsibility is shared between internal teams and an external partner — common in practice" },
+        { "term": "Guardian model", "desc": "one provider is given a coordination role across other providers, with the client retaining strategic governance" }
+      ]
+    },
+    {
+      "heading": "When to Use SIAM",
+      "type": "list",
+      "items": [
+        { "desc": "Multi-vendor IT environments with 3+ service providers" },
+        { "desc": "Outsourcing transitions where the retained organisation needs to maintain control" },
+        { "desc": "Cloud transformation with a mix of IaaS, PaaS, SaaS, and on-premises services" },
+        { "desc": "Post-merger IT integration where different providers serve different business units" },
+        { "desc": "Organisations experiencing service quality issues due to unclear accountability across providers" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "SIAM assessment — evaluate current multi-provider maturity and integration gaps" },
+        { "desc": "SIAM operating model design — define the service integrator function and governance layers" },
+        { "desc": "Retained organisation design — structure the internal IT function for effective vendor oversight" },
+        { "desc": "Cross-provider process design — incident, change, and problem management across boundaries" },
+        { "desc": "SIAM toolchain advisory — ServiceNow, BMC, or federated tooling strategy for multi-provider environments" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Outsourcing", "key": "outsourcing" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "key": "servicenow",
+  "category": "04 Accelerators",
+  "title": "ServiceNow Enablement",
+  "lead": "Expertise in implementing and optimising ServiceNow as the toolchain backbone of the new operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "ServiceNow is the dominant enterprise platform for IT Service Management, IT Operations Management, and increasingly for broader business workflows. ServiceNow Enablement goes beyond technical implementation — it means designing the platform to reflect and reinforce the target operating model. A well-configured ServiceNow instance becomes the operational nervous system of the ITOM: it embeds processes, enforces governance, provides visibility, and enables automation across the IT organisation."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "In many ITOM engagements, ServiceNow is 'where the operating model lands'. The processes designed in workshops and documented in blueprints are ultimately implemented as workflows, catalogues, and dashboards in ServiceNow. This makes platform design a critical part of ITOM delivery. Poorly configured ServiceNow instances entrench bad practices; well-designed ones accelerate adoption of the target operating model. The platform also provides the integration layer for SIAM environments, connecting processes across provider boundaries."
+    },
+    {
+      "heading": "Key Capabilities",
+      "type": "list",
+      "items": [
+        { "term": "ITSM module", "desc": "incident, problem, change, request, and knowledge management — the operational core" },
+        { "term": "ITOM module", "desc": "discovery, service mapping, event management, and cloud management — operational visibility" },
+        { "term": "Service Catalogue", "desc": "self-service portal for requesting IT services, driving shift-left and user satisfaction" },
+        { "term": "CMDB", "desc": "configuration management database providing a single source of truth for IT assets and relationships" },
+        { "term": "Reporting & dashboards", "desc": "real-time visibility into service performance, SLA compliance, and operational health" },
+        { "term": "Integration Hub", "desc": "connect ServiceNow with DevOps tools, cloud platforms, monitoring, and third-party providers" }
+      ]
+    },
+    {
+      "heading": "Implementation Approach",
+      "type": "list",
+      "items": [
+        { "term": "Process-first design", "desc": "define target processes before configuring the platform — avoid 'paving the cow paths'" },
+        { "term": "Out-of-the-box first", "desc": "maximise use of standard ServiceNow capabilities; customise only where business value justifies it" },
+        { "term": "Phased rollout", "desc": "implement in waves — start with core ITSM, then expand to ITOM, CMDB, and automation" },
+        { "term": "Governance model", "desc": "establish a platform governance team to manage configuration, upgrades, and demand" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "ServiceNow health check — assess current instance maturity and identify improvement areas" },
+        { "desc": "ServiceNow implementation — end-to-end platform deployment aligned to the target operating model" },
+        { "desc": "CMDB design & population — build a reliable configuration management foundation" },
+        { "desc": "Service catalogue design — create a user-friendly self-service experience" },
+        { "desc": "SIAM integration — configure cross-provider workflows and reporting in ServiceNow" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "IT4IT", "key": "it4it" },
+    { "label": "ITIL Library", "key": "itil-library" }
+  ]
+}

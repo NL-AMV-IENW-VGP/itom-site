@@ -1,0 +1,56 @@
+{
+  "key": "design-thinking",
+  "category": "04 Accelerators",
+  "title": "Design Thinking Workshops",
+  "lead": "Facilitated sessions using design thinking to co-create solutions with stakeholders — driving innovation and buy-in.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Design Thinking is a human-centred approach to innovation and problem-solving that draws from design practice. It emphasises empathy with users, rapid prototyping, and iterative testing. In the context of ITOM, Design Thinking workshops are used to co-create operating model solutions with the people who will live with them — moving beyond top-down blueprint design to inclusive, evidence-based operating model design that stakeholders understand and support."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Operating model design is ultimately about people — how they work, how they collaborate, and how they deliver value. Design Thinking brings the human dimension into ITOM engagements. Rather than designing processes in isolation and then 'rolling them out', Design Thinking workshops involve end users, team leads, and managers in the design process itself. This produces better solutions (because they're grounded in reality) and smoother adoption (because stakeholders feel ownership of the result)."
+    },
+    {
+      "heading": "The Design Thinking Process",
+      "type": "list",
+      "items": [
+        { "term": "Empathise", "desc": "understand the current experience of users and stakeholders through interviews, observation, and journey mapping" },
+        { "term": "Define", "desc": "synthesise insights into clear problem statements and design challenges" },
+        { "term": "Ideate", "desc": "generate a broad range of potential solutions through brainstorming, analogies, and creative techniques" },
+        { "term": "Prototype", "desc": "build quick, tangible representations of promising ideas — process maps, role cards, service blueprints" },
+        { "term": "Test", "desc": "validate prototypes with users, gather feedback, and iterate toward a refined solution" }
+      ]
+    },
+    {
+      "heading": "Workshop Formats in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "Pain point mapping — identify friction in the current operating model through user stories and empathy maps" },
+        { "desc": "Future-state co-design — collaboratively design target processes, roles, and interactions" },
+        { "desc": "Service blueprint workshops — map end-to-end service delivery including backstage processes and touchpoints" },
+        { "desc": "Governance design sprints — rapid design of governance bodies, decision rights, and escalation paths" },
+        { "desc": "Change readiness workshops — assess and build organisational readiness for the new operating model" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "Design Thinking facilitation — professionally facilitated workshops using proven design thinking methods" },
+        { "desc": "Stakeholder engagement design — plan and execute multi-stakeholder engagement programmes" },
+        { "desc": "Service design — apply service design methods to IT service creation and improvement" },
+        { "desc": "Innovation sprints — time-boxed innovation sessions for specific operating model challenges" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Business Model Canvas", "key": "bmc" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Agile", "key": "agile" },
+    { "label": "System Thinking", "key": "system-thinking" }
+  ]
+}

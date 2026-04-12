@@ -1,0 +1,56 @@
+{
+  "key": "enterprise-architecture",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Enterprise Architecture",
+  "lead": "Designing and governing the enterprise architecture that underpins the new operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Enterprise Architecture (EA) provides the structural framework for aligning IT capabilities with business objectives. It describes the current and target state of an organisation's business processes, information flows, applications, and technology infrastructure — and defines the roadmap for getting from one to the other. In ITOM engagements, EA is both a lens (how do we understand the current landscape?) and a deliverable (what should the future architecture look like?)."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "An IT Operating Model without an architecture foundation is a blueprint without a floor plan. EA ensures that the processes, toolchains, and governance mechanisms designed in an ITOM engagement actually fit together — and that the resulting model is buildable, scalable, and aligned with business direction. EA work in ITOM typically covers: application rationalisation, platform design, data architecture, and integration patterns."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Architecture domains", "desc": "Business, Data, Application, and Technology architecture (BDAT / TOGAF)" },
+        { "term": "Current state / target state", "desc": "EA describes where you are, where you're going, and the gap in between" },
+        { "term": "Architecture principles", "desc": "guiding rules that constrain design decisions and ensure coherence" },
+        { "term": "Roadmap & migration planning", "desc": "sequencing of changes from current to target architecture" },
+        { "term": "Governance", "desc": "Architecture Review Board, design authority, and guardrails for change" }
+      ]
+    },
+    {
+      "heading": "Common Frameworks",
+      "type": "list",
+      "items": [
+        { "term": "TOGAF", "desc": "The Open Group Architecture Framework; most widely adopted EA methodology" },
+        { "term": "Zachman", "desc": "Ontology/matrix for classifying architecture artefacts" },
+        { "term": "IT4IT", "desc": "Reference architecture specifically for managing the IT value chain" },
+        { "term": "ArchiMate", "desc": "Modelling language for enterprise architecture" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "Architecture assessment — map current state, identify debt and risk" },
+        { "desc": "Target architecture design — define future state aligned to business strategy" },
+        { "desc": "Platform architecture — cloud, data, integration, and security layer design" },
+        { "desc": "Architecture governance — set up ARB, principles, and decision frameworks" },
+        { "desc": "IT-Strategy alignment — connect EA roadmap to IT and business strategy" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "IT-Strategy", "key": "it-strategy" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "IT4IT", "key": "it4it" }
+  ]
+}

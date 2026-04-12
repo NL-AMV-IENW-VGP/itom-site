@@ -1,0 +1,57 @@
+{
+  "key": "post-merger",
+  "category": "02 Usecases",
+  "title": "Post Merger Integration",
+  "lead": "Using ITOM to integrate IT landscapes, processes, and organisations after a merger or acquisition — aligning operating models and eliminating duplication.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Post Merger Integration (PMI) is one of the most complex and time-critical scenarios for IT operating model redesign. When two organisations merge, their IT landscapes, processes, teams, contracts, and governance structures must be rationalised into a coherent whole. Without a deliberate ITOM approach, mergers result in shadow IT, duplicated capabilities, conflicting processes, and cultural friction that erode the value the merger was supposed to create."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "In a PMI scenario, the ITOM serves as the integration blueprint. It defines the target state for the combined IT organisation: which processes are standardised, which platforms are consolidated, how governance is unified, and how teams from both organisations are restructured. The ITOM approach ensures that integration decisions are made holistically rather than system-by-system, preventing the 'integration spaghetti' that plagues many mergers. Speed matters — the longer the integration takes, the more value leaks."
+    },
+    {
+      "heading": "Key Challenges",
+      "type": "list",
+      "items": [
+        { "term": "Dual operating models", "desc": "two sets of processes, tooling, and governance that must coexist during transition and converge to one" },
+        { "term": "Cultural integration", "desc": "different working cultures, methodologies (Agile vs. waterfall), and decision-making styles" },
+        { "term": "Application rationalisation", "desc": "overlapping application landscapes that need to be consolidated without disrupting business continuity" },
+        { "term": "Contract harmonisation", "desc": "different vendor contracts, SLAs, and licensing that must be renegotiated or consolidated" },
+        { "term": "Day-1 readiness", "desc": "ensuring critical IT services work from the first day of the merged entity" },
+        { "term": "Retained knowledge", "desc": "preventing knowledge loss as teams are restructured and roles change" }
+      ]
+    },
+    {
+      "heading": "Integration Approach",
+      "type": "list",
+      "items": [
+        { "term": "Absorption", "desc": "one organisation's operating model is adopted; the other migrates to it — fastest but highest change impact" },
+        { "term": "Best-of-breed", "desc": "cherry-pick the best processes, tools, and structures from both organisations — balanced but slower" },
+        { "term": "Greenfield", "desc": "design a new operating model from scratch for the merged entity — cleanest but most effort" },
+        { "term": "Federation", "desc": "maintain separate operating models with a thin integration layer — lowest disruption but limited synergy" }
+      ]
+    },
+    {
+      "heading": "Eviden Services",
+      "type": "list",
+      "items": [
+        { "desc": "PMI assessment — rapid analysis of both IT landscapes, processes, and organisational structures" },
+        { "desc": "Target operating model design — define the integrated ITOM for the merged entity" },
+        { "desc": "Integration roadmap — wave-based plan for converging platforms, processes, and teams" },
+        { "desc": "Day-1 planning — ensure critical service continuity from merger completion" },
+        { "desc": "Transformation management — change management and communication throughout integration" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "ITSM", "key": "itsm" }
+  ]
+}
