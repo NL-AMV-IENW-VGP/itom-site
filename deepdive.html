@@ -697,7 +697,7 @@ async function init() {
       }
     } catch (_) { /* no NL version, that's fine */ }
 
-    renderPage(currentData);
+    renderPage(currentLang === "nl" && currentDataNl ? currentDataNl : currentData);
     updateLangSwitch();
   } catch (err) {
     showError(`Failed to load deep-dive: ${err.message}`);
