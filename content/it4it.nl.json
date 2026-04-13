@@ -1,0 +1,55 @@
+{
+  "key": "it4it",
+  "category": "03 Frameworks",
+  "title": "IT4IT",
+  "lead": "Een referentiearchitectuur voor het managen van de IT-business — structureert de IT-waardeketen en ondersteunt toolchain-beslissingen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "IT4IT is een referentiearchitectuur gepubliceerd door The Open Group die een prescriptief model biedt voor het managen van de business van IT. Anders dan ITIL (dat zich richt op servicemanagementprocessen) of TOGAF (dat zich richt op enterprise architectuur) focust IT4IT op de IT-waardeketen — de end-to-end stroom van activiteiten waarmee IT waarde creëert en levert. Het definieert een standaard datamodel, functionele componenten en integratiepunten die toolchain-beslissingen en IT-managementplatformarchitectuur sturen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "IT4IT is bijzonder waardevol in ITOM-trajecten wanneer organisaties hun IT-managementtoolchain moeten rationaliseren of de 'IT-for-IT'-laag moeten ontwerpen — de platforms en tools die IT gebruikt om zichzelf te beheren. Terwijl ITIL vertelt welke processen je moet implementeren en COBIT hoe je ze stuurt, vertelt IT4IT hoe je de ondersteunende systemen en data structureert. Het voorkomt het gangbare patroon van losse tools (één voor ITSM, één voor DevOps, één voor portfoliomanagement) door een geïntegreerde referentiearchitectuur te bieden."
+    },
+    {
+      "heading": "De Vier Value Streams",
+      "type": "list",
+      "items": [
+        { "term": "Strategy to Portfolio (S2P)", "desc": "vertaalt bedrijfsstrategie naar een IT-portfolio — vraagbeheer, portfolioplanning en investeringsbeslissingen" },
+        { "term": "Requirement to Deploy (R2D)", "desc": "neemt vereisten via ontwerp, bouw, test en deployment — de ontwikkel- en leveringspijplijn" },
+        { "term": "Request to Fulfill (R2F)", "desc": "beheert serviceconsumptie — catalogus, aanvraag, provisioning en fulfilment van IT-diensten" },
+        { "term": "Detect to Correct (D2C)", "desc": "omvat operationele monitoring, incidentdetectie, diagnose en oplossing — de operationele value stream" }
+      ]
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Service backbone", "desc": "de data-objecten (dienst, IT-investering, vereiste, etc.) die door alle vier value streams stromen en voor integratie zorgen" },
+        { "term": "Functionele componenten", "desc": "bouwstenen binnen elke value stream die kunnen worden gekoppeld aan specifieke tools of platformcapabilities" },
+        { "term": "Data-objectmodel", "desc": "gestandaardiseerd datamodel dat consistentie over het IT-managementlandschap heen waarborgt" },
+        { "term": "Integratiearchitectuur", "desc": "definieert hoe ITSM-, DevOps-, portfoliomanagement- en monitoringtools verbinden en data delen" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "IT-managementlandschap assessment — huidige toolchain in kaart brengen ten opzichte van IT4IT referentiearchitectuur" },
+        { "desc": "Toolchain-rationalisatie — IT-managementplatforms consolideren en integreren" },
+        { "desc": "IT4IT-afgestemd ServiceNow ontwerp — ServiceNow structureren rond IT4IT value streams" },
+        { "desc": "DevOps-ITSM integratie — ontwikkel- en operatietoolchains verbinden via IT4IT-patronen" },
+        { "desc": "IT waardeketen workshops — IT4IT gebruiken om gesprekken te faciliteren over end-to-end IT-levering" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "COBIT", "key": "cobit" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" }
+  ]
+}

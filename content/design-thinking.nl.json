@@ -1,0 +1,56 @@
+{
+  "key": "design-thinking",
+  "category": "04 Accelerators",
+  "title": "Design Thinking Workshops",
+  "lead": "Gefaciliteerde sessies met design thinking om samen met stakeholders oplossingen te co-creëren — innovatie en draagvlak stimuleren.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Design Thinking is een mensgerichte benadering van innovatie en probleemoplossing die voortkomt uit de ontwerppraxis. Het legt nadruk op empathie met gebruikers, snel prototypen en iteratief testen. In de context van ITOM worden Design Thinking-workshops ingezet om operating model-oplossingen te co-creëren met de mensen die ermee moeten werken — voorbij top-down blauwdrukontwerp naar inclusief, op bewijs gebaseerd operating model-ontwerp dat stakeholders begrijpen en ondersteunen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Operating model-ontwerp gaat uiteindelijk over mensen — hoe zij werken, samenwerken en waarde leveren. Design Thinking brengt de menselijke dimensie in ITOM-trajecten. In plaats van processen in isolatie te ontwerpen en ze vervolgens 'uit te rollen', betrekken Design Thinking-workshops eindgebruikers, teamleiders en managers bij het ontwerpproces zelf. Dit levert betere oplossingen op (omdat ze zijn geworteld in de realiteit) en soepelere adoptie (omdat stakeholders eigenaarschap voelen over het resultaat)."
+    },
+    {
+      "heading": "Het Design Thinking Proces",
+      "type": "list",
+      "items": [
+        { "term": "Empathiseren", "desc": "begrijp de huidige ervaring van gebruikers en stakeholders via interviews, observatie en journey mapping" },
+        { "term": "Definiëren", "desc": "synthetiseer inzichten tot heldere probleemstellingen en ontwerpuitdagingen" },
+        { "term": "Ideeëngeneratie", "desc": "genereer een breed scala aan mogelijke oplossingen via brainstormen, analogieën en creatieve technieken" },
+        { "term": "Prototypen", "desc": "bouw snelle, tastbare representaties van veelbelovende ideeën — proceskaarten, rolkaarten, serviceblauwdrukken" },
+        { "term": "Testen", "desc": "valideer prototypes met gebruikers, verzamel feedback en itereer naar een verfijnde oplossing" }
+      ]
+    },
+    {
+      "heading": "Workshopformaten in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "Knelpunten in kaart brengen — identificeer wrijving in het huidige operating model via user stories en empathiekaarten" },
+        { "desc": "Co-ontwerp van de gewenste toestand — ontwerp gezamenlijk doelprocessen, rollen en interacties" },
+        { "desc": "Serviceblauwdruk-workshops — breng end-to-end serviceverlening in kaart inclusief backstage-processen en touchpoints" },
+        { "desc": "Governance design sprints — snel ontwerpen van governance-organen, besluitvormingsrechten en escalatiepaden" },
+        { "desc": "Workshops veranderbereidheid — beoordeel en vergroot de organisatorische gereedheid voor het nieuwe operating model" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Design Thinking-facilitering — professioneel gefaciliteerde workshops met bewezen design thinking-methoden" },
+        { "desc": "Stakeholder-betrokkenheidontwerp — plan en voer multi-stakeholder-betrokkenheidsprogramma's uit" },
+        { "desc": "Serviceontwerp — pas serviceontwerpmethoden toe op IT-servicecreatie en -verbetering" },
+        { "desc": "Innovatiesprints — tijdgebonden innovatiesessies voor specifieke operating model-uitdagingen" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Business Model Canvas", "key": "bmc" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Agile", "key": "agile" },
+    { "label": "Systeemdenken", "key": "system-thinking" }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "key": "agile",
+  "category": "03 Frameworks",
+  "title": "Agile",
+  "lead": "Iteratieve, waarde-gedreven aanpak voor zowel het ontwerpproces als het doeloperating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Agile is een filosofie en set van praktijken voor het iteratief en incrementeel leveren van waarde. Voortgekomen uit softwareontwikkeling (Agile Manifesto, 2001) is het uitgegroeid tot een brede operationele benadering die bepaalt hoe teams worden ingericht, hoe werk wordt gepland en hoe organisaties veranderingen doorvoeren. Binnen de ITOM-context onderbouwt Agile de ontwerpaanpak zelf — ITOM-trajecten worden iteratief uitgevoerd — en wordt het vaak ingebed in het doeloperating model als fundamentele manier van werken."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Agile methodologieën vormen een fundamentele aanpak binnen het IT Operating Model voor het iteratief leveren van waarde. Wanneer een organisatie een Agile-georiënteerd ITOM adopteert, verschuift ze van projectmatige levering naar continue productgerichte flow. Dit heeft gevolgen voor teamtopologie (cross-functionele productteams), governance (lichtgewicht sturing, OKR's in plaats van gate reviews), toolchain (boards, backlogs, CI/CD) en cultuur (psychologische veiligheid, experimenteren)."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Iteratieve levering", "desc": "werk in korte cycli (sprints of flows), valideer regelmatig, pas aan op basis van feedback" },
+        { "term": "Cross-functionele teams", "desc": "stabiele, autonome teams bezitten resultaten end-to-end en verminderen overdrachten" },
+        { "term": "Productmindset", "desc": "verschuiving van project- naar productdenken; teams zijn continu eigenaar van een dienst of capability" },
+        { "term": "Inspect & adapt", "desc": "regelmatige retrospectives en reviews stimuleren continue verbetering op team- en systeemniveau" },
+        { "term": "Lean governance", "desc": "lichtgewicht planning, rollende roadmaps en value stream-financiering vervangen jaarbudgetten en stage gates" }
+      ]
+    },
+    {
+      "heading": "Gangbare Frameworks",
+      "type": "list",
+      "items": [
+        { "term": "Scrum", "desc": "het meest gebruikte Agile framework; sprints, ceremonies, rollen (PO, SM, team)" },
+        { "term": "Kanban", "desc": "flow-gebaseerd werkbeheer; visualiseer, beperk WIP, beheer flow" },
+        { "term": "SAFe", "desc": "Scaled Agile Framework voor grote programma's en portfoliomanagement" },
+        { "term": "LeSS", "desc": "Large Scale Scrum; minimale opzet voor productontwikkeling met meerdere teams" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Agile Maturity Scan — bepaal waar je nu staat" },
+        { "desc": "Agile in Practice — hands-on training voor teams" },
+        { "desc": "Introduction to Agile — bewustwordingstraining voor stakeholders" },
+        { "desc": "Agile Transformation — end-to-end verschuiving van het operating model" },
+        { "desc": "Coaching en Training — duurzame gedragsverandering" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "SAFe", "key": "safe" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "Agile Transformation", "key": "agile-transformation" }
+  ]
+}

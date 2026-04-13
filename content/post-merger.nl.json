@@ -1,0 +1,57 @@
+{
+  "key": "post-merger",
+  "category": "02 Usecases",
+  "title": "Post Merger Integratie",
+  "lead": "ITOM inzetten om IT-landschappen, processen en organisaties te integreren na een fusie of overname — operating modellen afstemmen en duplicatie elimineren.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Post Merger Integratie (PMI) is een van de meest complexe en tijdkritische scenario's voor het herontwerpen van een IT-operating model. Wanneer twee organisaties fuseren, moeten hun IT-landschappen, processen, teams, contracten en governancestructuren worden gerationaliseerd tot een coherent geheel. Zonder een bewuste ITOM-aanpak leiden fusies tot shadow IT, gedupliceerde capabilities, conflicterende processen en culturele wrijving die de waarde ondermijnen die de fusie had moeten creëren."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "In een PMI-scenario dient het ITOM als integratieblauwdruk. Het definieert de doeltoestand voor de gecombineerde IT-organisatie: welke processen worden gestandaardiseerd, welke platforms worden geconsolideerd, hoe governance wordt gelijkgetrokken en hoe teams van beide organisaties worden geherstructureerd. De ITOM-aanpak zorgt ervoor dat integratiebeslissingen holistisch worden genomen in plaats van systeem voor systeem, waarmee de 'integratiespaghetti' wordt voorkomen die veel fusies teistert. Snelheid is cruciaal — hoe langer de integratie duurt, hoe meer waarde er weglekt."
+    },
+    {
+      "heading": "Kernuitdagingen",
+      "type": "list",
+      "items": [
+        { "term": "Dubbele operating modellen", "desc": "twee sets processen, tooling en governance die naast elkaar moeten bestaan tijdens de transitie en uiteindelijk naar één moeten convergeren" },
+        { "term": "Culturele integratie", "desc": "verschillende werkculturen, methodologieën (Agile vs. waterval) en besluitvormingsstijlen" },
+        { "term": "Applicatierationalisatie", "desc": "overlappende applicatielandschappen die moeten worden geconsolideerd zonder bedrijfscontinuïteit te verstoren" },
+        { "term": "Contractharmonisatie", "desc": "verschillende leverancierscontracten, SLA's en licenties die moeten worden heronderhandeld of geconsolideerd" },
+        { "term": "Day-1 gereedheid", "desc": "zorgen dat kritische IT-diensten werken vanaf de eerste dag van de gefuseerde entiteit" },
+        { "term": "Kennisbehoud", "desc": "kennisverlies voorkomen terwijl teams worden geherstructureerd en rollen veranderen" }
+      ]
+    },
+    {
+      "heading": "Integratiebenadering",
+      "type": "list",
+      "items": [
+        { "term": "Absorptie", "desc": "het operating model van één organisatie wordt overgenomen; de ander migreert daarnaartoe — snelst maar hoogste veranderimpact" },
+        { "term": "Best-of-breed", "desc": "de beste processen, tools en structuren van beide organisaties selecteren — gebalanceerd maar langzamer" },
+        { "term": "Greenfield", "desc": "een nieuw operating model ontwerpen voor de gefuseerde entiteit — schoonst maar meeste inspanning" },
+        { "term": "Federatie", "desc": "afzonderlijke operating modellen behouden met een dunne integratielaag — minste verstoring maar beperkte synergie" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "PMI assessment — snelle analyse van beide IT-landschappen, processen en organisatiestructuren" },
+        { "desc": "Doeloperating model ontwerp — het geïntegreerde ITOM definiëren voor de gefuseerde entiteit" },
+        { "desc": "Integratieroadmap — golf-gebaseerd plan voor het convergeren van platforms, processen en teams" },
+        { "desc": "Day-1 planning — kritische servicecontinuïteit waarborgen vanaf voltooiing van de fusie" },
+        { "desc": "Transformatiemanagement — changemanagement en communicatie gedurende het gehele integratieproces" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "ITSM", "key": "itsm" }
+  ]
+}

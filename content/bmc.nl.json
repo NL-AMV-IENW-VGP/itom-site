@@ -1,0 +1,50 @@
+{
+  "key": "bmc",
+  "category": "05 Visuele Toolkit",
+  "title": "Business Model Canvas",
+  "lead": "Visueel hulpmiddel voor het in kaart brengen en herontwerpen van businessmodellen — ingezet in ITOM-trajecten om IT operating model-keuzes te verbinden met businessmodel-imperatieven.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Het Business Model Canvas (BMC) is een strategisch managementtool ontwikkeld door Alexander Osterwalder dat de negen bouwstenen van een businessmodel op één pagina visualiseert. Het biedt een gemeenschappelijke taal voor het beschrijven, ontwerpen en ter discussie stellen van hoe een organisatie waarde creëert, levert en vastlegt. In ITOM-trajecten wordt het BMC gebruikt om te zorgen dat IT operating model-beslissingen zijn geworteld in de businessmodelrealiteit — door technologiekeuzes te verbinden met klantsegmenten, waardeproposities en inkomstenstromen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Voordat je een IT Operating Model ontwerpt, moet je het businessmodel begrijpen dat het bedient. Het BMC maakt dit expliciet. Het helpt ITOM-consultants de juiste vragen te stellen: welke klantsegmenten moet IT ondersteunen? Welke waardeproposities zijn afhankelijk van IT-capabilities? Welke kernactiviteiten en -resources zijn IT-intensief? Het BMC wordt doorgaans gebruikt in de ontdekkingsfase van een ITOM-traject — als workshoptool om business- en IT-stakeholders op één lijn te brengen over wat het operating model moet mogelijk maken."
+    },
+    {
+      "heading": "De Negen Bouwstenen",
+      "type": "list",
+      "items": [
+        { "term": "Klantsegmenten", "desc": "de verschillende groepen mensen of organisaties die het bedrijf bedient" },
+        { "term": "Waardeproposities", "desc": "het pakket producten en diensten dat waarde creëert voor elk klantsegment" },
+        { "term": "Kanalen", "desc": "hoe de organisatie haar klantsegmenten bereikt en met hen communiceert" },
+        { "term": "Klantrelaties", "desc": "de soorten relaties die worden opgebouwd met elk klantsegment" },
+        { "term": "Inkomstenstromen", "desc": "de opbrengsten die worden gegenereerd uit elk klantsegment" },
+        { "term": "Kernmiddelen", "desc": "de belangrijkste assets die nodig zijn om het businessmodel te laten werken" },
+        { "term": "Kernactiviteiten", "desc": "de belangrijkste dingen die de organisatie moet doen om succesvol te opereren" },
+        { "term": "Kernpartners", "desc": "het netwerk van leveranciers en partners dat het businessmodel doet werken" },
+        { "term": "Kostenstructuur", "desc": "alle kosten die worden gemaakt om het businessmodel te exploiteren" }
+      ]
+    },
+    {
+      "heading": "Hoe We Het Inzetten in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "Ontdekkingsworkshops — breng het huidige businessmodel in kaart om IT-intensieve bouwstenen te identificeren" },
+        { "desc": "Stakeholder-afstemming — creëer gedeeld begrip tussen business en IT over prioriteiten" },
+        { "desc": "Operating model-scoping — bepaal welke businessmodelelementen het ITOM moet ondersteunen" },
+        { "desc": "Transformatieprioritering — focus ITOM-ontwerp op bouwstenen met de hoogste businessimpact" },
+        { "desc": "Validatie van waardeproposities — zorg dat IT operating model-keuzes klantwaarde ondersteunen (en niet belemmeren)" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Value Proposition Canvas", "key": "vpc" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" }
+  ]
+}

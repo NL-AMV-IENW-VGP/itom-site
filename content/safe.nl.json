@@ -1,0 +1,57 @@
+{
+  "key": "safe",
+  "category": "03 Frameworks",
+  "title": "SAFe",
+  "lead": "Scaled Agile Framework — maakt Agile op grote schaal mogelijk binnen grote programma's en productportfolios.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Het Scaled Agile Framework (SAFe) is een uitgebreid framework voor het implementeren van Agile-praktijken op enterprise-schaal. Het adresseert uitdagingen die ontstaan wanneer meerdere teams moeten coördineren, wanneer planning op portfolioniveau vereist is, en wanneer grote organisaties willen overstappen van projectmatige levering naar productgerichte flow. SAFe integreert principes uit Agile, Lean, systeemdenken en DevOps in een gestructureerd, schaalbaar model met gedefinieerde rollen, events en artefacten op team-, programma- en portfolioniveau."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Wanneer een ITOM-traject vraagt om Agile op schaal — meer dan een handvol Scrum-teams — is SAFe vaak het framework bij uitstek. Het biedt de governancestructuur die traditionele organisaties nodig hebben om vertrouwen te hebben in een Agile-transformatie, terwijl het toch de snelheid en aanpassingsvermogen van Agile mogelijk maakt. In ITOM-ontwerp beïnvloedt SAFe de teamtopologie (Agile Release Trains), planningscadans (PI Planning), financieringsmodellen (Lean Portfolio Management) en de manier waarop werk stroomt van strategie naar levering."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Agile Release Train (ART)", "desc": "een langlopend team van Agile-teams (50–125 personen) dat samen plant, committeert en levert in een gesynchroniseerde cadans" },
+        { "term": "Program Increment (PI)", "desc": "een vaste tijdbox (doorgaans 8–12 weken) waarin een ART incrementele waarde levert; start met PI Planning" },
+        { "term": "PI Planning", "desc": "een face-to-face (of virtueel) event waarbij alle teams op een ART afstemmen over doelstellingen en afhankelijkheden voor de komende PI" },
+        { "term": "Lean Portfolio Management", "desc": "strategie afstemmen op uitvoering via value stream-financiering, Lean-budgetten en Agile portfoliooperaties" },
+        { "term": "Value Streams", "desc": "de end-to-end stroom van waarde van concept tot levering — SAFe organiseert hieromheen in plaats van projecthiërarchieën" },
+        { "term": "Ingebouwde kwaliteit", "desc": "kwaliteit op elk niveau inbedden via TDD, CI/CD, architectuurrunway en compliance-automatisering" }
+      ]
+    },
+    {
+      "heading": "SAFe Configuraties",
+      "type": "list",
+      "items": [
+        { "term": "Essential SAFe", "desc": "het minimaal levensvatbare framework — alleen team- en ART-niveau; geschikt voor organisaties die net beginnen met schaling" },
+        { "term": "Large Solution SAFe", "desc": "voegt coördinatie toe over meerdere ARTs voor grote, complexe systeemontwikkeling" },
+        { "term": "Portfolio SAFe", "desc": "voegt Lean portfoliomanagement toe voor strategische afstemming en investeringsfinanciering over value streams heen" },
+        { "term": "Full SAFe", "desc": "het volledige framework dat alle niveaus combineert — gebruikt door grote ondernemingen met complexe, multi-portfolio-omgevingen" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "SAFe readiness assessment — evalueer organisatiegereedheid voor Agile adoptie op schaal" },
+        { "desc": "ART launch — ontwerp en lanceer de eerste Agile Release Train met begeleide PI Planning" },
+        { "desc": "SAFe coaching — ingebedde SPCs en RTEs om de transformatie te begeleiden" },
+        { "desc": "Lean Portfolio Management setup — stem financiering, governance en strategie af op Agile flow" },
+        { "desc": "SAFe training — Leading SAFe, SAFe for Teams, SAFe Scrum Master en andere certificeringen" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Agile", "key": "agile" },
+    { "label": "Agile Transformation", "key": "agile-transformation" },
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "ITIL Library", "key": "itil-library" }
+  ]
+}

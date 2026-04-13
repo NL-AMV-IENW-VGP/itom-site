@@ -1,0 +1,59 @@
+{
+  "key": "cloud-transformation",
+  "category": "02 Usecases",
+  "title": "Cloud Transformatie",
+  "lead": "ITOM toepassen om een gestructureerde overgang naar de cloud te orkestreren — governance, toolchain, sourcing en procesherontwerp allemaal gevormd door ITOM-for-Cloud principes.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Cloud Transformatie is een van de meest voorkomende aanleidingen om een IT Operating Model opnieuw te ontwerpen. Migreren naar de cloud is niet slechts een technologiemigratie — het verandert fundamenteel hoe IT wordt bestuurd, hoe diensten worden gesourced, hoe teams zijn georganiseerd en hoe kosten worden beheerd. Een ITOM-for-Cloud adresseert deze dimensies holistisch en zorgt ervoor dat het operating model mee-evolueert met het technologielandschap in plaats van er achter te lopen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Veel organisaties adopteren cloudtechnologie maar behouden hun legacy operating model — wat leidt tot 'cloud chaos': ongecontroleerde uitgaven, inconsistente securityhouding en teams die governance omzeilen in plaats van ermee te werken. Een ITOM-for-Cloud ontwerpt het operating model rond cloud-native principes: selfservice-provisioning, FinOps-gedreven kostenbeheer, platform engineering en DevOps-gestuurde levering. Het overbrugt de kloof tussen cloudstrategie (wat we willen bereiken) en cloudoperaties (hoe we het dagelijks runnen)."
+    },
+    {
+      "heading": "Sleuteldimensies",
+      "type": "list",
+      "items": [
+        { "term": "Cloud governance", "desc": "landing zones, beleid, guardrails en compliance-frameworks die veilige selfservice-consumptie mogelijk maken" },
+        { "term": "FinOps", "desc": "financiële managementdiscipline voor cloud — kostzichtbaarheid, toewijzing, optimalisatie en verantwoording" },
+        { "term": "Platform engineering", "desc": "interne platforms die cloudcomplexiteit abstraheren en 'golden paths' bieden voor ontwikkelteams" },
+        { "term": "Cloud operating model", "desc": "rollen, processen en tooling voor het op schaal runnen van cloud — inclusief CCoE (Cloud Centre of Excellence)" },
+        { "term": "Migratiestrategie", "desc": "de 6 R's (Rehost, Replatform, Refactor, Repurchase, Retain, Retire) en hoe ze de transformatieroadmap vormgeven" },
+        { "term": "Multi-cloud management", "desc": "consistent opereren over AWS, Azure, GCP en private cloud met uniforme governance en tooling" }
+      ]
+    },
+    {
+      "heading": "Transformatiefasen",
+      "type": "list",
+      "items": [
+        { "term": "Beoordelen", "desc": "cloudgereedheidsscan, applicatieportfolioanalyse, businesscase-ontwikkeling" },
+        { "term": "Ontwerpen", "desc": "doelcloudarchitectuur, landing zone-ontwerp, operating model blauwdruk, migratiegolven" },
+        { "term": "Migreren", "desc": "golf-gebaseerde migratieuitvoering, geautomatiseerde tooling, testen en validatie" },
+        { "term": "Optimaliseren", "desc": "FinOps-implementatie, prestatieafstemming, modernisering van gemigreerde workloads" },
+        { "term": "Opereren", "desc": "stabiele cloudoperaties, CCoE-volwassenwording, continue verbetering" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Cloud Readiness Scan — organisatorische en technische gereedheid voor cloudadoptie beoordelen" },
+        { "desc": "Cloud Strategie & Roadmap — het cloudadoptiepad definiëren afgestemd op bedrijfsdoelstellingen" },
+        { "desc": "Landing Zone ontwerp — veilige, bestuurde cloudfundamenten implementeren (Azure, AWS, GCP)" },
+        { "desc": "Cloud migratiediensten — golf-gebaseerde migratie met geautomatiseerde tooling en validatie" },
+        { "desc": "FinOps enablement — kostenbeheerprocessen en -tooling implementeren" },
+        { "desc": "Managed cloud services — doorlopende operaties, monitoring en optimalisatie" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Cloud Advisory", "key": "cloud-advisory" },
+    { "label": "Cloud Readiness Scan", "key": "cloud-readiness" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" }
+  ]
+}

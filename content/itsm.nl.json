@@ -1,0 +1,60 @@
+{
+  "key": "itsm",
+  "category": "03 Frameworks",
+  "title": "ITSM",
+  "lead": "IT Service Management — de set van processen en praktijken die IT-diensten afstemmen op bedrijfsbehoeften.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "IT Service Management (ITSM) is de discipline voor het ontwerpen, leveren, beheren en verbeteren van IT-diensten om te voldoen aan bedrijfsvereisten. Het omvat de volledige levenscyclus van IT-diensten — van strategie en ontwerp via transitie en operatie tot continue verbetering. ITSM is niet één enkel framework, maar een domein dat put uit meerdere frameworks (ITIL, FitSM, VeriSM, ISO/IEC 20000) om een gestructureerde, herhaalbare aanpak voor servicelevering te creëren."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "ITSM is vaak de operationele ruggengraat van een IT Operating Model. Terwijl het ITOM de bredere blauwdruk definieert — governance, organisatie, sourcing en cultuur — biedt ITSM de proceslaag die het operating model dag-tot-dag laat functioneren. In een ITOM-traject bestrijkt ITSM-ontwerp welke processen geïmplementeerd worden, hoe volwassen ze moeten zijn, welke tooling ze ondersteunt en hoe ze integreren over providergrenzen heen (SIAM). De verschuiving van ITIL v3's procesgericht perspectief naar ITIL 4's waardegericht perspectief heeft ITSM dichter bij Agile en DevOps werkwijzen gebracht."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Servicelevenscyclus", "desc": "strategie, ontwerp, transitie, operatie en continue verbetering — de end-to-end reis van een dienst" },
+        { "term": "Procesvolwassenheid", "desc": "beoordelen hoe goed gedefinieerd, gemeten en geoptimaliseerd de servicemanagementprocessen zijn" },
+        { "term": "Servicecatalogus", "desc": "de gezaghebbende lijst van diensten die IT levert, met gedefinieerde serviceniveaus en eigenaarschap" },
+        { "term": "Operational Level Agreements (OLA's)", "desc": "interne overeenkomsten die externe SLA's onderbouwen en cross-team verantwoording borgen" },
+        { "term": "Continue Serviceverbetering (CSI)", "desc": "systematische aanpak voor het identificeren en implementeren van verbeteringen in alle ITSM-processen" },
+        { "term": "Shift-left", "desc": "oplossend vermogen dichter bij de gebruiker brengen — selfservice, automatisering en sterke L1-ondersteuning" }
+      ]
+    },
+    {
+      "heading": "Kern-ITSM Processen",
+      "type": "list",
+      "items": [
+        { "term": "Incidentbeheer", "desc": "normale servicewerking zo snel mogelijk herstellen, met minimale bedrijfsimpact" },
+        { "term": "Probleembeheer", "desc": "oorzaken identificeren en aanpakken om terugkerende incidenten te voorkomen" },
+        { "term": "Changebeheer", "desc": "de levenscyclus van wijzigingen beheersen om risico te minimaliseren en tegelijk bedrijfsagility mogelijk te maken" },
+        { "term": "Serviceaanvraagbeheer", "desc": "standaard, vooraf goedgekeurde aanvragen efficiënt afhandelen via catalogussen en automatisering" },
+        { "term": "Configuratiebeheer", "desc": "een nauwkeurig beeld bijhouden van IT-assets en hun onderlinge relaties (CMDB)" },
+        { "term": "Serviceniveaubeheer", "desc": "servicekwaliteitsdoelen definiëren, afspreken, bewaken en rapporteren" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "ITSM Maturity Scan — benchmark huidige procesvolwassenheid en identificeer lacunes" },
+        { "desc": "ITSM-procesherontwerp — processen afstemmen op ITIL 4 en het doeloperating model" },
+        { "desc": "ServiceNow enablement — de ITSM-toolchain implementeren en optimaliseren" },
+        { "desc": "ITSM-naar-DevOps integratie — de kloof overbruggen tussen servicemanagement en Agile levering" },
+        { "desc": "Servicecatalogusontwerp — het IT-serviceportfolio definiëren en structureren" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "ITSM Maturity Scan", "key": "itsm-scan" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" },
+    { "label": "FitSM", "key": "fitsm" }
+  ]
+}

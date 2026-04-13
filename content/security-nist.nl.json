@@ -1,0 +1,57 @@
+{
+  "key": "security-nist",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "Security Scan NIST",
+  "lead": "Een gestructureerd security-assessment afgestemd op het NIST Cybersecurity Framework — evaluatie van de securityhouding over vijf kernfuncties.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De Security Scan NIST is een gestructureerd assessment dat de cybersecurityhouding van een organisatie evalueert met het NIST Cybersecurity Framework (CSF) als benchmark. Het NIST CSF is wereldwijd een van de meest gebruikte securityframeworks en biedt een technologieneutrale, risicogebaseerde aanpak voor het beheersen van cybersecurityrisico's. De scan levert een volwassenheidsprofiel over vijf kernfuncties, identificeert hiaten en produceert een geprioriteerde verbeterroadmap — essentiële input voor security-bewust ITOM-ontwerp."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Security is een overkoepelend aandachtspunt in elk IT Operating Model. Een ITOM dat geen rekening houdt met security-governance, security-operaties en security-architectuur zal in de praktijk falen — of erger, risico creëren. De NIST Security Scan levert de onderbouwing voor het inbedden van security in het operating model: welke security-capabilities versterking behoeven, waar security-verantwoordelijkheden liggen, hoe securitymonitoring integreert met IT-operaties en hoe compliancevereisten procesontwerp beïnvloeden."
+    },
+    {
+      "heading": "NIST CSF Kernfuncties",
+      "type": "list",
+      "items": [
+        { "term": "Identificeren", "desc": "assetbeheer, risicoassessment, governance — begrijp wat je moet beschermen en welke risico's je loopt" },
+        { "term": "Beschermen", "desc": "toegangscontrole, training, databeveiliging, beschermende technologie — implementeer beveiligingsmaatregelen voor kritieke diensten" },
+        { "term": "Detecteren", "desc": "continue monitoring, detectieprocessen, anomalie-identificatie — ontdek cybersecurity-events tijdig" },
+        { "term": "Reageren", "desc": "responsplanning, communicatie, analyse, mitigatie — onderneem actie bij een cybersecurityincident" },
+        { "term": "Herstellen", "desc": "herstelplanning, verbeteringen, communicatie — herstel capabilities na een incident" }
+      ]
+    },
+    {
+      "heading": "Scanresultaten",
+      "type": "list",
+      "items": [
+        { "desc": "Huidig profiel — volwassenheidscore per NIST-functie en -categorie" },
+        { "desc": "Doelprofiel — gewenste volwassenheidsniveaus op basis van risicobereidheid en compliancevereisten" },
+        { "desc": "Gap-analyse — verschillen tussen huidig en doelprofiel met risicogewogen prioritering" },
+        { "desc": "Quick wins — directe acties die de securityhouding verbeteren met minimale investering" },
+        { "desc": "Roadmap — gefaseerd verbeterplan afgestemd op de ITOM-transformatietijdlijn" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "NIST CSF-assessment — gestructureerde evaluatie ten opzichte van het volledige NIST Cybersecurity Framework" },
+        { "desc": "Security-architectuurontwerp — ontwerp beveiligingslagen afgestemd op het doeloperating model" },
+        { "desc": "Security-operatiesontwerp — SOC, SIEM, incidentrespons en dreigingsintelligentie-integratie" },
+        { "desc": "Complianceframework-afstemming — koppel NIST CSF aan regelgevingsvereisten (NIS2, ISO 27001, BIO)" },
+        { "desc": "Security-bewustwordingsprogramma — training en cultuurverandering om een securitymindset te verankeren" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "COBIT", "key": "cobit" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "Cloud Readiness Scan", "key": "cloud-readiness" }
+  ]
+}

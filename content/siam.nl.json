@@ -1,0 +1,69 @@
+{
+  "key": "siam",
+  "category": "03 Frameworks",
+  "title": "SIAM",
+  "lead": "Service Integration and Management — een framework voor het op consistente, waarde-gedreven wijze managen van meerdere serviceproviders.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "SIAM (Service Integration and Management) is een managementmethodologie die de uitdagingen adresseert van het managen en integreren van diensten van meerdere serviceproviders. Naarmate organisaties steeds meer afhankelijk zijn van een mix van interne teams, uitbestede providers, cloudplatforms en gespecialiseerde leveranciers, biedt SIAM de governance-, coördinatie- en integratielaag die ervoor zorgt dat deze partijen samenwerken om coherente, end-to-end IT-diensten te leveren. SIAM is geen product of toolset — het is een capability die centraal staat in een multi-sourced operating model."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "In veel ITOM-trajecten moet het operating model meerdere serviceproviders accommoderen. SIAM definieert hoe de retained organisatie (de interne IT-functie van de klant) deze providers stuurt, integreert en orkestreert. Zonder een SIAM-laag leiden multi-sourced omgevingen tot onderlinge beschuldigingen, dubbel werk, inconsistente serviceniveaus en gebrek aan end-to-end verantwoordelijkheid. ITOM-ontwerpen die uitbesteding, managed services of cloudadoptie omvatten, vereisen vrijwel altijd een SIAM-capability — waardoor het een van de meest praktisch relevante frameworks in de ITOM-toolkit is."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Service integrator", "desc": "de functie (intern of extern) die coördineert over alle serviceproviders heen en end-to-end servicelevering waarborgt" },
+        { "term": "Retained organisatie", "desc": "het interne team van de klant dat strategische controle, leveranciersmanagement en vraagbeheer behoudt" },
+        { "term": "End-to-end servicemanagement", "desc": "servicekwaliteit beheren over providergrenzen heen, niet alleen binnen individuele contracten" },
+        { "term": "Cross-provider processen", "desc": "incident-, change- en probleembeheerprocessen die alle providers omvatten met duidelijke overdrachtsregels" },
+        { "term": "Governancemodel", "desc": "gelaagde governance (strategisch, tactisch, operationeel) die providergedrag afstemmt op bedrijfsresultaten" },
+        { "term": "Toolchain-integratie", "desc": "gedeelde of gefedereerde ITSM-tooling die zichtbaarheid en workflow over providergrenzen heen mogelijk maakt" }
+      ]
+    },
+    {
+      "heading": "SIAM Modellen",
+      "type": "list",
+      "items": [
+        { "term": "Intern gesourced SI", "desc": "de retained organisatie treedt op als service integrator — maximale controle, maar vereist sterke interne capability" },
+        { "term": "Extern gesourced SI", "desc": "een leadprovider of gespecialiseerde integrator vervult de SI-rol — sneller op te zetten, maar creëert afhankelijkheid" },
+        { "term": "Hybride SI", "desc": "integratievantwoordelijkheid wordt gedeeld door interne teams en een externe partner — in de praktijk het meest voorkomend" },
+        { "term": "Guardian model", "desc": "één provider krijgt een coördinerende rol over andere providers, terwijl de klant de strategische governance behoudt" }
+      ]
+    },
+    {
+      "heading": "Wanneer SIAM Toepassen",
+      "type": "list",
+      "items": [
+        { "desc": "Multi-vendor IT-omgevingen met 3 of meer serviceproviders" },
+        { "desc": "Uitbestedingstrajecten waarbij de retained organisatie de controle wil behouden" },
+        { "desc": "Cloudtransformatie met een mix van IaaS, PaaS, SaaS en on-premises diensten" },
+        { "desc": "IT-integratie na fusies waarbij verschillende providers verschillende bedrijfsonderdelen bedienen" },
+        { "desc": "Organisaties die servicekwaliteitsproblemen ervaren door onduidelijke verantwoordelijkheid over providers heen" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "SIAM assessment — evalueer huidige multi-provider volwassenheid en integratielacunes" },
+        { "desc": "SIAM operating model ontwerp — definieer de service integrator-functie en governance-lagen" },
+        { "desc": "Retained organisatie ontwerp — structureer de interne IT-functie voor effectief leveranciersbeheer" },
+        { "desc": "Cross-provider procesontwikkeling — incident-, change- en probleembeheer over grenzen heen" },
+        { "desc": "SIAM toolchain advies — ServiceNow, BMC of gefedereerde toolingstrategie voor multi-provider omgevingen" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Outsourcing", "key": "outsourcing" },
+    { "label": "ServiceNow Enablement", "key": "servicenow" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}

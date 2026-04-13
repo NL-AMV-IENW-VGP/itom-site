@@ -1,0 +1,57 @@
+{
+  "key": "cobit",
+  "category": "03 Frameworks",
+  "title": "COBIT",
+  "lead": "Governance- en managementframework voor enterprise IT — gebruikt om controledoelstellingen te bepalen en IT af te stemmen op organisatiedoelen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "COBIT (Control Objectives for Information and Related Technologies) is een framework ontwikkeld door ISACA voor de governance en het management van enterprise IT. Nu in zijn 2019-editie biedt COBIT een uitgebreide set van governance- en managementdoelstellingen, georganiseerd rond 40 processen die alles omvatten van strategische afstemming en waardecreatie tot risicobeheer en resourceoptimalisatie. Het wordt veel gebruikt in gereguleerde sectoren en door organisaties die heldere IT-governancestructuren willen opzetten."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "COBIT adresseert de governancelaag van een IT Operating Model — 'wie beslist wat' en 'hoe zorgen we ervoor dat IT waarde levert en risico beheert'. Terwijl frameworks als ITIL zich richten op operationele processen en Agile op levering, biedt COBIT de overkoepelende governancestructuur die zorgt dat IT is afgestemd op bedrijfsdoelstellingen, risico's worden beheerd en resources verantwoord worden ingezet. In ITOM-trajecten is COBIT bijzonder relevant bij het ontwerpen van governance-organen, besluitvormingsrechten en beheerskaders."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Governance vs. Management", "desc": "COBIT maakt duidelijk onderscheid tussen governance (evalueren, sturen, monitoren) en management (plannen, bouwen, uitvoeren, monitoren) — een cruciaal onderscheid in ITOM-ontwerp" },
+        { "term": "40 Governance & Management Doelstellingen", "desc": "gestructureerd over 5 domeinen: EDM (governance), APO, BAI, DSS, MEA (management)" },
+        { "term": "Ontwerpfactoren", "desc": "11 factoren (ondernemingsstrategie, IT-rol, dreigingslandschap, etc.) die de COBIT-implementatie afstemmen op de organisatiecontext" },
+        { "term": "Capabiliteitsniveaus", "desc": "0–5 volwassenheidsschaal gebaseerd op CMMI, gebruikt om procesvolwassenheid te beoordelen en na te streven" },
+        { "term": "Goals Cascade", "desc": "mechanisme dat ondernemingsdoelen → IT-gerelateerde doelen → governance-/managementdoelstellingen koppelt, met aantoonbare traceerbaarheid" }
+      ]
+    },
+    {
+      "heading": "COBIT Domeinen",
+      "type": "list",
+      "items": [
+        { "term": "EDM — Evaluate, Direct, Monitor", "desc": "het governancedomein; stelt richting, bewaakt compliance, evalueert resultaten" },
+        { "term": "APO — Align, Plan, Organise", "desc": "strategische planning, architectuur, innovatie, risico en portfoliomanagement" },
+        { "term": "BAI — Build, Acquire, Implement", "desc": "oplossings-ontwikkeling, changebeheer, asset-management en transitie" },
+        { "term": "DSS — Deliver, Service, Support", "desc": "operations, serviceaanvragen, incidentbeheer en continuïteit" },
+        { "term": "MEA — Monitor, Evaluate, Assess", "desc": "prestatiemonitoring, interne controles en naleving van regelgeving" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "IT Governance assessment — evalueer huidige governancevolwassenheid met COBIT als benchmark" },
+        { "desc": "Governancemodel ontwerp — definieer besluitvormingsrechten, governance-organen en escalatiepaden" },
+        { "desc": "COBIT-ITIL integratie — governance (COBIT) afstemmen op operationele processen (ITIL) in een samenhangend operating model" },
+        { "desc": "Compliance framework ontwerp — beheerskaders bouwen voor gereguleerde omgevingen" },
+        { "desc": "Risicobeheer integratie — IT-risicobeheer inbedden in de governance-laag van het operating model" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}

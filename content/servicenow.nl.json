@@ -1,0 +1,57 @@
+{
+  "key": "servicenow",
+  "category": "04 Accelerators",
+  "title": "ServiceNow Enablement",
+  "lead": "Expertise in het implementeren en optimaliseren van ServiceNow als toolchain-ruggengraat van het nieuwe operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "ServiceNow is het dominante enterprise-platform voor IT Service Management, IT Operations Management en in toenemende mate voor bredere bedrijfsworkflows. ServiceNow Enablement gaat verder dan technische implementatie — het betekent het platform zodanig ontwerpen dat het het doeloperating model weerspiegelt en versterkt. Een goed geconfigureerde ServiceNow-instantie wordt het operationele zenuwstelsel van het ITOM: het verankert processen, handhaaft governance, biedt zichtbaarheid en maakt automatisering mogelijk door de gehele IT-organisatie."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "In veel ITOM-trajecten is ServiceNow 'waar het operating model landt'. De processen die in workshops zijn ontworpen en in blauwdrukken zijn gedocumenteerd, worden uiteindelijk geïmplementeerd als workflows, catalogi en dashboards in ServiceNow. Dit maakt platformontwerp een cruciaal onderdeel van ITOM-levering. Slecht geconfigureerde ServiceNow-instanties bestendigen slechte praktijken; goed ontworpen instanties versnellen de adoptie van het doeloperating model. Het platform vormt ook de integratielaag voor SIAM-omgevingen, waarbij processen over provider-grenzen heen worden verbonden."
+    },
+    {
+      "heading": "Kernmogelijkheden",
+      "type": "list",
+      "items": [
+        { "term": "ITSM-module", "desc": "incident-, probleem-, change-, aanvraag- en kennisbeheer — de operationele kern" },
+        { "term": "ITOM-module", "desc": "discovery, servicemapping, eventbeheer en cloudbeheer — operationele zichtbaarheid" },
+        { "term": "Servicecatalogus", "desc": "selfserviceportaal voor het aanvragen van IT-diensten, stimuleert shift-left en gebruikerstevredenheid" },
+        { "term": "CMDB", "desc": "configuration management database als single source of truth voor IT-assets en hun onderlinge relaties" },
+        { "term": "Rapportage & dashboards", "desc": "realtime zichtbaarheid op serviceprestaties, SLA-naleving en operationele gezondheid" },
+        { "term": "Integration Hub", "desc": "verbindt ServiceNow met DevOps-tools, cloudplatformen, monitoring en externe providers" }
+      ]
+    },
+    {
+      "heading": "Implementatiebenadering",
+      "type": "list",
+      "items": [
+        { "term": "Proces-first ontwerp", "desc": "definieer doelprocessen vóór configuratie van het platform — vermijd 'het bestraten van bestaande paden'" },
+        { "term": "Out-of-the-box eerst", "desc": "maximaliseer gebruik van standaard ServiceNow-capabilities; pas alleen aan waar bedrijfswaarde dit rechtvaardigt" },
+        { "term": "Gefaseerde uitrol", "desc": "implementeer in golven — begin met kern-ITSM, breid daarna uit naar ITOM, CMDB en automatisering" },
+        { "term": "Governancemodel", "desc": "stel een platformgovernanceteam in om configuratie, upgrades en demand te beheren" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "ServiceNow health check — beoordeel de huidige instantievolwassenheid en identificeer verbeterpunten" },
+        { "desc": "ServiceNow-implementatie — end-to-end platformdeployment afgestemd op het doeloperating model" },
+        { "desc": "CMDB-ontwerp & -vulling — bouw een betrouwbare configuration management-basis" },
+        { "desc": "Servicecatalogusontwerp — creëer een gebruiksvriendelijke selfservice-ervaring" },
+        { "desc": "SIAM-integratie — configureer cross-provider workflows en rapportage in ServiceNow" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "IT4IT", "key": "it4it" },
+    { "label": "ITIL Library", "key": "itil-library" }
+  ]
+}

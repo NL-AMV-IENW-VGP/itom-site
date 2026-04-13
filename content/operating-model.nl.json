@@ -1,0 +1,59 @@
+{
+  "key": "operating-model",
+  "category": "01 Purpose",
+  "title": "Operating Model",
+  "lead": "De blauwdruk voor hoe een organisatie haar strategie realiseert — inclusief processen, mensen, technologie en governance.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Een Operating Model is de brug tussen strategie en uitvoering. Het beschrijft hoe een organisatie haar mensen, processen, technologie en governance organiseert om haar strategische doelstellingen te realiseren. Terwijl strategie antwoord geeft op 'wat willen we bereiken?', geeft het operating model antwoord op 'hoe organiseren we onszelf om dat te bereiken?'. Een IT Operating Model (ITOM) is een specialisatie die zich richt op de IT-functie — maar altijd ten dienste van het bredere bedrijfsoperating model."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Het operating model is het centrale concept in elk ITOM-traject. Het is het 'ding' dat wordt ontworpen. Een ITOM neemt het generieke operating model-concept en past het specifiek toe op de IT-functie: hoe IT-diensten worden geleverd, hoe IT wordt bestuurd, hoe teams zijn gestructureerd, hoe leveranciers worden beheerd en hoe technologie bedrijfsresultaten mogelijk maakt. Het ITOM is geen statisch document — het evolueert naarmate strategie verschuift, technologie verandert en de organisatie volwassener wordt."
+    },
+    {
+      "heading": "Sleuteldimensies",
+      "type": "list",
+      "items": [
+        { "term": "Organisatie & Mensen", "desc": "teamstructuren, rollen, capabilities, cultuur en manieren van werken" },
+        { "term": "Processen & Praktijken", "desc": "hoe werk wordt gedaan — van strategische planning tot operationele levering en verbetering" },
+        { "term": "Technologie & Tooling", "desc": "platforms, applicaties, automatisering en de toolchain die levering mogelijk maakt" },
+        { "term": "Governance & Besluitvormingsrechten", "desc": "wie beslist wat, hoe prestaties worden gemeten en hoe risico wordt beheerd" },
+        { "term": "Sourcing & Partners", "desc": "welke capabilities intern zijn, uitbesteed of cloud-gesourced — en hoe providers worden beheerd" },
+        { "term": "Informatie & Data", "desc": "hoe data stroomt, hoe inzichten worden gegenereerd en hoe informatie besluitvorming ondersteunt" }
+      ]
+    },
+    {
+      "heading": "Operating Model Archetypen",
+      "type": "list",
+      "items": [
+        { "term": "Gecentraliseerd", "desc": "IT is één centrale functie die de hele organisatie bedient — sterke governance, schaalvoordelen" },
+        { "term": "Gedecentraliseerd", "desc": "IT-capabilities zitten in bedrijfsonderdelen — hoge responsiviteit, risico op duplicatie en inconsistentie" },
+        { "term": "Gefedereerd", "desc": "centrale standaarden en governance met lokale uitvoering — balanceert controle en agility" },
+        { "term": "Platform-gebaseerd", "desc": "een centraal platformteam levert gedeelde capabilities; productteams bouwen daarop voort — cloud-native, DevOps-georiënteerd" },
+        { "term": "SIAM-gebaseerd", "desc": "een service-integratielaag beheert meerdere providers — gangbaar in uitbestede omgevingen" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Operating Model assessment — het huidige operating model analyseren over alle dimensies" },
+        { "desc": "Doeloperating Model ontwerp — het toekomstige ITOM ontwerpen afgestemd op strategie" },
+        { "desc": "Operating Model Canvas workshops — gefaciliteerde sessies om het operating model samen met stakeholders te creëren" },
+        { "desc": "Transformatieroadmap — de overgang van huidig naar doeloperating model plannen" },
+        { "desc": "Changemanagement — adoptie en de culturele verschuiving die nodig is voor het nieuwe operating model stimuleren" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITOM Core", "key": "itom-core" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "COBIT", "key": "cobit" }
+  ]
+}

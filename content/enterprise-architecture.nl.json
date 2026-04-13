@@ -1,0 +1,56 @@
+{
+  "key": "enterprise-architecture",
+  "category": "04 Accelerators — Architectuur & Strategie",
+  "title": "Enterprise Architectuur",
+  "lead": "Het ontwerpen en sturen van de enterprise architectuur die het nieuwe operating model ondersteunt.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Enterprise Architectuur (EA) biedt het structurele kader voor het afstemmen van IT-capabilities op bedrijfsdoelstellingen. Het beschrijft de huidige en doeltoestand van de bedrijfsprocessen, informatiestromen, applicaties en technologische infrastructuur van een organisatie — en definieert de roadmap om van de ene naar de andere te komen. In ITOM-trajecten is EA zowel een lens (hoe begrijpen we het huidige landschap?) als een deliverable (hoe moet de toekomstige architectuur eruitzien?)."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Een IT Operating Model zonder architectuurfundament is een blauwdruk zonder plattegrond. EA zorgt ervoor dat de processen, toolchains en governance-mechanismen die in een ITOM-traject zijn ontworpen daadwerkelijk bij elkaar passen — en dat het resulterende model bouwbaar, schaalbaar en afgestemd is op de bedrijfsrichting. EA-werk in ITOM omvat doorgaans: applicatierationalisa-tie, platformontwerp, data-architectuur en integratiepatronen."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Architectuurdomeinen", "desc": "Business-, Data-, Applicatie- en Technologie-architectuur (BDAT / TOGAF)" },
+        { "term": "Huidige staat / doelstaat", "desc": "EA beschrijft waar je bent, waar je naartoe gaat en het verschil daartussenin" },
+        { "term": "Architectuurprincipes", "desc": "leidende regels die ontwerpbeslissingen beperken en samenhang waarborgen" },
+        { "term": "Roadmap & migratieplan", "desc": "fasering van wijzigingen van huidige naar doelarchitectuur" },
+        { "term": "Governance", "desc": "Architecture Review Board, design authority en kaders voor wijzigingsbeheer" }
+      ]
+    },
+    {
+      "heading": "Gangbare Frameworks",
+      "type": "list",
+      "items": [
+        { "term": "TOGAF", "desc": "The Open Group Architecture Framework; meest gebruikte EA-methodologie" },
+        { "term": "Zachman", "desc": "Ontologie/matrix voor het classificeren van architectuurbescheiden" },
+        { "term": "IT4IT", "desc": "Referentiearchitectuur specifiek voor het managen van de IT-waardeketen" },
+        { "term": "ArchiMate", "desc": "Modelleertaal voor enterprise architectuur" }
+      ]
+    },
+    {
+      "heading": "Eviden Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Architectuurassessment — huidige staat in kaart brengen, schulden en risico's identificeren" },
+        { "desc": "Doelarchitectuurontwerp — toekomstige staat definiëren afgestemd op bedrijfsstrategie" },
+        { "desc": "Platformarchitectuur — cloud-, data-, integratie- en beveiligingslaagontwerp" },
+        { "desc": "Architectuurgovernance — ARB, principes en besluitvormingskaders opzetten" },
+        { "desc": "IT-strategie afstemming — EA-roadmap verbinden met IT- en bedrijfsstrategie" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "IT-Strategie", "key": "it-strategy" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "IT4IT", "key": "it4it" }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "key": "itil-library",
+  "category": "03 Frameworks",
+  "title": "ITIL Library",
+  "lead": "Best practice-bibliotheek voor IT-servicemanagement; fundament voor procesontwerp in ITSM-gebaseerde operating modellen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "ITIL (Information Technology Infrastructure Library) is het wereldwijd meest gebruikte IT-servicemanagement framework. Het biedt richtlijnen voor het ontwerpen, leveren, beheren en verbeteren van IT-diensten gedurende hun levenscyclus. Oorspronkelijk ontwikkeld voor de Britse overheid in de jaren tachtig is ITIL uitgegroeid tot een wereldwijde best practice-bibliotheek, nu in zijn vierde editie (ITIL 4), die nadruk legt op gezamenlijke waardecreatie, Agile-integratie en een service value system."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "ITIL biedt de procesvoering en governance-patronen die de ruggengraat vormen van de meeste ITSM-gebaseerde IT-operating modellen. Bij het ontwerpen van een ITOM informeert ITIL hoe incidenten worden beheerd, hoe wijzigingen worden beheerst, hoe diensten worden gecatalogiseerd en hoe continue verbetering is gestructureerd. ITIL 4 is bijzonder relevant omdat het ITSM expliciet positioneert in een breder operating model-context — verder dan processen, richting cultuur, waarde en organisatieontwerp."
+    },
+    {
+      "heading": "ITIL 4 Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Service Value System (SVS)", "desc": "het holistische model dat laat zien hoe alle componenten samenwerken om waarde te realiseren" },
+        { "term": "Service Value Chain", "desc": "zes onderling verbonden activiteiten: Plan, Improve, Engage, Design & Transition, Obtain/Build, Deliver & Support" },
+        { "term": "34 Managementpraktijken", "desc": "verdeeld over general, service en technical management (vervangt de oude 'processen')" },
+        { "term": "Leidende principes", "desc": "Focus op waarde, Begin waar je bent, Vorder iteratief met feedback, Werk samen en bevorder zichtbaarheid, Denk en werk holistisch, Houd het eenvoudig en praktisch, Optimaliseer en automatiseer" },
+        { "term": "Vier dimensies", "desc": "Organisaties & Mensen, Informatie & Technologie, Partners & Leveranciers, Value Streams & Processen" }
+      ]
+    },
+    {
+      "heading": "Kernpraktijken in ITOM-ontwerp",
+      "type": "list",
+      "items": [
+        { "term": "Incidentbeheer", "desc": "dienst snel herstellen; fundament van operationele SLA-prestaties" },
+        { "term": "Change Enablement", "desc": "risico beheersen en tegelijk snelheid mogelijk maken; cruciaal spanningspunt bij DevOps-transformaties" },
+        { "term": "Servicecatalogusmanagement", "desc": "definiëren wat IT levert; essentieel voor SIAM en sourcingmodellen" },
+        { "term": "Continue verbetering", "desc": "gestructureerde verbetering inbedden op elk niveau van het operating model" },
+        { "term": "Serviceniveaumanagement", "desc": "servicekwaliteitsverplichtingen afspreken, bewaken en rapporteren" }
+      ]
+    },
+    {
+      "heading": "ITIL vs. Agile",
+      "type": "text",
+      "body": "Een veelgehoorde zorg bij ITOM-ontwerp is de vermeende spanning tussen de governance-gerichtheid van ITIL en de snelheid van Agile. ITIL 4 adresseert dit expliciet: het framework is ontworpen om samen te werken met Agile, DevOps en Lean — het is een set principes en praktijken, geen rigide procesvoorschrift. Succesvolle operating modellen integreren beide: Agile levering binnen een goed beheerd servicekader."
+    }
+  ],
+  "related": [
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL4 Training", "key": "itil4" },
+    { "label": "YaSM", "key": "yasm" },
+    { "label": "FitSM", "key": "fitsm" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "key": "devops-capability-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "DevOps Capability Scan",
+  "lead": "Evalueert de DevOps-capabilities van de organisatie op het gebied van mensen, processen en toolchain.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De DevOps Capability Scan is een gestructureerd assessment dat de volwassenheid van een organisatie in DevOps-praktijken meet. Het onderzoekt hoe goed teams ontwikkeling en operatie integreren, hoe geautomatiseerd de leveringspijplijn is, en hoe cultuur, tooling en governance snelle, betrouwbare softwarelevering ondersteunen. De output is een gescoorde baseline en een geprioriteerde verbeterroadmap — input voor het ontwerpen van het doeloperating model."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Voordat je een DevOps-georiënteerd operating model ontwerpt, moet je weten waar je staat. De DevOps Capability Scan creëert de onderbouwing voor ITOM-ontwerpbeslissingen: welke teams klaar zijn voor autonome levering, waar automatisering ontbreekt en welke governance-wijzigingen nodig zijn. Het voorkomt over-engineering (ontwerpen voor een volwassenheidsniveau dat je nog niet hebt bereikt) en under-engineering (geen rekening houden met de vereiste transformatie-inspanning)."
+    },
+    {
+      "heading": "Scandimensies",
+      "type": "list",
+      "items": [
+        { "term": "Cultuur & samenwerking", "desc": "psychologische veiligheid, gedeeld eigenaarschap, blame-free post-mortems" },
+        { "term": "Continuous Integration (CI)", "desc": "integratiefrequentie, geautomatiseerd testen, buildkwaliteit" },
+        { "term": "Continuous Delivery (CD)", "desc": "deploymentfrequentie, doorlooptijd, wijzigingsfoutpercentage, MTTR" },
+        { "term": "Infrastructure as Code", "desc": "automatisering van provisioning, configuratiebeheer, immutable infrastructure" },
+        { "term": "Monitoring & observability", "desc": "metrics, logging, tracing, alerting en incidentrespons" },
+        { "term": "Beveiliging (DevSecOps)", "desc": "shift-left beveiligingspraktijken, kwetsbaarheidsscanning, compliance-automatisering" }
+      ]
+    },
+    {
+      "heading": "Output",
+      "type": "list",
+      "items": [
+        { "desc": "Volwassenheidsscore per dimensie (schaal 1–5, benchmarked tegen industrie)" },
+        { "desc": "Top-5 verbeterprioristeiten met onderbouwing" },
+        { "desc": "Quick wins versus structurele verbeteringen" },
+        { "desc": "Aanbevolen toolchain-wijzigingen" },
+        { "desc": "Input voor ITOM-doelontwerp en transformatieroadmap" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Agile", "key": "agile" },
+    { "label": "Agile Maturity Scan", "key": "agile-scan" },
+    { "label": "Platform & Pipeline Support", "key": "platform-pipeline" },
+    { "label": "Playbooks", "key": "playbooks" }
+  ]
+}
