@@ -289,7 +289,7 @@ let currentData = null;
 let currentDataNl = null;
 let isEditing = false;
 let fileSha = null;
-let currentLang = "en";
+let currentLang = localStorage.getItem("itom_lang") || "en";
 let hasNlVersion = false;
 
 function getPageKey() {
@@ -707,6 +707,7 @@ async function init() {
   document.addEventListener("click", (e) => {
     if (!e.target.closest("#lang-toggle") || !hasNlVersion) return;
     currentLang = currentLang === "en" ? "nl" : "en";
+    localStorage.setItem("itom_lang", currentLang);
     renderPage(currentLang === "nl" ? currentDataNl : currentData);
     updateLangSwitch();
   });
