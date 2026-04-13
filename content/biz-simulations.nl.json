@@ -1,0 +1,55 @@
+{
+  "key": "biz-simulations",
+  "category": "04 Accelerators",
+  "title": "Business Simulations",
+  "lead": "Meeslepende simulatie-oefeningen die teams helpen nieuwe manieren van werken te ervaren en te leren in een veilige, realistische omgeving — operating model-verandering tastbaar maken voordat het gebeurt.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Business simulations zijn serious games die deelnemers in realistische scenario's plaatsen waar ze de gevolgen van proces-, governance- en samenwerkingskeuzes zelf ervaren. Anders dan lezingen of workshops creëren simulaties een veilige omgeving waar teams snel kunnen falen, reflecteren en bijsturen — en zo gedeeld begrip en urgentie voor verandering opbouwen. In ITOM-trajecten worden simulaties gebruikt om afstemming te versnellen, de 'waarom' achter operating model-transformatie tastbaar te maken en de gedragsvaardigheden te ontwikkelen die nieuwe manieren van werken vereisen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Een nieuw IT Operating Model ontwerpen is één ding — mensen het laten begrijpen en omarmen is een ander. Business simulations overbruggen deze kloof. Door de pijn van een gebrekkig operating model in een spelsetting te ervaren, komen deelnemers aan ITOM-workshops met gedeelde context en oprechte motivatie voor verandering. Simulaties zijn bijzonder effectief voor cross-functionele groepen (business en IT samen) en voor senior stakeholders die de bedrijfsimpact van IT operating model-beslissingen moeten voelen, niet slechts erover lezen."
+    },
+    {
+      "heading": "Wanneer Simulaties Inzetten",
+      "type": "list",
+      "items": [
+        { "term": "Kick-off afstemming", "desc": "creëer gedeeld begrip en urgentie aan het begin van een ITOM-transformatieprogramma" },
+        { "term": "Stakeholder-betrokkenheid", "desc": "breng business- en IT-leiders samen in een niet-bedreigende, sterk betrokken format" },
+        { "term": "Gedragsverandering", "desc": "demonstreer nieuwe manieren van werken ervaringsgewijs — effectiever dan mensen vertellen te veranderen" },
+        { "term": "Trainingsversterking", "desc": "verstevig en verdiep leren uit frameworks als ITIL, Agile of DevOps in een praktische context" },
+        { "term": "Teamontwikkeling", "desc": "bouw samenwerkingsvaardigheden, gemeenschappelijke taal en cross-functioneel vertrouwen op" }
+      ]
+    },
+    {
+      "heading": "Atos Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "Simulatiefacilitering — gecertificeerde facilitering van business simulation-workshops voor teams van 8–24 deelnemers" },
+        { "desc": "Maatwerk scenario-ontwerp — simulatiescenario's afstemmen op de specifieke operating model-context van de klant" },
+        { "desc": "Debrief-facilitering — gestructureerde reflectiesessies die simulatie-ervaringen verbinden met echte ITOM-uitdagingen" },
+        { "desc": "Meerdaagse leertrajecten — combineer simulaties met ITOM-workshops voor meeslepende transformatieprogramma's" }
+      ]
+    },
+    {
+      "heading": "Beschikbare Simulaties",
+      "type": "links",
+      "items": [
+        { "label": "The Phoenix Project", "key": "phoenix-project" },
+        { "label": "MarsLander", "key": "marslander" },
+        { "label": "Hollywood Dreams", "key": "hollywood-dreams" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Agile", "key": "agile" }
+  ]
+}

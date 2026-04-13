@@ -352,6 +352,12 @@ function renderPage(data) {
       sectionsHtml += `  <p data-field="body">${esc(section.body)}</p>\n`;
     } else if (section.type === "list") {
       sectionsHtml += `  <ul data-field="items">\n    ${renderList(section.items)}\n  </ul>\n`;
+    } else if (section.type === "links") {
+      const linkChips = section.items.map(item => {
+        const href = `deepdive.html?page=${encodeURIComponent(item.key)}`;
+        return `<a href="${href}" class="related-chip">${esc(item.label)}</a>`;
+      }).join("\n      ");
+      sectionsHtml += `  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
     }
     sectionsHtml += `</div>\n`;
   }

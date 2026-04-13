@@ -1,0 +1,55 @@
+{
+  "key": "biz-simulations",
+  "category": "04 Accelerators",
+  "title": "Business Simulations",
+  "lead": "Immersive simulation exercises that help teams experience and learn new ways of working in a safe, realistic environment — making operating model change tangible before it happens.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Business simulations are serious games that place participants in realistic scenarios where they experience the consequences of process, governance, and collaboration choices first-hand. Unlike lectures or workshops, simulations create a safe environment where teams can fail fast, reflect, and adjust — building shared understanding and urgency for change. In ITOM engagements, simulations are used to accelerate alignment, demonstrate the 'why' behind operating model transformation, and build the behavioural skills that new ways of working require."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Designing a new IT Operating Model is one thing — getting people to understand and embrace it is another. Business simulations bridge this gap. By experiencing the pain of a broken operating model in a game setting, participants arrive at ITOM workshops with shared context and genuine motivation for change. Simulations are particularly effective for cross-functional groups (business and IT together) and for senior stakeholders who need to feel the business impact of IT operating model decisions, not just read about them."
+    },
+    {
+      "heading": "When to Use Simulations",
+      "type": "list",
+      "items": [
+        { "term": "Kick-off alignment", "desc": "create shared understanding and urgency at the start of an ITOM transformation programme" },
+        { "term": "Stakeholder engagement", "desc": "bring business and IT leaders together in a non-threatening, high-engagement format" },
+        { "term": "Behaviour change", "desc": "demonstrate new ways of working experientially — more effective than telling people to change" },
+        { "term": "Training reinforcement", "desc": "embed and reinforce learning from frameworks like ITIL, Agile, or DevOps in a practical context" },
+        { "term": "Team development", "desc": "build collaboration skills, shared language, and cross-functional trust" }
+      ]
+    },
+    {
+      "heading": "Atos Services",
+      "type": "list",
+      "items": [
+        { "desc": "Simulation facilitation — certified facilitation of business simulation workshops for teams of 8–24 participants" },
+        { "desc": "Custom scenario design — tailor simulation scenarios to the client's specific operating model context" },
+        { "desc": "Debrief facilitation — structured reflection sessions connecting simulation experience to real ITOM challenges" },
+        { "desc": "Multi-day learning journeys — combine simulations with ITOM workshops for immersive transformation programmes" }
+      ]
+    },
+    {
+      "heading": "Available Simulations",
+      "type": "links",
+      "items": [
+        { "label": "The Phoenix Project", "key": "phoenix-project" },
+        { "label": "MarsLander", "key": "marslander" },
+        { "label": "Hollywood Dreams", "key": "hollywood-dreams" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Agile", "key": "agile" }
+  ]
+}
