@@ -1,0 +1,88 @@
+{
+  "key": "itom-core",
+  "category": "01 Purpose",
+  "title": "IT Operating Model (ITOM)",
+  "lead": "The IT Operating Model describes how an organisation's IT function is structured and managed to deliver business value — the 'how' that translates IT strategy into daily operations.",
+  "sections": [
+    {
+      "heading": "What Is the IT Operating Model?",
+      "type": "image",
+      "src": "assets/img/itom-approach-1.png",
+      "alt": "ITOM pyramid — Strategy, IT Operating Model, Policy, Process, Technology and People"
+    },
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The IT Operating Model (ITOM) sits between IT strategy and daily operations. IT strategy defines 'what you are going to do' — the goals, priorities, and direction. The IT Operating Model defines 'how you are going to do it' — the processes, governance, organisation, sourcing, and technology that make delivery possible. Without a well-designed ITOM, even the best strategy fails in execution. The ITOM is the design blueprint that makes strategy operational."
+    },
+    {
+      "heading": "The Atos ITOM Framework",
+      "type": "image",
+      "src": "assets/img/itom-framework.png",
+      "alt": "The Atos ITOM Framework — five levels from Vision & Strategy to Delivery Support"
+    },
+    {
+      "heading": "Framework Levels",
+      "type": "list",
+      "items": [
+        { "term": "Level 1 — Vision & Strategy", "desc": "business strategy, digital strategy, IT strategy, and cloud direction shape the operating model scope and ambition" },
+        { "term": "Level 2 — Conceptual Blueprint", "desc": "enterprise architecture, functional design, and outsourcing approach define the high-level structure" },
+        { "term": "Level 3 — Blueprint Enablement", "desc": "the detailed design of functions, processes, governance models, and organisational modes" },
+        { "term": "Level 4 — Organisational Design", "desc": "performance management, stakeholder relationships, and organisational structure brought to life" },
+        { "term": "Level 5 — Delivery Support", "desc": "technology, methodology, finance, security, and supply chain that underpin daily operations" }
+      ]
+    },
+    {
+      "heading": "Alternative ITOM Topologies",
+      "type": "image",
+      "src": "assets/img/itom-topologies.png",
+      "alt": "Five ITOM topologies from Complete Autonomy to Platformized Digital Process along the digital maturity axis"
+    },
+    {
+      "heading": "ITOM Topology Options",
+      "type": "list",
+      "items": [
+        { "term": "1 — Complete Autonomy", "desc": "IT projects and infrastructure managed independently per business domain — maximum autonomy, minimum standardisation" },
+        { "term": "2 — Autonomy with Strategic Guidance", "desc": "shared infrastructure and strategic IT governance with domain-level autonomy for applications and projects" },
+        { "term": "3 — IT Domains", "desc": "structured domains with shared services, common governance, and coordinated delivery across the organisation" },
+        { "term": "4 — Business & IT Domains", "desc": "business and IT domains aligned around shared platforms, common infrastructure, and joint governance" },
+        { "term": "5 — Platformized Digital Process", "desc": "fully integrated platform model — shared IT foundations, automated operations, and product-centric delivery at scale" }
+      ]
+    },
+    {
+      "heading": "The Atos Approach to ITOM",
+      "type": "image",
+      "src": "assets/img/itom-approach.png",
+      "alt": "Atos ITOM delivery approach — flexible waterfall or agile, tailored to situation"
+    },
+    {
+      "heading": "Our Approach",
+      "type": "list",
+      "items": [
+        { "term": "Business & IT Drivers", "desc": "shape the Target Operating Model strategy and programme, informed by business drivers, digital ambition, and IT strategy" },
+        { "term": "Diagnosis & Options", "desc": "develop and assess operating model capabilities and options, guided by business context and constraints" },
+        { "term": "Target Landscape", "desc": "create the overall design for role and size of the future IT organisation — the Target Operating Model" },
+        { "term": "Transformation Plan & Delivery", "desc": "structure and execute the implementation plan to deliver the new operating model" },
+        { "term": "Value Impact", "desc": "define and quantify the business benefits and value the new operating model enables" }
+      ]
+    },
+    {
+      "heading": "Atos Services",
+      "type": "list",
+      "items": [
+        { "desc": "ITOM assessment — evaluate the current IT operating model across all five framework levels" },
+        { "desc": "Target Operating Model design — define the future-state ITOM aligned to business strategy" },
+        { "desc": "ITOM Canvas workshops — co-create the operating model with business and IT stakeholders" },
+        { "desc": "Topology selection — determine the right ITOM topology based on organisational context and digital maturity" },
+        { "desc": "Transformation roadmap — plan the journey from current to target operating model" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "SIAM", "key": "siam" }
+  ]
+}

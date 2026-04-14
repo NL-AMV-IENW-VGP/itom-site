@@ -1,0 +1,64 @@
+{
+  "key": "tom",
+  "category": "01 Purpose",
+  "title": "Target Operating Model (TOM)",
+  "lead": "Het Target Operating Model is de ontworpen toekomstige staat van de IT-functie van een organisatie — het blauwdruk dat definieert waar je naartoe gaat en hoe de organisatie eruitziet als je er bent.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Het Target Operating Model (TOM) is het concrete antwoord op de vraag: 'Hoe moet onze IT-functie er in de toekomst uitzien?' Het is het centrale deliverable van elk ITOM-traject. Waar het huidige operating model beschrijft hoe dingen vandaag werken, definieert het TOM de gewenste toekomstige staat — over mensen, processen, technologie, governance en sourcing heen. Het TOM is geen visiestatement. Het is een uitvoerbaar blauwdruk dat precies genoeg is om transformatieplanning, resource-allocatie en implementatiebeslissingen te sturen."
+    },
+    {
+      "heading": "TOM vs. Huidig Operating Model",
+      "type": "list",
+      "items": [
+        { "term": "Huidige staat (AS-IS)", "desc": "hoe de IT-functie vandaag opereert — gedocumenteerd via assessment, interviews en procesanalyse" },
+        { "term": "Gap-analyse", "desc": "het verschil tussen huidig en doelmodel over alle operating model-dimensies — identificeert wat moet veranderen" },
+        { "term": "Doelstaat (TO-BE)", "desc": "het TOM — het gewenste toekomstige ontwerp dat de hiaten dicht en de strategische ambitie realiseert" },
+        { "term": "Transformatieroadmap", "desc": "het gesequenced plan voor de overgang van AS-IS naar TOM — golven, afhankelijkheden, investering en changemanagement" }
+      ]
+    },
+    {
+      "heading": "TOM Dimensies",
+      "type": "list",
+      "items": [
+        { "term": "Organisatie & Mensen", "desc": "doelteamstructuur, rollen, capabilities, spanwijdtes en manieren van werken in de toekomstige staat" },
+        { "term": "Processen & Praktijken", "desc": "herontworpen end-to-end processen — van strategische planning via operationele levering tot continue verbetering" },
+        { "term": "Governance & Besluitvormingsrechten", "desc": "wie beslist wat in het toekomstige model — governance-organen, beleid, verantwoordelijkheden en escalatiepaden" },
+        { "term": "Technologie & Toolchain", "desc": "het doelappplicatielandschap, platforms en toolchain die het nieuwe operating model mogelijk maken" },
+        { "term": "Sourcing & Partners", "desc": "wat intern wordt gedaan, wat wordt uitbesteed en hoe providers worden beheerd in de doelstaat" },
+        { "term": "Prestaties & Meting", "desc": "doel-KPI's, SLA's en managementinformatie die aantonen dat het TOM zijn beoogde waarde levert" }
+      ]
+    },
+    {
+      "heading": "Wat Maakt een Goed TOM",
+      "type": "list",
+      "items": [
+        { "term": "Strategisch verankerd", "desc": "expliciet gekoppeld aan bedrijfsstrategie, digitale ambitie en IT-richting — niet in isolatie ontworpen" },
+        { "term": "Specifiek en uitvoerbaar", "desc": "concreet genoeg om beslissingen te sturen — geen afbeelding op hoog niveau maar een bruikbaar ontwerpdocument" },
+        { "term": "Met stakeholders co-gecreëerd", "desc": "ontwikkeld met de mensen die er straks in werken — verhoogt kwaliteit en adoptie" },
+        { "term": "Transitiebewust", "desc": "ontworpen met de transformatiereis in gedachten — wat in golven haalbaar is, wat een langetermijnambitie is" },
+        { "term": "Meetbaar", "desc": "bevat heldere succescriteria zodat de voortgang naar het TOM gevolgd en aangetoond kan worden" }
+      ]
+    },
+    {
+      "heading": "Atos Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "TOM-ontwerp — gestructureerd ontwerp van het doeloperating model over alle dimensies, van assessment tot blauwdruk" },
+        { "desc": "Operating Model Canvas-workshops — het TOM samen met business- en IT-stakeholders co-creëren via het (IT)OM Canvas" },
+        { "desc": "Gap-analyse — huidig en doeloperating model vergelijken om transformatievereisten te identificeren en te prioriteren" },
+        { "desc": "Transformatieroadmap — het TOM vertalen naar een gefaseerd implementatieplan met heldere mijlpalen en businesscases" },
+        { "desc": "TOM-validatie — onafhankelijke review van een concept-TOM om volledigheid, samenhang en strategische afstemming te toetsen" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model", "key": "itom-core" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" }
+  ]
+}

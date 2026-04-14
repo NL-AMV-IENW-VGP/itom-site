@@ -1,0 +1,88 @@
+{
+  "key": "itom-core",
+  "category": "01 Purpose",
+  "title": "IT Operating Model (ITOM)",
+  "lead": "Het IT Operating Model beschrijft hoe de IT-functie van een organisatie is ingericht en aangestuurd om bedrijfswaarde te leveren — het 'hoe' dat IT-strategie vertaalt naar dagelijkse operaties.",
+  "sections": [
+    {
+      "heading": "Wat is het IT Operating Model?",
+      "type": "image",
+      "src": "assets/img/itom-approach-1.png",
+      "alt": "ITOM piramide — Strategie, IT Operating Model, Beleid, Proces, Technologie en Mensen"
+    },
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Het IT Operating Model (ITOM) bevindt zich tussen IT-strategie en dagelijkse operaties. IT-strategie bepaalt 'wat je gaat doen' — de doelen, prioriteiten en richting. Het IT Operating Model bepaalt 'hoe je het gaat doen' — de processen, governance, organisatie, sourcing en technologie die levering mogelijk maken. Zonder een goed ontworpen ITOM mislukt zelfs de beste strategie in de uitvoering. Het ITOM is het ontwerpblauwdruk dat strategie operationeel maakt."
+    },
+    {
+      "heading": "Het Atos ITOM Framework",
+      "type": "image",
+      "src": "assets/img/itom-framework.png",
+      "alt": "Het Atos ITOM Framework — vijf niveaus van Visie & Strategie tot Delivery Support"
+    },
+    {
+      "heading": "Framework Niveaus",
+      "type": "list",
+      "items": [
+        { "term": "Niveau 1 — Visie & Strategie", "desc": "bedrijfsstrategie, digitale strategie, IT-strategie en cloudrichting bepalen de scope en ambitie van het operating model" },
+        { "term": "Niveau 2 — Conceptueel Blauwdruk", "desc": "enterprise architectuur, functioneel ontwerp en outsourcingbenadering definiëren de hoofdstructuur" },
+        { "term": "Niveau 3 — Blauwdruk Enablement", "desc": "het gedetailleerde ontwerp van functies, processen, governance-modellen en organisatorische vormen" },
+        { "term": "Niveau 4 — Organisatorisch Ontwerp", "desc": "performance management, stakeholderrelaties en organisatiestructuur in de praktijk gebracht" },
+        { "term": "Niveau 5 — Delivery Support", "desc": "technologie, methodologie, financiën, security en toeleveringsketen die de dagelijkse operaties ondersteunen" }
+      ]
+    },
+    {
+      "heading": "Alternatieve ITOM Topologieën",
+      "type": "image",
+      "src": "assets/img/itom-topologies.png",
+      "alt": "Vijf ITOM-topologieën van Complete Autonomie tot Geplatformiseerd Digitaal Proces langs de digitale volwassenheidsas"
+    },
+    {
+      "heading": "ITOM Topologie-opties",
+      "type": "list",
+      "items": [
+        { "term": "1 — Complete Autonomie", "desc": "IT-projecten en -infrastructuur per bedrijfsdomein zelfstandig beheerd — maximale autonomie, minimale standaardisatie" },
+        { "term": "2 — Autonomie met Strategische Sturing", "desc": "gedeelde infrastructuur en strategische IT-governance met domeinautonomie voor applicaties en projecten" },
+        { "term": "3 — IT-domeinen", "desc": "gestructureerde domeinen met gedeelde services, gemeenschappelijke governance en gecoördineerde levering" },
+        { "term": "4 — Business & IT-domeinen", "desc": "business- en IT-domeinen afgestemd op gedeelde platforms, gezamenlijke infrastructuur en gezamenlijke governance" },
+        { "term": "5 — Geplatformiseerd Digitaal Proces", "desc": "volledig geïntegreerd platformmodel — gedeelde IT-fundament, geautomatiseerde operaties en productgerichte levering op schaal" }
+      ]
+    },
+    {
+      "heading": "De Atos Aanpak voor ITOM",
+      "type": "image",
+      "src": "assets/img/itom-approach.png",
+      "alt": "Atos ITOM-leveringsaanpak — flexibel waterval of agile, afgestemd op de situatie"
+    },
+    {
+      "heading": "Onze Aanpak",
+      "type": "list",
+      "items": [
+        { "term": "Business & IT Drivers", "desc": "sturen de Target Operating Model-strategie en het programma, gevoed door bedrijfsdrijfveren, digitale ambitie en IT-strategie" },
+        { "term": "Diagnose & Opties", "desc": "operating model-capabilities en -opties ontwikkelen en beoordelen, gestuurd door bedrijfscontext en beperkingen" },
+        { "term": "Doellandschap", "desc": "het algehele ontwerp creëren voor de rol en omvang van de toekomstige IT-organisatie — het Target Operating Model" },
+        { "term": "Transformatieplan & Levering", "desc": "het implementatieplan structureren en uitvoeren om het nieuwe operating model te realiseren" },
+        { "term": "Waarde-impact", "desc": "de bedrijfsvoordelen en waarde definiëren en kwantificeren die het nieuwe operating model mogelijk maakt" }
+      ]
+    },
+    {
+      "heading": "Atos Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "ITOM-assessment — het huidige IT operating model evalueren over alle vijf framework-niveaus" },
+        { "desc": "Target Operating Model-ontwerp — het toekomstige ITOM definiëren afgestemd op bedrijfsstrategie" },
+        { "desc": "ITOM Canvas-workshops — het operating model samen met business- en IT-stakeholders co-creëren" },
+        { "desc": "Topologieselectie — de juiste ITOM-topologie bepalen op basis van organisatiecontext en digitale volwassenheid" },
+        { "desc": "Transformatieroadmap — de overgang van huidig naar doeloperating model plannen" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "SIAM", "key": "siam" }
+  ]
+}

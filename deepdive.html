@@ -358,6 +358,9 @@ function renderPage(data) {
         return `<a href="${href}" class="related-chip">${esc(item.label)}</a>`;
       }).join("\n      ");
       sectionsHtml += `  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
+    } else if (section.type === "image") {
+      const caption = section.caption ? `\n  <p class="img-caption">${esc(section.caption)}</p>` : "";
+      sectionsHtml += `  <img src="${esc(section.src)}" alt="${esc(section.alt || section.heading)}" class="section-img">${caption}\n`;
     }
     sectionsHtml += `</div>\n`;
   }

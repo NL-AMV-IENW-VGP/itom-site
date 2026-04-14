@@ -1,0 +1,64 @@
+{
+  "key": "tom",
+  "category": "01 Purpose",
+  "title": "Target Operating Model (TOM)",
+  "lead": "The Target Operating Model is the designed future state of an organisation's IT function — the blueprint that defines where you are going and what the organisation will look like when you get there.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Target Operating Model (TOM) is the concrete answer to the question: 'What should our IT function look like in the future?' It is the centrepiece deliverable of every ITOM engagement. While the current operating model describes how things work today, the TOM defines the desired future state — across people, processes, technology, governance, and sourcing. The TOM is not a vision statement. It is an actionable blueprint precise enough to drive transformation planning, resource allocation, and implementation decisions."
+    },
+    {
+      "heading": "TOM vs. Current Operating Model",
+      "type": "list",
+      "items": [
+        { "term": "Current state (AS-IS)", "desc": "how the IT function operates today — documented through assessment, interviews, and process analysis" },
+        { "term": "Gap analysis", "desc": "the difference between current and target across all operating model dimensions — identifies what must change" },
+        { "term": "Target state (TO-BE)", "desc": "the TOM — the desired future design that closes the gaps and realises the strategic ambition" },
+        { "term": "Transformation roadmap", "desc": "the sequenced plan for moving from AS-IS to TOM — waves, dependencies, investment, and change management" }
+      ]
+    },
+    {
+      "heading": "TOM Dimensions",
+      "type": "list",
+      "items": [
+        { "term": "Organisation & People", "desc": "target team structure, roles, capabilities, spans of control, and ways of working in the future state" },
+        { "term": "Processes & Practices", "desc": "redesigned end-to-end processes — from strategic planning through operational delivery and continual improvement" },
+        { "term": "Governance & Decision Rights", "desc": "who decides what in the future model — governance bodies, policies, accountabilities, and escalation paths" },
+        { "term": "Technology & Toolchain", "desc": "the target application landscape, platforms, and toolchain that enable the new operating model" },
+        { "term": "Sourcing & Partnerships", "desc": "what is done in-house, what is outsourced, and how providers are managed in the target state" },
+        { "term": "Performance & Measurement", "desc": "target KPIs, SLAs, and management information that demonstrate the TOM is delivering its intended value" }
+      ]
+    },
+    {
+      "heading": "What Makes a Good TOM",
+      "type": "list",
+      "items": [
+        { "term": "Strategically grounded", "desc": "explicitly linked to business strategy, digital ambition, and IT direction — not designed in isolation" },
+        { "term": "Specific and actionable", "desc": "concrete enough to drive decisions — not a high-level picture but a usable design document" },
+        { "term": "Stakeholder co-created", "desc": "developed with the people who will live and work in it — increases quality and adoption" },
+        { "term": "Transition-aware", "desc": "designed with the transformation journey in mind — what can be achieved in waves, what is a longer-term ambition" },
+        { "term": "Measured", "desc": "includes clear success criteria so progress toward the TOM can be tracked and demonstrated" }
+      ]
+    },
+    {
+      "heading": "Atos Services",
+      "type": "list",
+      "items": [
+        { "desc": "TOM design — structured design of the target operating model across all dimensions, from assessment to blueprint" },
+        { "desc": "Operating Model Canvas workshops — co-create the TOM with business and IT stakeholders using the (IT)OM Canvas" },
+        { "desc": "Gap analysis — compare current and target operating model to identify and prioritise transformation requirements" },
+        { "desc": "Transformation roadmap — translate the TOM into a phased implementation plan with clear milestones and investment cases" },
+        { "desc": "TOM validation — independent review of a draft TOM to stress-test completeness, coherence, and strategic alignment" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model", "key": "itom-core" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" }
+  ]
+}

@@ -132,3 +132,16 @@ header p.lead {
   border-color: var(--blue);
   box-shadow: var(--shadow);
 }
+
+.section-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 4px;
+  display: block;
+}
+.img-caption {
+  font-size: 0.82rem;
+  color: var(--gray);
+  margin-top: 8px;
+  text-align: center;
+}
