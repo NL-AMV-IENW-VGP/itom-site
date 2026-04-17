@@ -41,7 +41,7 @@
       "type": "list",
       "items": [
         { "term": "Duration", "desc": "half day to 1 day" },
-        { "term": "Participants", "desc": "8–24 people per session" },
+        { "term": "Participants", "desc": "8–12 people per session" },
         { "term": "Prerequisites", "desc": "no prior Agile or ITSM knowledge required — suitable for mixed IT and business audiences" },
         { "term": "Format", "desc": "available in-person; virtual version available on request" },
         { "term": "Certification", "desc": "Atos is certified facilitator for MarsLander simulations" }

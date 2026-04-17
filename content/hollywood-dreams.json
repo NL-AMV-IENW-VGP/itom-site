@@ -41,7 +41,7 @@
       "type": "list",
       "items": [
         { "term": "Duration", "desc": "half day to 1 day" },
-        { "term": "Participants", "desc": "8–24 people per session" },
+        { "term": "Participants", "desc": "8–12 people per session" },
         { "term": "Prerequisites", "desc": "no technical knowledge required — designed for both business and IT audiences, including senior leadership" },
         { "term": "Format", "desc": "available in-person; virtual version available on request" },
         { "term": "Certification", "desc": "Atos is certified facilitator for Hollywood Dreams simulations" }

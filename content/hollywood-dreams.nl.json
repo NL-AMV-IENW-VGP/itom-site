@@ -41,7 +41,7 @@
       "type": "list",
       "items": [
         { "term": "Duur", "desc": "halve dag tot 1 dag" },
-        { "term": "Deelnemers", "desc": "8–24 personen per sessie" },
+        { "term": "Deelnemers", "desc": "8–12 personen per sessie" },
         { "term": "Voorkennis", "desc": "geen technische kennis vereist — ontworpen voor zowel business- als IT-publiek, inclusief senior leiderschap" },
         { "term": "Format", "desc": "beschikbaar als fysieke workshop; virtuele versie beschikbaar op aanvraag" },
         { "term": "Certificering", "desc": "Atos is gecertificeerd facilitator voor Hollywood Dreams-simulaties" }
