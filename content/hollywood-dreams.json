@@ -1,0 +1,63 @@
+{
+  "key": "hollywood-dreams",
+  "category": "Training — Business Simulation",
+  "title": "Hollywood Dreams",
+  "lead": "A creative business simulation in which teams run a movie studio — making strategic decisions about projects, resources, and partnerships while discovering how operating model choices drive business outcomes.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Hollywood Dreams is a serious business simulation developed by GamingWorks in which participants manage a movie studio competing for box-office success. Teams must balance creative ambitions with budget constraints, stakeholder expectations, and delivery timelines — making strategic choices about which projects to greenlight, how to organise their teams, and how to manage supplier and partner relationships. The simulation makes the interplay between operating model design, collaboration, and value delivery tangible in an engaging and memorable way."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Hollywood Dreams is a powerful tool in ITOM engagements because it brings business and IT stakeholders together in a shared experience that mirrors the real tensions of operating model transformation. The movie studio metaphor resonates broadly — everyone understands the pressure of delivering on time, managing competing priorities, and satisfying demanding clients. Teams leave the simulation with a visceral understanding of how governance structures, sourcing decisions, and collaboration patterns directly affect the speed, quality, and cost of delivery — making subsequent ITOM design conversations far more grounded."
+    },
+    {
+      "heading": "How It Works",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "participants take on roles across a movie studio — executive leadership, production teams, creative departments, and supplier management — and compete to deliver the most successful film portfolio" },
+        { "term": "Multiple rounds", "desc": "each round presents new strategic choices and market conditions; teams must adapt their operating model, resource allocation, and governance approach as the game evolves" },
+        { "term": "Stakeholder dynamics", "desc": "investors, creative talent, and external partners introduce competing demands that teams must manage — reflecting the multi-stakeholder reality of IT operating model change" },
+        { "term": "Value delivery focus", "desc": "success is measured not just by delivery but by actual business value created — introducing concepts of portfolio prioritisation, waste reduction, and outcome orientation" },
+        { "term": "Debrief", "desc": "structured reflection maps simulation experiences to real operating model principles — from sourcing and governance to agility and customer centricity" }
+      ]
+    },
+    {
+      "heading": "Learning Objectives",
+      "type": "list",
+      "items": [
+        { "desc": "Experience how operating model choices — governance, sourcing, team structure — affect the speed and quality of value delivery" },
+        { "desc": "Develop strategic thinking around portfolio management and prioritisation under constraints" },
+        { "desc": "Practice stakeholder management and cross-functional collaboration in a complex, multi-party environment" },
+        { "desc": "Understand the relationship between organisational design and business outcomes" },
+        { "desc": "Build shared language and common ground between business and IT participants" }
+      ]
+    },
+    {
+      "heading": "Practical Details",
+      "type": "list",
+      "items": [
+        { "term": "Duration", "desc": "half day to 1 day" },
+        { "term": "Participants", "desc": "8–24 people per session" },
+        { "term": "Prerequisites", "desc": "no technical knowledge required — designed for both business and IT audiences, including senior leadership" },
+        { "term": "Format", "desc": "available in-person; virtual version available on request" },
+        { "term": "Certification", "desc": "Atos is certified facilitator for Hollywood Dreams simulations" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "For more information about this training, contact arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Business Simulations", "key": "biz-simulations" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}

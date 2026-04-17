@@ -1,0 +1,63 @@
+{
+  "key": "marslander",
+  "category": "Training — Bedrijfssimulatie",
+  "title": "MarsLander",
+  "lead": "Een Agile- en IT Service Management-simulatie waarbij teams een ruimtevaartuig op Mars moeten landen — en zo de impact van governance, samenwerking en iteratieve verbetering onder echte druk ervaren.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "MarsLander is een serieuze bedrijfssimulatie ontwikkeld door GamingWorks, waarbij deelnemers samenwerken om een missie te ontwerpen en uit te voeren voor een Mars-landing. De simulatie combineert Agile-principes met IT Service Management en plaatst teams in een omgeving met hoge inzetten, waarbij planning, communicatie en adaptief beslissen essentieel zijn. In meerdere rondes ontdekken teams hoe governance-keuzes, teamstructuren en manieren van werken de uitkomst van de missie direct beïnvloeden — waardoor abstracte frameworks tastbaar en memorabel worden."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "MarsLander is zeer relevant in ITOM-trajecten omdat het — in een meeslepende, competitieve omgeving — laat zien wat er gebeurt wanneer het ontwerp van een operating model faalt of slaagt. Teams ontdekken de waarde van duidelijke rollen en verantwoordelijkheden, lichte governance, cross-functionele samenwerking en iteratieve delivery. De debrief verbindt de missie-uitkomsten direct aan ITSM- en Agile-principes, waardoor het een ideaal instrument is om draagvlak en momentum te creëren aan het begin van een IT operating model-transformatie."
+    },
+    {
+      "heading": "Hoe Het Werkt",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "teams nemen rollen aan binnen een ruimtevaartorganisatie — van mission control en engineering tot communicatie en stakeholdermanagement — om een Mars-landing te plannen en uit te voeren" },
+        { "term": "Meerdere rondes", "desc": "elke ronde neemt de complexiteit toe: teams moeten hun manier van werken aanpassen naarmate nieuwe uitdagingen en beperkingen opdoemen" },
+        { "term": "Agile & ITSM-principes", "desc": "deelnemers passen Agile-waarden, iteratieve planning, service management-disciplines en incident handling toe en reflecteren hierop in een realistische context" },
+        { "term": "Competitieve spanning", "desc": "meerdere teams concurreren op missiesucces, wat urgentie en betrokkenheid creëert die de echte organisatiedruk weerspiegelt" },
+        { "term": "Debrief", "desc": "gestructureerde reflectie verbindt simulatie-uitkomsten aan operating model-principes — deelnemers zien direct het verband tussen manier van werken en resultaten" }
+      ]
+    },
+    {
+      "heading": "Leerdoelen",
+      "type": "list",
+      "items": [
+        { "desc": "De gevolgen ervaren van slechte communicatie, onduidelijke rollen en zware governance in een veilige, spelgebaseerde omgeving" },
+        { "desc": "Agile-principes toepassen — iteratieve planning, feedbackloops en adaptief denken — onder tijd- en middelendruk" },
+        { "desc": "Begrijpen hoe IT Service Management-disciplines de voorspelbaarheid en kwaliteit verbeteren" },
+        { "desc": "Cross-functionele samenwerkingsvaardigheden en gedeeld eigenaarschap van uitkomsten opbouwen" },
+        { "desc": "Governance- en operating model-ontwerpkeuzes verbinden aan echte bedrijfsimpact" }
+      ]
+    },
+    {
+      "heading": "Praktische Details",
+      "type": "list",
+      "items": [
+        { "term": "Duur", "desc": "halve dag tot 1 dag" },
+        { "term": "Deelnemers", "desc": "8–24 personen per sessie" },
+        { "term": "Voorkennis", "desc": "geen voorkennis van Agile of ITSM vereist — geschikt voor gemengd IT- en businesspubliek" },
+        { "term": "Format", "desc": "beschikbaar als fysieke workshop; virtuele versie beschikbaar op aanvraag" },
+        { "term": "Certificering", "desc": "Atos is gecertificeerd facilitator voor MarsLander-simulaties" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "Neem voor meer informatie over deze training contact op met arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "Bedrijfssimulaties", "key": "biz-simulations" },
+    { "label": "Agile", "key": "agile" },
+    { "label": "ITSM", "key": "itsm" }
+  ]
+}

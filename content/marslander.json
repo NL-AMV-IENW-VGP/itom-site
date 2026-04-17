@@ -1,0 +1,63 @@
+{
+  "key": "marslander",
+  "category": "Training — Business Simulation",
+  "title": "MarsLander",
+  "lead": "An Agile and IT Service Management simulation where teams must land a spacecraft on Mars — experiencing the impact of governance, collaboration, and iterative improvement under real pressure.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "MarsLander is a serious business simulation developed by GamingWorks in which participants work together to design and execute a mission to land a spacecraft on Mars. The simulation combines Agile principles with IT Service Management, placing teams in a high-stakes environment where planning, communication, and adaptive decision-making are essential. Over multiple rounds, teams experience how governance choices, team structures, and ways of working directly affect mission success — making abstract frameworks tangible and memorable."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "MarsLander is highly relevant in ITOM engagements because it demonstrates — in a compelling, competitive setting — what happens when operating model design fails or succeeds. Teams discover the value of clear roles and responsibilities, lightweight governance, cross-functional collaboration, and iterative delivery. The debrief connects mission outcomes directly to ITSM and Agile principles, making it an ideal tool to create alignment and momentum at the start of an IT operating model transformation."
+    },
+    {
+      "heading": "How It Works",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "teams take on roles within a space agency — from mission control and engineering to communication and stakeholder management — to plan and execute a Mars landing" },
+        { "term": "Multiple rounds", "desc": "each round increases complexity: teams must adapt their ways of working as new challenges and constraints emerge" },
+        { "term": "Agile & ITSM principles", "desc": "participants apply and reflect on Agile values, iterative planning, service management disciplines, and incident handling in a realistic context" },
+        { "term": "Competitive tension", "desc": "multiple teams compete on mission success, creating urgency and engagement that mirrors real organisational pressure" },
+        { "term": "Debrief", "desc": "structured reflection connects simulation outcomes to operating model principles — helping participants see the direct link between ways of working and results" }
+      ]
+    },
+    {
+      "heading": "Learning Objectives",
+      "type": "list",
+      "items": [
+        { "desc": "Experience the consequences of poor communication, unclear roles, and heavyweight governance in a safe, game-based environment" },
+        { "desc": "Apply Agile principles — iterative planning, feedback loops, and adaptive thinking — under time and resource pressure" },
+        { "desc": "Understand how IT Service Management disciplines improve predictability and quality" },
+        { "desc": "Build cross-functional collaboration skills and shared ownership of outcomes" },
+        { "desc": "Connect governance and operating model design choices to real business impact" }
+      ]
+    },
+    {
+      "heading": "Practical Details",
+      "type": "list",
+      "items": [
+        { "term": "Duration", "desc": "half day to 1 day" },
+        { "term": "Participants", "desc": "8–24 people per session" },
+        { "term": "Prerequisites", "desc": "no prior Agile or ITSM knowledge required — suitable for mixed IT and business audiences" },
+        { "term": "Format", "desc": "available in-person; virtual version available on request" },
+        { "term": "Certification", "desc": "Atos is certified facilitator for MarsLander simulations" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "For more information about this training, contact arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
+    { "label": "Business Simulations", "key": "biz-simulations" },
+    { "label": "Agile", "key": "agile" },
+    { "label": "ITSM", "key": "itsm" }
+  ]
+}

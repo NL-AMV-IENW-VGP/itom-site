@@ -1,0 +1,63 @@
+{
+  "key": "hollywood-dreams",
+  "category": "Training — Bedrijfssimulatie",
+  "title": "Hollywood Dreams",
+  "lead": "Een creatieve bedrijfssimulatie waarbij teams een filmstudio runnen — strategische keuzes makend over projecten, resources en partnerschappen, terwijl ze ontdekken hoe operating model-keuzes bedrijfsresultaten bepalen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Hollywood Dreams is een serieuze bedrijfssimulatie ontwikkeld door GamingWorks, waarbij deelnemers een filmstudio beheren die concurreert om bioscoopsucces. Teams moeten creatieve ambities balanceren met budgetbeperkingen, verwachtingen van stakeholders en leveringstijdlijnen — strategische keuzes makend over welke projecten groen licht krijgen, hoe teams te organiseren en hoe leveranciers- en partnerrelaties te managen. De simulatie maakt het samenspel tussen operating model-ontwerp, samenwerking en waardecreatie tastbaar op een boeiende en memorabele manier."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Hollywood Dreams is een krachtig instrument in ITOM-trajecten omdat het business- en IT-stakeholders samenbrengt in een gedeelde ervaring die de echte spanningen van operating model-transformatie weerspiegelt. De filmstudiometafoor spreekt breed aan — iedereen begrijpt de druk om op tijd te leveren, concurrerende prioriteiten te managen en veeleisende klanten tevreden te stellen. Teams verlaten de simulatie met een levendig begrip van hoe governance-structuren, sourcingbeslissingen en samenwerkingspatronen direct de snelheid, kwaliteit en kosten van delivery beïnvloeden — waardoor de daaropvolgende ITOM-ontwerpdiscussies veel concreter worden."
+    },
+    {
+      "heading": "Hoe Het Werkt",
+      "type": "list",
+      "items": [
+        { "term": "Setting", "desc": "deelnemers nemen rollen aan in een filmstudio — executive leiderschap, productieteams, creatieve afdelingen en leveranciersmanagement — en concurreren om de meest succesvolle filmportefeuille te leveren" },
+        { "term": "Meerdere rondes", "desc": "elke ronde brengt nieuwe strategische keuzes en marktomstandigheden; teams moeten hun operating model, resource-allocatie en governance aanpassen naarmate het spel evolueert" },
+        { "term": "Stakeholderdynamiek", "desc": "investeerders, creatief talent en externe partners introduceren concurrerende eisen die teams moeten managen — een weerspiegeling van de multi-stakeholder realiteit van IT operating model-verandering" },
+        { "term": "Focus op waardecreatie", "desc": "succes wordt niet alleen gemeten aan delivery, maar aan daadwerkelijk gecreëerde bedrijfswaarde — concepten als portfolioprioritering, afvalreductie en resultaatgerichtheid komen aan bod" },
+        { "term": "Debrief", "desc": "gestructureerde reflectie koppelt simulatie-ervaringen aan echte operating model-principes — van sourcing en governance tot wendbaarheid en klantgerichtheid" }
+      ]
+    },
+    {
+      "heading": "Leerdoelen",
+      "type": "list",
+      "items": [
+        { "desc": "Ervaren hoe operating model-keuzes — governance, sourcing, teamstructuur — de snelheid en kwaliteit van waardecreatie beïnvloeden" },
+        { "desc": "Strategisch denken ontwikkelen rondom portfoliomanagement en prioritering onder beperkingen" },
+        { "desc": "Stakeholdermanagement en cross-functionele samenwerking oefenen in een complexe, meerstakeholdersomgeving" },
+        { "desc": "De relatie begrijpen tussen organisatieontwerp en bedrijfsresultaten" },
+        { "desc": "Gedeelde taal en gemeenschappelijk begrip opbouwen tussen business- en IT-deelnemers" }
+      ]
+    },
+    {
+      "heading": "Praktische Details",
+      "type": "list",
+      "items": [
+        { "term": "Duur", "desc": "halve dag tot 1 dag" },
+        { "term": "Deelnemers", "desc": "8–24 personen per sessie" },
+        { "term": "Voorkennis", "desc": "geen technische kennis vereist — ontworpen voor zowel business- als IT-publiek, inclusief senior leiderschap" },
+        { "term": "Format", "desc": "beschikbaar als fysieke workshop; virtuele versie beschikbaar op aanvraag" },
+        { "term": "Certificering", "desc": "Atos is gecertificeerd facilitator voor Hollywood Dreams-simulaties" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "type": "text",
+      "body": "Neem voor meer informatie over deze training contact op met arjen.bakker@atos.net"
+    }
+  ],
+  "related": [
+    { "label": "The Phoenix Project", "key": "phoenix-project" },
+    { "label": "MarsLander", "key": "marslander" },
+    { "label": "Bedrijfssimulaties", "key": "biz-simulations" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Operating Model", "key": "operating-model" }
+  ]
+}
