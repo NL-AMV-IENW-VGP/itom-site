@@ -1,0 +1,74 @@
+{
+  "key": "ac2e",
+  "category": "04 Tools, accelerators and services",
+  "title": "Atos AC²E Framework",
+  "lead": "The Atos Circle of Customer Excellence (AC²E) is a recognised standard framework for shaping client engagements — centred on business excellence and structured around six interconnected business aspects within their wider context.",
+  "sections": [
+    {
+      "heading": "The AC²E Model",
+      "type": "image",
+      "src": "assets/img/ac2e-model.png",
+      "alt": "Atos AC²E model — Business Excellence at the centre, surrounded by six business aspects and an outer ring of context factors"
+    },
+    {
+      "heading": "What is AC²E?",
+      "type": "text",
+      "body": "Atos Amplify engagements are focused on improving the business excellence of the customer — understanding the aspects that contribute to excellence and considering the customer's broader business context. The AC²E framework provides a recognised standard to shape these engagements consistently and comprehensively."
+    },
+    {
+      "heading": "Business Excellence — the Centre",
+      "type": "list",
+      "items": [
+        { "desc": "Strategic objectives — the goals and ambitions that define what excellence means for this organisation" },
+        { "desc": "Market and customer demand — the external pull that shapes priorities and investment" },
+        { "desc": "KPIs — the measurable outcomes that define whether excellence is being achieved" }
+      ]
+    },
+    {
+      "heading": "The Six Business Aspects",
+      "type": "def-list",
+      "items": [
+        { "term": "Organization & Identity", "desc": "operating model, governance, and organisational identity that enable delivery" },
+        { "term": "People & Culture", "desc": "capabilities, behaviours, and cultural mindset required for transformation" },
+        { "term": "Processes", "desc": "end-to-end processes and value streams that deliver customer outcomes" },
+        { "term": "Data", "desc": "data strategy, governance, and quality that underpin decision-making and AI" },
+        { "term": "Applications", "desc": "application landscape, modernisation, and integration supporting business processes" },
+        { "term": "Platforms", "desc": "infrastructure, cloud, and platform capabilities that enable scalable delivery" }
+      ]
+    },
+    {
+      "heading": "Outer Ring — Business Context",
+      "type": "list",
+      "items": [
+        { "desc": "Market developments — trends and competitive dynamics that influence the engagement scope" },
+        { "desc": "Regulations — compliance requirements and legal constraints that bound the solution space" },
+        { "desc": "Security & Safety — risk, cyber, and safety requirements embedded across all aspects" },
+        { "desc": "Environmental awareness — sustainability goals and ESG constraints shaping decisions" }
+      ]
+    },
+    {
+      "heading": "Positioning: When to Apply AC²E",
+      "type": "image",
+      "src": "assets/img/ac2e-positioning.png",
+      "alt": "AC²E Goal — positioning within the 6D delivery model (Define, Discover, Design, Develop, Deliver, Drive)"
+    },
+    {
+      "heading": "AC²E in the 6D Delivery Model",
+      "type": "def-list",
+      "items": [
+        { "term": "Define", "desc": "shape a project in terms of goals (customer KPIs) and scope (internal and external)" },
+        { "term": "Discover", "desc": "check completeness of the project vision across all six business aspects" },
+        { "term": "Design", "desc": "select techniques and tools appropriate to the aspects in scope" },
+        { "term": "Develop", "desc": "check solution quality-of-service against the defined business aspects" },
+        { "term": "Deliver", "desc": "check outcomes against original project goals and business excellence targets" },
+        { "term": "Drive", "desc": "reassess continuously for possible new developments in the outer context ring" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model (ITOM)", "key": "itom-core" },
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" }
+  ]
+}

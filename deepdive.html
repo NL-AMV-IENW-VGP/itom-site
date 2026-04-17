@@ -139,6 +139,35 @@
     margin-top: -4px;
   }
 
+  /* Definition list — hanging style */
+  .def-list {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .def-list li {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 0 16px;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .def-list li:last-child { border-bottom: none; }
+  .def-list .def-term {
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .def-list .def-desc {
+    color: var(--ink);
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+
   /* Edit mode styling */
   .editing [contenteditable="true"] {
     outline: 2px dashed var(--blue);
@@ -340,6 +369,15 @@ function renderList(items) {
   }).join("\n");
 }
 
+function renderDefList(items) {
+  return items.map(item => {
+    if (item.term) {
+      return `<li><span class="def-term">${esc(item.term)}</span><span class="def-desc">${esc(item.desc)}</span></li>`;
+    }
+    return `<li><span class="def-desc">${esc(item.desc)}</span></li>`;
+  }).join("\n");
+}
+
 function renderPage(data) {
   const container = document.getElementById("content");
   document.title = `${data.title} — ITOM Deep-dive`;
@@ -352,6 +390,8 @@ function renderPage(data) {
       sectionsHtml += `  <p data-field="body">${esc(section.body)}</p>\n`;
     } else if (section.type === "list") {
       sectionsHtml += `  <ul data-field="items">\n    ${renderList(section.items)}\n  </ul>\n`;
+    } else if (section.type === "def-list") {
+      sectionsHtml += `  <ul class="def-list" data-field="items">\n    ${renderDefList(section.items)}\n  </ul>\n`;
     } else if (section.type === "links") {
       const linkChips = section.items.map(item => {
         const href = `deepdive.html?page=${encodeURIComponent(item.key)}`;

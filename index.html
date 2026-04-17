@@ -248,6 +248,25 @@
     line-height: 1.3;
   }
 
+  /* Atos AC2E hero chip */
+  .chip.accel-hero {
+    background: rgba(196,122,30,0.12);
+    color: var(--orange);
+    border: 1.5px solid rgba(196,122,30,0.35);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    padding: 18px 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(196,122,30,0.1);
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .chip.accel-hero:hover {
+    background: rgba(196,122,30,0.18);
+    box-shadow: 0 4px 14px rgba(196,122,30,0.18);
+  }
+
   /* ACCELERATORS */
   .section-accelerators {
     background: var(--orange-light);
@@ -856,6 +875,9 @@
       </div>
     </div>
 
+    <!-- Hero: Atos AC2E Framework -->
+    <div class="chip accel-hero" data-key="ac2e" data-tooltip="Atos AC2E delivery framework">Atos AC2E</div>
+
     <!-- Row 2: three smaller groups with single-column lists -->
     <div class="accel-row-bottom">
       <div class="accel-group">
@@ -1024,6 +1046,7 @@ const content = {
     tags: ["SIAM", "Outsourcing", "Governance"]
   },
   "eviden-itom": { cat: "03 Frameworks", title: "Atos ITOM Framework", desc: "The proprietary Atos framework that structures how an IT Operating Model is analysed, designed, and implemented — integrating market frameworks with Atos IP and delivery methodology.", tags: ["Proprietary", "Atos", "IP"] },
+  "ac2e": { cat: "04 Tools, accelerators and services", title: "Atos AC²E Framework", desc: "The Atos Circle of Customer Excellence (AC²E) — a standard framework for shaping client engagements, centred on business excellence and structured around six business aspects: Organization & Identity, People & Culture, Processes, Data, Applications, and Platforms.", tags: ["Proprietary", "Atos", "Amplify"] },
   "togaf": { cat: "03 Frameworks — Architecture", title: "TOGAF", desc: "The Open Group Architecture Framework — the most widely adopted methodology for enterprise architecture development and governance.", tags: ["Architecture", "TOGAF", "Enterprise"] },
   "nora": { cat: "03 Frameworks — Architecture", title: "NORA", desc: "Nederlandse Overheid Referentie Architectuur — the reference architecture for Dutch government organisations, providing principles, standards, and building blocks for interoperable public services.", tags: ["Architecture", "Dutch Government", "Reference"] },
   "rora": { cat: "03 Frameworks — Architecture", title: "RORA", desc: "Rijksoverheid Referentie Architectuur — the reference architecture specifically for Rijkswaterstaat and central government departments, building on NORA with domain-specific guidance.", tags: ["Architecture", "Rijksoverheid", "Reference"] },
@@ -1113,6 +1136,8 @@ const deepdivePages = {
   "biz-simulations": "deepdive.html?page=biz-simulations",
   "itom-core": "deepdive.html?page=itom-core",
   "tom": "deepdive.html?page=tom",
+  "ac2e": "deepdive.html?page=ac2e",
+  "itom-canvas": "deepdive.html?page=itom-canvas",
 };
 
 let currentKey = null;

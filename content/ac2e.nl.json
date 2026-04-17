@@ -1,0 +1,74 @@
+{
+  "key": "ac2e",
+  "category": "04 Tools, accelerators en diensten",
+  "title": "Atos AC²E Framework",
+  "lead": "De Atos Circle of Customer Excellence (AC²E) is een erkend standaardframework voor het vormgeven van klanttrajecten — gericht op bedrijfsexcellentie en gestructureerd rond zes samenhangende bedrijfsaspecten binnen hun bredere context.",
+  "sections": [
+    {
+      "heading": "Het AC²E Model",
+      "type": "image",
+      "src": "assets/img/ac2e-model.png",
+      "alt": "Atos AC²E model — Bedrijfsexcellentie in het centrum, omgeven door zes bedrijfsaspecten en een buitenring met contextfactoren"
+    },
+    {
+      "heading": "Wat is AC²E?",
+      "type": "text",
+      "body": "Atos Amplify-trajecten zijn gericht op het verbeteren van de bedrijfsexcellentie van de klant — het begrijpen van de aspecten die bijdragen aan die excellentie en het meenemen van de bredere bedrijfscontext. Het AC²E-framework biedt een erkende standaard om deze trajecten consistent en volledig vorm te geven."
+    },
+    {
+      "heading": "Bedrijfsexcellentie — het centrum",
+      "type": "list",
+      "items": [
+        { "desc": "Strategische doelstellingen — de ambities die bepalen wat excellentie voor deze organisatie betekent" },
+        { "desc": "Markt- en klantenvraag — de externe drijfveren die prioriteiten en investeringen vormgeven" },
+        { "desc": "KPI's — de meetbare uitkomsten die bepalen of excellentie wordt bereikt" }
+      ]
+    },
+    {
+      "heading": "De zes bedrijfsaspecten",
+      "type": "def-list",
+      "items": [
+        { "term": "Organization & Identity", "desc": "operating model, governance en organisatie-identiteit die levering mogelijk maken" },
+        { "term": "People & Culture", "desc": "capabilities, gedrag en culturele mindset die nodig zijn voor transformatie" },
+        { "term": "Processes", "desc": "end-to-end processen en waardestromen die klantuitkomsten leveren" },
+        { "term": "Data", "desc": "datastrategie, governance en kwaliteit die besluitvorming en AI ondersteunen" },
+        { "term": "Applications", "desc": "applicatielandschap, modernisering en integratie ter ondersteuning van bedrijfsprocessen" },
+        { "term": "Platforms", "desc": "infrastructuur, cloud en platformcapabilities die schaalbare levering mogelijk maken" }
+      ]
+    },
+    {
+      "heading": "Buitenring — Bedrijfscontext",
+      "type": "list",
+      "items": [
+        { "desc": "Marktontwikkelingen — trends en concurrentiedynamiek die de scope van het traject beïnvloeden" },
+        { "desc": "Regelgeving — compliance-eisen en wettelijke beperkingen die de oplossingsruimte afbakenen" },
+        { "desc": "Security & Safety — risico, cyber en veiligheidseisen verankerd in alle aspecten" },
+        { "desc": "Environmental awareness — duurzaamheidsdoelen en ESG-beperkingen die beslissingen vormgeven" }
+      ]
+    },
+    {
+      "heading": "Positionering: wanneer pas je AC²E toe?",
+      "type": "image",
+      "src": "assets/img/ac2e-positioning.png",
+      "alt": "AC²E Goal — positionering binnen het 6D-leveringsmodel (Define, Discover, Design, Develop, Deliver, Drive)"
+    },
+    {
+      "heading": "AC²E in het 6D-leveringsmodel",
+      "type": "def-list",
+      "items": [
+        { "term": "Define", "desc": "het project vormgeven in termen van doelen (klant-KPI's) en scope (intern en extern)" },
+        { "term": "Discover", "desc": "volledigheid van de projectvisie toetsen over alle zes bedrijfsaspecten" },
+        { "term": "Design", "desc": "technieken en tools selecteren passend bij de aspecten in scope" },
+        { "term": "Develop", "desc": "oplossing toetsen op kwaliteit (QoS) ten opzichte van de gedefinieerde bedrijfsaspecten" },
+        { "term": "Deliver", "desc": "uitkomsten toetsen aan de oorspronkelijke projectdoelen en bedrijfsexcellentiedoelstellingen" },
+        { "term": "Drive", "desc": "continu hertoetsen op mogelijke nieuwe ontwikkelingen in de buitenste contextring" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model (ITOM)", "key": "itom-core" },
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "Design Thinking Workshops", "key": "design-thinking" },
+    { "label": "Enterprise Architectuur", "key": "enterprise-architecture" }
+  ]
+}

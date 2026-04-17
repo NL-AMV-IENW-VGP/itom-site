@@ -5,6 +5,12 @@
   "lead": "Visueel hulpmiddel voor het in kaart brengen en herontwerpen van businessmodellen — ingezet in ITOM-trajecten om IT operating model-keuzes te verbinden met businessmodel-imperatieven.",
   "sections": [
     {
+      "heading": "Business Model Canvas",
+      "type": "image",
+      "src": "assets/img/bmc-template.svg",
+      "alt": "Business Model Canvas template met de negen bouwstenen"
+    },
+    {
       "heading": "Overzicht",
       "type": "text",
       "body": "Het Business Model Canvas (BMC) is een strategisch managementtool ontwikkeld door Alexander Osterwalder dat de negen bouwstenen van een businessmodel op één pagina visualiseert. Het biedt een gemeenschappelijke taal voor het beschrijven, ontwerpen en ter discussie stellen van hoe een organisatie waarde creëert, levert en vastlegt. In ITOM-trajecten wordt het BMC gebruikt om te zorgen dat IT operating model-beslissingen zijn geworteld in de businessmodelrealiteit — door technologiekeuzes te verbinden met klantsegmenten, waardeproposities en inkomstenstromen."

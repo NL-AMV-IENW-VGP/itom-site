@@ -5,6 +5,12 @@
   "lead": "Visual tool for mapping and redesigning business models — used in ITOM engagements to connect IT operating model choices to business model imperatives.",
   "sections": [
     {
+      "heading": "Business Model Canvas",
+      "type": "image",
+      "src": "assets/img/bmc-template.svg",
+      "alt": "Business Model Canvas template with the nine building blocks"
+    },
+    {
       "heading": "Overview",
       "type": "text",
       "body": "The Business Model Canvas (BMC) is a strategic management tool developed by Alexander Osterwalder that visualises the nine building blocks of a business model on a single page. It provides a shared language for describing, designing, and challenging how an organisation creates, delivers, and captures value. In ITOM engagements, the BMC is used to ensure that IT operating model decisions are grounded in business model reality — connecting technology choices to customer segments, value propositions, and revenue streams."

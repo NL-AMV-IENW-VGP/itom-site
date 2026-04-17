@@ -1,0 +1,69 @@
+{
+  "key": "itom-canvas",
+  "category": "05 Visual Toolkit",
+  "title": "(IT)OM Canvas",
+  "lead": "The (IT)OM Canvas captures a complete Operating Model on a single A4 or whiteboard — a powerful tool to quickly discover, capture and communicate the essential design of an existing or new operating model.",
+  "sections": [
+    {
+      "heading": "The (IT)OM Canvas",
+      "type": "image",
+      "src": "assets/img/itom-canvas.png",
+      "alt": "The (IT)OM Canvas with its six building blocks: Suppliers (S), Locations (L), Processes (P), Organization (O), Information (I) and Management System (M)"
+    },
+    {
+      "heading": "What is the (IT)OM Canvas?",
+      "type": "text",
+      "body": "The (IT)OM Canvas is the simplest representation of an Operating Model. It fits on a single A4, a whiteboard, or in a presentation and provides a clear high-level definition of the operating model before diving into lower-level detail. The canvas works especially well as an interactive tool in workshops with business and IT stakeholders."
+    },
+    {
+      "heading": "The Six Building Blocks",
+      "type": "def-list",
+      "items": [
+        { "term": "P — Processes", "desc": "the end-to-end process flow (Value Delivery Chain) that creates and delivers value to customers — the core of the operating model" },
+        { "term": "O — Organization", "desc": "the organisational structure, roles, teams and governance that execute and manage the processes" },
+        { "term": "L — Locations", "desc": "the physical and/or virtual locations from which the organisation operates and delivers" },
+        { "term": "I — Information", "desc": "the data, systems and information flows that support processes and decision-making" },
+        { "term": "S — Suppliers", "desc": "the suppliers and partners the organisation needs to deliver value — internal and external" },
+        { "term": "M — Management System", "desc": "the control and management mechanisms that steer and monitor the operating model as a whole" }
+      ]
+    },
+    {
+      "heading": "The (IT)OM Canvas within the Business Model Canvas",
+      "type": "image",
+      "src": "assets/img/itom-canvas-bmc.png",
+      "alt": "The Operating Model Canvas embedded within the Business Model Canvas — the operations (back end) form the left side of the Business Model Canvas"
+    },
+    {
+      "heading": "Relationship with the Business Model Canvas",
+      "type": "text",
+      "body": "The Operating Model Canvas represents the operations side of the Business Model and fits seamlessly within the Business Model Canvas (BMC). The left half of the BMC — Key Partners, Key Activities, Key Resources and Cost Structure — maps directly onto the building blocks of the (IT)OM Canvas. This makes the canvas highly suited for conversations about how IT operations deliver business value."
+    },
+    {
+      "heading": "When to Use the Canvas",
+      "type": "list",
+      "items": [
+        { "desc": "ITOM engagement kickoff — quickly create a shared picture of the current or desired operating model" },
+        { "desc": "Stakeholder workshops — interactively discover and capture the operating model with business and IT together" },
+        { "desc": "Target Operating Model — summarise the essence of the desired future model on a single page" },
+        { "desc": "Communication — make complex operating model designs accessible to a broad audience" },
+        { "desc": "Gap analysis — place the current canvas next to the desired canvas to identify transformation space" }
+      ]
+    },
+    {
+      "heading": "Atos Services",
+      "type": "list",
+      "items": [
+        { "desc": "Canvas workshops — facilitated sessions to complete the (IT)OM Canvas together with stakeholders" },
+        { "desc": "As-is / To-be Canvas — map current and desired operating models side by side" },
+        { "desc": "Business Model Canvas integration — connect the operating model to the broader business strategy" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model (ITOM)", "key": "itom-core" },
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "Operating Model", "key": "operating-model" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
+    { "label": "Business Model Canvas", "key": "bmc" }
+  ]
+}
