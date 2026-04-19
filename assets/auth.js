@@ -8,7 +8,7 @@
 const SUPABASE_URL = 'https://ojjdstkuuhwgvusqomsm.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_bZn3MVoZh4qGrxgr_tM9JQ_GXjfh6Ij';
 
-const LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+const LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.hostname.startsWith('172.');
 const sb = LOCAL ? null : supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 async function initAuth() {

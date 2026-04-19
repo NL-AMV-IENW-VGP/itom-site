@@ -1,0 +1,41 @@
+{
+  "key": "6d-framework",
+  "category": "03 Frameworks",
+  "title": "Atos 6D Delivery Framework",
+  "lead": "The blueprint for turning strategy into actionable roadmaps — a structured end-to-end transformation approach used to translate strategy into delivery.",
+  "sections": [
+    {
+      "heading": "The 6 D's",
+      "type": "def-list",
+      "items": [
+        { "term": "1 — Define", "desc": "Clarify the problem, ambition, scope, KPIs, and constraints. What are we trying to achieve and why?" },
+        { "term": "2 — Discover", "desc": "Deep analysis of the current situation across business, customer, and technology. What is really going on today?" },
+        { "term": "3 — Design", "desc": "Create future-state concepts, target operating models, architectures, and solution directions. What should it look like?" },
+        { "term": "4 — Develop", "desc": "Translate designs into concrete solutions, plans, MVPs, or implementations. Build what we designed." },
+        { "term": "5 — Deploy", "desc": "Roll out solutions into the organisation, including change, adoption, and governance. Make it real." },
+        { "term": "6 — Drive", "desc": "Ensure value realisation, continuous improvement, and measurable outcomes. Make it stick and keep improving." }
+      ]
+    },
+    {
+      "heading": "The 6D Model",
+      "type": "image",
+      "src": "assets/img/6d-model.png",
+      "alt": "Atos 6D model — the six transformation phases: Define, Discover, Design, Develop, Deploy, Drive"
+    },
+    {
+      "heading": "Transformation Phases",
+      "type": "text",
+      "body": "The 6D model groups the six phases into four delivery focus areas: Define & Discover (deep immersion into customer, business, and technology), Design (design thinking for future-proofed organisations and infrastructure), Develop & Deploy (MVP-driven delivery using scaled agile, DevOps, and product roadmaps), and Drive (continuous improvement through innovation, analytics, and enablement)."
+    },
+    {
+      "heading": "Relationship to Other Atos Models",
+      "type": "text",
+      "body": "Other Atos models such as AC2E (Circle of Customer Excellence) are positioned inside the 6D model. The 6D model defines when and how an engagement is run, while AC2E defines what business aspects are evaluated during each phase."
+    }
+  ],
+  "related": [
+    { "key": "ac2e", "label": "Atos AC2E Framework" },
+    { "key": "eviden-itom", "label": "Atos ITOM Framework" }
+  ],
+  "tags": ["03 Frameworks", "Atos Amplify"]
+}

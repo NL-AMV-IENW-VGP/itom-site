@@ -267,6 +267,50 @@
     box-shadow: 0 4px 14px rgba(196,122,30,0.18);
   }
 
+  /* Atos Amplify Frameworks group (in section 04) */
+  .amplify-frameworks {
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, rgba(26,95,168,0.07) 0%, rgba(107,63,160,0.07) 100%);
+    border: 1.5px solid rgba(26,95,168,0.24);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .amplify-frameworks-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--blue);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .amplify-frameworks-cards {
+    display: flex;
+    gap: 10px;
+  }
+  .chip.amplify-card {
+    flex: 1;
+    background: #ffffff;
+    color: var(--blue);
+    border: 1.5px solid rgba(26,95,168,0.34);
+    font-family: 'Playfair Display', serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 12px 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(26,95,168,0.1);
+    transition: var(--transition);
+  }
+  .chip.amplify-card:hover {
+    background: linear-gradient(135deg, rgba(26,95,168,0.2) 0%, rgba(107,63,160,0.15) 100%);
+    box-shadow: 0 4px 16px rgba(26,95,168,0.22);
+    transform: translateY(-1px);
+  }
+
   /* ACCELERATORS */
   .section-accelerators {
     background: var(--orange-light);
@@ -833,8 +877,6 @@
       </div>
     </div>
 
-    <!-- Hero: Atos ITOM Framework -->
-    <div class="chip framework-hero" data-key="eviden-itom" data-tooltip="Proprietary Atos framework">Atos ITOM Framework</div>
   </div>
 
   <!-- CONNECTOR -->
@@ -847,6 +889,16 @@
   <div class="section section-accelerators">
     <div class="section-label">04 Tools, accelerators and services</div>
     <div class="section-title">Atos Service components and accelerators</div>
+
+    <!-- Atos Amplify Frameworks -->
+    <div class="amplify-frameworks">
+      <div class="amplify-frameworks-label">Atos Amplify Frameworks</div>
+      <div class="amplify-frameworks-cards">
+        <div class="chip amplify-card" data-key="eviden-itom" data-tooltip="Proprietary Atos ITOM framework"><img src="assets/img/itom-icon.png" alt="ITOM" style="height:2.4em;vertical-align:middle;margin-right:6px;">Atos ITOM Framework</div>
+        <div class="chip amplify-card" data-key="ac2e" data-tooltip="Atos AC2E delivery framework"><img src="assets/img/ac2e-icon.png" alt="AC2E" style="height:1.8em;vertical-align:middle;margin-right:6px;">Atos AC2E Framework</div>
+        <div class="chip amplify-card" data-key="6d" data-tooltip="Atos 6D Delivery Framework">Atos 6D Delivery Framework</div>
+      </div>
+    </div>
 
     <!-- Row 1: two large groups with 2-column chip grids -->
     <div class="accel-row-top">
@@ -875,9 +927,6 @@
       </div>
     </div>
 
-    <!-- Hero: Atos AC2E Framework -->
-    <div class="chip accel-hero" data-key="ac2e" data-tooltip="Atos AC2E delivery framework">Atos AC2E</div>
-
     <!-- Row 2: three smaller groups with single-column lists -->
     <div class="accel-row-bottom">
       <div class="accel-group">
@@ -905,6 +954,7 @@
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- 05 VISUAL TOOLKIT -->
@@ -1045,8 +1095,9 @@ const content = {
     desc: "Redesigning the IT operating model to accommodate SIAM structures, multi-vendor management, and retained organisation design in outsourcing scenarios.",
     tags: ["SIAM", "Outsourcing", "Governance"]
   },
-  "eviden-itom": { cat: "03 Frameworks", title: "Atos ITOM Framework", desc: "The proprietary Atos framework that structures how an IT Operating Model is analysed, designed, and implemented — integrating market frameworks with Atos IP and delivery methodology.", tags: ["Proprietary", "Atos", "IP"] },
-  "ac2e": { cat: "04 Tools, accelerators and services", title: "Atos AC²E Framework", desc: "The Atos Circle of Customer Excellence (AC²E) — a standard framework for shaping client engagements, centred on business excellence and structured around six business aspects: Organization & Identity, People & Culture, Processes, Data, Applications, and Platforms.", tags: ["Proprietary", "Atos", "Amplify"] },
+  "eviden-itom": { cat: "03 Frameworks", title: "Atos ITOM Framework", img: "assets/img/itom-icon-extended.png", desc: "The proprietary Atos framework that structures how an IT Operating Model is analysed, designed, and implemented — integrating market frameworks with Atos IP and delivery methodology.", tags: ["Proprietary", "Atos", "IP"] },
+  "ac2e": { cat: "04 Tools, accelerators and services", title: "Atos AC²E Framework", img: "assets/img/ac2e-icon.png", desc: "The Atos Circle of Customer Excellence (AC²E) — a standard framework for shaping client engagements, centred on business excellence and structured around six business aspects: Organization & Identity, People & Culture, Processes, Data, Applications, and Platforms.", tags: ["Proprietary", "Atos", "Amplify"] },
+  "6d": { cat: "03 Frameworks", title: "Atos 6D Delivery Framework", desc: "The blueprint for turning strategy into actionable roadmaps — a structured end-to-end transformation approach by Atos covering Define, Discover, Design, Develop, Deploy, and Drive.", tags: ["Proprietary", "Atos", "Amplify", "Delivery"] },
   "togaf": { cat: "03 Frameworks — Architecture", title: "TOGAF", desc: "The Open Group Architecture Framework — the most widely adopted methodology for enterprise architecture development and governance.", tags: ["Architecture", "TOGAF", "Enterprise"] },
   "nora": { cat: "03 Frameworks — Architecture", title: "NORA", desc: "Nederlandse Overheid Referentie Architectuur — the reference architecture for Dutch government organisations, providing principles, standards, and building blocks for interoperable public services.", tags: ["Architecture", "Dutch Government", "Reference"] },
   "rora": { cat: "03 Frameworks — Architecture", title: "RORA", desc: "Rijksoverheid Referentie Architectuur — the reference architecture specifically for Rijkswaterstaat and central government departments, building on NORA with domain-specific guidance.", tags: ["Architecture", "Rijksoverheid", "Reference"] },
@@ -1114,6 +1165,8 @@ const closeBtn2 = document.getElementById('modal-close2');
 const deepdiveBtn = document.getElementById('modal-deepdive');
 
 const deepdivePages = {
+  "eviden-itom": "deepdive.html?page=itom-core",
+  "6d": "deepdive.html?page=6d-framework",
   "agile": "deepdive.html?page=agile",
   "enterprise-arch": "deepdive.html?page=enterprise-architecture",
   "devops-scan": "deepdive.html?page=devops-capability-scan",

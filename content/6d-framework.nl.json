@@ -1,0 +1,41 @@
+{
+  "key": "6d-framework",
+  "category": "03 Frameworks",
+  "title": "Atos 6D Leveringsframework",
+  "lead": "Het blauwdruk voor het omzetten van strategie in uitvoerbare roadmaps — een gestructureerde end-to-end transformatieaanpak om strategie te vertalen naar levering.",
+  "sections": [
+    {
+      "heading": "De 6 D's",
+      "type": "def-list",
+      "items": [
+        { "term": "1 — Define", "desc": "Verduidelijk het probleem, de ambitie, scope, KPI's en randvoorwaarden. Wat willen we bereiken en waarom?" },
+        { "term": "2 — Discover", "desc": "Diepgaande analyse van de huidige situatie over business, klant en technologie. Wat speelt er werkelijk vandaag?" },
+        { "term": "3 — Design", "desc": "Creëer toekomstgerichte concepten, target operating models, architecturen en oplossingsrichtingen. Hoe moet het eruit zien?" },
+        { "term": "4 — Develop", "desc": "Vertaal ontwerpen naar concrete oplossingen, plannen, MVP's of implementaties. Bouw wat we hebben ontworpen." },
+        { "term": "5 — Deploy", "desc": "Rol oplossingen uit in de organisatie, inclusief verandermanagement, adoptie en governance. Maak het werkelijkheid." },
+        { "term": "6 — Drive", "desc": "Zorg voor waarderealisatie, continue verbetering en meetbare uitkomsten. Verankeren en blijven verbeteren." }
+      ]
+    },
+    {
+      "heading": "Het 6D-model",
+      "type": "image",
+      "src": "assets/img/6d-model.png",
+      "alt": "Atos 6D-model — de zes transformatiefasen: Define, Discover, Design, Develop, Deploy, Drive"
+    },
+    {
+      "heading": "Transformatiefasen",
+      "type": "text",
+      "body": "Het 6D-model groepeert de zes fasen in vier leveringsfocusgebieden: Define & Discover (diepgaande verkenning van klant, business en technologie), Design (design thinking voor toekomstbestendige organisaties en infrastructuur), Develop & Deploy (MVP-gedreven levering via scaled agile, DevOps en productroadmaps), en Drive (continue verbetering via innovatie, analytics en enablement)."
+    },
+    {
+      "heading": "Relatie met andere Atos-modellen",
+      "type": "text",
+      "body": "Andere Atos-modellen zoals AC2E (Circle of Customer Excellence) zijn gepositioneerd binnen het 6D-model. Het 6D-model bepaalt wanneer en hoe een traject wordt uitgevoerd, terwijl AC2E bepaalt welke bedrijfsaspecten tijdens elke fase worden geëvalueerd."
+    }
+  ],
+  "related": [
+    { "key": "ac2e", "label": "Atos AC2E Framework" },
+    { "key": "eviden-itom", "label": "Atos ITOM Framework" }
+  ],
+  "tags": ["03 Frameworks", "Atos Amplify"]
+}
