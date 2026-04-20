@@ -33,23 +33,6 @@
       ]
     },
     {
-      "heading": "Alternative ITOM Topologies",
-      "type": "image",
-      "src": "assets/img/itom-topologies.png",
-      "alt": "Five ITOM topologies from Complete Autonomy to Platformized Digital Process along the digital maturity axis"
-    },
-    {
-      "heading": "ITOM Topology Options",
-      "type": "list",
-      "items": [
-        { "term": "1 — Complete Autonomy", "desc": "IT projects and infrastructure managed independently per business domain — maximum autonomy, minimum standardisation" },
-        { "term": "2 — Autonomy with Strategic Guidance", "desc": "shared infrastructure and strategic IT governance with domain-level autonomy for applications and projects" },
-        { "term": "3 — IT Domains", "desc": "structured domains with shared services, common governance, and coordinated delivery across the organisation" },
-        { "term": "4 — Business & IT Domains", "desc": "business and IT domains aligned around shared platforms, common infrastructure, and joint governance" },
-        { "term": "5 — Platformized Digital Process", "desc": "fully integrated platform model — shared IT foundations, automated operations, and product-centric delivery at scale" }
-      ]
-    },
-    {
       "heading": "The Atos Approach to ITOM",
       "type": "image",
       "src": "assets/img/itom-approach.png",
@@ -64,6 +47,13 @@
         { "term": "Target Landscape", "desc": "create the overall design for role and size of the future IT organisation — the Target Operating Model" },
         { "term": "Transformation Plan & Delivery", "desc": "structure and execute the implementation plan to deliver the new operating model" },
         { "term": "Value Impact", "desc": "define and quantify the business benefits and value the new operating model enables" }
+      ]
+    },
+    {
+      "heading": "More Information",
+      "type": "links",
+      "items": [
+        { "label": "ITOM Topologies — L2 deepdive", "key": "itom-core-L2-topologies" }
       ]
     },
     {

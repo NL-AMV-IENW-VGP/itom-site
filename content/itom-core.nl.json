@@ -33,23 +33,6 @@
       ]
     },
     {
-      "heading": "Alternatieve ITOM Topologieën",
-      "type": "image",
-      "src": "assets/img/itom-topologies.png",
-      "alt": "Vijf ITOM-topologieën van Complete Autonomie tot Geplatformiseerd Digitaal Proces langs de digitale volwassenheidsas"
-    },
-    {
-      "heading": "ITOM Topologie-opties",
-      "type": "list",
-      "items": [
-        { "term": "1 — Complete Autonomie", "desc": "IT-projecten en -infrastructuur per bedrijfsdomein zelfstandig beheerd — maximale autonomie, minimale standaardisatie" },
-        { "term": "2 — Autonomie met Strategische Sturing", "desc": "gedeelde infrastructuur en strategische IT-governance met domeinautonomie voor applicaties en projecten" },
-        { "term": "3 — IT-domeinen", "desc": "gestructureerde domeinen met gedeelde services, gemeenschappelijke governance en gecoördineerde levering" },
-        { "term": "4 — Business & IT-domeinen", "desc": "business- en IT-domeinen afgestemd op gedeelde platforms, gezamenlijke infrastructuur en gezamenlijke governance" },
-        { "term": "5 — Geplatformiseerd Digitaal Proces", "desc": "volledig geïntegreerd platformmodel — gedeelde IT-fundament, geautomatiseerde operaties en productgerichte levering op schaal" }
-      ]
-    },
-    {
       "heading": "De Atos Aanpak voor ITOM",
       "type": "image",
       "src": "assets/img/itom-approach.png",
@@ -64,6 +47,13 @@
         { "term": "Doellandschap", "desc": "het algehele ontwerp creëren voor de rol en omvang van de toekomstige IT-organisatie — het Target Operating Model" },
         { "term": "Transformatieplan & Levering", "desc": "het implementatieplan structureren en uitvoeren om het nieuwe operating model te realiseren" },
         { "term": "Waarde-impact", "desc": "de bedrijfsvoordelen en waarde definiëren en kwantificeren die het nieuwe operating model mogelijk maakt" }
+      ]
+    },
+    {
+      "heading": "Meer informatie",
+      "type": "links",
+      "items": [
+        { "label": "ITOM Topologieën — L2 deepdive", "key": "itom-core-L2-topologies" }
       ]
     },
     {

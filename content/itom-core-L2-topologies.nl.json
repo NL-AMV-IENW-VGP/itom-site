@@ -1,0 +1,30 @@
+{
+  "key": "itom-core-L2-topologies",
+  "category": "01 Purpose",
+  "title": "ITOM Topologieën",
+  "lead": "Een overzicht van de vijf alternatieve IT Operating Model-topologieën, van volledige domeinautonomie tot een volledig geplatformiseerd digitaal model.",
+  "sections": [
+    {
+      "heading": "Alternatieve ITOM Topologieën",
+      "type": "image",
+      "src": "assets/img/itom-topologies.png",
+      "alt": "Vijf ITOM-topologieën van Complete Autonomie tot Geplatformiseerd Digitaal Proces langs de digitale volwassenheidsas"
+    },
+    {
+      "heading": "ITOM Topologie-opties",
+      "type": "list",
+      "items": [
+        { "term": "1 — Complete Autonomie", "desc": "IT-projecten en -infrastructuur per bedrijfsdomein zelfstandig beheerd — maximale autonomie, minimale standaardisatie" },
+        { "term": "2 — Autonomie met Strategische Sturing", "desc": "gedeelde infrastructuur en strategische IT-governance met domeinautonomie voor applicaties en projecten" },
+        { "term": "3 — IT-domeinen", "desc": "gestructureerde domeinen met gedeelde services, gemeenschappelijke governance en gecoördineerde levering" },
+        { "term": "4 — Business & IT-domeinen", "desc": "business- en IT-domeinen afgestemd op gedeelde platforms, gezamenlijke infrastructuur en gezamenlijke governance" },
+        { "term": "5 — Geplatformiseerd Digitaal Proces", "desc": "volledig geïntegreerd platformmodel — gedeelde IT-fundament, geautomatiseerde operaties en productgerichte levering op schaal" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model (ITOM)", "key": "itom-core" },
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" }
+  ]
+}

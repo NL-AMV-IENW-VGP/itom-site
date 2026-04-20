@@ -1,0 +1,30 @@
+{
+  "key": "itom-core-L2-topologies",
+  "category": "01 Purpose",
+  "title": "ITOM Topologies",
+  "lead": "An overview of the five alternative IT Operating Model topologies, ranging from full domain autonomy to a fully platformized digital model.",
+  "sections": [
+    {
+      "heading": "Alternative ITOM Topologies",
+      "type": "image",
+      "src": "assets/img/itom-topologies.png",
+      "alt": "Five ITOM topologies from Complete Autonomy to Platformized Digital Process along the digital maturity axis"
+    },
+    {
+      "heading": "ITOM Topology Options",
+      "type": "list",
+      "items": [
+        { "term": "1 — Complete Autonomy", "desc": "IT projects and infrastructure managed independently per business domain — maximum autonomy, minimum standardisation" },
+        { "term": "2 — Autonomy with Strategic Guidance", "desc": "shared infrastructure and strategic IT governance with domain-level autonomy for applications and projects" },
+        { "term": "3 — IT Domains", "desc": "structured domains with shared services, common governance, and coordinated delivery across the organisation" },
+        { "term": "4 — Business & IT Domains", "desc": "business and IT domains aligned around shared platforms, common infrastructure, and joint governance" },
+        { "term": "5 — Platformized Digital Process", "desc": "fully integrated platform model — shared IT foundations, automated operations, and product-centric delivery at scale" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "IT Operating Model (ITOM)", "key": "itom-core" },
+    { "label": "Target Operating Model", "key": "tom" },
+    { "label": "(IT)OM Canvas", "key": "itom-canvas" }
+  ]
+}
