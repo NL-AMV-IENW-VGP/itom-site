@@ -1,0 +1,70 @@
+{
+  "key": "agile-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "Agile Maturity Scan",
+  "lead": "A structured assessment that measures agile maturity across teams, leadership, and delivery — producing a prioritised improvement roadmap.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Agile Maturity Scan is a diagnostic instrument that determines where an organisation stands on the Agile adoption curve. It examines practices, culture, tooling, and governance across teams and leadership to produce a scored baseline. The output drives informed decisions about where to invest in Agile coaching, training, and process improvement — and provides the evidence base for designing an Agile-oriented IT Operating Model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "An Agile Maturity Scan is typically one of the first steps in an ITOM engagement where the target state includes Agile ways of working. Without a clear picture of current maturity, transformation plans are built on assumptions. The scan anchors ITOM design decisions — which teams can move to autonomous delivery now, where coaching is needed first, and what governance changes are realistic in the short term. It prevents over-designing for a maturity level the organisation has not yet reached."
+    },
+    {
+      "heading": "Scan Dimensions",
+      "type": "list",
+      "items": [
+        { "term": "Team practices", "desc": "sprint execution, ceremony quality, backlog management, definition of done" },
+        { "term": "Leadership & culture", "desc": "servant leadership, psychological safety, tolerance for experimentation and failure" },
+        { "term": "Product ownership", "desc": "clarity of vision, stakeholder engagement, prioritisation effectiveness" },
+        { "term": "Delivery & flow", "desc": "cycle time, WIP limits, release frequency, dependency management" },
+        { "term": "Scaling", "desc": "cross-team coordination, programme-level ceremonies, portfolio alignment" },
+        { "term": "Tooling & automation", "desc": "board hygiene, CI/CD maturity, metrics visibility" }
+      ]
+    },
+    {
+      "heading": "Output",
+      "type": "list",
+      "items": [
+        { "desc": "Maturity score per dimension (1–5 scale, team and organisational level)" },
+        { "desc": "Strengths and critical gaps with supporting evidence" },
+        { "desc": "Prioritised improvement actions — quick wins and structural changes" },
+        { "desc": "Recommended coaching and training interventions" },
+        { "desc": "Input for ITOM target design and Agile transformation roadmap" }
+      ]
+    },
+    {
+      "heading": "Approach",
+      "type": "list",
+      "items": [
+        { "term": "Workshops & interviews", "desc": "structured sessions with teams, product owners, scrum masters, and leadership" },
+        { "term": "Survey instrument", "desc": "standardised questionnaire providing quantitative maturity scores" },
+        { "term": "Observation", "desc": "attendance at team ceremonies (sprint planning, retrospective, review) for direct observation" },
+        { "term": "Benchmarking", "desc": "scores positioned against industry reference data and Atos client base" }
+      ]
+    },
+    {
+      "heading": "Relevant materials on SharePoint",
+      "type": "external-links",
+      "items": [
+        { "label": "Maturity & Capability Scans — folder", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/Forms/PersonalViews.aspx?RootFolder=/sites%2FAtosDGteam%2FShared%20Documents%2F02%2E%20Portfolio%2FMaturlity%20and%20Capability%20scans&View=%7B2C998B60%2D3529%2D48D2%2D975E%2DA2A6ADC2363D%7D" },
+        { "label": "Agile Maturity Scan with example Oct2020 (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20with%20example%20Oct2020.xlsx" },
+        { "label": "Agile Maturity Scan AC 20160127 (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20AC%2020160127.xlsx" },
+        { "label": "Agile DevOps Scan v1 (XLSM)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Devops%20Scan%20v1.xlsm" },
+        { "label": "Atos Consulting Agile Health Check v1.1 (XLSM)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Atos%20Consulting%20Agile%20Health%20Check%20v1.1.xlsm" },
+        { "label": "Agile healthcheck probe areas (DOCX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20healthcheck%20probe%20areas.docx" },
+        { "label": "Maturity assessment (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/maturity%20assessment.pptx" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "Agile", "key": "agile" },
+    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
+    { "label": "Agile Transformation", "key": "agile-transformation" },
+    { "label": "SAFe", "key": "safe" }
+  ]
+}

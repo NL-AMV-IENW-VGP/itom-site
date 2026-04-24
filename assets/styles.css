@@ -132,6 +132,15 @@ header p.lead {
   border-color: var(--blue);
   box-shadow: var(--shadow);
 }
+.sharepoint-notice {
+  font-size: 0.82rem;
+  color: var(--orange);
+  background: var(--orange-light);
+  border: 1px solid rgba(196,122,30,0.3);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
 
 .section-img {
   width: 100%;
