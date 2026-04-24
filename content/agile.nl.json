@@ -45,6 +45,17 @@
         { "desc": "Agile Transformation — end-to-end verschuiving van het operating model" },
         { "desc": "Coaching en Training — duurzame gedragsverandering" }
       ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        { "label": "KNOWvember Agile introduction (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction_share.pptx" },
+        { "label": "KNOWvember Agile introduction (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction%202023.pdf" },
+        { "label": "Agile in de Praktijk (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Training%20Agile%20in%20de%20praktijk/Agile%20in%20de%20praktijk%20v01%202023_share.pptx" },
+        { "label": "Roodkapje — Agile in Practice (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Roodkapje/Roodkapje.pptx" },
+        { "label": "Ball Point Game — trainersinstructie (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Ballpointgame/Balll%20point%20game-%20trainersinstructie.pptx" }
+      ]
     }
   ],
   "related": [

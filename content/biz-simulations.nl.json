@@ -43,6 +43,16 @@
         { "label": "MarsLander", "key": "marslander" },
         { "label": "Hollywood Dreams", "key": "hollywood-dreams" }
       ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        { "label": "MarsLander simulation game incl. prijsindicatie (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20simulation%20game%20incl%20price%20indication.pptx" },
+        { "label": "MarsLander brochure NL (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20-%20Atos%20brochure%202020%20NL.pptx" },
+        { "label": "MarsLander brochure EN (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20-%20Atos%20brochure%202020%20ENG%20July%202020.pptx" },
+        { "label": "Serious gaming pre-sales presentatie (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/Serious%20gaming%20slides%20pre%20sales%20call%2013102020.pptx" }
+      ]
     }
   ],
   "related": [

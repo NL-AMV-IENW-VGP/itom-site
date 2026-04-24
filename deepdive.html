@@ -282,7 +282,7 @@
 <!-- Auth overlay — verborgen nadat gebruiker is ingelogd -->
 <div id="auth-overlay" style="display:none">
   <div class="auth-card">
-    <h2>ITOM Framework</h2>
+    <h2>ITOM Framework Navigator</h2>
     <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
     <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
     <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
@@ -397,6 +397,11 @@ function renderPage(data) {
         const href = `deepdive.html?page=${encodeURIComponent(item.key)}`;
         return `<a href="${href}" class="related-chip">${esc(item.label)}</a>`;
       }).join("\n      ");
+      sectionsHtml += `  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
+    } else if (section.type === "external-links") {
+      const linkChips = section.items.map(item =>
+        `<a href="${esc(item.url)}" target="_blank" rel="noopener" class="related-chip">${esc(item.label)}</a>`
+      ).join("\n      ");
       sectionsHtml += `  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
     } else if (section.type === "image") {
       const caption = section.caption ? `\n  <p class="img-caption">${esc(section.caption)}</p>` : "";
@@ -528,6 +533,12 @@ function extractData() {
         }
         return { desc: li.textContent.trim() };
       });
+    } else if (section.type === "external-links") {
+      const anchors = card.querySelectorAll("[data-field='items'] a");
+      section.items = Array.from(anchors).map(a => ({
+        label: a.textContent.trim(),
+        url: a.getAttribute("href")
+      }));
     }
   });
 

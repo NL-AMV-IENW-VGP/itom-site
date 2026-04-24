@@ -40,6 +40,18 @@
       "heading": "ITIL vs. Agile",
       "type": "text",
       "body": "Een veelgehoorde zorg bij ITOM-ontwerp is de vermeende spanning tussen de governance-gerichtheid van ITIL en de snelheid van Agile. ITIL 4 adresseert dit expliciet: het framework is ontworpen om samen te werken met Agile, DevOps en Lean — het is een set principes en praktijken, geen rigide procesvoorschrift. Succesvolle operating modellen integreren beide: Agile levering binnen een goed beheerd servicekader."
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        { "label": "ITIL4 Introduction Course (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pptx" },
+        { "label": "ITIL4 Introduction Course (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pdf" },
+        { "label": "ITIL4 Foundation Practice Exam 1 (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%201%29.pdf" },
+        { "label": "ITIL4 Foundation Practice Exam 2 (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%202%29.pdf" },
+        { "label": "ITIL Process Heat Map — SIAM (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/ITIL/TSI-DOM%20ITIL%20Process%20Heat%20Map%20v1.0%20%28SIAM%29.xlsx" },
+        { "label": "ITIL map op SharePoint", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL" }
+      ]
     }
   ],
   "related": [
