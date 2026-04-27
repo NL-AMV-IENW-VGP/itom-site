@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,22 +15,16 @@
     --shadow: 0 2px 10px rgba(26,23,20,0.08);
     --radius: 8px;
 
-    --row-color: #0073E6;
     --col-header-bg: #0E2841;
     --col-header-ink: #ffffff;
 
-    --define-color:   #156082;
-    --define-light:   #E3EEF5;
-    --discover-color: #B84A0C;
-    --discover-light: #FAE8DC;
-    --design-color:   #196B24;
-    --design-light:   #E3F0E5;
-    --develop-color:  #0076A3;
-    --develop-light:  #DDF0F8;
-    --deliver-color:  #7B2D8B;
-    --deliver-light:  #F2E3F7;
-    --drive-color:    #3A7A1F;
-    --drive-light:    #E5F2DF;
+    /* Domain row colors — 6 domeinen */
+    --dom0-color: #156082; --dom0-light: #E3EEF5;  /* Organization & Identity */
+    --dom1-color: #B84A0C; --dom1-light: #FAE8DC;  /* Processes */
+    --dom2-color: #196B24; --dom2-light: #E3F0E5;  /* Applications */
+    --dom3-color: #0076A3; --dom3-light: #DDF0F8;  /* Platform */
+    --dom4-color: #7B2D8B; --dom4-light: #F2E3F7;  /* Data & AI */
+    --dom5-color: #3A7A1F; --dom5-light: #E5F2DF;  /* People & Culture */
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -104,19 +98,8 @@
     padding: 14px 10px 12px;
     text-align: center;
     border-right: 1px solid rgba(255,255,255,0.10);
-    position: relative;
+    border-bottom: 3px solid rgba(255,255,255,0.12);
   }
-  .col-header::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0; height: 3px;
-  }
-  .col-header.define::after   { background: var(--define-color); }
-  .col-header.discover::after { background: var(--discover-color); }
-  .col-header.design::after   { background: var(--design-color); }
-  .col-header.develop::after  { background: var(--develop-color); }
-  .col-header.deliver::after  { background: var(--deliver-color); }
-  .col-header.drive::after    { background: var(--drive-color); }
   .col-header .d-label {
     display: block;
     font-size: 1.15rem;
@@ -124,8 +107,8 @@
     letter-spacing: -0.01em;
   }
 
+  /* ROW LABELS — domeinkleur */
   .row-label {
-    background: var(--row-color);
     color: #ffffff;
     font-size: 0.78rem;
     font-weight: 600;
@@ -138,6 +121,12 @@
     border-right: 3px solid rgba(255,255,255,0.20);
     border-bottom: 1px solid rgba(255,255,255,0.15);
   }
+  .row-label.domain-0 { background: var(--dom0-color); }
+  .row-label.domain-1 { background: var(--dom1-color); }
+  .row-label.domain-2 { background: var(--dom2-color); }
+  .row-label.domain-3 { background: var(--dom3-color); }
+  .row-label.domain-4 { background: var(--dom4-color); }
+  .row-label.domain-5 { background: var(--dom5-color); }
 
   .cell {
     padding: 10px 8px;
@@ -151,11 +140,10 @@
     background: var(--card-bg);
   }
 
-  /* Alternating row tint */
-  .row-even .cell   { background: #faf9f7; }
-  .row-even .row-label { background: #0065CC; }
+  /* Alternerende rij-tint */
+  .row-even .cell { background: #faf9f7; }
 
-  /* CHIPS — base */
+  /* CHIPS — basis */
   .chip {
     display: inline-block;
     padding: 3px 8px;
@@ -168,13 +156,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     transition: all 0.15s ease;
-    cursor: default;
+    cursor: pointer;
     position: relative;
   }
-
-  /* Linked chips: border + pointer + link indicator */
+  .chip:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    filter: brightness(0.92);
+  }
   .chip.linked {
-    cursor: pointer;
     border-bottom: 1.5px solid currentColor;
     opacity: 0.95;
   }
@@ -183,72 +173,147 @@
     font-size: 0.6rem;
     opacity: 0.6;
   }
-  .chip.linked:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
-    opacity: 1;
-    filter: brightness(0.90);
-  }
-  .chip.active-popover {
+  .chip.linked:hover { opacity: 1; }
+  .chip.active-overlay {
     box-shadow: 0 0 0 2px currentColor;
-    opacity: 1;
+    opacity: 1 !important;
   }
 
-  /* Chip colors per phase column */
-  .define   .chip { background: var(--define-light);   color: var(--define-color); }
-  .discover .chip { background: var(--discover-light); color: var(--discover-color); }
-  .design   .chip { background: var(--design-light);   color: var(--design-color); }
-  .develop  .chip { background: var(--develop-light);  color: var(--develop-color); }
-  .deliver  .chip { background: var(--deliver-light);  color: var(--deliver-color); }
-  .drive    .chip { background: var(--drive-light);    color: var(--drive-color); }
+  /* Chipkleuren per domeinrij */
+  .domain-0 .chip { background: var(--dom0-light); color: var(--dom0-color); }
+  .domain-1 .chip { background: var(--dom1-light); color: var(--dom1-color); }
+  .domain-2 .chip { background: var(--dom2-light); color: var(--dom2-color); }
+  .domain-3 .chip { background: var(--dom3-light); color: var(--dom3-color); }
+  .domain-4 .chip { background: var(--dom4-light); color: var(--dom4-color); }
+  .domain-5 .chip { background: var(--dom5-light); color: var(--dom5-color); }
 
-  /* POPOVER */
-  #popover {
-    display: none;
+  /* OVERLAY */
+  .overlay {
     position: fixed;
+    inset: 0;
+    background: rgba(26,23,20,0.50);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1000;
-    background: #ffffff;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: 0 8px 32px rgba(26,23,20,0.18);
-    padding: 12px 14px;
-    min-width: 220px;
-    max-width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
   }
-  #popover.visible { display: block; }
-  #popover .pop-title {
-    font-size: 0.72rem;
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .overlay-card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 36px 40px 32px;
+    max-width: 520px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 80px rgba(26,23,20,0.22);
+    transform: translateY(16px) scale(0.97);
+    transition: transform 0.22s cubic-bezier(.4,0,.2,1);
+    position: relative;
+  }
+  .overlay.active .overlay-card {
+    transform: translateY(0) scale(1);
+  }
+  .overlay-close {
+    position: absolute;
+    top: 16px; right: 18px;
+    background: none; border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: var(--gray);
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.12s;
+  }
+  .overlay-close:hover { background: var(--bg); color: var(--ink); }
+
+  .overlay-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .breadcrumb-domain {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.64rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .breadcrumb-sep { color: var(--gray); font-size: 0.75rem; opacity: 0.5; }
+  .breadcrumb-phase {
+    font-size: 0.68rem;
     font-weight: 600;
     color: var(--gray);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 8px;
+    letter-spacing: 0.08em;
   }
-  #popover .pop-chip-label {
-    font-size: 0.82rem;
-    font-weight: 600;
+
+  .overlay-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
     color: var(--ink);
-    margin-bottom: 10px;
-    line-height: 1.3;
+    padding-right: 24px;
   }
-  #popover a.pop-link {
+  .overlay-desc {
+    color: var(--gray);
+    line-height: 1.65;
+    font-size: 0.90rem;
+    margin-bottom: 26px;
+  }
+  .overlay-section { margin-bottom: 18px; }
+  .overlay-section-label {
+    font-size: 0.66rem;
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .overlay-link {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 7px 10px;
-    border-radius: 7px;
+    padding: 8px 10px;
+    border-radius: 8px;
     text-decoration: none;
     color: var(--ink);
-    font-size: 0.80rem;
+    font-size: 0.82rem;
     font-weight: 500;
     margin-bottom: 4px;
     background: var(--bg);
     transition: background 0.12s;
   }
-  #popover a.pop-link:hover { background: #eae7e2; }
-  #popover a.pop-link .pop-icon {
-    font-size: 0.75rem;
+  .overlay-link:hover { background: #eae7e2; }
+  .overlay-link .link-icon {
+    font-size: 0.72rem;
+    opacity: 0.45;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+  .overlay-empty {
+    font-size: 0.78rem;
+    color: var(--gray);
     opacity: 0.5;
+    font-style: italic;
+    padding: 4px 0;
   }
 
   /* LEGEND */
@@ -268,12 +333,8 @@
     color: var(--gray);
     font-weight: 500;
   }
-  .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
-  .legend-sep {
-    color: var(--border);
-    font-size: 1.2rem;
-    line-height: 1;
-  }
+  .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+  .legend-sep { color: var(--border); font-size: 1.2rem; line-height: 1; }
   .legend-linked {
     display: flex;
     align-items: center;
@@ -325,21 +386,32 @@
 
 <div class="legend" id="legend"></div>
 
-<!-- Popover for chips with multiple deepdives -->
-<div id="popover" role="dialog" aria-label="Gerelateerde deepdives">
-  <div class="pop-title">Deepdives</div>
-  <div class="pop-chip-label" id="pop-chip-label"></div>
-  <div id="pop-links"></div>
+<!-- Overlay panel -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
+  <div class="overlay-card">
+    <button class="overlay-close" id="overlay-close" aria-label="Sluiten">✕</button>
+    <div class="overlay-breadcrumb" id="overlay-breadcrumb"></div>
+    <h2 class="overlay-title" id="overlay-title"></h2>
+    <p class="overlay-desc" id="overlay-desc"></p>
+    <div class="overlay-section" id="overlay-deepdives-section">
+      <div class="overlay-section-label">Deepdives</div>
+      <div id="overlay-deepdives"></div>
+    </div>
+    <div class="overlay-section" id="overlay-files-section">
+      <div class="overlay-section-label">Bestanden</div>
+      <div id="overlay-files"></div>
+    </div>
+  </div>
 </div>
 
 <script>
 const PHASES = [
-  { key: 'define',   label: 'Define',   color: '#156082', light: '#E3EEF5' },
-  { key: 'discover', label: 'Discover', color: '#B84A0C', light: '#FAE8DC' },
-  { key: 'design',   label: 'Design',   color: '#196B24', light: '#E3F0E5' },
-  { key: 'develop',  label: 'Develop',  color: '#0076A3', light: '#DDF0F8' },
-  { key: 'deliver',  label: 'Deliver',  color: '#7B2D8B', light: '#F2E3F7' },
-  { key: 'drive',    label: 'Drive',    color: '#3A7A1F', light: '#E5F2DF' },
+  { key: 'define',   label: 'Define' },
+  { key: 'discover', label: 'Discover' },
+  { key: 'design',   label: 'Design' },
+  { key: 'develop',  label: 'Develop' },
+  { key: 'deliver',  label: 'Deliver' },
+  { key: 'drive',    label: 'Drive' },
 ];
 
 const DOMAINS = [
@@ -349,6 +421,11 @@ const DOMAINS = [
   'Platform',
   'Data & AI',
   'People & Culture',
+];
+
+/* Kleuren per domein (index 0-5) */
+const DOMAIN_COLORS = [
+  '#156082', '#B84A0C', '#196B24', '#0076A3', '#7B2D8B', '#3A7A1F'
 ];
 
 const MATRIX = {
@@ -402,9 +479,8 @@ const MATRIX = {
   },
 };
 
-/* Chip → deepdive(s). Eén chip mag meerdere deepdives hebben. */
+/* Chip → deepdive-sleutels */
 const CHIP_LINKS = {
-  // Organization & Identity
   'Business model overview':        ['bmc'],
   'Business value drivers':         ['bmc'],
   'EA blueprint':                   ['enterprise-architecture'],
@@ -420,8 +496,6 @@ const CHIP_LINKS = {
   'IT service maturity':            ['itsm', 'agile-scan', 'itom-canvas'],
   'IT support organization':        ['itsm', 'siam'],
   'Post-implementation audit':      ['cobit'],
-
-  // Processes
   "KPI's":                          ['cobit'],
   'Business capabilities':          ['itom-canvas'],
   'Current service blueprint':      ['itil-library'],
@@ -433,16 +507,12 @@ const CHIP_LINKS = {
   'Monitoring solution':            ['cobit'],
   'Automation solutions':           ['devops-capability-scan'],
   'Continuous improvement approach':['cobit'],
-
-  // Applications
   'Coding standards':               ['devops-capability-scan'],
   'Prototyping approach':           ['design-thinking'],
   'UI/UX design':                   ['design-thinking'],
   'Application prototype':          ['design-thinking'],
   'Software release plan':          ['devops-capability-scan'],
   'Software/code repository':       ['devops-capability-scan'],
-
-  // Platform
   'Technology requirements':        ['cloud-transformation', 'enterprise-architecture'],
   'Platform strategy':              ['cloud-transformation'],
   'Target tech architecture':       ['enterprise-architecture', 'cloud-transformation'],
@@ -455,8 +525,6 @@ const CHIP_LINKS = {
   'Platform financial management':  ['cloud-transformation'],
   'Platform prod infra':            ['cloud-transformation'],
   'Service monitoring':             ['itsm', 'cobit'],
-
-  // Data & AI
   'Responsible AI principles':      ['security-nist'],
   'Data maturity assessment':       ['itom-canvas'],
   'Migration/cleansing strategy':   ['cloud-transformation'],
@@ -469,8 +537,6 @@ const CHIP_LINKS = {
   'Responsible AI monitoring':      ['cobit', 'security-nist'],
   'Model accuracy monitoring':      ['cobit'],
   'Innovation backlog':             ['agile'],
-
-  // People & Culture
   'Case for change':                ['post-merger'],
   'Change impact assessment':       ['post-merger'],
   'Stakeholder analysis':           ['post-merger'],
@@ -508,87 +574,255 @@ const DEEPDIVE_LABELS = {
   'tom':                    'Target Operating Model',
 };
 
-/* Popover logic */
-const popover = document.getElementById('popover');
-const popLabel = document.getElementById('pop-chip-label');
-const popLinks = document.getElementById('pop-links');
+/* Korte beschrijving per chip */
+const CHIP_DESCRIPTIONS = {
+  // Organization & Identity
+  'Vision statement':             'Beschrijft de gewenste toekomstige toestand van de organisatie en de richtinggevende ambitie van de digitale transformatie.',
+  'Digital strategy':             'Het strategisch plan voor de digitale transformatie, inclusief prioriteiten, roadmap en beoogde business outcomes.',
+  'Business model overview':      'Overzicht van het huidige en/of gewenste businessmodel: hoe creëert en levert de organisatie waarde?',
+  'Business value drivers':       'Identificatie van de sleutelfactoren die waarde creëren voor de organisatie en haar klanten.',
+  'Architecture policies':        'Beleid en richtlijnen voor enterprise-architectuur, inclusief beveiligings- en complianceprincipes.',
+  'EA blueprint':                 'Enterprise Architecture blauwdruk: overzicht van de doelarchitectuur op het snijvlak van business, informatie, applicaties en technologie.',
+  'Critical success factors':     'De essentiële randvoorwaarden waaraan moet worden voldaan om de transformatie succesvol te laten zijn.',
+  'Priority focus areas':         'Gebieden die de meeste aandacht en investering vereisen op basis van impact en urgentie.',
+  'Quick wins':                   'Snel te realiseren verbeteringen met directe, zichtbare resultaten die het transformatiemomentum versterken.',
+  'Current internal org. overview':'Inventarisatie van de huidige organisatiestructuur, bevoegdheden en besluitvormingslijnen.',
+  'IT service maturity':          'Beoordeling van de volwassenheid van IT-servicelevering en -beheer ten opzichte van een referentiemodel.',
+  'Policies & localizations':     'Beleid en lokale aanpassingen voor compliancy, beveiligingsnormen en wet- en regelgeving.',
+  'TOM':                          'Target Operating Model: het integrale ontwerp van de toekomstige organisatie — structuur, processen, mensen, technologie en governance.',
+  'Target org structure':         'De toekomstige organisatiestructuur die de doelstellingen en het opererende model ondersteunt.',
+  'Future gov. model':            'Het besturingsmodel voor de toekomstige situatie, inclusief besluitvormings- en verantwoordelijkheidsstructuren.',
+  'Target IT support model':      'Definitie van hoe IT-ondersteuning en -beheer in de toekomstige situatie georganiseerd worden.',
+  'Roles & responsibilities':     'Beschrijving van functies, taken, bevoegdheden (RACI) en verantwoordelijkheden in de nieuwe organisatie.',
+  'SLA':                          'Service Level Agreement: prestatieafspraken over beschikbaarheid, responstijden en kwaliteit van IT-dienstverlening.',
+  'Ops/support procedures':       'Operationele procedures en werkinstructies voor dagelijkse ondersteuning en beheer.',
+  'IT support organization':      'De ingerichte organisatie voor IT-ondersteuning na implementatie, inclusief rollen en escalatielijnen.',
+  'Post-implementation audit':    'Evaluatie achteraf om te beoordelen in welke mate de beoogde doelstellingen en businesswaarde zijn gerealiseerd.',
+
+  // Processes
+  "KPI's":                        'Key Performance Indicators: meetbare indicatoren om voortgang, prestaties en succes van de transformatie te bewaken.',
+  'Business capabilities':        'Gestructureerd overzicht van de zakelijke mogelijkheden (capabilities) die de organisatie nodig heeft om haar strategie uit te voeren.',
+  'Process opportunities':        'Identificatie van kansen voor procesverbetering, standaardisatie of automatisering.',
+  'Business process analysis':    'Analyse van huidige bedrijfsprocessen om inefficiënties, risico\'s en verbeterpotentieel te identificeren.',
+  'Current process L1–4':         'Documentatie van bestaande processen op vier detailniveaus: van hoofdproces tot processtap.',
+  'Current service blueprint':    'Visuele beschrijving van de huidige dienstverlening, klantinteracties en onderliggende activiteiten.',
+  'Industry process benchmark':   'Vergelijking van processen en prestaties met best practices en normen in de sector.',
+  'Process maturity':             'Beoordeling van de volwassenheid van processen op basis van een erkend referentiemodel.',
+  'Process design principles':    'Richtlijnen en ontwerpprincipes voor het (her)ontwerpen van processen.',
+  'Customer journey':             'Visualisatie van de klantervaring gedurende het volledige dienstverleningsproces, inclusief pijn- en kansenpunten.',
+  'Future process L1–2':          'Ontwerp van toekomstige processen op hoofdlijnen (niveau 1 en 2).',
+  'Future service blueprint':     'Blauwdruk van de toekomstige dienstverlening, klantinteracties en ondersteunende activiteiten.',
+  'Monitoring indicators':        'Indicatoren voor het continu bewaken van procesperformance en -kwaliteit.',
+  'Process automation blueprint': 'Plan voor automatisering van processen, inclusief tooling, prioritering en te verwachten efficiency-winst.',
+  'Process support model':        'Beschrijving van hoe processen na implementatie worden ondersteund en beheerd.',
+  'Future detail process L3–4':   'Gedetailleerde beschrijving van toekomstige processen op het uitvoerend detailniveau.',
+  'Monitoring solution':          'Technische oplossing voor het monitoren van procesperformance en signalering van afwijkingen.',
+  'Automation solutions':         'Geïmplementeerde automatiseringsoplossingen, inclusief RPA, workflow-engines en scripts.',
+  'Continuous improvement approach':'Aanpak voor structurele, doorlopende verbetering van processen op basis van data en feedback.',
+
+  // Applications
+  'Current application landscape': 'Inventarisatie en overzicht van het huidige applicatielandschap, inclusief afhankelijkheden en verouderde systemen.',
+  'Application design principles': 'Richtlijnen voor het ontwerpen en bouwen van applicaties: modulariteit, herbruikbaarheid, security-by-design.',
+  'Coding standards':              'Normen en standaarden voor softwareontwikkeling, codekwaliteit en code review.',
+  'Project start architecture':    'Architectuurbeslissingen en kaders die aan het begin van het project worden vastgesteld.',
+  'Rationalization potential':     'Analyse van mogelijkheden om het applicatielandschap te vereenvoudigen door consolidatie of uitfasering.',
+  'Prototyping approach':          'Aanpak voor het snel ontwerpen, bouwen en valideren van prototypes met eindgebruikers.',
+  'Application fit/gap':           'Analyse van de mate waarin bestaande of kandidaat-applicaties aansluiten op de gewenste functionaliteit.',
+  'Functional specs / use cases':  'Gedetailleerde functionele specificaties en gebruiksscenario\'s als basis voor ontwerp en bouw.',
+  'Software selection':            'Proces en criteria voor het selecteren van de meest geschikte softwareoplossing.',
+  'Solution design / blueprint':   'Technisch en functioneel ontwerp van de gekozen oplossing.',
+  'Extension specs':               'Specificaties voor maatwerkontwikkelingen en uitbreidingen op standaardsoftware.',
+  'UI/UX design':                  'Ontwerp van gebruikersinterfaces en gebruikerservaring, gebaseerd op onderzoek en gebruikerstests.',
+  'Application prototype':         'Werkend prototype van de applicatieoplossing ten behoeve van validatie door stakeholders.',
+  'Software release plan':         'Gedetailleerde planning voor de uitrol van software-releases en versies.',
+  'Decommission approach':         'Plan voor het veilig buiten gebruik stellen en afvoeren van verouderde systemen.',
+  'Software/code repository':      'Centrale opslagplaats voor broncode, documentatie en softwareartefacten.',
+  'Support hand-over approach':    'Plan voor de gestructureerde overdracht van de oplossing naar de beheerorganisatie.',
+  'Hypercare approach':            'Plan voor intensieve begeleiding en ondersteuning direct na de go-live.',
+
+  // Platform
+  'Technology requirements':       'Vereisten voor technische infrastructuur, inclusief performance, beschikbaarheid, beveiliging en cloudgereedheid.',
+  'Platform strategy':             'Strategische keuzes voor het technologieplatform, waaronder cloudadoptie, vendor-strategie en build/buy beslissingen.',
+  'Target tech architecture':      'Doelarchitectuur voor de technische infrastructuur, netwerk, cloud en middlewarelaag.',
+  'Platform selection':            'Keuzeproces en besluitvorming voor het technologieplatform op basis van functionele en niet-functionele eisen.',
+  'Integration strategy':          'Strategie voor het integreren van systemen en services, inclusief API-beleid en middleware-keuzes.',
+  'Platform project infra':        'Projectinfrastructuur voor ontwikkel-, test- en acceptatieomgevingen.',
+  'Upgrade strategy':              'Plan voor het periodiek upgraden van platform- en infrastructuurcomponenten.',
+  'Data process strategy':         'Strategie voor dataverwerking en -transport op het platform, inclusief batch, streaming en ETL.',
+  'Integration design':            'Technisch ontwerp voor koppelingen en integraties tussen systemen, inclusief berichtformaten en foutafhandeling.',
+  'Job schedule design':           'Ontwerp van geplande taken, batch-jobs en geautomatiseerde processen.',
+  'Platform SLA':                  'Service Level Agreement voor beschikbaarheid, performance en hersteltijden van het platform.',
+  'Integration repository':        'Centrale opslagplaats voor integratieartefacten, interfaces en koppelingsspecificaties.',
+  'Platform governance model':     'Besturingsmodel voor platformbeheer, change management en doorontwikkeling.',
+  'Platform financial management': 'Financieel model voor platformkosten, inclusief cloud cost management en showback/chargeback.',
+  'Platform prod infra':           'Productie-infrastructuur voor het platform na go-live, inclusief monitoring en high-availability.',
+  'Service monitoring':            'Continue bewaking van beschikbaarheid, performance en gezondheid van IT-services.',
+
+  // Data & AI
+  'Data strategy':                 'Strategisch plan voor datamanagement, datakwaliteit, data governance en benutting van data als bedrijfsmiddel.',
+  'AI strategy':                   'Strategisch plan voor de inzet van kunstmatige intelligentie ter ondersteuning van bedrijfsdoelstellingen.',
+  'Responsible AI principles':     'Principes voor verantwoord en ethisch gebruik van AI, inclusief transparantie, fairness en beveiligingsaspecten.',
+  'Data maturity assessment':      'Beoordeling van de volwassenheid van datamanagement, -kwaliteit en -gebruik in de organisatie.',
+  'Data architecture':             'Ontwerp van de datainfrastructuur: datamodellen, datameren, warehouses en koppelingen.',
+  'Data requirements':             'Specificatie van datavereisten voor de transformatie: welke data is nodig, in welke kwaliteit.',
+  'Migration/cleansing strategy':  'Strategie voor datamigiratie naar het nieuwe systeem en opschoning van historische data.',
+  'AI maturity assessment':        'Beoordeling van de volwassenheid van AI-capabilities en -gereedheid in de organisatie.',
+  'Responsible AI assessment':     'Toetsing van concrete AI-toepassingen op ethische aspecten, privacy en beveiligingsrisico\'s.',
+  'Migration/cleansing design':    'Technisch ontwerp voor de uitvoering van datamigiratie en dataopschoning.',
+  'Data tooling selection':        'Selectie van tools voor datamanagement, -opslag, -analyse en -visualisatie.',
+  'Dashboard/report specs':        'Specificaties voor bedrijfsrapportages, dashboards en KPI-overzichten.',
+  'Data governance framework':     'Kader voor datakwaliteit, data-eigenaarschap, toegangsbeleid en nalevingsregels.',
+  'AI use cases':                  'Concrete en geprioriteerde toepassingsscenario\'s voor AI-inzet binnen de organisatie.',
+  'AI solution design':            'Technisch en functioneel ontwerp van de te bouwen AI-oplossing.',
+  'Migration/cleansing scripts':   'Geïmplementeerde scripts en tools voor de uitvoering van datamigiratie en dataopschoning.',
+  'Reports & dashboards':          'Gerealiseerde en in gebruik genomen rapportages en dashboards.',
+  'AI MVP':                        'Minimum Viable Product van de AI-oplossing: werkende eerste versie voor validatie in de praktijk.',
+  'AI solution':                   'Volledig geïmplementeerde en in productie genomen AI-oplossing.',
+  'AI data pipelines':             'Geautomatiseerde datapijplijnen voor het voeden, trainen en updaten van AI-modellen.',
+  'Migration QA / audit':          'Kwaliteitscontrole en onafhankelijke audit van de uitgevoerde datamigiratie.',
+  'AI & ML way of working':        'Werkwijze en afspraken voor het beheer, de doorontwikkeling en het gebruik van AI en machine learning.',
+  'ML Ops handbook':               'Operationeel handboek voor het beheer, monitoring en versiebeheer van ML-modellen in productie.',
+  'AI transformation summary':     'Samenvatting van de gerealiseerde AI-transformatie: resultaten, geleerde lessen en vervolgstappen.',
+  'Archive/purge policy':          'Beleid voor archivering en periodieke verwijdering van data conform wet- en regelgeving.',
+  'Responsible AI monitoring':     'Continue bewaking van AI-systemen op bias, drift en ethische aspecten.',
+  'Data ops':                      'Operationele activiteiten voor datakwaliteitsbeheer, pipelinesupport en dataincidentafhandeling.',
+  'Model accuracy monitoring':     'Bewaking van de nauwkeurigheid en betrouwbaarheid van AI-modellen in productie.',
+  'Data/AI literacy program':      'Programma voor het structureel verbeteren van data- en AI-vaardigheden in de organisatie.',
+  'Innovation backlog':            'Geprioriteerde lijst van innovatie-ideeën en verbeterinitiatieven die voortvloeien uit de transformatie.',
+
+  // People & Culture
+  'Case for change':               'Heldere en overtuigende onderbouwing van de noodzaak voor verandering en de te verwachten voordelen voor de organisatie.',
+  'Change strategy':               'Strategie voor het effectief managen van de organisatieverandering, inclusief aanpak, interventies en betrokken actoren.',
+  'Culture awareness':             'Inzicht in de huidige organisatiecultuur — waarden, gedragingen, werkwijzen — als vertrekpunt voor gerichte cultuurontwikkeling.',
+  'Change impact assessment':      'Analyse van de impact van de transformatie op medewerkers, rollen, processen en werkwijzen.',
+  'Stakeholder analysis':          'Inventarisatie en analyse van betrokken partijen: belangen, invloed, houding en communicatiebehoeften.',
+  'Change monitoring approach':    'Aanpak voor het meten, volgen en bijsturen van voortgang en effectiviteit van het veranderproces.',
+  'Communication strategy':        'Strategie voor interne en externe communicatie over de transformatie: boodschappen, kanalen en timing.',
+  'Sponsor/leader engagement':     'Plan voor zichtbare betrokkenheid en actieve rol van sponsors en leidinggevenden bij de transformatie.',
+  'Persona definitions':           'Beschrijvingen van representatieve gebruikerstypen met hun specifieke behoeften, gedrag en pijnpunten.',
+  'Training strategy':             'Strategie voor het opleiden van medewerkers: doelgroepen, methoden, timing en succescriteria.',
+  'Change agent network definition':'Definitie en samenstelling van het netwerk van change agents in de organisatie.',
+  'Stakeholder management approach':'Aanpak voor het systematisch betrekken, informeren en enthousiasmeren van stakeholders.',
+  'Communication plan':            'Gedetailleerd communicatieplan met activiteiten, boodschappen, kanalen en doelgroepen per fase.',
+  'Training plan & materials':     'Opleidingsplan en bijbehorende trainingsmaterialen voor eindgebruikers en key users.',
+  'Change agent network activation':'Activering, briefing en ondersteuning van het netwerk van change agents in de organisatie.',
+  'User training':                 'Uitvoering van eindgebruikerstraining voorafgaand aan en rondom de go-live.',
+  'Lessons learned':               'Gestructureerde evaluatie van ervaringen en leerpunten uit de transformatie, gedocumenteerd voor toekomstige projecten.',
+  'Feedback loops & surveys':      'Structurele mechanismen voor het ophalen en verwerken van feedback van medewerkers en gebruikers.',
+  'Success celebration':           'Activiteiten om successen te erkennen en te vieren, en de transformatie in de organisatie te bekrachtigen.',
+};
+
+/* Bestandslinks per chip — voorlopig leeg */
+const CHIP_FILES = {};
+
+/* ---- OVERLAY LOGICA ---- */
+const overlay     = document.getElementById('overlay');
+const overlayClose = document.getElementById('overlay-close');
 let activeChip = null;
 
-function showPopover(chip, deepdives, label) {
-  if (activeChip) activeChip.classList.remove('active-popover');
+function showOverlay(chip, chipLabel, domain, domainIdx, phase) {
+  if (activeChip) activeChip.classList.remove('active-overlay');
   activeChip = chip;
-  chip.classList.add('active-popover');
+  chip.classList.add('active-overlay');
 
-  popLabel.textContent = label;
-  popLinks.innerHTML = '';
-  deepdives.forEach(key => {
-    const a = document.createElement('a');
-    a.className = 'pop-link';
-    a.href = `../deepdive.html?page=${key}`;
-    a.innerHTML = `<span>${DEEPDIVE_LABELS[key] || key}</span><span class="pop-icon">↗</span>`;
-    popLinks.appendChild(a);
-  });
+  const color = DOMAIN_COLORS[domainIdx];
 
-  popover.classList.add('visible');
-  positionPopover(chip);
+  // Breadcrumb
+  const bc = document.getElementById('overlay-breadcrumb');
+  bc.innerHTML =
+    `<span class="breadcrumb-domain" style="background:${color}">${domain}</span>` +
+    `<span class="breadcrumb-sep">—</span>` +
+    `<span class="breadcrumb-phase">${phase}</span>`;
+
+  // Titel
+  document.getElementById('overlay-title').textContent = chipLabel;
+
+  // Beschrijving
+  const desc = CHIP_DESCRIPTIONS[chipLabel] || '';
+  document.getElementById('overlay-desc').textContent = desc || '—';
+
+  // Deepdives
+  const deepdives = CHIP_LINKS[chipLabel] || [];
+  const ddContainer = document.getElementById('overlay-deepdives');
+  ddContainer.innerHTML = '';
+  if (deepdives.length > 0) {
+    deepdives.forEach(key => {
+      const a = document.createElement('a');
+      a.className = 'overlay-link';
+      a.href = `../deepdive.html?page=${key}`;
+      a.innerHTML = `<span>${DEEPDIVE_LABELS[key] || key}</span><span class="link-icon">↗</span>`;
+      ddContainer.appendChild(a);
+    });
+    document.getElementById('overlay-deepdives-section').style.display = '';
+  } else {
+    const empty = document.createElement('p');
+    empty.className = 'overlay-empty';
+    empty.textContent = 'Geen deepdives gekoppeld';
+    ddContainer.appendChild(empty);
+    document.getElementById('overlay-deepdives-section').style.display = '';
+  }
+
+  // Bestanden
+  const files = CHIP_FILES[chipLabel] || [];
+  const filesContainer = document.getElementById('overlay-files');
+  filesContainer.innerHTML = '';
+  if (files.length > 0) {
+    files.forEach(f => {
+      const a = document.createElement('a');
+      a.className = 'overlay-link';
+      a.href = f.url;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.innerHTML = `<span>${f.label}</span><span class="link-icon">↗</span>`;
+      filesContainer.appendChild(a);
+    });
+  }
+  document.getElementById('overlay-files-section').style.display = files.length > 0 ? '' : 'none';
+
+  overlay.classList.add('active');
+  overlayClose.focus();
 }
 
-function positionPopover(chip) {
-  const rect = chip.getBoundingClientRect();
-  const pw = popover.offsetWidth || 240;
-  const ph = popover.offsetHeight || 120;
-  const vw = window.innerWidth;
-  const vh = window.innerHeight;
-
-  let left = rect.left;
-  let top = rect.bottom + 6;
-
-  if (left + pw > vw - 12) left = vw - pw - 12;
-  if (top + ph > vh - 12) top = rect.top - ph - 6;
-
-  popover.style.left = `${Math.max(8, left)}px`;
-  popover.style.top  = `${Math.max(8, top)}px`;
+function hideOverlay() {
+  overlay.classList.remove('active');
+  if (activeChip) { activeChip.classList.remove('active-overlay'); activeChip = null; }
 }
 
-function hidePopover() {
-  popover.classList.remove('visible');
-  if (activeChip) { activeChip.classList.remove('active-popover'); activeChip = null; }
-}
-
-document.addEventListener('click', e => {
-  if (!popover.contains(e.target) && !e.target.classList.contains('linked')) hidePopover();
+overlayClose.addEventListener('click', hideOverlay);
+overlay.addEventListener('click', e => {
+  if (e.target === overlay) hideOverlay();
 });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePopover(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') hideOverlay(); });
 
-/* Build matrix */
+/* ---- MATRIX OPBOUWEN ---- */
 function build() {
   const matrix = document.getElementById('matrix');
 
-  // Corner
+  // Hoekcel
   const corner = document.createElement('div');
   corner.className = 'corner';
   matrix.appendChild(corner);
 
-  // Column headers
+  // Kolomkoppen
   PHASES.forEach(ph => {
     const div = document.createElement('div');
-    div.className = `col-header ${ph.key}`;
+    div.className = 'col-header';
     div.innerHTML = `<span class="d-label">${ph.label}</span>`;
     matrix.appendChild(div);
   });
 
-  // Domain rows
+  // Domeinrijen
   DOMAINS.forEach((domain, rowIdx) => {
     const rowClass = rowIdx % 2 === 1 ? 'row-even' : 'row-odd';
 
     const label = document.createElement('div');
-    label.className = `row-label ${rowClass}`;
+    label.className = `row-label domain-${rowIdx} ${rowClass}`;
     label.textContent = domain;
     matrix.appendChild(label);
 
     PHASES.forEach(ph => {
       const cell = document.createElement('div');
-      cell.className = `cell ${ph.key} ${rowClass}`;
+      cell.className = `cell domain-${rowIdx} ${rowClass}`;
       const items = (MATRIX[domain] || {})[ph.key] || [];
 
       items.forEach(item => {
@@ -600,20 +834,16 @@ function build() {
         const deepdives = CHIP_LINKS[item];
         if (deepdives && deepdives.length > 0) {
           chip.classList.add('linked');
-
-          chip.addEventListener('click', e => {
-            e.stopPropagation();
-            if (deepdives.length === 1) {
-              window.location.href = `../deepdive.html?page=${deepdives[0]}`;
-            } else {
-              if (activeChip === chip && popover.classList.contains('visible')) {
-                hidePopover();
-              } else {
-                showPopover(chip, deepdives, item);
-              }
-            }
-          });
         }
+
+        chip.addEventListener('click', e => {
+          e.stopPropagation();
+          if (activeChip === chip && overlay.classList.contains('active')) {
+            hideOverlay();
+          } else {
+            showOverlay(chip, item, domain, rowIdx, ph.label);
+          }
+        });
 
         cell.appendChild(chip);
       });
@@ -622,12 +852,12 @@ function build() {
     });
   });
 
-  // Legend
+  // Legenda — domeinrijen
   const legend = document.getElementById('legend');
-  PHASES.forEach(ph => {
+  DOMAINS.forEach((domain, i) => {
     const item = document.createElement('div');
     item.className = 'legend-item';
-    item.innerHTML = `<span class="legend-dot" style="background:${ph.color}"></span>${ph.label}`;
+    item.innerHTML = `<span class="legend-dot" style="background:${DOMAIN_COLORS[i]}"></span>${domain}`;
     legend.appendChild(item);
   });
 
