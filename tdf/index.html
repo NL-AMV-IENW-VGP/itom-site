@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DTC — Digital Transformation Delivery Framework</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f2ed;
+    --ink: #1a1714;
+    --gray: #6b6560;
+    --card-bg: #ffffff;
+    --border: rgba(26,23,20,0.10);
+    --shadow: 0 2px 10px rgba(26,23,20,0.08);
+    --radius: 8px;
+
+    --row-color: #0073E6;
+    --col-header-bg: #0E2841;
+    --col-header-ink: #ffffff;
+
+    --define-color:   #156082;
+    --define-light:   #E3EEF5;
+    --discover-color: #B84A0C;
+    --discover-light: #FAE8DC;
+    --design-color:   #196B24;
+    --design-light:   #E3F0E5;
+    --develop-color:  #0076A3;
+    --develop-light:  #DDF0F8;
+    --deliver-color:  #7B2D8B;
+    --deliver-light:  #F2E3F7;
+    --drive-color:    #3A7A1F;
+    --drive-light:    #E5F2DF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 36px 24px 80px;
+  }
+
+  /* HEADER */
+  header { text-align: center; margin-bottom: 36px; }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  header p.subtitle {
+    color: var(--gray);
+    font-size: 0.88rem;
+    margin-top: 6px;
+    font-weight: 400;
+  }
+  header .badge {
+    display: inline-block;
+    margin-top: 12px;
+    background: #fff3cd;
+    border: 1px solid #e6c400;
+    color: #7a5c00;
+    border-radius: 20px;
+    padding: 3px 14px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* MATRIX */
+  .matrix-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(26,23,20,0.10);
+    background: var(--card-bg);
+  }
+  .matrix {
+    display: grid;
+    grid-template-columns: 140px repeat(6, minmax(190px, 1fr));
+    min-width: 1300px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .corner {
+    background: var(--col-header-bg);
+    border-right: 1px solid rgba(255,255,255,0.10);
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+  }
+
+  .col-header {
+    background: var(--col-header-bg);
+    color: var(--col-header-ink);
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 14px 10px 12px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.10);
+    position: relative;
+  }
+  .col-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0; height: 3px;
+  }
+  .col-header.define::after   { background: var(--define-color); }
+  .col-header.discover::after { background: var(--discover-color); }
+  .col-header.design::after   { background: var(--design-color); }
+  .col-header.develop::after  { background: var(--develop-color); }
+  .col-header.deliver::after  { background: var(--deliver-color); }
+  .col-header.drive::after    { background: var(--drive-color); }
+  .col-header .d-label {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .row-label {
+    background: var(--row-color);
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 12px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
+    border-right: 3px solid rgba(255,255,255,0.20);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .cell {
+    padding: 10px 8px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-content: flex-start;
+    min-height: 80px;
+    background: var(--card-bg);
+  }
+
+  /* Alternating row tint */
+  .row-even .cell   { background: #faf9f7; }
+  .row-even .row-label { background: #0065CC; }
+
+  /* CHIPS — base */
+  .chip {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.15s ease;
+    cursor: default;
+    position: relative;
+  }
+
+  /* Linked chips: border + pointer + link indicator */
+  .chip.linked {
+    cursor: pointer;
+    border-bottom: 1.5px solid currentColor;
+    opacity: 0.95;
+  }
+  .chip.linked::after {
+    content: ' ↗';
+    font-size: 0.6rem;
+    opacity: 0.6;
+  }
+  .chip.linked:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    opacity: 1;
+    filter: brightness(0.90);
+  }
+  .chip.active-popover {
+    box-shadow: 0 0 0 2px currentColor;
+    opacity: 1;
+  }
+
+  /* Chip colors per phase column */
+  .define   .chip { background: var(--define-light);   color: var(--define-color); }
+  .discover .chip { background: var(--discover-light); color: var(--discover-color); }
+  .design   .chip { background: var(--design-light);   color: var(--design-color); }
+  .develop  .chip { background: var(--develop-light);  color: var(--develop-color); }
+  .deliver  .chip { background: var(--deliver-light);  color: var(--deliver-color); }
+  .drive    .chip { background: var(--drive-light);    color: var(--drive-color); }
+
+  /* POPOVER */
+  #popover {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(26,23,20,0.18);
+    padding: 12px 14px;
+    min-width: 220px;
+    max-width: 300px;
+  }
+  #popover.visible { display: block; }
+  #popover .pop-title {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+  #popover .pop-chip-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  #popover a.pop-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 0.80rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    background: var(--bg);
+    transition: background 0.12s;
+  }
+  #popover a.pop-link:hover { background: #eae7e2; }
+  #popover a.pop-link .pop-icon {
+    font-size: 0.75rem;
+    opacity: 0.5;
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+    justify-content: center;
+    align-items: center;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--gray);
+    font-weight: 500;
+  }
+  .legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+  .legend-sep {
+    color: var(--border);
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .legend-linked {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--gray);
+  }
+  .legend-linked .chip-ex {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 0.67rem;
+    background: #E3EEF5;
+    color: #156082;
+    border-bottom: 1.5px solid #156082;
+    font-weight: 500;
+  }
+  .legend-linked .chip-ex::after { content: ' ↗'; font-size: 0.58rem; opacity: 0.6; }
+
+  /* BACK LINK */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--ink); }
+  .back-link::before { content: '←'; }
+</style>
+</head>
+<body>
+
+<a href="../index.html" class="back-link">ITOM Framework Navigator</a>
+
+<header>
+  <h1>Digital business transformation delivery framework</h1>
+  <p class="subtitle">Best practice deliverables — Business aspects</p>
+  <span class="badge">Mockup — niet gepubliceerd</span>
+</header>
+
+<div class="matrix-scroll">
+  <div class="matrix" id="matrix"></div>
+</div>
+
+<div class="legend" id="legend"></div>
+
+<!-- Popover for chips with multiple deepdives -->
+<div id="popover" role="dialog" aria-label="Gerelateerde deepdives">
+  <div class="pop-title">Deepdives</div>
+  <div class="pop-chip-label" id="pop-chip-label"></div>
+  <div id="pop-links"></div>
+</div>
+
+<script>
+const PHASES = [
+  { key: 'define',   label: 'Define',   color: '#156082', light: '#E3EEF5' },
+  { key: 'discover', label: 'Discover', color: '#B84A0C', light: '#FAE8DC' },
+  { key: 'design',   label: 'Design',   color: '#196B24', light: '#E3F0E5' },
+  { key: 'develop',  label: 'Develop',  color: '#0076A3', light: '#DDF0F8' },
+  { key: 'deliver',  label: 'Deliver',  color: '#7B2D8B', light: '#F2E3F7' },
+  { key: 'drive',    label: 'Drive',    color: '#3A7A1F', light: '#E5F2DF' },
+];
+
+const DOMAINS = [
+  'Organization & Identity',
+  'Processes',
+  'Applications',
+  'Platform',
+  'Data & AI',
+  'People & Culture',
+];
+
+const MATRIX = {
+  'Organization & Identity': {
+    define:   ['Vision statement', 'Digital strategy', 'Business model overview', 'Business value drivers', 'Architecture policies', 'EA blueprint'],
+    discover: ['Critical success factors', 'Priority focus areas', 'Quick wins', 'Current internal org. overview', 'IT service maturity'],
+    design:   ['Policies & localizations', 'TOM', 'Target org structure', 'Future gov. model', 'Target IT support model'],
+    develop:  ['Roles & responsibilities', 'SLA'],
+    deliver:  ['Ops/support procedures', 'IT support organization'],
+    drive:    ['Post-implementation audit'],
+  },
+  'Processes': {
+    define:   ["KPI's", 'Business capabilities', 'Process opportunities', 'Business process analysis'],
+    discover: ['Current process L1–4', 'Current service blueprint', 'Industry process benchmark', 'Process maturity', 'Process design principles', 'Customer journey'],
+    design:   ['Future process L1–2', 'Future service blueprint', 'Monitoring indicators', 'Process automation blueprint', 'Process support model'],
+    develop:  ['Future detail process L3–4', 'Monitoring solution', 'Automation solutions'],
+    deliver:  [],
+    drive:    ['Continuous improvement approach'],
+  },
+  'Applications': {
+    define:   ['Current application landscape', 'Application design principles', 'Coding standards', 'Project start architecture'],
+    discover: ['Rationalization potential', 'Prototyping approach', 'Application fit/gap', 'Functional specs / use cases', 'Software selection'],
+    design:   ['Solution design / blueprint', 'Extension specs', 'UI/UX design', 'Application prototype'],
+    develop:  ['Software release plan', 'Decommission approach', 'Software/code repository'],
+    deliver:  ['Support hand-over approach'],
+    drive:    ['Hypercare approach'],
+  },
+  'Platform': {
+    define:   ['Technology requirements', 'Platform strategy'],
+    discover: ['Target tech architecture', 'Platform selection', 'Integration strategy'],
+    design:   ['Platform project infra', 'Upgrade strategy', 'Data process strategy', 'Integration design'],
+    develop:  ['Job schedule design', 'Platform SLA', 'Integration repository'],
+    deliver:  ['Platform governance model', 'Platform financial management', 'Platform prod infra'],
+    drive:    ['Service monitoring'],
+  },
+  'Data & AI': {
+    define:   ['Data strategy', 'AI strategy', 'Responsible AI principles'],
+    discover: ['Data maturity assessment', 'Data architecture', 'Data requirements', 'Migration/cleansing strategy', 'AI maturity assessment', 'Responsible AI assessment'],
+    design:   ['Migration/cleansing design', 'Data tooling selection', 'Dashboard/report specs', 'Data governance framework', 'AI use cases', 'AI solution design'],
+    develop:  ['Migration/cleansing scripts', 'Reports & dashboards', 'AI MVP', 'AI solution', 'AI data pipelines'],
+    deliver:  ['Migration QA / audit', 'AI & ML way of working', 'ML Ops handbook', 'AI transformation summary'],
+    drive:    ['Archive/purge policy', 'Responsible AI monitoring', 'Data ops', 'Model accuracy monitoring', 'Data/AI literacy program', 'Innovation backlog'],
+  },
+  'People & Culture': {
+    define:   ['Case for change', 'Change strategy', 'Culture awareness', 'Change impact assessment', 'Stakeholder analysis'],
+    discover: ['Change monitoring approach', 'Communication strategy', 'Sponsor/leader engagement', 'Persona definitions'],
+    design:   ['Training strategy', 'Change agent network definition', 'Stakeholder management approach', 'Communication plan'],
+    develop:  ['Training plan & materials', 'Change agent network activation'],
+    deliver:  ['User training', 'Lessons learned'],
+    drive:    ['Feedback loops & surveys', 'Success celebration'],
+  },
+};
+
+/* Chip → deepdive(s). Eén chip mag meerdere deepdives hebben. */
+const CHIP_LINKS = {
+  // Organization & Identity
+  'Business model overview':        ['bmc'],
+  'Business value drivers':         ['bmc'],
+  'EA blueprint':                   ['enterprise-architecture'],
+  'Architecture policies':          ['enterprise-architecture', 'security-nist'],
+  'TOM':                            ['tom'],
+  'Target org structure':           ['tom', 'operating-model'],
+  'Future gov. model':              ['tom', 'operating-model'],
+  'Target IT support model':        ['tom', 'itsm'],
+  'Roles & responsibilities':       ['operating-model'],
+  'SLA':                            ['itil-library'],
+  'Platform SLA':                   ['itil-library'],
+  'Ops/support procedures':         ['itil-library', 'itsm'],
+  'IT service maturity':            ['itsm', 'agile-scan', 'itom-canvas'],
+  'IT support organization':        ['itsm', 'siam'],
+  'Post-implementation audit':      ['cobit'],
+
+  // Processes
+  "KPI's":                          ['cobit'],
+  'Business capabilities':          ['itom-canvas'],
+  'Current service blueprint':      ['itil-library'],
+  'Future service blueprint':       ['itil-library'],
+  'Process maturity':               ['agile-scan', 'itsm', 'cobit'],
+  'Customer journey':               ['design-thinking'],
+  'Monitoring indicators':          ['cobit'],
+  'Process automation blueprint':   ['devops-capability-scan'],
+  'Monitoring solution':            ['cobit'],
+  'Automation solutions':           ['devops-capability-scan'],
+  'Continuous improvement approach':['cobit'],
+
+  // Applications
+  'Coding standards':               ['devops-capability-scan'],
+  'Prototyping approach':           ['design-thinking'],
+  'UI/UX design':                   ['design-thinking'],
+  'Application prototype':          ['design-thinking'],
+  'Software release plan':          ['devops-capability-scan'],
+  'Software/code repository':       ['devops-capability-scan'],
+
+  // Platform
+  'Technology requirements':        ['cloud-transformation', 'enterprise-architecture'],
+  'Platform strategy':              ['cloud-transformation'],
+  'Target tech architecture':       ['enterprise-architecture', 'cloud-transformation'],
+  'Platform selection':             ['cloud-transformation'],
+  'Integration strategy':           ['siam', 'it4it'],
+  'Platform project infra':         ['cloud-transformation'],
+  'Integration design':             ['it4it'],
+  'Integration repository':         ['it4it'],
+  'Platform governance model':      ['cobit', 'operating-model'],
+  'Platform financial management':  ['cloud-transformation'],
+  'Platform prod infra':            ['cloud-transformation'],
+  'Service monitoring':             ['itsm', 'cobit'],
+
+  // Data & AI
+  'Responsible AI principles':      ['security-nist'],
+  'Data maturity assessment':       ['itom-canvas'],
+  'Migration/cleansing strategy':   ['cloud-transformation'],
+  'AI maturity assessment':         ['itom-canvas'],
+  'Responsible AI assessment':      ['security-nist'],
+  'Migration/cleansing design':     ['cloud-transformation'],
+  'Data governance framework':      ['cobit'],
+  'Migration/cleansing scripts':    ['cloud-transformation'],
+  'Migration QA / audit':           ['cobit'],
+  'Responsible AI monitoring':      ['cobit', 'security-nist'],
+  'Model accuracy monitoring':      ['cobit'],
+  'Innovation backlog':             ['agile'],
+
+  // People & Culture
+  'Case for change':                ['post-merger'],
+  'Change impact assessment':       ['post-merger'],
+  'Stakeholder analysis':           ['post-merger'],
+  'Persona definitions':            ['design-thinking'],
+  'Training strategy':              ['safe'],
+  'Change agent network definition':['safe'],
+  'Stakeholder management approach':['post-merger'],
+  'Communication plan':             ['post-merger'],
+  'Training plan & materials':      ['safe'],
+  'Change agent network activation':['safe'],
+  'User training':                  ['safe'],
+  'Quick wins':                     ['agile'],
+  'Feedback loops & surveys':       ['itil-library'],
+  'Policies & localizations':       ['security-nist'],
+};
+
+const DEEPDIVE_LABELS = {
+  'agile':                  'Agile',
+  'agile-scan':             'Agile Maturity Scan',
+  'bmc':                    'Business Model Canvas',
+  'cloud-transformation':   'Cloud Transformation',
+  'cobit':                  'COBIT',
+  'design-thinking':        'Design Thinking',
+  'devops-capability-scan': 'DevOps Capability Scan',
+  'enterprise-architecture':'Enterprise Architecture',
+  'it4it':                  'IT4IT',
+  'itil-library':           'ITIL Library',
+  'itom-canvas':            '(IT)OM Canvas',
+  'itsm':                   'ITSM',
+  'operating-model':        'Operating Model',
+  'post-merger':            'Post Merger Integration',
+  'safe':                   'SAFe',
+  'security-nist':          'Security Scan NIST',
+  'siam':                   'SIAM',
+  'tom':                    'Target Operating Model',
+};
+
+/* Popover logic */
+const popover = document.getElementById('popover');
+const popLabel = document.getElementById('pop-chip-label');
+const popLinks = document.getElementById('pop-links');
+let activeChip = null;
+
+function showPopover(chip, deepdives, label) {
+  if (activeChip) activeChip.classList.remove('active-popover');
+  activeChip = chip;
+  chip.classList.add('active-popover');
+
+  popLabel.textContent = label;
+  popLinks.innerHTML = '';
+  deepdives.forEach(key => {
+    const a = document.createElement('a');
+    a.className = 'pop-link';
+    a.href = `../deepdive.html?page=${key}`;
+    a.innerHTML = `<span>${DEEPDIVE_LABELS[key] || key}</span><span class="pop-icon">↗</span>`;
+    popLinks.appendChild(a);
+  });
+
+  popover.classList.add('visible');
+  positionPopover(chip);
+}
+
+function positionPopover(chip) {
+  const rect = chip.getBoundingClientRect();
+  const pw = popover.offsetWidth || 240;
+  const ph = popover.offsetHeight || 120;
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+
+  let left = rect.left;
+  let top = rect.bottom + 6;
+
+  if (left + pw > vw - 12) left = vw - pw - 12;
+  if (top + ph > vh - 12) top = rect.top - ph - 6;
+
+  popover.style.left = `${Math.max(8, left)}px`;
+  popover.style.top  = `${Math.max(8, top)}px`;
+}
+
+function hidePopover() {
+  popover.classList.remove('visible');
+  if (activeChip) { activeChip.classList.remove('active-popover'); activeChip = null; }
+}
+
+document.addEventListener('click', e => {
+  if (!popover.contains(e.target) && !e.target.classList.contains('linked')) hidePopover();
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePopover(); });
+
+/* Build matrix */
+function build() {
+  const matrix = document.getElementById('matrix');
+
+  // Corner
+  const corner = document.createElement('div');
+  corner.className = 'corner';
+  matrix.appendChild(corner);
+
+  // Column headers
+  PHASES.forEach(ph => {
+    const div = document.createElement('div');
+    div.className = `col-header ${ph.key}`;
+    div.innerHTML = `<span class="d-label">${ph.label}</span>`;
+    matrix.appendChild(div);
+  });
+
+  // Domain rows
+  DOMAINS.forEach((domain, rowIdx) => {
+    const rowClass = rowIdx % 2 === 1 ? 'row-even' : 'row-odd';
+
+    const label = document.createElement('div');
+    label.className = `row-label ${rowClass}`;
+    label.textContent = domain;
+    matrix.appendChild(label);
+
+    PHASES.forEach(ph => {
+      const cell = document.createElement('div');
+      cell.className = `cell ${ph.key} ${rowClass}`;
+      const items = (MATRIX[domain] || {})[ph.key] || [];
+
+      items.forEach(item => {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = item;
+        chip.title = item;
+
+        const deepdives = CHIP_LINKS[item];
+        if (deepdives && deepdives.length > 0) {
+          chip.classList.add('linked');
+
+          chip.addEventListener('click', e => {
+            e.stopPropagation();
+            if (deepdives.length === 1) {
+              window.location.href = `../deepdive.html?page=${deepdives[0]}`;
+            } else {
+              if (activeChip === chip && popover.classList.contains('visible')) {
+                hidePopover();
+              } else {
+                showPopover(chip, deepdives, item);
+              }
+            }
+          });
+        }
+
+        cell.appendChild(chip);
+      });
+
+      matrix.appendChild(cell);
+    });
+  });
+
+  // Legend
+  const legend = document.getElementById('legend');
+  PHASES.forEach(ph => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `<span class="legend-dot" style="background:${ph.color}"></span>${ph.label}`;
+    legend.appendChild(item);
+  });
+
+  const sep = document.createElement('span');
+  sep.className = 'legend-sep';
+  sep.textContent = '|';
+  legend.appendChild(sep);
+
+  const ll = document.createElement('div');
+  ll.className = 'legend-linked';
+  ll.innerHTML = `<span class="chip-ex">chip</span> = koppeling naar deepdive`;
+  legend.appendChild(ll);
+}
+
+build();
+</script>
+</body>
+</html>
