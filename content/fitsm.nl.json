@@ -1,0 +1,72 @@
+{
+  "key": "fitsm",
+  "category": "03 Frameworks",
+  "title": "FitSM",
+  "lead": "Een lichtgewicht, gratis ITSM-standaard — ontworpen om servicemanagement haalbaar te maken voor federaties van organisaties en kleinere IT-teams.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "FitSM is een open, vrij beschikbare standaard voor lichtgewicht IT-servicemanagement, gepubliceerd en onderhouden door ITEMO (IT Service Management Expert Group). Oorspronkelijk ontwikkeld binnen het EU-gefinancierde FedSM-project, is het ontworpen om gestructureerd servicemanagement toegankelijk te maken in gefedereerde IT-infrastructuren — zoals onderzoeksnetwerken, publieke-sectorconsortia en cloudfederaties — waar meerdere organisaties gezamenlijk verantwoordelijk zijn voor dienstverlening. FitSM is afgestemd op ISO/IEC 20000 en deelt conceptuele wortels met ITIL, maar elimineert complexiteit om te focussen op wat strikt noodzakelijk is voor het leveren en verbeteren van IT-diensten."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "FitSM is relevant in ITOM-trajecten waar een volledige ITIL-implementatie onevenredig zou zijn — bijvoorbeeld bij kleinere organisaties, overheidsinstanties met beperkte ITSM-volwassenheid, of multi-provideromgevingen waar een gemeenschappelijke, lichtgewicht basis nodig is over organisatiegrenzen heen. Het gefedereerde ontwerp maakt het bijzonder geschikt voor SIAM-contexten, waar een gemeenschappelijk procesmodel meerdere providers moet overspannen zonder zware governance-overhead op te leggen. FitSM kan ook dienen als opstap: organisaties adopteren het om discipline op te bouwen en groeien daarna door naar ISO/IEC 20000 of ITIL 4."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        { "term": "Gefedereerde IT", "desc": "FitSM is speciaal gebouwd voor omgevingen waar IT-diensten worden geleverd over organisatiegrenzen heen — een directe match met SIAM en multi-providermodellen" },
+        { "term": "14 servicemanagementprocessen", "desc": "dekken de volledige ITSM-levenscyclus van strategie via operatie tot verbetering, op een pragmatisch detailniveau" },
+        { "term": "Gratis te gebruiken", "desc": "alle FitSM-standaarden, sjablonen en trainingsmaterialen zijn publiek beschikbaar zonder kosten — de adoptiedrempel wordt hiermee aanzienlijk verlaagd" },
+        { "term": "Afstemming op ISO/IEC 20000", "desc": "FitSM is structureel afgestemd op de ISO/IEC 20000-standaard, waardoor het een haalbaar pad biedt naar formele certificering" },
+        { "term": "Eenvoud als ontwerpprincipe", "desc": "FitSM beperkt bewust de prescriptiviteit — vereisten zijn haalbaar in plaats van ambitieus, zodat echte adoptie in resource-beperkte omgevingen mogelijk is" }
+      ]
+    },
+    {
+      "heading": "De 14 FitSM-processen",
+      "type": "list",
+      "items": [
+        { "term": "SMS — Plannen en beheersen van het servicemanagmentsysteem", "desc": "stelt het managementsysteem zelf in en onderhoudt dit" },
+        { "term": "SPM — Serviceportfoliobeheer", "desc": "beheert het portfolioïo van diensten gedurende hun volledige levenscyclus" },
+        { "term": "SLM — Serviceniveaubeheer", "desc": "sluit serviceniveaus af met klanten en bewaakt deze" },
+        { "term": "SRM — Leveranciers- en contractbeheer", "desc": "beheert externe leveranciers en onderliggende contracten" },
+        { "term": "Fin — Financieel beheer voor IT-diensten", "desc": "bewaakt kosten en budgetten die samenhangen met IT-dienstverlening" },
+        { "term": "CAP — Capaciteits- en prestatiebeheer", "desc": "zorgt voor voldoende capaciteit om overeengekomen serviceniveaus te halen" },
+        { "term": "ISRM — Informatiebeveiligings- en privacybeheer", "desc": "beschermt de vertrouwelijkheid, integriteit en beschikbaarheid van informatie" },
+        { "term": "SACM — Beschikbaarheids- en continuiteitsbeheer", "desc": "beheert beschikbaarheidsdoelen en herstelmogelijkheden" },
+        { "term": "CHG — Changebeheer", "desc": "beheert wijzigingen om verstoringen van diensten te minimaliseren" },
+        { "term": "RDM — Release- en deploymentbeheer", "desc": "beheert het bouwen, testen en uitrollen van releases" },
+        { "term": "CONFM — Configuratiebeheer", "desc": "onderhoudt nauwkeurige informatie over servicecomponenten en hun onderlinge relaties" },
+        { "term": "INC — Incident- en serviceaanvraagbeheer", "desc": "herstelt diensten en vervult standaardaanvragen efficiënt" },
+        { "term": "PRB — Probleembeheer", "desc": "pakt oorzaken aan om terugkerende incidenten te voorkomen" },
+        { "term": "REL — Relatiebeheer", "desc": "bouwt productieve relaties op en onderhoudt deze met klanten en stakeholders" }
+      ]
+    },
+    {
+      "heading": "Atos Diensten",
+      "type": "list",
+      "items": [
+        { "desc": "FitSM-adoptiebeoordeling — bereidheid evalueren en de juiste scope van FitSM-processen bepalen voor de organisatie" },
+        { "desc": "Lichtgewicht ITSM-ontwerp — een evenredig processet implementeren op basis van FitSM voor kleinere of gefedereerde omgevingen" },
+        { "desc": "FitSM-naar-ISO/IEC 20000-roadmap — het volwassenheidspad plannen van FitSM-basis naar formele certificering" },
+        { "desc": "Multi-provider basisontwerp — FitSM gebruiken als gemeenschappelijk procesmodel in SIAM- en multi-sourcingcontexten" }
+      ]
+    },
+    {
+      "heading": "Officiële bronnen",
+      "type": "external-links",
+      "items": [
+        { "label": "FitSM officiële website (ITEMO)", "url": "https://www.fitsm.eu/" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "COBIT", "key": "cobit" }
+  ]
+}

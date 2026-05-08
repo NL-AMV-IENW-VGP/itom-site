@@ -1,0 +1,72 @@
+{
+  "key": "fitsm",
+  "category": "03 Frameworks",
+  "title": "FitSM",
+  "lead": "A lightweight, free ITSM standard — designed to make service management achievable for federations of organisations and smaller IT teams.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "FitSM is an open, freely available standard for lightweight IT service management, published and maintained by ITEMO (IT Service Management Expert Group). Originally developed through the EU-funded FedSM project, it was designed to make structured service management accessible in federated IT infrastructures — such as research networks, public sector consortia, and cloud federations — where multiple organisations share responsibility for service delivery. FitSM is aligned with ISO/IEC 20000 and shares conceptual roots with ITIL, but strips away complexity to focus on what is strictly necessary to deliver and improve IT services."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "FitSM is relevant in ITOM engagements where a full ITIL implementation would be disproportionate — for example in smaller organisations, government agencies with limited ITSM maturity, or multi-provider environments where a common, lightweight baseline is needed across organisational boundaries. Its federated design makes it particularly suited to SIAM contexts, where a shared process model must span multiple providers without imposing heavy governance overhead. FitSM can also serve as a stepping stone: organisations adopt it to establish discipline and then mature towards ISO/IEC 20000 or ITIL 4 over time."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        { "term": "Federated IT", "desc": "FitSM was purpose-built for environments where IT services are delivered across organisational boundaries — a direct fit for SIAM and multi-provider models" },
+        { "term": "14 service management processes", "desc": "covering the full ITSM lifecycle from strategy through operation and improvement, at a pragmatic level of detail" },
+        { "term": "Free to use", "desc": "all FitSM standards, templates, and training materials are publicly available at no cost — lowering the adoption barrier significantly" },
+        { "term": "ISO/IEC 20000 alignment", "desc": "FitSM is structurally aligned with the ISO/IEC 20000 standard, making it a viable path towards formal certification" },
+        { "term": "Simplicity by design", "desc": "FitSM deliberately limits prescriptiveness — requirements are achievable rather than aspirational, enabling real-world adoption in resource-constrained settings" }
+      ]
+    },
+    {
+      "heading": "The 14 FitSM Processes",
+      "type": "list",
+      "items": [
+        { "term": "SMS — Service Management System Planning and Control", "desc": "establishes and maintains the management system itself" },
+        { "term": "SPM — Service Portfolio Management", "desc": "manages the portfolio of services across their full lifecycle" },
+        { "term": "SLM — Service Level Management", "desc": "agrees and monitors service levels with customers" },
+        { "term": "SRM — Supplier and Contract Management", "desc": "manages external suppliers and underpinning contracts" },
+        { "term": "Fin — Financial Management for IT Services", "desc": "tracks costs and budgets associated with IT service delivery" },
+        { "term": "CAP — Capacity and Performance Management", "desc": "ensures sufficient capacity to meet agreed service levels" },
+        { "term": "ISRM — Information Security and Privacy Management", "desc": "protects the confidentiality, integrity, and availability of information" },
+        { "term": "SACM — Service Availability and Continuity Management", "desc": "manages availability targets and recovery capabilities" },
+        { "term": "CHG — Change Management", "desc": "controls changes to minimise disruption to services" },
+        { "term": "RDM — Release and Deployment Management", "desc": "manages the build, test, and deployment of releases" },
+        { "term": "CONFM — Configuration Management", "desc": "maintains accurate information about service components and their relationships" },
+        { "term": "INC — Incident and Service Request Management", "desc": "restores services and fulfils standard requests efficiently" },
+        { "term": "PRB — Problem Management", "desc": "addresses root causes to prevent recurring incidents" },
+        { "term": "REL — Relationship Management", "desc": "builds and maintains productive relationships with customers and stakeholders" }
+      ]
+    },
+    {
+      "heading": "Atos Services",
+      "type": "list",
+      "items": [
+        { "desc": "FitSM adoption assessment — evaluate readiness and identify the right scope of FitSM processes for the organisation" },
+        { "desc": "Lightweight ITSM design — implement a proportionate process set based on FitSM for smaller or federated environments" },
+        { "desc": "FitSM-to-ISO/IEC 20000 roadmap — plan the maturation journey from FitSM baseline towards formal certification" },
+        { "desc": "Multi-provider baseline design — use FitSM as the common process model in SIAM and multi-sourcing contexts" }
+      ]
+    },
+    {
+      "heading": "Official resources",
+      "type": "external-links",
+      "items": [
+        { "label": "FitSM official website (ITEMO)", "url": "https://www.fitsm.eu/" }
+      ]
+    }
+  ],
+  "related": [
+    { "label": "ITSM", "key": "itsm" },
+    { "label": "ITIL Library", "key": "itil-library" },
+    { "label": "SIAM", "key": "siam" },
+    { "label": "COBIT", "key": "cobit" }
+  ]
+}
