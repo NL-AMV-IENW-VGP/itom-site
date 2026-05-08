@@ -10,6 +10,13 @@
       "body": "FitSM is an open, freely available standard for lightweight IT service management, published and maintained by ITEMO (IT Service Management Expert Group). Originally developed through the EU-funded FedSM project, it was designed to make structured service management accessible in federated IT infrastructures — such as research networks, public sector consortia, and cloud federations — where multiple organisations share responsibility for service delivery. FitSM is aligned with ISO/IEC 20000 and shares conceptual roots with ITIL, but strips away complexity to focus on what is strictly necessary to deliver and improve IT services."
     },
     {
+      "heading": "FitSM framework overview",
+      "type": "image",
+      "src": "assets/img/fitsm-overview.png",
+      "alt": "FitSM framework overview showing the 14 service management processes",
+      "caption": "Source: fitsm.eu"
+    },
+    {
       "heading": "ITOM Perspective",
       "type": "text",
       "body": "FitSM is relevant in ITOM engagements where a full ITIL implementation would be disproportionate — for example in smaller organisations, government agencies with limited ITSM maturity, or multi-provider environments where a common, lightweight baseline is needed across organisational boundaries. Its federated design makes it particularly suited to SIAM contexts, where a shared process model must span multiple providers without imposing heavy governance overhead. FitSM can also serve as a stepping stone: organisations adopt it to establish discipline and then mature towards ISO/IEC 20000 or ITIL 4 over time."
