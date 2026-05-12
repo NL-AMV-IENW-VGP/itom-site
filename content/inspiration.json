@@ -1,0 +1,58 @@
+{
+  "key": "inspiration",
+  "category": "04 Accelerators",
+  "title": "Inspiration Sessions",
+  "lead": "Curated presentations and experiences that inspire teams and leadership to embrace new ways of working and technology-driven change.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Inspiration sessions are structured sessions designed to shift mindsets and build appetite for change. They combine external perspectives, case studies, emerging trends and interactive elements to challenge assumptions and open up new possibilities. They are typically used early in a transformation engagement."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Inspiration sessions are used in ITOM engagements to create urgency and openness for change. They are particularly effective with leadership teams who need to understand why the current operating model needs to change and what the future could look like."
+    },
+    {
+      "heading": "Session Types",
+      "type": "list",
+      "items": [
+        {
+          "term": "Technology Trends",
+          "desc": "Overview of emerging technologies and their business implications."
+        },
+        {
+          "term": "Case Studies",
+          "desc": "Real-world examples of operating model transformation from peer organisations."
+        },
+        {
+          "term": "KNOWvember Sessions",
+          "desc": "Atos's internal knowledge-sharing sessions on specific topics."
+        },
+        {
+          "term": "Reverse Mentoring",
+          "desc": "Junior staff sharing new perspectives with senior leadership."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    },
+    {
+      "label": "Facilitation Games",
+      "key": "facilitation"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    }
+  ]
+}

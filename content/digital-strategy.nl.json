@@ -1,0 +1,62 @@
+{
+  "key": "digital-strategy",
+  "category": "01 Purpose",
+  "title": "Digitale Strategie",
+  "lead": "Het plan dat bepaalt hoe een organisatie digitale technologieën inzet om haar doelstellingen te bereiken en nieuwe waarde te creëren.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De digitale strategie vertaalt de bedrijfsambitie naar technologiegedreven transformatie. Ze beschrijft hoe data, automatisering, platforms en digitale kanalen het businessmodel, de klantervaring en de interne processen zullen veranderen. Digitale strategie gaat over concurrentieel onderscheid door technologie — niet alleen het draaien van IT."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De digitale strategie bepaalt in grote mate het target operating model. Ze geeft aan welke capabilities gebouwd, ingekocht of gepartnerd moeten worden, en in welk tempo. ITOM-trajecten analyseren de digitale strategie om de gevolgen voor organisatie, processen, platforms en governance te identificeren."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Digitale Transformatie Roadmap",
+          "desc": "Gesequentieerde set initiatieven die de digitale ambitie omzetten in concrete verandering."
+        },
+        {
+          "term": "Platformdenken",
+          "desc": "Bouwen van herbruikbare digitale platforms in plaats van puntoplossingen."
+        },
+        {
+          "term": "Data & Analytics",
+          "desc": "Data omzetten in inzicht en concurrentievoordeel."
+        },
+        {
+          "term": "Klantervaring (CX)",
+          "desc": "End-to-end digitale klantreizen over alle contactpunten."
+        },
+        {
+          "term": "Ecosysteem & Partnerships",
+          "desc": "Gebruik van externe platforms, API's en partners om capabilities uit te breiden."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Organisatiestrategie",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "Cloud Strategie",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

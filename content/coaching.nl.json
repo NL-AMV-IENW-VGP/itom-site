@@ -1,0 +1,66 @@
+{
+  "key": "coaching",
+  "category": "04 Accelerators",
+  "title": "Coaching & Training",
+  "lead": "Individuele en teamcoaching en -training om capabilities op te bouwen, adoptie te versnellen en verandering te bestendigen in IT-transformatieprogramma's.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Coaching en training zijn essentiële versnellers in elke IT-transformatie. Coaching richt zich op individuele en teamontwikkeling via begeleide reflectie en praktijk. Training bouwt specifieke vaardigheden en kennis op. Samen stellen ze de mensendimensie van het target operating model in staat — zodat teams direct op nieuwe manieren kunnen werken."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Elk ITOM-operating model vereist capability-opbouw. Coaching wordt gebruikt voor het ontwikkelen van leiderschapsgedrag (bijv. dienend leiderschap in agile transformaties), teampraktijken (bijv. Scrum-coaching) en individuele vaardigheden (bijv. agile coaching, ITIL-certificering). Trainingsprogramma's worden ontworpen om de capability-gaps te adresseren die zijn geïdentificeerd in het operating model-ontwerp."
+    },
+    {
+      "heading": "Servicetypen",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile Coaching",
+          "desc": "Agile-praktijken inbedden in teams via coaching en facilitatie."
+        },
+        {
+          "term": "Leiderschapscoaching",
+          "desc": "Leiders ondersteunen bij het aanpassen van hun stijl aan nieuwe werkwijzen."
+        },
+        {
+          "term": "Teamtraining",
+          "desc": "Vaardighedenopbouwprogramma's voor teams (ITIL, SAFe, Scrum, DevOps)."
+        },
+        {
+          "term": "Train-de-Trainer",
+          "desc": "Interne coaches en trainers in staat stellen de verandering zelfstandig te bestendigen."
+        },
+        {
+          "term": "Certificeringsvoorbereiding",
+          "desc": "Gestructureerde voorbereiding op professionele certificeringen."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "SFIA",
+      "key": "sfia"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    }
+  ]
+}

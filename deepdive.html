@@ -278,6 +278,7 @@
 </style>
 </head>
 <body>
+<script>if(/Edg\//.test(navigator.userAgent))document.body.classList.add('browser-edge');</script>
 
 <!-- Auth overlay — verborgen nadat gebruiker is ingelogd -->
 <div id="auth-overlay" style="display:none">
@@ -399,10 +400,14 @@ function renderPage(data) {
       }).join("\n      ");
       sectionsHtml += `  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
     } else if (section.type === "external-links") {
-      const linkChips = section.items.map(item =>
-        `<a href="${esc(item.url)}" target="_blank" rel="noopener" class="related-chip">${esc(item.label)}</a>`
-      ).join("\n      ");
-      sectionsHtml += `  <p class="sharepoint-notice">⚠️ Open these links in Internet Explorer to avoid authorisation issues.</p>\n  <div class="related-grid" data-field="items">\n      ${linkChips}\n  </div>\n`;
+      const docLinks = section.items.map(item => {
+        const match = item.label.match(/^(.*?)\s*\(([A-Z]+)\)$/);
+        const name = match ? match[1] : item.label;
+        const type = match ? match[2] : '';
+        const typeSpan = type ? `<span class="doc-type">${esc(type)}</span>` : '';
+        return `<a href="${esc(item.url)}" target="_blank" rel="noopener" class="doc-link" data-label="${esc(item.label)}"><span class="doc-icon">🗎</span><span class="doc-name">${esc(name)}</span>${typeSpan}</a>`;
+      }).join("\n      ");
+      sectionsHtml += `  <div class="doc-section">\n  <p class="sharepoint-notice">⚠️ Open these links in Microsoft Edge to avoid authorisation issues.</p>\n  <div class="doc-list" data-field="items">\n      ${docLinks}\n  </div>\n  </div>\n`;
     } else if (section.type === "image") {
       const caption = section.caption ? `\n  <p class="img-caption">${esc(section.caption)}</p>` : "";
       sectionsHtml += `  <img src="${esc(section.src)}" alt="${esc(section.alt || section.heading)}" class="section-img">${caption}\n`;
@@ -536,7 +541,7 @@ function extractData() {
     } else if (section.type === "external-links") {
       const anchors = card.querySelectorAll("[data-field='items'] a");
       section.items = Array.from(anchors).map(a => ({
-        label: a.textContent.trim(),
+        label: a.dataset.label || a.textContent.trim(),
         url: a.getAttribute("href")
       }));
     }

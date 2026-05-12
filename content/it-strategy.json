@@ -1,0 +1,66 @@
+{
+  "key": "it-strategy",
+  "category": "01 Purpose",
+  "title": "IT Strategy",
+  "lead": "The plan that aligns IT capabilities, investments and sourcing decisions with business objectives.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "IT strategy defines how the IT function will support and enable the organisation's goals over a multi-year horizon. It covers the portfolio of IT services, sourcing model, technology architecture, governance and the roadmap for change. A clear IT strategy is the prerequisite for designing an effective IT Operating Model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The IT Operating Model is the operationalisation of the IT strategy. Every ITOM engagement begins with validating or developing the IT strategy, as it drives all decisions about organisation design, process architecture, platform choices and governance structure."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "IT Governance",
+          "desc": "Decision rights and accountability structures for IT investment and delivery."
+        },
+        {
+          "term": "Sourcing Strategy",
+          "desc": "The mix of in-house, outsourced and cloud-delivered IT capabilities."
+        },
+        {
+          "term": "Technology Roadmap",
+          "desc": "Multi-year plan for platform evolution and legacy retirement."
+        },
+        {
+          "term": "Portfolio Management",
+          "desc": "Prioritisation of IT projects and products relative to business value."
+        },
+        {
+          "term": "IT Architecture",
+          "desc": "The structural design of systems, data, infrastructure and integration."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Corporate Strategy",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "Digital Strategy",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "Cloud Strategy",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    }
+  ]
+}

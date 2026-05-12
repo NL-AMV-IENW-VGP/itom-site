@@ -86,6 +86,32 @@
           "desc": "SAFe training — Leading SAFe, SAFe for Teams, SAFe Scrum Master, and other certifications"
         }
       ]
+    },
+    {
+      "heading": "Relevant materials on SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "Agile Team Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Agile-Team-Self-Assessment.xlsx"
+        },
+        {
+          "label": "DevOps Health Radar (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/DevOps-Health-Radar.xlsx"
+        },
+        {
+          "label": "Lean Enterprise Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Lean-Enterprise-Assessment_F-1.xlsx"
+        },
+        {
+          "label": "Lean Portfolio Management Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Lean-Portfolio-Management-Self-Assessment_fixed.xlsx"
+        },
+        {
+          "label": "Program Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Program-Self-Assessment.xlsx"
+        }
+      ]
     }
   ],
   "related": [

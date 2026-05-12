@@ -1,0 +1,92 @@
+{
+  "key": "itil4",
+  "category": "Training",
+  "title": "ITIL4 Training",
+  "lead": "Trainingsprogramma ter voorbereiding op de ITIL4 Foundation-certificering — de wereldwijd erkende instapkwalificatie voor ITSM.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Het ITIL4-trainingsprogramma behandelt de kernconcepten, praktijken en principes van ITIL4. Het bereidt deelnemers voor op het ITIL4 Foundation-examen, het toegangspunt tot het bredere ITIL4-certificeringsschema. De training combineert theorie, uitgewerkte voorbeelden en oefenexamens."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "ITIL4-training wordt in ITOM-trajecten gebruikt om een gemeenschappelijke taal en basiskennis op te bouwen in de IT-organisatie. Het is bijzonder waardevol aan het begin van ITSM-gerichte operating model-herontwerpen, zodat alle stakeholders hetzelfde begrip van service management-concepten delen."
+    },
+    {
+      "heading": "Programmainhoud",
+      "type": "list",
+      "items": [
+        {
+          "term": "ITIL4 Leidende Principes",
+          "desc": "De 7 principes die alle IT-servicemanagementbeslissingen sturen."
+        },
+        {
+          "term": "Service Value System (SVS)",
+          "desc": "Het overkoepelende model dat toont hoe alle ITIL-componenten samenwerken."
+        },
+        {
+          "term": "Vier Dimensies Model",
+          "desc": "Organisaties & Mensen, Informatie & Technologie, Partners & Leveranciers, Waardeketen & Processen."
+        },
+        {
+          "term": "Service Value Chain",
+          "desc": "Het operationele model voor servicecreatie en -levering."
+        },
+        {
+          "term": "Managementpraktijken",
+          "desc": "34 ITIL-praktijken die de volledige servicelevenscyclus bestrijken."
+        }
+      ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "ITIL4 Introduction Course (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pptx"
+        },
+        {
+          "label": "ITIL4 Introduction Course (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pdf"
+        },
+        {
+          "label": "ITIL4 Foundation Practice Exam 1 (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%201%29.pdf"
+        },
+        {
+          "label": "ITIL4 Foundation Practice Exam 2 (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%202%29.pdf"
+        },
+        {
+          "label": "TSI-DOM ITIL Maturity Questionnaire (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/ITIL/TSI-DOM%20ITIL%20Maturity%20Questionnaire.xlsx"
+        },
+        {
+          "label": "ITIL map op SharePoint",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL"
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITSM Volwassenheidsscan",
+      "key": "itsm-scan"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    }
+  ]
+}

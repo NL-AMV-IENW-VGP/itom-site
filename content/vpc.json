@@ -1,0 +1,66 @@
+{
+  "key": "vpc",
+  "category": "05 Visual Toolkit",
+  "title": "Value Proposition Canvas",
+  "lead": "A visual tool for mapping what an organisation offers against what customers actually need — ensuring strategic fit.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Value Proposition Canvas (VPC), developed by Alex Osterwalder, is a two-sided tool. On the right is the Customer Profile — describing customer jobs, pains and gains. On the left is the Value Map — describing the products/services, pain relievers and gain creators. The goal is to achieve 'fit' between the two sides."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "In ITOM, the Value Proposition Canvas is used to define IT's value proposition to the business. It helps articulate what IT services relieve business pains and create business gains — making the operating model's purpose explicit and customer-centric."
+    },
+    {
+      "heading": "Canvas Components",
+      "type": "list",
+      "items": [
+        {
+          "term": "Customer Jobs",
+          "desc": "Functional, social and emotional tasks the customer needs to accomplish."
+        },
+        {
+          "term": "Pains",
+          "desc": "Risks, obstacles and frustrations experienced when trying to get the job done."
+        },
+        {
+          "term": "Gains",
+          "desc": "Benefits, outcomes and aspirations the customer desires."
+        },
+        {
+          "term": "Products & Services",
+          "desc": "The offerings that help customers get their jobs done."
+        },
+        {
+          "term": "Pain Relievers",
+          "desc": "How the offering reduces or eliminates customer pains."
+        },
+        {
+          "term": "Gain Creators",
+          "desc": "How the offering produces customer gains."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Value Proposition",
+      "key": "value-proposition"
+    },
+    {
+      "label": "Business Model Canvas",
+      "key": "bmc"
+    },
+    {
+      "label": "(IT)OM Canvas",
+      "key": "itom-canvas"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    }
+  ]
+}

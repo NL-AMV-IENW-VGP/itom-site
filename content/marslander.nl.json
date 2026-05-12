@@ -18,46 +18,135 @@
       "heading": "Hoe Het Werkt",
       "type": "list",
       "items": [
-        { "term": "Setting", "desc": "teams nemen rollen aan binnen een ruimtevaartorganisatie — van mission control en engineering tot communicatie en stakeholdermanagement — om een Mars-landing te plannen en uit te voeren" },
-        { "term": "Meerdere rondes", "desc": "elke ronde neemt de complexiteit toe: teams moeten hun manier van werken aanpassen naarmate nieuwe uitdagingen en beperkingen opdoemen" },
-        { "term": "Agile & ITSM-principes", "desc": "deelnemers passen Agile-waarden, iteratieve planning, service management-disciplines en incident handling toe en reflecteren hierop in een realistische context" },
-        { "term": "Competitieve spanning", "desc": "meerdere teams concurreren op missiesucces, wat urgentie en betrokkenheid creëert die de echte organisatiedruk weerspiegelt" },
-        { "term": "Debrief", "desc": "gestructureerde reflectie verbindt simulatie-uitkomsten aan operating model-principes — deelnemers zien direct het verband tussen manier van werken en resultaten" }
+        {
+          "term": "Setting",
+          "desc": "teams nemen rollen aan binnen een ruimtevaartorganisatie — van mission control en engineering tot communicatie en stakeholdermanagement — om een Mars-landing te plannen en uit te voeren"
+        },
+        {
+          "term": "Meerdere rondes",
+          "desc": "elke ronde neemt de complexiteit toe: teams moeten hun manier van werken aanpassen naarmate nieuwe uitdagingen en beperkingen opdoemen"
+        },
+        {
+          "term": "Agile & ITSM-principes",
+          "desc": "deelnemers passen Agile-waarden, iteratieve planning, service management-disciplines en incident handling toe en reflecteren hierop in een realistische context"
+        },
+        {
+          "term": "Competitieve spanning",
+          "desc": "meerdere teams concurreren op missiesucces, wat urgentie en betrokkenheid creëert die de echte organisatiedruk weerspiegelt"
+        },
+        {
+          "term": "Debrief",
+          "desc": "gestructureerde reflectie verbindt simulatie-uitkomsten aan operating model-principes — deelnemers zien direct het verband tussen manier van werken en resultaten"
+        }
       ]
     },
     {
       "heading": "Leerdoelen",
       "type": "list",
       "items": [
-        { "desc": "De gevolgen ervaren van slechte communicatie, onduidelijke rollen en zware governance in een veilige, spelgebaseerde omgeving" },
-        { "desc": "Agile-principes toepassen — iteratieve planning, feedbackloops en adaptief denken — onder tijd- en middelendruk" },
-        { "desc": "Begrijpen hoe IT Service Management-disciplines de voorspelbaarheid en kwaliteit verbeteren" },
-        { "desc": "Cross-functionele samenwerkingsvaardigheden en gedeeld eigenaarschap van uitkomsten opbouwen" },
-        { "desc": "Governance- en operating model-ontwerpkeuzes verbinden aan echte bedrijfsimpact" }
+        {
+          "desc": "De gevolgen ervaren van slechte communicatie, onduidelijke rollen en zware governance in een veilige, spelgebaseerde omgeving"
+        },
+        {
+          "desc": "Agile-principes toepassen — iteratieve planning, feedbackloops en adaptief denken — onder tijd- en middelendruk"
+        },
+        {
+          "desc": "Begrijpen hoe IT Service Management-disciplines de voorspelbaarheid en kwaliteit verbeteren"
+        },
+        {
+          "desc": "Cross-functionele samenwerkingsvaardigheden en gedeeld eigenaarschap van uitkomsten opbouwen"
+        },
+        {
+          "desc": "Governance- en operating model-ontwerpkeuzes verbinden aan echte bedrijfsimpact"
+        }
       ]
     },
     {
       "heading": "Praktische Details",
       "type": "list",
       "items": [
-        { "term": "Duur", "desc": "halve dag tot 1 dag" },
-        { "term": "Deelnemers", "desc": "8–12 personen per sessie" },
-        { "term": "Voorkennis", "desc": "geen voorkennis van Agile of ITSM vereist — geschikt voor gemengd IT- en businesspubliek" },
-        { "term": "Format", "desc": "beschikbaar als fysieke workshop; virtuele versie beschikbaar op aanvraag" },
-        { "term": "Certificering", "desc": "Atos is gecertificeerd facilitator voor MarsLander-simulaties" }
+        {
+          "term": "Duur",
+          "desc": "halve dag tot 1 dag"
+        },
+        {
+          "term": "Deelnemers",
+          "desc": "8–12 personen per sessie"
+        },
+        {
+          "term": "Voorkennis",
+          "desc": "geen voorkennis van Agile of ITSM vereist — geschikt voor gemengd IT- en businesspubliek"
+        },
+        {
+          "term": "Format",
+          "desc": "beschikbaar als fysieke workshop; virtuele versie beschikbaar op aanvraag"
+        },
+        {
+          "term": "Certificering",
+          "desc": "Atos is gecertificeerd facilitator voor MarsLander-simulaties"
+        }
       ]
     },
     {
       "heading": "Contact",
       "type": "text",
       "body": "Neem voor meer informatie over deze training contact op met arjen.bakker@atos.net"
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "Atos MarsLander game — brochure (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Atos%20Marslandergame%20brochure%20oud.pptx"
+        },
+        {
+          "label": "MarsLander game — Atos brochure customer ENG (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20game%20-%20Atos%20brochure%20customer%202020%20ENG.pptx"
+        },
+        {
+          "label": "MarsLander simulation game (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20simulation%20game.pptx"
+        },
+        {
+          "label": "MarsLander simulation game incl. price indication (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20simulation%20game%20incl%20price%20indication.pptx"
+        },
+        {
+          "label": "MarsLander game — Atos brochure ENG July 2020 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20-%20Atos%20brochure%202020%20ENG%20July%202020.pptx"
+        },
+        {
+          "label": "MarsLander game virtual — Atos brochure ENG (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20virtual%20-%20Atos%20brochure%202020%20ENG.pptx"
+        },
+        {
+          "label": "Serious gaming slides pre sales call (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/Serious%20gaming%20slides%20pre%20sales%20call%2013102020.pptx"
+        }
+      ]
     }
   ],
   "related": [
-    { "label": "The Phoenix Project", "key": "phoenix-project" },
-    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
-    { "label": "Bedrijfssimulaties", "key": "biz-simulations" },
-    { "label": "Agile", "key": "agile" },
-    { "label": "ITSM", "key": "itsm" }
+    {
+      "label": "The Phoenix Project",
+      "key": "phoenix-project"
+    },
+    {
+      "label": "Hollywood Dreams",
+      "key": "hollywood-dreams"
+    },
+    {
+      "label": "Bedrijfssimulaties",
+      "key": "biz-simulations"
+    },
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    }
   ]
 }

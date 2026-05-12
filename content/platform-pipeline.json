@@ -1,0 +1,62 @@
+{
+  "key": "platform-pipeline",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Platform and Pipeline Support",
+  "lead": "Technical support for setting up and operating DevOps platforms and CI/CD pipelines — enabling fast, safe software delivery.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Platform and Pipeline Support helps organisations implement the technical foundation for DevOps — the developer platform, CI/CD toolchain and deployment automation. This includes platform selection, setup, integration and ongoing operation. A well-designed platform is a force multiplier for development teams."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The DevOps platform is the technology backbone of a modern delivery operating model. In ITOM, platform and pipeline support translates the operating model design into a working technical environment — enabling the practices, governance and metrics defined in the operating model."
+    },
+    {
+      "heading": "Service Components",
+      "type": "list",
+      "items": [
+        {
+          "term": "Developer Platform",
+          "desc": "Internal developer platform (IDP) setup — portals, self-service, scaffolding."
+        },
+        {
+          "term": "CI/CD Pipeline",
+          "desc": "Design and implementation of build, test and deployment pipelines."
+        },
+        {
+          "term": "Infrastructure as Code",
+          "desc": "Automating infrastructure provisioning with tools like Terraform or Ansible."
+        },
+        {
+          "term": "Platform Operations",
+          "desc": "Ongoing platform management, monitoring and evolution."
+        },
+        {
+          "term": "DevSecOps Integration",
+          "desc": "Embedding security controls into the pipeline (SAST, DAST, secrets management)."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Cloud Services",
+      "key": "cloud-services"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "key": "process-redesign",
+  "category": "04 Accelerators",
+  "title": "Process Redesign",
+  "lead": "Structured analysis and redesign of business and IT processes to improve efficiency, quality and alignment with the target operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Process redesign involves mapping current (as-is) processes, identifying waste and inefficiencies, and designing improved (to-be) processes aligned with the target operating model. It draws on Lean, Six Sigma and BPM techniques and results in documented processes, RACI matrices and implementation plans."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The process dimension is central to the IT Operating Model. Process redesign translates the operating model principles into operational reality — defining how work flows, who does what, and how quality is ensured. It is a core activity in ITSM, outsourcing and agile transformation engagements."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "As-Is Analysis",
+          "desc": "Documenting and understanding current processes, including pain points and waste."
+        },
+        {
+          "term": "Gap Analysis",
+          "desc": "Identifying the delta between current and desired process performance."
+        },
+        {
+          "term": "To-Be Design",
+          "desc": "Designing the future process, including swimlanes, decision points and RACI."
+        },
+        {
+          "term": "Lean Principles",
+          "desc": "Eliminating waste (muda) and non-value-adding steps."
+        },
+        {
+          "term": "Process Governance",
+          "desc": "Ownership, metrics and continuous improvement mechanisms for processes."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Transformation Management",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "key": "cloud-services",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Clouddiensten",
+  "lead": "Beheerde clouddiensten voor infrastructuur-, platform- en applicatielagen — organisaties in staat stellend IT als dienst af te nemen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Clouddiensten bieden organisaties on-demand toegang tot computingresources — van infrastructuur (IaaS) en platforms (PaaS) tot software (SaaS). Beheerde clouddiensten voegen operationeel beheer toe bovenop ruwe cloudcapaciteit, waardoor organisaties zich kunnen richten op hun business in plaats van op het draaien van infrastructuur."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Clouddiensten bepalen de platform- en technologiedimensie van het IT Operating Model. De keuze van het cloudservicemodel (IaaS, PaaS, SaaS) bepaalt de benodigde IT-capabilities, het operating model-ontwerp en de governance. Overstap naar cloud maakt vaak een verschuiving mogelijk van bouwen-en-beheren naar consumeren-en-managen."
+    },
+    {
+      "heading": "Servicemodellen",
+      "type": "list",
+      "items": [
+        {
+          "term": "IaaS",
+          "desc": "Infrastructure as a Service — compute, opslag en netwerken op aanvraag."
+        },
+        {
+          "term": "PaaS",
+          "desc": "Platform as a Service — beheerde runtime, databases en middleware."
+        },
+        {
+          "term": "SaaS",
+          "desc": "Software as a Service — complete applicaties via de cloud geleverd."
+        },
+        {
+          "term": "Managed Cloud",
+          "desc": "Volledig beheerde cloudoperaties inclusief monitoring, patchen en optimalisatie."
+        },
+        {
+          "term": "Hybride Cloud",
+          "desc": "Combinatie van on-premises en public cloud, centraal verbonden en beheerd."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloudstrategie",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    },
+    {
+      "label": "Platform- en Pipelineondersteuning",
+      "key": "platform-pipeline"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "key": "iso-iec",
+  "category": "03 Frameworks",
+  "title": "ISO/IEC 20000",
+  "lead": "De internationale norm voor IT-servicemanagement — definieert eisen voor een Service Management System (SMS).",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "ISO/IEC 20000 specificeert eisen voor organisaties om een Service Management System (SMS) op te zetten, te implementeren, te onderhouden en continu te verbeteren. De norm is technologieonafhankelijk en kan worden gebruikt naast ITIL, SIAM of elke andere ITSM-aanpak. Certificering toont aan dat de service management-processen voldoen aan internationaal erkende normen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "ISO/IEC 20000-certificering is vaak een klant- of regelgevingsvereiste in ITOM-trajecten, met name in outsourcing en managed services-contexten. De norm biedt een compliancebaseline die de volwassenheid van het service management operating model valideert."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Service Management System (SMS)",
+          "desc": "De geïntegreerde set beleidslijnen, processen en resources voor het beheer van IT-diensten."
+        },
+        {
+          "term": "Eisen",
+          "desc": "Verplichte vereisten waaraan moet worden voldaan voor certificering."
+        },
+        {
+          "term": "Certificeringsaudit",
+          "desc": "Derde-partijenaudit om conformiteit met de norm te verifiëren."
+        },
+        {
+          "term": "Continue Verbetering",
+          "desc": "Voortdurende meting en verbetering van het SMS."
+        },
+        {
+          "term": "Scope",
+          "desc": "De gedefinieerde grens van diensten en organisaties die door het SMS worden gedekt."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

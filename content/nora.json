@@ -1,0 +1,62 @@
+{
+  "key": "nora",
+  "category": "03 Frameworks",
+  "title": "NORA",
+  "lead": "Nederlandse Overheid Referentie Architectuur — the Dutch government's reference architecture for interoperable and coherent digital services.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "NORA (Nederlandse Overheid Referentie Architectuur) provides architecture principles, models and standards for the Dutch government. It aims to ensure that government IT systems are interoperable, reusable and citizen-centred. NORA is maintained by the Dutch Ministry of the Interior and is the foundation for all government architecture frameworks in the Netherlands."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "NORA is a mandatory reference in Dutch public sector ITOM engagements. IT Operating Model designs for government clients must demonstrate alignment with NORA principles, particularly around interoperability, open standards and privacy by design."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Architecture Principles",
+          "desc": "The foundational design rules for government IT systems."
+        },
+        {
+          "term": "Interoperability",
+          "desc": "Enabling government systems to exchange data and work together seamlessly."
+        },
+        {
+          "term": "Open Standards",
+          "desc": "Use of open, vendor-neutral standards to prevent lock-in."
+        },
+        {
+          "term": "Privacy by Design",
+          "desc": "Building privacy into systems from the ground up, aligned with GDPR."
+        },
+        {
+          "term": "Gemma / RORA / etc.",
+          "desc": "Sector-specific architectures derived from NORA for municipalities, Rijksoverheid, etc."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "RORA",
+      "key": "rora"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "TOGAF",
+      "key": "togaf"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    }
+  ]
+}

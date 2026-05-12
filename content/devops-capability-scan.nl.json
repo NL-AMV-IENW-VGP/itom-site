@@ -18,30 +18,104 @@
       "heading": "Scandimensies",
       "type": "list",
       "items": [
-        { "term": "Cultuur & samenwerking", "desc": "psychologische veiligheid, gedeeld eigenaarschap, blame-free post-mortems" },
-        { "term": "Continuous Integration (CI)", "desc": "integratiefrequentie, geautomatiseerd testen, buildkwaliteit" },
-        { "term": "Continuous Delivery (CD)", "desc": "deploymentfrequentie, doorlooptijd, wijzigingsfoutpercentage, MTTR" },
-        { "term": "Infrastructure as Code", "desc": "automatisering van provisioning, configuratiebeheer, immutable infrastructure" },
-        { "term": "Monitoring & observability", "desc": "metrics, logging, tracing, alerting en incidentrespons" },
-        { "term": "Beveiliging (DevSecOps)", "desc": "shift-left beveiligingspraktijken, kwetsbaarheidsscanning, compliance-automatisering" }
+        {
+          "term": "Cultuur & samenwerking",
+          "desc": "psychologische veiligheid, gedeeld eigenaarschap, blame-free post-mortems"
+        },
+        {
+          "term": "Continuous Integration (CI)",
+          "desc": "integratiefrequentie, geautomatiseerd testen, buildkwaliteit"
+        },
+        {
+          "term": "Continuous Delivery (CD)",
+          "desc": "deploymentfrequentie, doorlooptijd, wijzigingsfoutpercentage, MTTR"
+        },
+        {
+          "term": "Infrastructure as Code",
+          "desc": "automatisering van provisioning, configuratiebeheer, immutable infrastructure"
+        },
+        {
+          "term": "Monitoring & observability",
+          "desc": "metrics, logging, tracing, alerting en incidentrespons"
+        },
+        {
+          "term": "Beveiliging (DevSecOps)",
+          "desc": "shift-left beveiligingspraktijken, kwetsbaarheidsscanning, compliance-automatisering"
+        }
       ]
     },
     {
       "heading": "Output",
       "type": "list",
       "items": [
-        { "desc": "Volwassenheidsscore per dimensie (schaal 1–5, benchmarked tegen industrie)" },
-        { "desc": "Top-5 verbeterprioristeiten met onderbouwing" },
-        { "desc": "Quick wins versus structurele verbeteringen" },
-        { "desc": "Aanbevolen toolchain-wijzigingen" },
-        { "desc": "Input voor ITOM-doelontwerp en transformatieroadmap" }
+        {
+          "desc": "Volwassenheidsscore per dimensie (schaal 1–5, benchmarked tegen industrie)"
+        },
+        {
+          "desc": "Top-5 verbeterprioristeiten met onderbouwing"
+        },
+        {
+          "desc": "Quick wins versus structurele verbeteringen"
+        },
+        {
+          "desc": "Aanbevolen toolchain-wijzigingen"
+        },
+        {
+          "desc": "Input voor ITOM-doelontwerp en transformatieroadmap"
+        }
+      ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "ADM L5 DevSecOps — Customer Presentation (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/ADM%20L5%20DevSecOps%20-%20Customer%20Presentation.pptx"
+        },
+        {
+          "label": "Atos Lean DevOps (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/Atos-LeanDevOps-v09-preso-white.pptx"
+        },
+        {
+          "label": "Atos DevOps — masterslides (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/DevOps%20masterslides/Atos%20DevOps%20-%20long.pptx"
+        },
+        {
+          "label": "DevPipeline and Platform (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/DevOps%20masterslides/DevPipeline%20and%20platform.pptx"
+        },
+        {
+          "label": "Eviden DevOps Material Oct 2020 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/DevOps%20masterslides/Eviden%20DevOps%20Material%20Oct%202020.pptx"
+        },
+        {
+          "label": "DevSecOps extract for BPS France (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/DevOps%20Material/DevSecOps/Slides%20Repository%20-%2020200424%20WIP%20-%20DevSecOps%20extract%20for%20BPS%20France.pptx"
+        },
+        {
+          "label": "Agile DevOps Scan v1 (XLSM)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Devops%20Scan%20v1.xlsm"
+        }
       ]
     }
   ],
   "related": [
-    { "label": "Agile", "key": "agile" },
-    { "label": "Agile Maturity Scan", "key": "agile-scan" },
-    { "label": "Platform & Pipeline Support", "key": "platform-pipeline" },
-    { "label": "Playbooks", "key": "playbooks" }
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Platform & Pipeline Support",
+      "key": "platform-pipeline"
+    },
+    {
+      "label": "Playbooks",
+      "key": "playbooks"
+    }
   ]
 }

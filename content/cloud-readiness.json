@@ -1,0 +1,66 @@
+{
+  "key": "cloud-readiness",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "Cloud Readiness Scan",
+  "lead": "An assessment of an organisation's technical, organisational and financial readiness to migrate workloads to the cloud.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The Cloud Readiness Scan evaluates how prepared an organisation is for cloud migration — across its application portfolio, IT organisation, security posture, financial model and skills. The output is a workload disposition map (migrate, modernise, retire, retain) and a readiness improvement plan."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Cloud readiness is a prerequisite assessment in cloud transformation use cases. In ITOM, it informs the platform strategy and the operating model changes needed to support a cloud-first environment — including new roles (cloud engineers, FinOps), processes (release management, cloud governance) and tools."
+    },
+    {
+      "heading": "Assessment Areas",
+      "type": "list",
+      "items": [
+        {
+          "term": "Workload Assessment",
+          "desc": "Application inventory, dependencies and cloud suitability (6Rs framework)."
+        },
+        {
+          "term": "Security & Compliance",
+          "desc": "Data residency, regulatory requirements and security controls."
+        },
+        {
+          "term": "Skills & Organisation",
+          "desc": "Current cloud capabilities and skill gaps in the IT team."
+        },
+        {
+          "term": "Financial Readiness",
+          "desc": "OpEx vs CapEx model readiness and cloud cost management."
+        },
+        {
+          "term": "Operations",
+          "desc": "Monitoring, DevOps maturity and automation baseline."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloud Strategy",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Scan",
+      "key": "cloud-scan"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "key": "digital-strategy",
+  "category": "01 Purpose",
+  "title": "Digital Strategy",
+  "lead": "The plan that defines how an organisation leverages digital technologies to achieve its business objectives and create new value.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Digital strategy translates corporate ambition into technology-enabled transformation. It addresses how data, automation, platforms and digital channels will reshape the business model, customer experience and internal operations. It is distinct from IT strategy — digital strategy is about competitive differentiation through technology, not just running IT."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Digital strategy directly shapes the target operating model. It determines which capabilities must be built, bought or partnered, and at what pace. ITOM engagements analyse the digital strategy to identify implications for organisation, processes, platforms and governance."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Digital Transformation Roadmap",
+          "desc": "Sequenced set of initiatives translating digital ambition into delivered change."
+        },
+        {
+          "term": "Platform Thinking",
+          "desc": "Building reusable digital platforms rather than point solutions."
+        },
+        {
+          "term": "Data & Analytics",
+          "desc": "Turning data into insight and competitive advantage."
+        },
+        {
+          "term": "Customer Experience (CX)",
+          "desc": "End-to-end digital journeys across touchpoints."
+        },
+        {
+          "term": "Ecosystem & Partnerships",
+          "desc": "Leveraging external platforms, APIs and partners to extend capability."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Corporate Strategy",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "Cloud Strategy",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

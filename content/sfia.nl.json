@@ -1,0 +1,62 @@
+{
+  "key": "sfia",
+  "category": "03 Frameworks",
+  "title": "SFIA",
+  "lead": "Skills Framework for the Information Age — een wereldwijd erkend competentiekader voor IT-professionals.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "SFIA biedt een gemeenschappelijke taal voor het beschrijven van IT-vaardigheden en competenties. Het definieert vaardigheden op zeven verantwoordelijkheidsniveaus, van instructies opvolgen tot strategie bepalen. Organisaties gebruiken SFIA voor het definiëren van functieprofielen, het beoordelen van capability-gaps, het plannen van ontwikkeling en het beheren van workforce-transformatie."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "In ITOM-trajecten wordt SFIA gebruikt voor het ontwerpen van de mensendimensie van het target operating model — het definiëren van rollen, vaardighedenbehoeften en ontwikkeltrajecten. Het is met name relevant bij outsourcingtransities en agile transformaties waar nieuwe functieprofielen vereist zijn."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Vaardighedencategorieën",
+          "desc": "7 categorieën die IT-praktijken bestrijken van strategie tot gebruikersondersteuning."
+        },
+        {
+          "term": "Verantwoordelijkheidsniveaus",
+          "desc": "7 niveaus van 'Volgen' tot 'Strategie Bepalen'."
+        },
+        {
+          "term": "Functieprofielen",
+          "desc": "Combinaties van SFIA-vaardigheden voor het definiëren van functiebeschrijvingen."
+        },
+        {
+          "term": "Capabilitybeoordeling",
+          "desc": "Huidige workforce-vaardigheden in kaart brengen ten opzichte van SFIA."
+        },
+        {
+          "term": "Ontwikkelplanning",
+          "desc": "SFIA-gaps gebruiken voor gerichte training en loopbaanpaden."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    }
+  ]
+}

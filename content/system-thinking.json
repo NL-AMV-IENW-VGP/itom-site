@@ -1,0 +1,62 @@
+{
+  "key": "system-thinking",
+  "category": "04 Accelerators",
+  "title": "System Thinking",
+  "lead": "An approach to analysis that focuses on how a system's parts interrelate, work together and evolve over time — revealing hidden dynamics and leverage points.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "System thinking treats organisations as complex adaptive systems rather than linear cause-and-effect machines. It uses tools like causal loop diagrams, stock-and-flow models and archetypes to understand feedback loops, delays and unintended consequences. It is particularly valuable in complex transformation programmes where local optimisation leads to global sub-optimisation."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "System thinking is applied in ITOM to understand the interconnected nature of the operating model dimensions. Changes to one dimension (e.g. organisation structure) inevitably affect others (processes, governance, culture). System thinking helps identify high-leverage interventions and anticipate second-order effects."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Feedback Loops",
+          "desc": "Reinforcing loops (accelerators) and balancing loops (stabilisers) that drive system behaviour."
+        },
+        {
+          "term": "Delays",
+          "desc": "Time lags between actions and effects that cause oscillation and poor decisions."
+        },
+        {
+          "term": "Archetypes",
+          "desc": "Recurring system structures (e.g. 'Limits to Growth', 'Shifting the Burden') that explain common organisational problems."
+        },
+        {
+          "term": "Causal Loop Diagrams",
+          "desc": "Visual maps of system relationships and feedback."
+        },
+        {
+          "term": "Leverage Points",
+          "desc": "Places in the system where small interventions produce large changes."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    },
+    {
+      "label": "Transformation Management",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

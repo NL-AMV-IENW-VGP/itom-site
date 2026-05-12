@@ -1,0 +1,62 @@
+{
+  "key": "verism",
+  "category": "03 Frameworks",
+  "title": "VeriSM",
+  "lead": "Value-driven, Evolving, Responsive, Integrated Service Management — a modern ITSM framework that adapts to organisational context.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "VeriSM is a service management framework that emphasises flexibility and value. Rather than prescribing specific processes, it provides a Management Mesh — a set of resources, environment, service management practices and emerging technologies that organisations combine to deliver services. VeriSM is designed to work alongside DevOps, Agile and other practices."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "VeriSM's non-prescriptive approach makes it suitable for ITOM engagements where a bespoke service management model is required. Its Management Mesh concept aligns well with ITOM's multi-dimensional view of the operating model."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Management Mesh",
+          "desc": "The combination of resources, environment, practices and technologies used to deliver services."
+        },
+        {
+          "term": "Value-driven",
+          "desc": "Focus on outcomes that matter to consumers, not on internal process compliance."
+        },
+        {
+          "term": "Evolving",
+          "desc": "Continuous adaptation of service management to changing business needs."
+        },
+        {
+          "term": "Responsive",
+          "desc": "Rapid response to change using agile and DevOps practices."
+        },
+        {
+          "term": "Integrated",
+          "desc": "Combining multiple management practices rather than following a single framework."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "YaSM",
+      "key": "yasm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

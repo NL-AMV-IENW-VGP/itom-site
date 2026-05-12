@@ -1,0 +1,66 @@
+{
+  "key": "transformation-mgmt",
+  "category": "04 Accelerators",
+  "title": "Transformation and Transition Management",
+  "lead": "The management of complex organisational and IT transformation programmes — governing the journey from current to target operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Transformation management encompasses the governance, change management, communication and workstream coordination needed to deliver large-scale operating model change. Transition management specifically focuses on the operational handover phase — ensuring continuity of service while new capabilities are stood up."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Every ITOM engagement culminates in a transformation and transition phase. The target operating model must be implemented in a controlled, sequenced manner that manages risk, maintains service continuity and delivers sustainable change. Transformation management provides the governance wrapper for this journey."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Transformation Roadmap",
+          "desc": "Sequenced plan for moving from current to target state across all operating model dimensions."
+        },
+        {
+          "term": "Change Management",
+          "desc": "Managing the human side of transformation — communications, engagement, resistance."
+        },
+        {
+          "term": "Transition Planning",
+          "desc": "Operational handover plan ensuring continuity of service during change."
+        },
+        {
+          "term": "Workstream Coordination",
+          "desc": "Orchestrating parallel workstreams (people, process, technology, governance)."
+        },
+        {
+          "term": "Benefits Tracking",
+          "desc": "Monitoring realisation of transformation benefits against the business case."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Project and Program Management",
+      "key": "ppm"
+    },
+    {
+      "label": "Outsourcing",
+      "key": "outsourcing"
+    },
+    {
+      "label": "Post-merger Integration",
+      "key": "post-merger"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    }
+  ]
+}

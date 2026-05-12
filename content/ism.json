@@ -1,0 +1,62 @@
+{
+  "key": "ism",
+  "category": "03 Frameworks",
+  "title": "ISM — Information Security Management",
+  "lead": "A framework for protecting information assets through risk-based governance, controls and continuous improvement.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Information Security Management (ISM) provides the policies, processes and controls needed to protect the confidentiality, integrity and availability of information. In practice, ISM draws on standards such as ISO/IEC 27001 and NIST, and integrates with IT governance and service management to manage information risk across the organisation."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Security is a horizontal governance dimension in every IT Operating Model. ISM defines the security policies, risk appetite and control framework that constrain and guide all other operating model decisions — from architecture choices to process design and supplier management."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "CIA Triad",
+          "desc": "Confidentiality, Integrity and Availability — the three pillars of information security."
+        },
+        {
+          "term": "Risk Management",
+          "desc": "Identifying, assessing and treating information security risks."
+        },
+        {
+          "term": "Security Controls",
+          "desc": "Technical and organisational measures to reduce security risk."
+        },
+        {
+          "term": "Security Governance",
+          "desc": "Accountability, policies and decision structures for information security."
+        },
+        {
+          "term": "Incident Response",
+          "desc": "The process for detecting, containing and recovering from security incidents."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Security Scan NIST",
+      "key": "security-nist"
+    },
+    {
+      "label": "COBIT",
+      "key": "cobit"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

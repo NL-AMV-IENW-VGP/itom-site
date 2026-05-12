@@ -1,0 +1,66 @@
+{
+  "key": "agile-transformation",
+  "category": "02 Usecases",
+  "title": "Agile Transformation",
+  "lead": "Organisation-wide adoption of agile principles and ways of working — beyond teams, into leadership, governance and culture.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Agile transformation is a fundamental shift in how an organisation plans, executes and governs work. It moves from plan-driven to value-driven delivery, from hierarchical to collaborative, and from project-based to product-based. True agile transformation requires changes in organisation design, leadership behaviour, processes and tooling."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Agile transformation is one of the most common ITOM use cases. It affects all dimensions of the operating model: organisation structure (cross-functional teams), processes (continuous delivery, retrospectives), people (new roles, skills and behaviours), technology (DevOps platforms), and governance (OKRs, lean portfolio management)."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile at Scale",
+          "desc": "Applying agile principles beyond individual teams — SAFe, LeSS, Spotify model."
+        },
+        {
+          "term": "Product Operating Model",
+          "desc": "Organising around stable product teams rather than temporary projects."
+        },
+        {
+          "term": "Lean Portfolio Management",
+          "desc": "Value-driven investment and prioritisation at the portfolio level."
+        },
+        {
+          "term": "Culture & Mindset",
+          "desc": "The behavioural shifts required — psychological safety, transparency, continuous improvement."
+        },
+        {
+          "term": "Change Management",
+          "desc": "Managing the human side of the transformation using structured approaches."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

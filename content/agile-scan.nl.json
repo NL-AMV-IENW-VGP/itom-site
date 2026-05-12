@@ -18,53 +18,138 @@
       "heading": "Scandimensies",
       "type": "list",
       "items": [
-        { "term": "Teampraktijken", "desc": "sprintuitvoering, kwaliteit van ceremonies, backlogbeheer, definition of done" },
-        { "term": "Leiderschap & cultuur", "desc": "dienend leiderschap, psychologische veiligheid, ruimte voor experimenteren en falen" },
-        { "term": "Product ownership", "desc": "duidelijkheid van visie, stakeholderbetrokkenheid, effectiviteit van prioritering" },
-        { "term": "Levering & flow", "desc": "doorlooptijd, WIP-limieten, releasefrequentie, afhankelijkheidsbeheer" },
-        { "term": "Schaalvergroting", "desc": "cross-teamcoördinatie, programma-level ceremonies, portfolioafstemming" },
-        { "term": "Tooling & automatisering", "desc": "boardhygiëne, CI/CD-volwassenheid, zichtbaarheid van metrics" }
+        {
+          "term": "Teampraktijken",
+          "desc": "sprintuitvoering, kwaliteit van ceremonies, backlogbeheer, definition of done"
+        },
+        {
+          "term": "Leiderschap & cultuur",
+          "desc": "dienend leiderschap, psychologische veiligheid, ruimte voor experimenteren en falen"
+        },
+        {
+          "term": "Product ownership",
+          "desc": "duidelijkheid van visie, stakeholderbetrokkenheid, effectiviteit van prioritering"
+        },
+        {
+          "term": "Levering & flow",
+          "desc": "doorlooptijd, WIP-limieten, releasefrequentie, afhankelijkheidsbeheer"
+        },
+        {
+          "term": "Schaalvergroting",
+          "desc": "cross-teamcoördinatie, programma-level ceremonies, portfolioafstemming"
+        },
+        {
+          "term": "Tooling & automatisering",
+          "desc": "boardhygiëne, CI/CD-volwassenheid, zichtbaarheid van metrics"
+        }
       ]
     },
     {
       "heading": "Output",
       "type": "list",
       "items": [
-        { "desc": "Volwassenheidsscore per dimensie (schaal 1–5, op team- en organisatieniveau)" },
-        { "desc": "Sterktes en kritieke hiaten met onderbouwend bewijs" },
-        { "desc": "Geprioriteerde verbeteracties — quick wins en structurele veranderingen" },
-        { "desc": "Aanbevolen coaching- en trainingsinterventies" },
-        { "desc": "Input voor ITOM-doelontwerp en Agile transformatieroadmap" }
+        {
+          "desc": "Volwassenheidsscore per dimensie (schaal 1–5, op team- en organisatieniveau)"
+        },
+        {
+          "desc": "Sterktes en kritieke hiaten met onderbouwend bewijs"
+        },
+        {
+          "desc": "Geprioriteerde verbeteracties — quick wins en structurele veranderingen"
+        },
+        {
+          "desc": "Aanbevolen coaching- en trainingsinterventies"
+        },
+        {
+          "desc": "Input voor ITOM-doelontwerp en Agile transformatieroadmap"
+        }
       ]
     },
     {
       "heading": "Aanpak",
       "type": "list",
       "items": [
-        { "term": "Workshops & interviews", "desc": "gestructureerde sessies met teams, product owners, scrum masters en leiderschap" },
-        { "term": "Vragenlijst", "desc": "gestandaardiseerde enquête die kwantitatieve volwassenheidsscores oplevert" },
-        { "term": "Observatie", "desc": "bijwonen van teamceremonies (sprintplanning, retrospective, review) voor directe waarneming" },
-        { "term": "Benchmarking", "desc": "scores gepositioneerd ten opzichte van industrie-referentiedata en het Atos-klantenbestand" }
+        {
+          "term": "Workshops & interviews",
+          "desc": "gestructureerde sessies met teams, product owners, scrum masters en leiderschap"
+        },
+        {
+          "term": "Vragenlijst",
+          "desc": "gestandaardiseerde enquête die kwantitatieve volwassenheidsscores oplevert"
+        },
+        {
+          "term": "Observatie",
+          "desc": "bijwonen van teamceremonies (sprintplanning, retrospective, review) voor directe waarneming"
+        },
+        {
+          "term": "Benchmarking",
+          "desc": "scores gepositioneerd ten opzichte van industrie-referentiedata en het Atos-klantenbestand"
+        }
       ]
     },
     {
       "heading": "Relevante materialen op SharePoint",
       "type": "external-links",
       "items": [
-        { "label": "Maturity & Capability Scans — map", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/Forms/PersonalViews.aspx?RootFolder=/sites%2FAtosDGteam%2FShared%20Documents%2F02%2E%20Portfolio%2FMaturlity%20and%20Capability%20scans&View=%7B2C998B60%2D3529%2D48D2%2D975E%2DA2A6ADC2363D%7D" },
-        { "label": "Agile Maturity Scan met voorbeeld okt2020 (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20with%20example%20Oct2020.xlsx" },
-        { "label": "Agile Maturity Scan AC 20160127 (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20AC%2020160127.xlsx" },
-        { "label": "Agile DevOps Scan v1 (XLSM)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Devops%20Scan%20v1.xlsm" },
-        { "label": "Atos Consulting Agile Health Check v1.1 (XLSM)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Atos%20Consulting%20Agile%20Health%20Check%20v1.1.xlsm" },
-        { "label": "Agile healthcheck probe areas (DOCX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20healthcheck%20probe%20areas.docx" },
-        { "label": "Maturity assessment (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/maturity%20assessment.pptx" }
+        {
+          "label": "Maturity & Capability Scans — map",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/Forms/PersonalViews.aspx?RootFolder=/sites%2FAtosDGteam%2FShared%20Documents%2F02%2E%20Portfolio%2FMaturlity%20and%20Capability%20scans&View=%7B2C998B60%2D3529%2D48D2%2D975E%2DA2A6ADC2363D%7D"
+        },
+        {
+          "label": "Agile Maturity Scan met voorbeeld okt2020 (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20with%20example%20Oct2020.xlsx"
+        },
+        {
+          "label": "Agile Maturity Scan AC 20160127 (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20AC%2020160127.xlsx"
+        },
+        {
+          "label": "Agile DevOps Scan v1 (XLSM)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Devops%20Scan%20v1.xlsm"
+        },
+        {
+          "label": "Atos Consulting Agile Health Check v1.1 (XLSM)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Atos%20Consulting%20Agile%20Health%20Check%20v1.1.xlsm"
+        },
+        {
+          "label": "Agile healthcheck probe areas (DOCX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20healthcheck%20probe%20areas.docx"
+        },
+        {
+          "label": "Maturity assessment (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/maturity%20assessment.pptx"
+        },
+        {
+          "label": "Agile Maturity Scan Organisation Level 2nd — NS&I (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/20170821%20Agile%20Maturity%20Scan%20Organisation%20Level%202nd%20-%20NS%26I.xlsx"
+        },
+        {
+          "label": "Agile Maturity Scan NXP (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Agile%20Maturity%20Scan%20NXP.xlsx"
+        },
+        {
+          "label": "Scrum checklist (XLSM)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/Scrum%20checklist.xlsm"
+        }
       ]
     }
   ],
   "related": [
-    { "label": "Agile", "key": "agile" },
-    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
-    { "label": "Agile Transformation", "key": "agile-transformation" },
-    { "label": "SAFe", "key": "safe" }
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    }
   ]
 }

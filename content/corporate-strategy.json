@@ -1,0 +1,62 @@
+{
+  "key": "corporate-strategy",
+  "category": "01 Purpose",
+  "title": "Corporate Strategy",
+  "lead": "The long-term plan that defines an organisation's direction, competitive positioning and value creation priorities.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Corporate strategy sets the overall ambition and direction of an organisation — what markets it operates in, what capabilities it needs, and how it creates sustainable value. It is the starting point for all downstream planning, including IT and digital strategy."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "A sound IT Operating Model must be anchored to corporate strategy. ITOM engagements typically start by understanding the corporate strategy to ensure the target operating model supports the right business priorities — whether growth, efficiency, compliance or innovation."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Vision & Mission",
+          "desc": "The long-term aspirational direction and core purpose of the organisation."
+        },
+        {
+          "term": "Strategic Goals",
+          "desc": "Time-bound objectives that translate vision into measurable outcomes."
+        },
+        {
+          "term": "Business Model",
+          "desc": "How the organisation creates, delivers and captures value."
+        },
+        {
+          "term": "Competitive Positioning",
+          "desc": "The choices made about where and how to compete."
+        },
+        {
+          "term": "Portfolio Management",
+          "desc": "Prioritisation of initiatives and investments to support strategic goals."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Digital Strategy",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Value Proposition",
+      "key": "value-proposition"
+    }
+  ]
+}

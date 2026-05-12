@@ -1,0 +1,66 @@
+{
+  "key": "transformation-mgmt",
+  "category": "04 Accelerators",
+  "title": "Transformatie- en Transitiemanagement",
+  "lead": "Het beheer van complexe organisatorische en IT-transformatieprogramma's — de governance van de reis van het huidige naar het target operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Transformatiemanagement omvat de governance, changemanagement, communicatie en workstreamcoördinatie die nodig zijn voor grootschalige operating model-verandering. Transitiemanagement richt zich specifiek op de operationele overdrachtsfase — het waarborgen van servicecontinuïteit terwijl nieuwe capabilities worden opgebouwd."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Elk ITOM-traject culmineert in een transformatie- en transitiefase. Het target operating model moet worden geïmplementeerd op een beheerste, gesequentieerde manier die risico's beheert, servicecontinuïteit handhaaft en duurzame verandering oplevert. Transformatiemanagement biedt de governancewrapper voor deze reis."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Transformatie Roadmap",
+          "desc": "Gesequentieerd plan voor de overgang van huidige naar doeltoestand over alle operating model-dimensies."
+        },
+        {
+          "term": "Changemanagement",
+          "desc": "Beheer van de menselijke kant van transformatie — communicatie, betrokkenheid, weerstand."
+        },
+        {
+          "term": "Transitieplanning",
+          "desc": "Operationeel overdrachtsplan dat servicecontinuïteit tijdens verandering waarborgt."
+        },
+        {
+          "term": "Workstreamcoördinatie",
+          "desc": "Orkestratie van parallelle workstreams (mensen, proces, technologie, governance)."
+        },
+        {
+          "term": "Batenbewaking",
+          "desc": "Bewaken van de realisatie van transformatiebaten ten opzichte van de business case."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Project- en Programmamanagement",
+      "key": "ppm"
+    },
+    {
+      "label": "Outsourcing",
+      "key": "outsourcing"
+    },
+    {
+      "label": "Post-merger Integratie",
+      "key": "post-merger"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "key": "process-redesign",
+  "category": "04 Accelerators",
+  "title": "Procesherontwerp",
+  "lead": "Gestructureerde analyse en herontwerp van bedrijfs- en IT-processen voor verbeterde efficiëntie, kwaliteit en aansluiting op het target operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Procesherontwerp omvat het in kaart brengen van huidige processen (as-is), het identificeren van verspilling en inefficiënties, en het ontwerpen van verbeterde processen (to-be) die aansluiten op het target operating model. Het maakt gebruik van Lean-, Six Sigma- en BPM-technieken en resulteert in gedocumenteerde processen, RACI-matrices en implementatieplannen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De procesdimensie is centraal in het IT Operating Model. Procesherontwerp vertaalt de operating model-principes naar operationele realiteit — door te definiëren hoe werk stroomt, wie wat doet en hoe kwaliteit wordt gewaarborgd. Het is een kernactiviteit in ITSM-, outsourcing- en agile transformatietrajecten."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "As-Is Analyse",
+          "desc": "Documenteren en begrijpen van huidige processen, inclusief pijnpunten en verspilling."
+        },
+        {
+          "term": "Gap Analyse",
+          "desc": "Identificeren van het verschil tussen huidige en gewenste processprestaties."
+        },
+        {
+          "term": "To-Be Ontwerp",
+          "desc": "Ontwerpen van het toekomstige proces, inclusief swimlanes, beslispunten en RACI."
+        },
+        {
+          "term": "Lean Principes",
+          "desc": "Elimineren van verspilling (muda) en niet-waarde-toevoegende stappen."
+        },
+        {
+          "term": "Procesgovernance",
+          "desc": "Eigenaarschap, metrics en continue verbeteringsmechanismen voor processen."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Transformatiemanagement",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

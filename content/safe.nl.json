@@ -18,40 +18,118 @@
       "heading": "Kernconcepten",
       "type": "list",
       "items": [
-        { "term": "Agile Release Train (ART)", "desc": "een langlopend team van Agile-teams (50–125 personen) dat samen plant, committeert en levert in een gesynchroniseerde cadans" },
-        { "term": "Program Increment (PI)", "desc": "een vaste tijdbox (doorgaans 8–12 weken) waarin een ART incrementele waarde levert; start met PI Planning" },
-        { "term": "PI Planning", "desc": "een face-to-face (of virtueel) event waarbij alle teams op een ART afstemmen over doelstellingen en afhankelijkheden voor de komende PI" },
-        { "term": "Lean Portfolio Management", "desc": "strategie afstemmen op uitvoering via value stream-financiering, Lean-budgetten en Agile portfoliooperaties" },
-        { "term": "Value Streams", "desc": "de end-to-end stroom van waarde van concept tot levering — SAFe organiseert hieromheen in plaats van projecthiërarchieën" },
-        { "term": "Ingebouwde kwaliteit", "desc": "kwaliteit op elk niveau inbedden via TDD, CI/CD, architectuurrunway en compliance-automatisering" }
+        {
+          "term": "Agile Release Train (ART)",
+          "desc": "een langlopend team van Agile-teams (50–125 personen) dat samen plant, committeert en levert in een gesynchroniseerde cadans"
+        },
+        {
+          "term": "Program Increment (PI)",
+          "desc": "een vaste tijdbox (doorgaans 8–12 weken) waarin een ART incrementele waarde levert; start met PI Planning"
+        },
+        {
+          "term": "PI Planning",
+          "desc": "een face-to-face (of virtueel) event waarbij alle teams op een ART afstemmen over doelstellingen en afhankelijkheden voor de komende PI"
+        },
+        {
+          "term": "Lean Portfolio Management",
+          "desc": "strategie afstemmen op uitvoering via value stream-financiering, Lean-budgetten en Agile portfoliooperaties"
+        },
+        {
+          "term": "Value Streams",
+          "desc": "de end-to-end stroom van waarde van concept tot levering — SAFe organiseert hieromheen in plaats van projecthiërarchieën"
+        },
+        {
+          "term": "Ingebouwde kwaliteit",
+          "desc": "kwaliteit op elk niveau inbedden via TDD, CI/CD, architectuurrunway en compliance-automatisering"
+        }
       ]
     },
     {
       "heading": "SAFe Configuraties",
       "type": "list",
       "items": [
-        { "term": "Essential SAFe", "desc": "het minimaal levensvatbare framework — alleen team- en ART-niveau; geschikt voor organisaties die net beginnen met schaling" },
-        { "term": "Large Solution SAFe", "desc": "voegt coördinatie toe over meerdere ARTs voor grote, complexe systeemontwikkeling" },
-        { "term": "Portfolio SAFe", "desc": "voegt Lean portfoliomanagement toe voor strategische afstemming en investeringsfinanciering over value streams heen" },
-        { "term": "Full SAFe", "desc": "het volledige framework dat alle niveaus combineert — gebruikt door grote ondernemingen met complexe, multi-portfolio-omgevingen" }
+        {
+          "term": "Essential SAFe",
+          "desc": "het minimaal levensvatbare framework — alleen team- en ART-niveau; geschikt voor organisaties die net beginnen met schaling"
+        },
+        {
+          "term": "Large Solution SAFe",
+          "desc": "voegt coördinatie toe over meerdere ARTs voor grote, complexe systeemontwikkeling"
+        },
+        {
+          "term": "Portfolio SAFe",
+          "desc": "voegt Lean portfoliomanagement toe voor strategische afstemming en investeringsfinanciering over value streams heen"
+        },
+        {
+          "term": "Full SAFe",
+          "desc": "het volledige framework dat alle niveaus combineert — gebruikt door grote ondernemingen met complexe, multi-portfolio-omgevingen"
+        }
       ]
     },
     {
       "heading": "Atos Diensten",
       "type": "list",
       "items": [
-        { "desc": "SAFe readiness assessment — evalueer organisatiegereedheid voor Agile adoptie op schaal" },
-        { "desc": "ART launch — ontwerp en lanceer de eerste Agile Release Train met begeleide PI Planning" },
-        { "desc": "SAFe coaching — ingebedde SPCs en RTEs om de transformatie te begeleiden" },
-        { "desc": "Lean Portfolio Management setup — stem financiering, governance en strategie af op Agile flow" },
-        { "desc": "SAFe training — Leading SAFe, SAFe for Teams, SAFe Scrum Master en andere certificeringen" }
+        {
+          "desc": "SAFe readiness assessment — evalueer organisatiegereedheid voor Agile adoptie op schaal"
+        },
+        {
+          "desc": "ART launch — ontwerp en lanceer de eerste Agile Release Train met begeleide PI Planning"
+        },
+        {
+          "desc": "SAFe coaching — ingebedde SPCs en RTEs om de transformatie te begeleiden"
+        },
+        {
+          "desc": "Lean Portfolio Management setup — stem financiering, governance en strategie af op Agile flow"
+        },
+        {
+          "desc": "SAFe training — Leading SAFe, SAFe for Teams, SAFe Scrum Master en andere certificeringen"
+        }
+      ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "Agile Team Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Agile-Team-Self-Assessment.xlsx"
+        },
+        {
+          "label": "DevOps Health Radar (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/DevOps-Health-Radar.xlsx"
+        },
+        {
+          "label": "Lean Enterprise Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Lean-Enterprise-Assessment_F-1.xlsx"
+        },
+        {
+          "label": "Lean Portfolio Management Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Lean-Portfolio-Management-Self-Assessment_fixed.xlsx"
+        },
+        {
+          "label": "Program Self-Assessment (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/SAFe%20Assessment%20tools/Program-Self-Assessment.xlsx"
+        }
       ]
     }
   ],
   "related": [
-    { "label": "Agile", "key": "agile" },
-    { "label": "Agile Transformation", "key": "agile-transformation" },
-    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
-    { "label": "ITIL Library", "key": "itil-library" }
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    }
   ]
 }

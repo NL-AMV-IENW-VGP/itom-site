@@ -1,0 +1,62 @@
+{
+  "key": "intro-agile",
+  "category": "Training",
+  "title": "Introductie tot Agile",
+  "lead": "Een instaptraining die agile principes, mindset en werkwijzen introduceert — voor teams en stakeholders die nieuw zijn in agile.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Introductie tot Agile is een beknopte, bewustzijnsniveau-training voor teams en leiders die nieuw zijn in agile. Het behandelt de kernprincipes van het Agile Manifest, het verschil tussen agile en traditionele levering, en hoe agile er in de praktijk uitziet. Het is doorgaans een halve of hele dag."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Introductie tot Agile wordt in ITOM-trajecten gebruikt om een gemeenschappelijke basiskennis van agile te creëren bij diverse stakeholdergroepen — van businesssponsors tot IT-leveringsteams. Het is de eerste stap in het opbouwen van het bewustzijn dat nodig is voor een agile transformatie."
+    },
+    {
+      "heading": "Sessieinhoud",
+      "type": "list",
+      "items": [
+        {
+          "term": "Wat is Agile?",
+          "desc": "Oorsprong, het Agile Manifest, waarden en principes."
+        },
+        {
+          "term": "Agile vs. Waterval",
+          "desc": "Belangrijkste verschillen in planning, levering en governance."
+        },
+        {
+          "term": "Agile Raamwerken Overzicht",
+          "desc": "Scrum, Kanban, SAFe — wat ze zijn en wanneer ze te gebruiken."
+        },
+        {
+          "term": "Agile in Onze Context",
+          "desc": "Wat agile betekent voor deze specifieke organisatie en dit team."
+        },
+        {
+          "term": "Volgende Stappen",
+          "desc": "Hoe te beginnen — aanbevolen training, coaching en literatuur."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "Agile in de Praktijk",
+      "key": "agile-practice"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    }
+  ]
+}

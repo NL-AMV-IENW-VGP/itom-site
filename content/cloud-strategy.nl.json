@@ -1,0 +1,66 @@
+{
+  "key": "cloud-strategy",
+  "category": "01 Purpose",
+  "title": "Cloudstrategie",
+  "lead": "Het plan dat bepaalt hoe een organisatie cloud adopteert, beheert en optimaliseert om haar technologie- en bedrijfsdoelstellingen te bereiken.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De cloudstrategie bepaalt de rol van cloud in het toekomstige IT-landschap — van het adoptiemodel (cloud-first, hybride of multi-cloud) tot het governance- en financieel kader. Ze vertaalt zakelijke drijfveren naar cloudprincipes en een migratie-roadmap."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De cloudstrategie is een fundamentele input voor de platform- en technologiedimensie van het IT Operating Model. Ze bepaalt of diensten intern, op public cloud of via SaaS worden gehost, en vormt de benodigde IT-capabilities, het organisatiemodel en de governance."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Cloudadoptiemodel",
+          "desc": "Cloud-first, hybride of multi-cloud aanpak op basis van workloadkenmerken."
+        },
+        {
+          "term": "Migratiestrategie",
+          "desc": "Lift & shift, re-platform, re-architect of vervangen per workload."
+        },
+        {
+          "term": "FinOps",
+          "desc": "Financieel beheer van clouduitgaven voor de balans tussen kosten, performance en wendbaarheid."
+        },
+        {
+          "term": "Cloud Governance",
+          "desc": "Beleid, beveiliging en compliance voor cloudoperaties."
+        },
+        {
+          "term": "Landing Zone",
+          "desc": "De fundamentele cloudomgeving voor veilige en beheerste adoptie."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Digitale Strategie",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Readiness Scan",
+      "key": "cloud-readiness"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    }
+  ]
+}

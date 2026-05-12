@@ -1,0 +1,62 @@
+{
+  "key": "togaf",
+  "category": "03 Frameworks",
+  "title": "TOGAF",
+  "lead": "The Open Group Architecture Framework — the most widely adopted enterprise architecture methodology for designing, planning and governing IT architecture.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "TOGAF provides a comprehensive approach and set of tools for developing enterprise architecture. At its core is the Architecture Development Method (ADM) — a cycle of phases that guides architects from strategy through to implementation and governance. TOGAF covers four architecture domains: Business, Data, Application and Technology (BDAT)."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "TOGAF is used in ITOM engagements to structure the enterprise architecture analysis that underpins operating model design. The architecture domains map directly to ITOM dimensions: business processes, data governance, application landscape and technology platform."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Architecture Development Method (ADM)",
+          "desc": "The iterative cycle of phases from architecture vision through to implementation governance."
+        },
+        {
+          "term": "BDAT Domains",
+          "desc": "Business, Data, Application and Technology — the four architecture domains."
+        },
+        {
+          "term": "Architecture Repository",
+          "desc": "The structured store of architecture assets, models and decisions."
+        },
+        {
+          "term": "Architecture Governance",
+          "desc": "The framework for managing architecture compliance and change."
+        },
+        {
+          "term": "Views & Viewpoints",
+          "desc": "Tailored architecture representations for different stakeholder concerns."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "NORA",
+      "key": "nora"
+    }
+  ]
+}

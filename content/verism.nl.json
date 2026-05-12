@@ -1,0 +1,62 @@
+{
+  "key": "verism",
+  "category": "03 Frameworks",
+  "title": "VeriSM",
+  "lead": "Value-driven, Evolving, Responsive, Integrated Service Management — een modern ITSM-raamwerk dat zich aanpast aan de organisatiecontext.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "VeriSM is een service management-raamwerk dat flexibiliteit en waarde centraal stelt. In plaats van specifieke processen voor te schrijven, biedt het een Management Mesh — een set van resources, omgeving, service management-praktijken en nieuwe technologieën die organisaties combineren om diensten te leveren. VeriSM is ontworpen om samen te werken met DevOps, Agile en andere praktijken."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De niet-prescriptieve aanpak van VeriSM maakt het geschikt voor ITOM-trajecten waarbij een maatwerkmodel voor service management vereist is. Het Management Mesh-concept sluit goed aan bij ITOM's meerdimensionale kijk op het operating model."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Management Mesh",
+          "desc": "De combinatie van resources, omgeving, praktijken en technologieën voor dienstverlening."
+        },
+        {
+          "term": "Waardegedreven",
+          "desc": "Focus op uitkomsten die van belang zijn voor consumenten, niet op procescompliance."
+        },
+        {
+          "term": "Evoluerend",
+          "desc": "Continue aanpassing van service management aan veranderende behoeften."
+        },
+        {
+          "term": "Responsief",
+          "desc": "Snelle reactie op verandering via agile en DevOps-praktijken."
+        },
+        {
+          "term": "Geïntegreerd",
+          "desc": "Combinatie van meerdere managementpraktijken in plaats van één raamwerk."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "YaSM",
+      "key": "yasm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

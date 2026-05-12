@@ -1,0 +1,62 @@
+{
+  "key": "it-strategy-svc",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "IT Transformation Strategy",
+  "lead": "A service to define, validate or refresh the IT strategy as the foundation for a transformation engagement.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The IT Transformation Strategy service establishes or refreshes the IT strategy as the starting point for a larger transformation programme. It combines stakeholder interviews, analysis of the current IT landscape, and benchmarking to produce a clear strategic direction, capability gaps and a transformation roadmap."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "IT Transformation Strategy is typically the first service delivered in an ITOM engagement. Without a clear IT strategy, operating model design risks producing a model that is technically sound but strategically misaligned. The output of this service directly feeds the ITOM design."
+    },
+    {
+      "heading": "Service Components",
+      "type": "list",
+      "items": [
+        {
+          "term": "Strategic Analysis",
+          "desc": "Current state assessment of IT capabilities, landscape and performance."
+        },
+        {
+          "term": "Stakeholder Alignment",
+          "desc": "Workshops to align leadership on IT direction and priorities."
+        },
+        {
+          "term": "Strategy Definition",
+          "desc": "IT vision, principles, strategic objectives and sourcing model."
+        },
+        {
+          "term": "Transformation Roadmap",
+          "desc": "Sequenced initiatives to close the gap between current and target state."
+        },
+        {
+          "term": "Business Case",
+          "desc": "Investment justification for the transformation programme."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "Transformation Management",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

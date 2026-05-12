@@ -1,0 +1,62 @@
+{
+  "key": "cloud-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "Cloud Scan",
+  "lead": "Een gestructureerde beoordeling van cloud-adoptierijpheid — met identificatie van gaps, risico's en kansen op het gebied van governance, architectuur en operaties.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De Cloud Scan beoordeelt de huidige cloud-adoptie van een organisatie ten opzichte van best practices en volwassenheidsmodellen. Het onderzoekt cloud governance, beveiligingshouding, kostenbeheer, operationeel model en architectuur om een geprioriteerde set verbeteraanbevelingen en een cloud-roadmap te produceren."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Gebruikt in ITOM-trajecten om de baseline te bepalen voor cloudstrategie en -transformatie. De scan-uitkomsten informeren direct de platform- en technologiedimensies van het target operating model."
+    },
+    {
+      "heading": "Scandimensies",
+      "type": "list",
+      "items": [
+        {
+          "term": "Cloud Governance",
+          "desc": "Beleidslijnen, guardrails en verantwoordelijkheidsstructuren voor cloudgebruik."
+        },
+        {
+          "term": "Beveiliging & Compliance",
+          "desc": "Cloud beveiligingshouding, identiteitsbeheer en regelgevingscompliance."
+        },
+        {
+          "term": "Kostenoptimalisatie",
+          "desc": "FinOps-rijpheid, kostenvisibiliteit en right-sizing."
+        },
+        {
+          "term": "Operaties",
+          "desc": "Monitoring, incidentmanagement en automatisering in de cloud."
+        },
+        {
+          "term": "Architectuur",
+          "desc": "Landing zone-ontwerp, workload-geschiktheid en multi-cloudstrategie."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloudstrategie",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Readiness Scan",
+      "key": "cloud-readiness"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    }
+  ]
+}

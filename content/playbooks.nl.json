@@ -1,0 +1,54 @@
+{
+  "key": "playbooks",
+  "category": "04 Accelerators",
+  "title": "Playbooks — Digitaal / Agile / DevOps",
+  "lead": "Gecureerde, gebruiksklare naslagdocumenten die de implementatie van Digitale, Agile en DevOps-werkwijzen in klantorganisaties versnellen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Playbooks zijn gestructureerde naslagdocumenten die methodologie vertalen naar praktische richtlijnen. Elk playbook behandelt een specifiek praktijkgebied — zoals DevOps, agile levering of digitale transformatie — en biedt principes, patronen, tools en uitgewerkte voorbeelden die teams direct kunnen toepassen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Playbooks versnellen de implementatie van het operating model door teams een bewezen startpunt te geven in plaats van alles van nul te ontwerpen. In ITOM-trajecten worden playbooks aangepast aan de klantcontext en gebruikt als fundamentele artefacten voor de nieuwe werkwijzen."
+    },
+    {
+      "heading": "Beschikbare Playbooks",
+      "type": "list",
+      "items": [
+        {
+          "term": "DevOps Playbook",
+          "desc": "End-to-end richtlijnen voor DevOps-implementatie — van cultuur en organisatie tot CI/CD en platform."
+        },
+        {
+          "term": "Agile Playbook",
+          "desc": "Praktische patronen voor agile levering op team- en programmaniveau."
+        },
+        {
+          "term": "Digitale Transformatie Playbook",
+          "desc": "Gestructureerde aanpak voor digitale verandering — strategie, levering en governance."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    }
+  ]
+}

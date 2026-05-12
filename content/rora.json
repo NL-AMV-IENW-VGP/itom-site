@@ -1,0 +1,62 @@
+{
+  "key": "rora",
+  "category": "03 Frameworks",
+  "title": "RORA",
+  "lead": "Rijksoverheid Referentie Architectuur — the central government reference architecture for consistent digital government in the Netherlands.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "RORA (Rijksoverheid Referentie Architectuur) is the reference architecture specifically for the Dutch central government (Rijksoverheid). It builds on NORA principles and translates them into concrete architecture guidelines and standards for ministries and executing organisations. RORA ensures coherence, interoperability and compliance across the central government IT landscape."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "RORA is the mandatory architecture framework for Rijksoverheid IT engagements. IT Operating Model designs for central government must align with RORA standards. Key implications include data classification, security baseline (BIO), shared services usage and interoperability requirements."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "BIO",
+          "desc": "Baseline Informatiebeveiliging Overheid — mandatory information security baseline."
+        },
+        {
+          "term": "Shared Services",
+          "desc": "Centrally provided services (DigiD, MijnOverheid) that must be reused."
+        },
+        {
+          "term": "Architecture Governance",
+          "desc": "Central review of IT projects for RORA compliance."
+        },
+        {
+          "term": "Interoperability Standards",
+          "desc": "Required standards for data exchange between government organisations."
+        },
+        {
+          "term": "Digiwerking",
+          "desc": "The programme for coherent digital working across the Rijksoverheid."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "NORA",
+      "key": "nora"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "ISM — Information Security Management",
+      "key": "ism"
+    }
+  ]
+}

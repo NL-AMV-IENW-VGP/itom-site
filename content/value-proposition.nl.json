@@ -1,0 +1,62 @@
+{
+  "key": "value-proposition",
+  "category": "01 Purpose",
+  "title": "Value Proposition",
+  "lead": "De unieke bundel waarde die een IT-organisatie levert aan haar klanten en stakeholders — de reden achter het operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Een value proposition beschrijft wat een organisatie biedt, voor wie, en waarom dat van belang is. In IT-context definieert het wat de IT-functie levert aan de business — welke problemen zij oplost en welke voordelen zij creëert. Een heldere IT value proposition is de grondslag van het IT Operating Model."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Elk ITOM-traject begint met het definiëren of valideren van de IT value proposition. Die bepaalt het dienstenportfolio, de operating model-prioriteiten en de metrics voor succes. Zonder een heldere value proposition dreigt het operating model-ontwerp technologiegedreven te worden in plaats van waardegedreven."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Customer Jobs",
+          "desc": "De taken en doelen die de klant wil bereiken."
+        },
+        {
+          "term": "Pijnpunten (Pains)",
+          "desc": "De obstakels, risico's en frustraties die de klant ervaart."
+        },
+        {
+          "term": "Voordelen (Gains)",
+          "desc": "De uitkomsten en voordelen die de klant nastreeft."
+        },
+        {
+          "term": "Value Map",
+          "desc": "Hoe producten en diensten voordelen creëren en pijnpunten verlichten."
+        },
+        {
+          "term": "Fit",
+          "desc": "De aansluiting tussen wat de klant nodig heeft en wat IT levert."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Organisatiestrategie",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "(IT)OM Canvas",
+      "key": "itom-canvas"
+    },
+    {
+      "label": "Value Proposition Canvas",
+      "key": "vpc"
+    }
+  ]
+}

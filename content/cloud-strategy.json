@@ -1,0 +1,66 @@
+{
+  "key": "cloud-strategy",
+  "category": "01 Purpose",
+  "title": "Cloud Strategy",
+  "lead": "The plan that defines how an organisation will adopt, govern and optimise cloud to achieve its technology and business objectives.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Cloud strategy determines the role of cloud in the future IT landscape — from the adoption model (cloud-first, hybrid or multi-cloud) to the governance and financial framework. It translates business drivers into cloud principles and a migration roadmap."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Cloud strategy is a fundamental input to the platform and technology dimension of the IT Operating Model. It determines whether services are hosted internally, on public cloud or via SaaS, and shapes the required IT capabilities, organisational model and governance."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Cloud Adoption Model",
+          "desc": "Cloud-first, hybrid or multi-cloud approach based on workload characteristics."
+        },
+        {
+          "term": "Migration Approach",
+          "desc": "Lift & shift, re-platform, re-architect or replace strategies per workload."
+        },
+        {
+          "term": "FinOps",
+          "desc": "Financial management of cloud spend to balance cost, performance and agility."
+        },
+        {
+          "term": "Cloud Governance",
+          "desc": "Policy, security and compliance frameworks for cloud operations."
+        },
+        {
+          "term": "Landing Zone",
+          "desc": "The foundational cloud environment setup for secure and governed adoption."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Digital Strategy",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "IT Strategy",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Readiness Scan",
+      "key": "cloud-readiness"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    }
+  ]
+}

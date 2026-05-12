@@ -18,46 +18,135 @@
       "heading": "How It Works",
       "type": "list",
       "items": [
-        { "term": "Setting", "desc": "teams take on roles within a space agency — from mission control and engineering to communication and stakeholder management — to plan and execute a Mars landing" },
-        { "term": "Multiple rounds", "desc": "each round increases complexity: teams must adapt their ways of working as new challenges and constraints emerge" },
-        { "term": "Agile & ITSM principles", "desc": "participants apply and reflect on Agile values, iterative planning, service management disciplines, and incident handling in a realistic context" },
-        { "term": "Competitive tension", "desc": "multiple teams compete on mission success, creating urgency and engagement that mirrors real organisational pressure" },
-        { "term": "Debrief", "desc": "structured reflection connects simulation outcomes to operating model principles — helping participants see the direct link between ways of working and results" }
+        {
+          "term": "Setting",
+          "desc": "teams take on roles within a space agency — from mission control and engineering to communication and stakeholder management — to plan and execute a Mars landing"
+        },
+        {
+          "term": "Multiple rounds",
+          "desc": "each round increases complexity: teams must adapt their ways of working as new challenges and constraints emerge"
+        },
+        {
+          "term": "Agile & ITSM principles",
+          "desc": "participants apply and reflect on Agile values, iterative planning, service management disciplines, and incident handling in a realistic context"
+        },
+        {
+          "term": "Competitive tension",
+          "desc": "multiple teams compete on mission success, creating urgency and engagement that mirrors real organisational pressure"
+        },
+        {
+          "term": "Debrief",
+          "desc": "structured reflection connects simulation outcomes to operating model principles — helping participants see the direct link between ways of working and results"
+        }
       ]
     },
     {
       "heading": "Learning Objectives",
       "type": "list",
       "items": [
-        { "desc": "Experience the consequences of poor communication, unclear roles, and heavyweight governance in a safe, game-based environment" },
-        { "desc": "Apply Agile principles — iterative planning, feedback loops, and adaptive thinking — under time and resource pressure" },
-        { "desc": "Understand how IT Service Management disciplines improve predictability and quality" },
-        { "desc": "Build cross-functional collaboration skills and shared ownership of outcomes" },
-        { "desc": "Connect governance and operating model design choices to real business impact" }
+        {
+          "desc": "Experience the consequences of poor communication, unclear roles, and heavyweight governance in a safe, game-based environment"
+        },
+        {
+          "desc": "Apply Agile principles — iterative planning, feedback loops, and adaptive thinking — under time and resource pressure"
+        },
+        {
+          "desc": "Understand how IT Service Management disciplines improve predictability and quality"
+        },
+        {
+          "desc": "Build cross-functional collaboration skills and shared ownership of outcomes"
+        },
+        {
+          "desc": "Connect governance and operating model design choices to real business impact"
+        }
       ]
     },
     {
       "heading": "Practical Details",
       "type": "list",
       "items": [
-        { "term": "Duration", "desc": "half day to 1 day" },
-        { "term": "Participants", "desc": "8–12 people per session" },
-        { "term": "Prerequisites", "desc": "no prior Agile or ITSM knowledge required — suitable for mixed IT and business audiences" },
-        { "term": "Format", "desc": "available in-person; virtual version available on request" },
-        { "term": "Certification", "desc": "Atos is certified facilitator for MarsLander simulations" }
+        {
+          "term": "Duration",
+          "desc": "half day to 1 day"
+        },
+        {
+          "term": "Participants",
+          "desc": "8–12 people per session"
+        },
+        {
+          "term": "Prerequisites",
+          "desc": "no prior Agile or ITSM knowledge required — suitable for mixed IT and business audiences"
+        },
+        {
+          "term": "Format",
+          "desc": "available in-person; virtual version available on request"
+        },
+        {
+          "term": "Certification",
+          "desc": "Atos is certified facilitator for MarsLander simulations"
+        }
       ]
     },
     {
       "heading": "Contact",
       "type": "text",
       "body": "For more information about this training, contact arjen.bakker@atos.net"
+    },
+    {
+      "heading": "Relevant materials on SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "Atos MarsLander game — brochure (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Atos%20Marslandergame%20brochure%20oud.pptx"
+        },
+        {
+          "label": "MarsLander game — Atos brochure customer ENG (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20game%20-%20Atos%20brochure%20customer%202020%20ENG.pptx"
+        },
+        {
+          "label": "MarsLander simulation game (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20simulation%20game.pptx"
+        },
+        {
+          "label": "MarsLander simulation game incl. price indication (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Customer/MarsLander%20simulation%20game%20incl%20price%20indication.pptx"
+        },
+        {
+          "label": "MarsLander game — Atos brochure ENG July 2020 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20-%20Atos%20brochure%202020%20ENG%20July%202020.pptx"
+        },
+        {
+          "label": "MarsLander game virtual — Atos brochure ENG (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/MarsLander%20game%20virtual%20-%20Atos%20brochure%202020%20ENG.pptx"
+        },
+        {
+          "label": "Serious gaming slides pre sales call (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Marslander%20Sales%20Support/Internal%20sales/Serious%20gaming%20slides%20pre%20sales%20call%2013102020.pptx"
+        }
+      ]
     }
   ],
   "related": [
-    { "label": "The Phoenix Project", "key": "phoenix-project" },
-    { "label": "Hollywood Dreams", "key": "hollywood-dreams" },
-    { "label": "Business Simulations", "key": "biz-simulations" },
-    { "label": "Agile", "key": "agile" },
-    { "label": "ITSM", "key": "itsm" }
+    {
+      "label": "The Phoenix Project",
+      "key": "phoenix-project"
+    },
+    {
+      "label": "Hollywood Dreams",
+      "key": "hollywood-dreams"
+    },
+    {
+      "label": "Business Simulations",
+      "key": "biz-simulations"
+    },
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    }
   ]
 }

@@ -1,0 +1,62 @@
+{
+  "key": "platform-pipeline",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Platform- en Pipelineondersteuning",
+  "lead": "Technische ondersteuning voor het opzetten en beheren van DevOps-platforms en CI/CD-pipelines — voor snelle, veilige softwarelevering.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Platform- en Pipelineondersteuning helpt organisaties bij het implementeren van de technische basis voor DevOps — het developerplatform, de CI/CD-toolketen en de deploymentautomatisering. Dit omvat platformselectie, opzet, integratie en voortdurende operatie. Een goed ontworpen platform is een krachtvermenigvuldiger voor ontwikkelteams."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Het DevOps-platform is de technologische ruggengraat van een modern leveringsoperating model. In ITOM vertaalt platform- en pipelineondersteuning het operating model-ontwerp naar een werkende technische omgeving — die de praktijken, governance en metrics mogelijk maakt die in het operating model zijn gedefinieerd."
+    },
+    {
+      "heading": "Dienstcomponenten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Developerplatform",
+          "desc": "Internal developer platform (IDP) opzet — portals, self-service, scaffolding."
+        },
+        {
+          "term": "CI/CD Pipeline",
+          "desc": "Ontwerp en implementatie van build-, test- en deploymentpipelines."
+        },
+        {
+          "term": "Infrastructure as Code",
+          "desc": "Automatisering van infrastructuurprovisioning met tools als Terraform of Ansible."
+        },
+        {
+          "term": "Platformoperaties",
+          "desc": "Voortdurend platformbeheer, monitoring en evolutie."
+        },
+        {
+          "term": "DevSecOps Integratie",
+          "desc": "Beveiligingscontroles inbedden in de pipeline (SAST, DAST, secrets management)."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Clouddiensten",
+      "key": "cloud-services"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

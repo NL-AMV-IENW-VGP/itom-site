@@ -1,0 +1,62 @@
+{
+  "key": "ism",
+  "category": "03 Frameworks",
+  "title": "ISM — Informatiebeveiliging",
+  "lead": "Een raamwerk voor het beschermen van informatiemiddelen via risicogebaseerde governance, beheersmaatregelen en continue verbetering.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Information Security Management (ISM) biedt de beleidslijnen, processen en beheersmaatregelen die nodig zijn om de vertrouwelijkheid, integriteit en beschikbaarheid van informatie te beschermen. In de praktijk put ISM uit standaarden als ISO/IEC 27001 en NIST, en integreert het met IT-governance en service management om informatierisico's te beheersen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Beveiliging is een horizontale governancedimensie in elk IT Operating Model. ISM definieert de beveiligingsbeleiden, risicobereidheid en beheerskader die alle andere operating model-beslissingen inkaderen — van architectuurkeuzes tot procesontwerp en leveranciersmanagement."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "CIA-driehoek",
+          "desc": "Vertrouwelijkheid, Integriteit en Beschikbaarheid — de drie pijlers van informatiebeveiliging."
+        },
+        {
+          "term": "Risicobeheer",
+          "desc": "Identificeren, beoordelen en behandelen van informatiebeveiligingsrisico's."
+        },
+        {
+          "term": "Beveiligingsmaatregelen",
+          "desc": "Technische en organisatorische maatregelen om beveiligingsrisico's te verminderen."
+        },
+        {
+          "term": "Beveiligingsgovernance",
+          "desc": "Verantwoordelijkheid, beleidslijnen en beslissingsstructuren voor informatiebeveiliging."
+        },
+        {
+          "term": "Incidentrespons",
+          "desc": "Het proces voor het detecteren, beheersen en herstellen van beveiligingsincidenten."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Security Scan NIST",
+      "key": "security-nist"
+    },
+    {
+      "label": "COBIT",
+      "key": "cobit"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

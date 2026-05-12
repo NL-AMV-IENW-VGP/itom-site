@@ -1,0 +1,62 @@
+{
+  "key": "facilitation",
+  "category": "04 Accelerators",
+  "title": "Facilitation Games",
+  "lead": "Interactive games and structured workshops that accelerate alignment, learning and culture change in IT transformation programmes.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Facilitation games use game mechanics to make complex concepts tangible, create shared experiences and accelerate behavioural change. They are used in workshops, offsites and training programmes to establish psychological safety, demonstrate new ways of working and surface organisational dynamics."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Facilitation games are used at key moments in ITOM engagements — at the start to create alignment, during process redesign to demonstrate lean principles, and in agile transformations to experience iterative delivery first-hand. Games make abstract concepts concrete and memorable."
+    },
+    {
+      "heading": "Available Games",
+      "type": "list",
+      "items": [
+        {
+          "term": "Ball Point Game",
+          "desc": "Demonstrates iterative improvement and the value of short feedback cycles."
+        },
+        {
+          "term": "Coin Game",
+          "desc": "Illustrates the cost of multitasking and the value of small batch sizes."
+        },
+        {
+          "term": "Marshmallow Challenge",
+          "desc": "Team dynamics, prototyping and iterative design."
+        },
+        {
+          "term": "Business Simulations",
+          "desc": "Realistic scenarios for experiencing operating model change (MarsLander, Phoenix Project, Hollywood Dreams)."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Business Simulations",
+      "key": "biz-simulations"
+    },
+    {
+      "label": "MarsLander",
+      "key": "marslander"
+    },
+    {
+      "label": "The Phoenix Project",
+      "key": "phoenix-project"
+    },
+    {
+      "label": "Hollywood Dreams",
+      "key": "hollywood-dreams"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    }
+  ]
+}

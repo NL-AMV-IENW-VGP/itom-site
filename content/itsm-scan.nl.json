@@ -1,0 +1,66 @@
+{
+  "key": "itsm-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "ITSM Volwassenheidsscan",
+  "lead": "Een gestructureerde beoordeling van IT-servicemanagementrijpheid — baseline-input voor het ontwerp van het ITSM-operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De ITSM Volwassenheidsscan evalueert de huidige staat van IT-servicemanagementprocessen, -tools en -governance. Het benchmarkt procesrijpheid ten opzichte van erkende raamwerken (ITIL, ISO/IEC 20000) en identificeert verbetermogelijkheden. De output is een rijpheidskaart en een geprioriteerde verbeterroadmap."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "De ITSM Volwassenheidsscan is doorgaans de eerste stap in een herontwerp van het ITSM-operating model. Het stelt een feitelijke baseline vast, aligneert stakeholders op de huidige staat en prioriteert de verbeteringen die nodig zijn om het target operating model te bereiken."
+    },
+    {
+      "heading": "Scandimensies",
+      "type": "list",
+      "items": [
+        {
+          "term": "Procesrijpheid",
+          "desc": "Dekking en effectiviteit van kernprocessen (incident, change, problem, etc.)."
+        },
+        {
+          "term": "Tool Landschap",
+          "desc": "Geschiktheid van ITSM-tooling (ServiceNow, Topdesk, etc.) voor huidige behoeften."
+        },
+        {
+          "term": "Governance",
+          "desc": "Verantwoordelijkheid, escalatiepaden en servicerapportage."
+        },
+        {
+          "term": "Mensen & Vaardigheden",
+          "desc": "Rollen, competenties en trainingsniveaus binnen de IT-organisatie."
+        },
+        {
+          "term": "Klantervaring",
+          "desc": "Perceptie van servicekwaliteit door zakelijke stakeholders."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "ServiceNow",
+      "key": "servicenow"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    }
+  ]
+}

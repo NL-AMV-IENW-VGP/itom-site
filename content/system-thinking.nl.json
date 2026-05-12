@@ -1,0 +1,62 @@
+{
+  "key": "system-thinking",
+  "category": "04 Accelerators",
+  "title": "Systeemdenken",
+  "lead": "Een analysebenadering die zich richt op hoe de onderdelen van een systeem met elkaar samenhangen, samenwerken en in de loop van de tijd evolueren — en zo verborgen dynamieken en hefboompunten onthult.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Systeemdenken behandelt organisaties als complexe adaptieve systemen in plaats van lineaire oorzaak-en-gevolgmachines. Het gebruikt tools als causale lusdiagrammen, voorraad-en-stroommodellen en archetypen om feedbacklussen, vertragingen en onbedoelde gevolgen te begrijpen. Het is bijzonder waardevol in complexe transformatieprogramma's waar lokale optimalisatie leidt tot globale suboptimalisatie."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Systeemdenken wordt in ITOM toegepast om de onderling verbonden aard van de operating model-dimensies te begrijpen. Veranderingen in één dimensie (bijv. organisatiestructuur) beïnvloeden onvermijdelijk andere (processen, governance, cultuur). Systeemdenken helpt bij het identificeren van effectieve interventiepunten en het anticiperen op tweede-orde-effecten."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Feedbacklussen",
+          "desc": "Versterkende lussen (versnellers) en balancerende lussen (stabilisatoren) die systeemgedrag aansturen."
+        },
+        {
+          "term": "Vertragingen",
+          "desc": "Tijdslagen tussen acties en effecten die oscillatie en slechte beslissingen veroorzaken."
+        },
+        {
+          "term": "Archetypen",
+          "desc": "Terugkerende systeemstructuren die veelvoorkomende organisatieproblemen verklaren."
+        },
+        {
+          "term": "Causale Lusdiagrammen",
+          "desc": "Visuele kaarten van systeemrelaties en feedback."
+        },
+        {
+          "term": "Hefboompunten",
+          "desc": "Plaatsen in het systeem waar kleine ingrepen grote veranderingen produceren."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    },
+    {
+      "label": "Transformatiemanagement",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

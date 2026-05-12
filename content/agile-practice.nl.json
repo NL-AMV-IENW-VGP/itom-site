@@ -1,0 +1,112 @@
+{
+  "key": "agile-practice",
+  "category": "Training",
+  "title": "Agile in de Praktijk",
+  "lead": "Een praktijkgericht trainingsprogramma gericht op het toepassen van agile principes en werkwijzen in dagelijkse teamactiviteiten en organisaties.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Agile in de Praktijk is een hands-on trainingsprogramma dat verder gaat dan theorie. Deelnemers leren door te doen — via realistische scenario's, facilitatieoefeningen en retrospectives die praktische agile vaardigheden opbouwen. Het is geschikt voor teams aan het begin van of halverwege een agile transformatie."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Agile in de Praktijk-training wordt in ITOM-trajecten gebruikt om snel agile capaciteit op te bouwen in teams die nieuwe werkwijzen adopteren als onderdeel van een operating model-verandering. Het complementeert Agile Coaching door een gestructureerde kennisbasis te bieden."
+    },
+    {
+      "heading": "Programmainhoud",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile Waarden & Principes",
+          "desc": "Het Agile Manifest en wat dat in de praktijk betekent."
+        },
+        {
+          "term": "Scrum-raamwerk",
+          "desc": "Rollen, ceremonies en artefacten voor iteratieve levering."
+        },
+        {
+          "term": "Kanban & Flow",
+          "desc": "Werk visualiseren, WIP beperken en flow verbeteren."
+        },
+        {
+          "term": "Retrospectives",
+          "desc": "Gestructureerde reflectie en continue verbetering."
+        },
+        {
+          "term": "Agile op Schaal",
+          "desc": "Introductie tot schalingskaders — SAFe, LeSS, Spotify."
+        }
+      ]
+    },
+    {
+      "heading": "Relevante materialen op SharePoint",
+      "type": "external-links",
+      "items": [
+        {
+          "label": "Agile in de Praktijk (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Training%20Agile%20in%20de%20praktijk/Agile%20in%20de%20praktijk%20v01%202023_share.pptx"
+        },
+        {
+          "label": "Agile in de praktijk v01 2022 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Training%20Agile%20in%20de%20praktijk/Agile%20in%20de%20praktijk%20v01%202022.pptx"
+        },
+        {
+          "label": "Training Agile in de praktijk Mei 2021 — Handouts (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Training%20Agile%20in%20de%20praktijk/Training%20Agile%20in%20de%20praktijk%20Mei%202021_Handouts.pdf"
+        },
+        {
+          "label": "Roodkapje — Agile in Practice (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Roodkapje/Roodkapje.pptx"
+        },
+        {
+          "label": "Ball Point Game — trainersinstructie (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Ballpointgame/Balll%20point%20game-%20trainersinstructie.pptx"
+        },
+        {
+          "label": "Agile Scrum - PSMI Certificeringstraining DAG 2 v1.0 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Scrum%20PSMI%20training/Agile%20%20Scrum%20-%20PSMI%20Certificeringstraining%20DAG%202%20v1.0.pptx"
+        },
+        {
+          "label": "Scrum-Guide-US (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Scrum%20PSMI%20training/Scrum-Guide-US.pdf"
+        },
+        {
+          "label": "KNOWvember Agile introduction (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction_share.pptx"
+        },
+        {
+          "label": "KNOWvember Agile introduction (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction%202023.pdf"
+        },
+        {
+          "label": "KNOWvember Agile introduction — 2022 editie (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction.pptx"
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    }
+  ]
+}

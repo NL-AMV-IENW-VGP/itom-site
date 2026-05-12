@@ -1,0 +1,62 @@
+{
+  "key": "facilitation",
+  "category": "04 Accelerators",
+  "title": "Facilitatiespellen",
+  "lead": "Interactieve spellen en gestructureerde workshops die alignment, leren en cultuurverandering versnellen in IT-transformatieprogramma's.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Facilitatiespellen gebruiken spelmechanica om complexe concepten tastbaar te maken, gedeelde ervaringen te creëren en gedragsverandering te versnellen. Ze worden gebruikt in workshops, offsites en trainingsprogramma's om psychologische veiligheid te vestigen, nieuwe werkwijzen te demonstreren en organisatiedynamieken bloot te leggen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Facilitatiespellen worden op sleutelmomenten in ITOM-trajecten ingezet — aan het begin voor alignment, tijdens procesherontwerp om lean-principes te demonstreren, en in agile transformaties om iteratieve levering uit de eerste hand te ervaren. Spellen maken abstracte concepten concreet en memorabel."
+    },
+    {
+      "heading": "Beschikbare Spellen",
+      "type": "list",
+      "items": [
+        {
+          "term": "Ball Point Game",
+          "desc": "Demonstreert iteratieve verbetering en de waarde van korte feedbackcycli."
+        },
+        {
+          "term": "Coin Game",
+          "desc": "Illustreert de kosten van multitasking en de waarde van kleine batchgroottes."
+        },
+        {
+          "term": "Marshmallow Challenge",
+          "desc": "Teamdynamiek, prototyping en iteratief ontwerp."
+        },
+        {
+          "term": "Business Simulaties",
+          "desc": "Realistische scenario's voor het ervaren van operating model-verandering (MarsLander, Phoenix Project, Hollywood Dreams)."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Business Simulaties",
+      "key": "biz-simulations"
+    },
+    {
+      "label": "MarsLander",
+      "key": "marslander"
+    },
+    {
+      "label": "The Phoenix Project",
+      "key": "phoenix-project"
+    },
+    {
+      "label": "Hollywood Dreams",
+      "key": "hollywood-dreams"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    }
+  ]
+}

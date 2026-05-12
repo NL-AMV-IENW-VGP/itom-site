@@ -1,0 +1,54 @@
+{
+  "key": "playbooks",
+  "category": "04 Accelerators",
+  "title": "Playbooks — Digital / Agile / DevOps",
+  "lead": "Curated, ready-to-use guidance documents that accelerate the implementation of Digital, Agile and DevOps practices in client organisations.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Playbooks are structured reference documents that translate methodology into practical guidance. Each playbook covers a specific practice area — such as DevOps, Agile delivery or Digital transformation — and provides principles, patterns, tools and worked examples that teams can apply immediately."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Playbooks accelerate operating model implementation by giving teams a proven starting point rather than designing from scratch. In ITOM engagements, playbooks are adapted to the client's context and used as foundational artefacts for the new ways of working."
+    },
+    {
+      "heading": "Available Playbooks",
+      "type": "list",
+      "items": [
+        {
+          "term": "DevOps Playbook",
+          "desc": "End-to-end guidance on implementing DevOps — from culture and organisation to CI/CD and platform."
+        },
+        {
+          "term": "Agile Playbook",
+          "desc": "Practical patterns for agile delivery at team and programme level."
+        },
+        {
+          "term": "Digital Transformation Playbook",
+          "desc": "Structured approach to digital change — strategy, delivery and governance."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    }
+  ]
+}

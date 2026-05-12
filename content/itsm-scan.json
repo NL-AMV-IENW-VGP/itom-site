@@ -1,0 +1,66 @@
+{
+  "key": "itsm-scan",
+  "category": "04 Accelerators — Assessments & Scans",
+  "title": "ITSM Maturity Scan",
+  "lead": "A structured assessment of IT service management maturity — baseline input for ITSM operating model design.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "The ITSM Maturity Scan evaluates the current state of IT service management processes, tools and governance. It benchmarks process maturity against recognised frameworks (ITIL, ISO/IEC 20000) and identifies improvement opportunities. The output is a maturity heatmap and a prioritised improvement roadmap."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "The ITSM Maturity Scan is typically the first step in an ITSM operating model redesign. It establishes a factual baseline, aligns stakeholders on the current state and prioritises the improvements needed to achieve the target operating model."
+    },
+    {
+      "heading": "Scan Dimensions",
+      "type": "list",
+      "items": [
+        {
+          "term": "Process Maturity",
+          "desc": "Coverage and effectiveness of core ITSM processes (incident, change, problem, etc.)."
+        },
+        {
+          "term": "Tool Landscape",
+          "desc": "Fitness of the ITSM tooling (ServiceNow, Topdesk, etc.) for current needs."
+        },
+        {
+          "term": "Governance",
+          "desc": "Accountability, escalation paths and service reporting."
+        },
+        {
+          "term": "People & Skills",
+          "desc": "Roles, competencies and training levels across the IT organisation."
+        },
+        {
+          "term": "Customer Experience",
+          "desc": "Service quality perception from business stakeholders."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "ServiceNow",
+      "key": "servicenow"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    }
+  ]
+}

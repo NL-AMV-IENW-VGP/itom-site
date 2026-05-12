@@ -1,0 +1,62 @@
+{
+  "key": "sfia",
+  "category": "03 Frameworks",
+  "title": "SFIA",
+  "lead": "Skills Framework for the Information Age — a globally recognised competency framework for IT professionals.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "SFIA provides a common language for describing IT skills and competencies. It defines skills across seven levels of responsibility, from following instructions to setting strategy. Organisations use SFIA to define job roles, assess capability gaps, plan development and manage workforce transformation. SFIA is widely used in IT outsourcing contracts to define skill requirements."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "In ITOM engagements, SFIA is used to design the people dimension of the target operating model — defining roles, skill requirements and development paths. It is particularly relevant in outsourcing transitions and agile transformations where new role profiles are required."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Skill Categories",
+          "desc": "7 categories covering IT practices from strategy to user support."
+        },
+        {
+          "term": "Responsibility Levels",
+          "desc": "7 levels from 'Follow' to 'Set Strategy' — defining seniority and autonomy."
+        },
+        {
+          "term": "Role Profiles",
+          "desc": "Combinations of SFIA skills used to define job descriptions."
+        },
+        {
+          "term": "Capability Assessment",
+          "desc": "Mapping current workforce skills against SFIA to identify gaps."
+        },
+        {
+          "term": "Development Planning",
+          "desc": "Using SFIA gaps to design targeted training and career paths."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    }
+  ]
+}

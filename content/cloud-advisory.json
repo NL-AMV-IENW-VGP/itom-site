@@ -1,0 +1,66 @@
+{
+  "key": "cloud-advisory",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Cloud Advisory",
+  "lead": "Strategic advice on cloud adoption, governance and optimisation — helping organisations make informed, value-driven cloud decisions.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Cloud Advisory provides independent, expert guidance on cloud strategy, architecture and governance. It covers the full cloud journey — from initial strategy and business case through architecture design, migration planning and ongoing optimisation. Cloud Advisory is vendor-agnostic and focuses on what is right for the client's specific context."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Cloud Advisory is a strategic service that informs the platform dimension of the IT Operating Model. It ensures cloud decisions are aligned with business strategy, operating model requirements and governance constraints — rather than driven by technology preference or vendor pressure."
+    },
+    {
+      "heading": "Advisory Areas",
+      "type": "list",
+      "items": [
+        {
+          "term": "Cloud Strategy",
+          "desc": "Defining the cloud adoption approach, principles and target architecture."
+        },
+        {
+          "term": "Architecture Design",
+          "desc": "Designing cloud landing zones, reference architectures and integration patterns."
+        },
+        {
+          "term": "Vendor Selection",
+          "desc": "Objective assessment and selection of cloud providers and managed service partners."
+        },
+        {
+          "term": "Governance Framework",
+          "desc": "Cloud governance policies, cost management and security controls."
+        },
+        {
+          "term": "Optimisation",
+          "desc": "Ongoing cost, performance and security optimisation of the cloud estate."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloud Strategy",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Scan",
+      "key": "cloud-scan"
+    },
+    {
+      "label": "Cloud Readiness Scan",
+      "key": "cloud-readiness"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    }
+  ]
+}

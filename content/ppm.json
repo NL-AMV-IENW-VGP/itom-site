@@ -1,0 +1,62 @@
+{
+  "key": "ppm",
+  "category": "04 Accelerators",
+  "title": "Project and Program Management",
+  "lead": "Structured approaches to planning, executing and governing projects and programmes — ensuring delivery on time, budget and scope.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Project and Program Management (PPM) provides the governance, methods and tools to deliver complex change initiatives. It covers the full lifecycle from business case through to benefits realisation. PPM methodologies range from traditional (PRINCE2, MSP, PMI) to agile (SAFe, Scrum at Scale) depending on the nature of the change."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "PPM is both an enabler and a service in ITOM. As an enabler, it governs the journey from current to target operating model. As a service, it is often part of the target operating model — managing IT-enabled business change on behalf of the organisation. ITOM designs define the PPM governance model, roles and tooling."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Programme Governance",
+          "desc": "Steering structures, decision rights and risk management across a programme."
+        },
+        {
+          "term": "Business Case",
+          "desc": "The justification for investment including costs, benefits and risks."
+        },
+        {
+          "term": "Agile Programme Management",
+          "desc": "Applying agile principles at programme level — SAFe, LeSS, MSP Agile."
+        },
+        {
+          "term": "Benefits Realisation",
+          "desc": "Tracking and confirming that expected benefits are delivered post-implementation."
+        },
+        {
+          "term": "Portfolio Management",
+          "desc": "Prioritisation and governance of the programme and project portfolio."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Transformation Management",
+      "key": "transformation-mgmt"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile",
+      "key": "agile"
+    }
+  ]
+}

@@ -18,22 +18,52 @@
       "heading": "ITIL 4 Kernconcepten",
       "type": "list",
       "items": [
-        { "term": "Service Value System (SVS)", "desc": "het holistische model dat laat zien hoe alle componenten samenwerken om waarde te realiseren" },
-        { "term": "Service Value Chain", "desc": "zes onderling verbonden activiteiten: Plan, Improve, Engage, Design & Transition, Obtain/Build, Deliver & Support" },
-        { "term": "34 Managementpraktijken", "desc": "verdeeld over general, service en technical management (vervangt de oude 'processen')" },
-        { "term": "Leidende principes", "desc": "Focus op waarde, Begin waar je bent, Vorder iteratief met feedback, Werk samen en bevorder zichtbaarheid, Denk en werk holistisch, Houd het eenvoudig en praktisch, Optimaliseer en automatiseer" },
-        { "term": "Vier dimensies", "desc": "Organisaties & Mensen, Informatie & Technologie, Partners & Leveranciers, Value Streams & Processen" }
+        {
+          "term": "Service Value System (SVS)",
+          "desc": "het holistische model dat laat zien hoe alle componenten samenwerken om waarde te realiseren"
+        },
+        {
+          "term": "Service Value Chain",
+          "desc": "zes onderling verbonden activiteiten: Plan, Improve, Engage, Design & Transition, Obtain/Build, Deliver & Support"
+        },
+        {
+          "term": "34 Managementpraktijken",
+          "desc": "verdeeld over general, service en technical management (vervangt de oude 'processen')"
+        },
+        {
+          "term": "Leidende principes",
+          "desc": "Focus op waarde, Begin waar je bent, Vorder iteratief met feedback, Werk samen en bevorder zichtbaarheid, Denk en werk holistisch, Houd het eenvoudig en praktisch, Optimaliseer en automatiseer"
+        },
+        {
+          "term": "Vier dimensies",
+          "desc": "Organisaties & Mensen, Informatie & Technologie, Partners & Leveranciers, Value Streams & Processen"
+        }
       ]
     },
     {
       "heading": "Kernpraktijken in ITOM-ontwerp",
       "type": "list",
       "items": [
-        { "term": "Incidentbeheer", "desc": "dienst snel herstellen; fundament van operationele SLA-prestaties" },
-        { "term": "Change Enablement", "desc": "risico beheersen en tegelijk snelheid mogelijk maken; cruciaal spanningspunt bij DevOps-transformaties" },
-        { "term": "Servicecatalogusmanagement", "desc": "definiëren wat IT levert; essentieel voor SIAM en sourcingmodellen" },
-        { "term": "Continue verbetering", "desc": "gestructureerde verbetering inbedden op elk niveau van het operating model" },
-        { "term": "Serviceniveaumanagement", "desc": "servicekwaliteitsverplichtingen afspreken, bewaken en rapporteren" }
+        {
+          "term": "Incidentbeheer",
+          "desc": "dienst snel herstellen; fundament van operationele SLA-prestaties"
+        },
+        {
+          "term": "Change Enablement",
+          "desc": "risico beheersen en tegelijk snelheid mogelijk maken; cruciaal spanningspunt bij DevOps-transformaties"
+        },
+        {
+          "term": "Servicecatalogusmanagement",
+          "desc": "definiëren wat IT levert; essentieel voor SIAM en sourcingmodellen"
+        },
+        {
+          "term": "Continue verbetering",
+          "desc": "gestructureerde verbetering inbedden op elk niveau van het operating model"
+        },
+        {
+          "term": "Serviceniveaumanagement",
+          "desc": "servicekwaliteitsverplichtingen afspreken, bewaken en rapporteren"
+        }
       ]
     },
     {
@@ -45,20 +75,33 @@
       "heading": "Relevante materialen op SharePoint",
       "type": "external-links",
       "items": [
-        { "label": "ITIL4 Introduction Course (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pptx" },
-        { "label": "ITIL4 Introduction Course (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL4%20Introduction%20course.pdf" },
-        { "label": "ITIL4 Foundation Practice Exam 1 (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%201%29.pdf" },
-        { "label": "ITIL4 Foundation Practice Exam 2 (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL/ITIL%204%20Foundation%20%28Practice%20Exam%202%29.pdf" },
-        { "label": "ITIL Process Heat Map — SIAM (XLSX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/ITIL/TSI-DOM%20ITIL%20Process%20Heat%20Map%20v1.0%20%28SIAM%29.xlsx" },
-        { "label": "ITIL map op SharePoint", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/ITIL" }
+        {
+          "label": "ITIL Process Heat Map — SIAM — Reusable (XLSX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Maturlity%20and%20Capability%20scans/ITIL/TSI-DOM%20ITIL%20Process%20Heat%20Map%20v1.0%20%28SIAM%29.xlsx"
+        }
       ]
     }
   ],
   "related": [
-    { "label": "Enterprise Architecture", "key": "enterprise-architecture" },
-    { "label": "ITSM", "key": "itsm" },
-    { "label": "ITIL4 Training", "key": "itil4" },
-    { "label": "YaSM", "key": "yasm" },
-    { "label": "FitSM", "key": "fitsm" }
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL4 Training",
+      "key": "itil4"
+    },
+    {
+      "label": "YaSM",
+      "key": "yasm"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    }
   ]
 }

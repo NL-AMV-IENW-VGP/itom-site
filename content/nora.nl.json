@@ -1,0 +1,62 @@
+{
+  "key": "nora",
+  "category": "03 Frameworks",
+  "title": "NORA",
+  "lead": "Nederlandse Overheid Referentie Architectuur — het referentiekader voor interoperabele en samenhangende digitale diensten van de Nederlandse overheid.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "NORA biedt architectuurprincipes, -modellen en -standaarden voor de Nederlandse overheid. Het doel is te garanderen dat overheidssystemen interoperabel, herbruikbaar en burgercentraal zijn. NORA wordt beheerd door het Ministerie van Binnenlandse Zaken en is de basis voor alle overheidsarchitectuurkaders in Nederland."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "NORA is een verplichte referentie in ITOM-trajecten voor de Nederlandse publieke sector. IT Operating Model-ontwerpen voor overheidsklanten moeten aantonen dat ze aansluiten bij NORA-principes, met name rond interoperabiliteit, open standaarden en privacy by design."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Architectuurprincipes",
+          "desc": "De fundamentele ontwerpregels voor overheids-IT-systemen."
+        },
+        {
+          "term": "Interoperabiliteit",
+          "desc": "Overheidssystemen in staat stellen data uit te wisselen en naadloos samen te werken."
+        },
+        {
+          "term": "Open Standaarden",
+          "desc": "Gebruik van open, leveranciersonafhankelijke standaarden ter voorkoming van lock-in."
+        },
+        {
+          "term": "Privacy by Design",
+          "desc": "Privacybescherming inbouwen in systemen vanaf de basis, in lijn met de AVG."
+        },
+        {
+          "term": "Gemma / RORA / etc.",
+          "desc": "Sectorspecifieke architecturen afgeleid van NORA voor gemeenten, Rijksoverheid, etc."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "RORA",
+      "key": "rora"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "TOGAF",
+      "key": "togaf"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    }
+  ]
+}

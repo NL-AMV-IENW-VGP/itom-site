@@ -1,0 +1,62 @@
+{
+  "key": "cloud-services",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Cloud Services",
+  "lead": "Managed cloud services covering infrastructure, platform and application layers — enabling organisations to consume IT as a service.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Cloud services provide organisations with on-demand access to computing resources — from infrastructure (IaaS) and platforms (PaaS) to software (SaaS). Managed cloud services add operational management on top of raw cloud capability, enabling organisations to focus on their business rather than running infrastructure."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Cloud services shape the platform and technology dimension of the IT Operating Model. The choice of cloud service model (IaaS, PaaS, SaaS) determines the required IT capabilities, operating model design and governance. Moving to cloud often enables a shift from build-and-run to consume-and-manage."
+    },
+    {
+      "heading": "Service Models",
+      "type": "list",
+      "items": [
+        {
+          "term": "IaaS",
+          "desc": "Infrastructure as a Service — compute, storage and networking on demand."
+        },
+        {
+          "term": "PaaS",
+          "desc": "Platform as a Service — managed runtime, databases and middleware."
+        },
+        {
+          "term": "SaaS",
+          "desc": "Software as a Service — complete applications delivered via the cloud."
+        },
+        {
+          "term": "Managed Cloud",
+          "desc": "Fully managed cloud operations including monitoring, patching and optimisation."
+        },
+        {
+          "term": "Hybrid Cloud",
+          "desc": "Combination of on-premises and public cloud, connected and governed centrally."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloud Strategy",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Advisory",
+      "key": "cloud-advisory"
+    },
+    {
+      "label": "Platform and Pipeline Support",
+      "key": "platform-pipeline"
+    }
+  ]
+}

@@ -139,7 +139,53 @@ header p.lead {
   border: 1px solid rgba(196,122,30,0.3);
   border-radius: 8px;
   padding: 8px 12px;
-  margin-bottom: 10px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-bottom: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-bottom 0.2s ease;
+}
+body:not(.browser-edge) .doc-section:hover .sharepoint-notice {
+  max-height: 80px;
+  opacity: 1;
+  margin-bottom: 8px;
+}
+.doc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.doc-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+.doc-link:hover {
+  background: var(--blue-light);
+}
+.doc-icon {
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  opacity: 0.45;
+}
+.doc-name {
+  flex: 1;
+  color: var(--blue);
+}
+.doc-link:hover .doc-name {
+  text-decoration: underline;
+}
+.doc-type {
+  font-size: 0.68rem;
+  color: var(--gray);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
 }
 
 .section-img {

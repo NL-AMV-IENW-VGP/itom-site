@@ -1,0 +1,62 @@
+{
+  "key": "yasm",
+  "category": "03 Frameworks",
+  "title": "YaSM",
+  "lead": "Yet Another Service Model — een vereenvoudigd, procesgebaseerd ITSM-raamwerk ontworpen voor praktische implementatie.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "YaSM is een lean ITSM-raamwerk opgebouwd rond een kleine set end-to-end processen. Het is bewust eenvoudiger dan ITIL, waardoor het praktisch is voor kleine tot middelgrote organisaties of als opstap naar uitgebreidere ITSM-raamwerken. YaSM bestrijkt de volledige servicelevenscyclus van strategie tot buitengebruikstelling."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "YaSM wordt in ITOM-trajecten gebruikt waar een lichtgewicht procesraamwerk nodig is, met name in kleinere organisaties of vroege implementaties van service management. De end-to-end procesvisie sluit aan bij ITOM's holistische benadering van dienstverlening."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "End-to-end Processen",
+          "desc": "Een kleine set processen die de volledige servicelevenscyclus bestrijkt."
+        },
+        {
+          "term": "Servicelevenscyclus",
+          "desc": "Strategie, ontwerp, transitie, operatie en continue verbetering."
+        },
+        {
+          "term": "Klantfocus",
+          "desc": "Processen gedefinieerd vanuit het perspectief van waarde voor klanten."
+        },
+        {
+          "term": "Eenvoud",
+          "desc": "Ontworpen om zonder uitgebreide aanpassing implementeerbaar te zijn."
+        },
+        {
+          "term": "Schaalbaarheid",
+          "desc": "Kan worden opgeschaald naar ITIL of andere raamwerken naarmate de organisatie volwassener wordt."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "VeriSM",
+      "key": "verism"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    }
+  ]
+}

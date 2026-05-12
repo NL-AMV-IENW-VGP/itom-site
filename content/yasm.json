@@ -1,0 +1,62 @@
+{
+  "key": "yasm",
+  "category": "03 Frameworks",
+  "title": "YaSM",
+  "lead": "Yet Another Service Model — a simplified, process-based ITSM framework designed for practical implementation.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "YaSM (Yet Another Service Model) is a lean ITSM framework built around a small set of end-to-end processes. It is intentionally simpler than ITIL, making it practical for small to mid-sized organisations or as a stepping stone to more comprehensive ITSM frameworks. YaSM covers the full service lifecycle from strategy to retirement."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "YaSM is used in ITOM engagements where a lightweight process framework is needed, particularly in smaller organisations or early-stage service management implementations. Its end-to-end process view aligns with ITOM's holistic approach to service delivery."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "End-to-end Processes",
+          "desc": "A small set of processes covering the complete service lifecycle."
+        },
+        {
+          "term": "Service Lifecycle",
+          "desc": "Strategy, design, transition, operation and continual improvement."
+        },
+        {
+          "term": "Customer Focus",
+          "desc": "Processes defined from the perspective of value delivered to customers."
+        },
+        {
+          "term": "Simplicity",
+          "desc": "Designed to be implementable without extensive customisation."
+        },
+        {
+          "term": "Scalability",
+          "desc": "Can be scaled up to ITIL or other frameworks as the organisation matures."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "VeriSM",
+      "key": "verism"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    }
+  ]
+}

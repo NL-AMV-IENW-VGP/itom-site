@@ -1,0 +1,62 @@
+{
+  "key": "value-proposition",
+  "category": "01 Purpose",
+  "title": "Value Proposition",
+  "lead": "The unique bundle of value an IT organisation delivers to its customers and stakeholders — the why behind the operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "A value proposition articulates what an organisation offers, for whom, and why it matters. In IT, it defines what the IT function delivers to the business — which problems it solves and which benefits it creates. A clear IT value proposition is the foundation of the IT Operating Model."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Every ITOM engagement starts with defining or validating the IT value proposition. It shapes the service portfolio, the operating model priorities and the metrics used to measure success. Without a clear value proposition, operating model design risks being technology-driven rather than value-driven."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Customer Jobs",
+          "desc": "The tasks and goals the customer is trying to accomplish."
+        },
+        {
+          "term": "Pains",
+          "desc": "The obstacles, risks and frustrations the customer experiences."
+        },
+        {
+          "term": "Gains",
+          "desc": "The outcomes and benefits the customer desires."
+        },
+        {
+          "term": "Value Map",
+          "desc": "How products and services create gains and relieve pains."
+        },
+        {
+          "term": "Fit",
+          "desc": "The alignment between what the customer needs and what IT delivers."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Corporate Strategy",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "IT Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "(IT)OM Canvas",
+      "key": "itom-canvas"
+    },
+    {
+      "label": "Value Proposition Canvas",
+      "key": "vpc"
+    }
+  ]
+}

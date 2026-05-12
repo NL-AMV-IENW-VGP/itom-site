@@ -1,0 +1,66 @@
+{
+  "key": "it-strategy",
+  "category": "01 Purpose",
+  "title": "IT Strategie",
+  "lead": "Het plan dat IT-capabilities, investeringen en sourcingbeslissingen afstemt op de bedrijfsdoelstellingen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De IT-strategie bepaalt hoe de IT-functie de organisatiedoelen ondersteunt en mogelijk maakt over een meerjarenhorizon. Ze omvat het portfolio van IT-diensten, sourcingmodel, technologie-architectuur, governance en de veranderroadmap. Een heldere IT-strategie is de randvoorwaarde voor het ontwerpen van een effectief IT Operating Model."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Het IT Operating Model is de operationalisering van de IT-strategie. Elk ITOM-traject begint met het valideren of ontwikkelen van de IT-strategie, omdat die alle beslissingen stuurt over organisatieontwerp, procesarchitectuur, platformkeuzes en governancestructuur."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "IT Governance",
+          "desc": "Beslissingsbevoegdheden en verantwoordelijkheidsstructuren voor IT-investeringen en -levering."
+        },
+        {
+          "term": "Sourcingstrategie",
+          "desc": "De mix van eigen, uitbestede en cloud-geleverde IT-capabilities."
+        },
+        {
+          "term": "Technologie Roadmap",
+          "desc": "Meerjarenplan voor platformevolutie en legacy-afbouw."
+        },
+        {
+          "term": "Portfoliomanagement",
+          "desc": "Prioritering van IT-projecten en -producten op basis van businesswaarde."
+        },
+        {
+          "term": "IT-architectuur",
+          "desc": "Het structurele ontwerp van systemen, data, infrastructuur en integratie."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Organisatiestrategie",
+      "key": "corporate-strategy"
+    },
+    {
+      "label": "Digitale Strategie",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "Cloud Strategie",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    }
+  ]
+}

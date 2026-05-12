@@ -1,0 +1,66 @@
+{
+  "key": "coaching",
+  "category": "04 Accelerators",
+  "title": "Coaching & Training",
+  "lead": "Individual and team coaching and training to build capabilities, accelerate adoption and sustain change in IT transformation programmes.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Coaching and training are essential accelerators in any IT transformation. Coaching focuses on individual and team development through guided reflection and practice. Training builds specific skills and knowledge. Together they enable the people dimension of the target operating model — ensuring teams can work in new ways from day one."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Every ITOM operating model requires capability building. Coaching is used to develop leadership behaviours (e.g. servant leadership in agile transformations), team practices (e.g. Scrum coaching) and individual skills (e.g. agile coaching, ITIL certification). Training programmes are designed to match the capability gaps identified in the operating model design."
+    },
+    {
+      "heading": "Service Types",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile Coaching",
+          "desc": "Embedding agile practices in teams through coaching and facilitation."
+        },
+        {
+          "term": "Leadership Coaching",
+          "desc": "Supporting leaders in adapting their style to new ways of working."
+        },
+        {
+          "term": "Team Training",
+          "desc": "Skill-building programmes for teams (ITIL, SAFe, Scrum, DevOps)."
+        },
+        {
+          "term": "Train-the-Trainer",
+          "desc": "Enabling internal coaches and trainers to sustain the change independently."
+        },
+        {
+          "term": "Certification Preparation",
+          "desc": "Structured preparation for professional certifications."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "SFIA",
+      "key": "sfia"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    }
+  ]
+}

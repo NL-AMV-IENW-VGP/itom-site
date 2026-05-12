@@ -1,0 +1,62 @@
+{
+  "key": "ppm",
+  "category": "04 Accelerators",
+  "title": "Project- en Programmamanagement",
+  "lead": "Gestructureerde aanpakken voor het plannen, uitvoeren en beheersen van projecten en programma's — om levering op tijd, binnen budget en scope te garanderen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Project- en Programmamanagement (PPM) biedt de governance, methoden en tools voor het leveren van complexe veranderinitiatieven. Het bestrijkt de volledige levenscyclus van business case tot batenrealisatie. PPM-methodologieën variëren van traditioneel (PRINCE2, MSP, PMI) tot agile (SAFe, Scrum at Scale), afhankelijk van de aard van de verandering."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "PPM is zowel een enabler als een dienst in ITOM. Als enabler beheert het de reis van het huidige naar het target operating model. Als dienst maakt het vaak deel uit van het target operating model — voor het managen van IT-gedreven bedrijfsverandering namens de organisatie. ITOM-ontwerpen definiëren het PPM-governancemodel, rollen en tooling."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Programmagovernance",
+          "desc": "Stuurstructuren, beslissingsrechten en risicobeheer binnen een programma."
+        },
+        {
+          "term": "Business Case",
+          "desc": "De rechtvaardiging voor investeringen inclusief kosten, baten en risico's."
+        },
+        {
+          "term": "Agile Programmamanagement",
+          "desc": "Agile principes op programmaniveau — SAFe, LeSS, MSP Agile."
+        },
+        {
+          "term": "Batenrealisatie",
+          "desc": "Bijhouden en bevestigen dat verwachte baten na implementatie worden gerealiseerd."
+        },
+        {
+          "term": "Portfoliomanagement",
+          "desc": "Prioritering en governance van het programma- en projectportfolio."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Transformatiemanagement",
+      "key": "transformation-mgmt"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Agile",
+      "key": "agile"
+    }
+  ]
+}

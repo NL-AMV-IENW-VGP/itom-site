@@ -1,0 +1,62 @@
+{
+  "key": "it-strategy-svc",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "IT Transformatiestrategie",
+  "lead": "Een dienst voor het definiëren, valideren of vernieuwen van de IT-strategie als basis voor een transformatietraject.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De IT Transformatiestrategie-dienst stelt de IT-strategie op als startpunt voor een groter transformatieprogramma. Het combineert stakeholderinterviews, analyse van het huidige IT-landschap en benchmarking om een heldere strategische richting, capability-gaps en een transformatie-roadmap te produceren."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "IT Transformatiestrategie is doorgaans de eerste dienst die in een ITOM-traject wordt geleverd. Zonder een heldere IT-strategie dreigt het operating model-ontwerp een model op te leveren dat technisch solide is maar strategisch niet aansluit. De uitkomst van deze dienst voedt direct het ITOM-ontwerp."
+    },
+    {
+      "heading": "Dienstcomponenten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Strategische Analyse",
+          "desc": "Huidige-staatsbeoordeling van IT-capabilities, landschap en prestaties."
+        },
+        {
+          "term": "Stakeholderalignment",
+          "desc": "Workshops voor het aligneren van leiderschap op IT-richting en prioriteiten."
+        },
+        {
+          "term": "Strategiedefinitie",
+          "desc": "IT-visie, principes, strategische doelstellingen en sourcingmodel."
+        },
+        {
+          "term": "Transformatie Roadmap",
+          "desc": "Gesequentieerde initiatieven om de kloof tussen huidige en doeltoestand te overbruggen."
+        },
+        {
+          "term": "Business Case",
+          "desc": "Investeringsrechtvaardiging voor het transformatieprogramma."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "Transformatiemanagement",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

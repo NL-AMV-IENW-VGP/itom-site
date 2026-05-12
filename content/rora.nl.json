@@ -1,0 +1,62 @@
+{
+  "key": "rora",
+  "category": "03 Frameworks",
+  "title": "RORA",
+  "lead": "Rijksoverheid Referentie Architectuur — het referentiekader voor consistente digitale overheid binnen de Nederlandse rijksoverheid.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "RORA is het referentiekader specifiek voor de Nederlandse rijksoverheid. Het bouwt voort op NORA-principes en vertaalt die naar concrete architectuurrichtlijnen en -standaarden voor ministeries en uitvoeringsorganisaties. RORA zorgt voor samenhang, interoperabiliteit en compliance in het IT-landschap van de centrale overheid."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "RORA is het verplichte architectuurkader voor rijksoverheids-IT-trajecten. IT Operating Model-ontwerpen voor de centrale overheid moeten aansluiten bij RORA-standaarden. Belangrijke implicaties zijn onder meer dataclassificatie, beveiligingsbaseline (BIO), gebruik van shared services en interoperabiliteitseisen."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "BIO",
+          "desc": "Baseline Informatiebeveiliging Overheid — verplichte informatiebeveiligingsbaseline."
+        },
+        {
+          "term": "Shared Services",
+          "desc": "Centraal aangeboden diensten (DigiD, MijnOverheid) die hergebruikt moeten worden."
+        },
+        {
+          "term": "Architectuurgovernance",
+          "desc": "Centrale beoordeling van IT-projecten op RORA-compliance."
+        },
+        {
+          "term": "Interoperabiliteitsstandaarden",
+          "desc": "Vereiste standaarden voor gegevensuitwisseling tussen overheidsorganisaties."
+        },
+        {
+          "term": "Digiwerking",
+          "desc": "Het programma voor samenhangend digitaal werken binnen de rijksoverheid."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "NORA",
+      "key": "nora"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "ISM — Informatiebeveiliging",
+      "key": "ism"
+    }
+  ]
+}

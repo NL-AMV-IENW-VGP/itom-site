@@ -1,0 +1,66 @@
+{
+  "key": "cloud-advisory",
+  "category": "04 Accelerators — Architecture & Strategy",
+  "title": "Cloud Advisory",
+  "lead": "Strategisch advies over cloudadoptie, governance en optimalisatie — organisaties helpen weloverwogen, waardegedreven cloudbeslissingen te nemen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Cloud Advisory biedt onafhankelijk, deskundig advies over cloudstrategie, architectuur en governance. Het bestrijkt de volledige cloudreis — van initiële strategie en business case tot architectuurontwerp, migratieplanning en voortdurende optimalisatie. Cloud Advisory is leveranciersonafhankelijk en richt zich op wat juist is voor de specifieke context van de klant."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Cloud Advisory is een strategische dienst die de platformdimensie van het IT Operating Model informeert. Het zorgt ervoor dat cloudbeslissingen zijn afgestemd op bedrijfsstrategie, operating model-vereisten en governancebeperkingen — in plaats van te worden gedreven door technologievoorkeur of leveranciersdruk."
+    },
+    {
+      "heading": "Adviesgebieden",
+      "type": "list",
+      "items": [
+        {
+          "term": "Cloudstrategie",
+          "desc": "Definiëren van de cloudadoptiebenadering, principes en doelarchitectuur."
+        },
+        {
+          "term": "Architectuurontwerp",
+          "desc": "Ontwerpen van cloud landing zones, referentiearchitecturen en integratiepatronen."
+        },
+        {
+          "term": "Leveranciersselectie",
+          "desc": "Objectieve beoordeling en selectie van cloudleveranciers en managed service-partners."
+        },
+        {
+          "term": "Governancekader",
+          "desc": "Cloud governance-beleidslijnen, kostenbeheer en beveiligingsmaatregelen."
+        },
+        {
+          "term": "Optimalisatie",
+          "desc": "Voortdurende kosten-, prestatie- en beveiligingsoptimalisatie van het cloudestate."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Cloudstrategie",
+      "key": "cloud-strategy"
+    },
+    {
+      "label": "Cloud Transformation",
+      "key": "cloud-transformation"
+    },
+    {
+      "label": "Cloud Scan",
+      "key": "cloud-scan"
+    },
+    {
+      "label": "Cloud Readiness Scan",
+      "key": "cloud-readiness"
+    },
+    {
+      "label": "Enterprise Architecture",
+      "key": "enterprise-architecture"
+    }
+  ]
+}

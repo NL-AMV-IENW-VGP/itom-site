@@ -18,50 +18,118 @@
       "heading": "Kernconcepten",
       "type": "list",
       "items": [
-        { "term": "Iteratieve levering", "desc": "werk in korte cycli (sprints of flows), valideer regelmatig, pas aan op basis van feedback" },
-        { "term": "Cross-functionele teams", "desc": "stabiele, autonome teams bezitten resultaten end-to-end en verminderen overdrachten" },
-        { "term": "Productmindset", "desc": "verschuiving van project- naar productdenken; teams zijn continu eigenaar van een dienst of capability" },
-        { "term": "Inspect & adapt", "desc": "regelmatige retrospectives en reviews stimuleren continue verbetering op team- en systeemniveau" },
-        { "term": "Lean governance", "desc": "lichtgewicht planning, rollende roadmaps en value stream-financiering vervangen jaarbudgetten en stage gates" }
+        {
+          "term": "Iteratieve levering",
+          "desc": "werk in korte cycli (sprints of flows), valideer regelmatig, pas aan op basis van feedback"
+        },
+        {
+          "term": "Cross-functionele teams",
+          "desc": "stabiele, autonome teams bezitten resultaten end-to-end en verminderen overdrachten"
+        },
+        {
+          "term": "Productmindset",
+          "desc": "verschuiving van project- naar productdenken; teams zijn continu eigenaar van een dienst of capability"
+        },
+        {
+          "term": "Inspect & adapt",
+          "desc": "regelmatige retrospectives en reviews stimuleren continue verbetering op team- en systeemniveau"
+        },
+        {
+          "term": "Lean governance",
+          "desc": "lichtgewicht planning, rollende roadmaps en value stream-financiering vervangen jaarbudgetten en stage gates"
+        }
       ]
     },
     {
       "heading": "Gangbare Frameworks",
       "type": "list",
       "items": [
-        { "term": "Scrum", "desc": "het meest gebruikte Agile framework; sprints, ceremonies, rollen (PO, SM, team)" },
-        { "term": "Kanban", "desc": "flow-gebaseerd werkbeheer; visualiseer, beperk WIP, beheer flow" },
-        { "term": "SAFe", "desc": "Scaled Agile Framework voor grote programma's en portfoliomanagement" },
-        { "term": "LeSS", "desc": "Large Scale Scrum; minimale opzet voor productontwikkeling met meerdere teams" }
+        {
+          "term": "Scrum",
+          "desc": "het meest gebruikte Agile framework; sprints, ceremonies, rollen (PO, SM, team)"
+        },
+        {
+          "term": "Kanban",
+          "desc": "flow-gebaseerd werkbeheer; visualiseer, beperk WIP, beheer flow"
+        },
+        {
+          "term": "SAFe",
+          "desc": "Scaled Agile Framework voor grote programma's en portfoliomanagement"
+        },
+        {
+          "term": "LeSS",
+          "desc": "Large Scale Scrum; minimale opzet voor productontwikkeling met meerdere teams"
+        }
       ]
     },
     {
       "heading": "Atos Diensten",
       "type": "list",
       "items": [
-        { "desc": "Agile Maturity Scan — bepaal waar je nu staat" },
-        { "desc": "Agile in Practice — hands-on training voor teams" },
-        { "desc": "Introduction to Agile — bewustwordingstraining voor stakeholders" },
-        { "desc": "Agile Transformation — end-to-end verschuiving van het operating model" },
-        { "desc": "Coaching en Training — duurzame gedragsverandering" }
+        {
+          "desc": "Agile Maturity Scan — bepaal waar je nu staat"
+        },
+        {
+          "desc": "Agile in Practice — hands-on training voor teams"
+        },
+        {
+          "desc": "Introduction to Agile — bewustwordingstraining voor stakeholders"
+        },
+        {
+          "desc": "Agile Transformation — end-to-end verschuiving van het operating model"
+        },
+        {
+          "desc": "Coaching en Training — duurzame gedragsverandering"
+        }
       ]
     },
     {
       "heading": "Relevante materialen op SharePoint",
       "type": "external-links",
       "items": [
-        { "label": "KNOWvember Agile introduction (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction_share.pptx" },
-        { "label": "KNOWvember Agile introduction (PDF)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction%202023.pdf" },
-        { "label": "Agile in de Praktijk (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Training%20Agile%20in%20de%20praktijk/Agile%20in%20de%20praktijk%20v01%202023_share.pptx" },
-        { "label": "Roodkapje — Agile in Practice (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Roodkapje/Roodkapje.pptx" },
-        { "label": "Ball Point Game — trainersinstructie (PPTX)", "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Games%26Simulations/Ballpointgame/Balll%20point%20game-%20trainersinstructie.pptx" }
+        {
+          "label": "KNOWvember Agile introduction (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction_share.pptx"
+        },
+        {
+          "label": "KNOWvember Agile introduction (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction%202023.pdf"
+        },
+        {
+          "label": "KNOWvember Agile introduction — 2022 editie (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Training/Knowvember/KNOWvember%20Agile%20introduction.pptx"
+        },
+        {
+          "label": "AgileScrumCoaching_AtosConsulting_extern20160203 (PPTX)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Agile%20Materials/AgileScrumCoaching_AtosConsulting_extern20160203.pptx"
+        },
+        {
+          "label": "TheAgilePrinciples (PDF)",
+          "url": "https://atos365.sharepoint.com/sites/AtosDGteam/Shared%20Documents/02.%20Portfolio/Agile%20Materials/TheAgilePrinciples.pdf"
+        }
       ]
     }
   ],
   "related": [
-    { "label": "DevOps Capability Scan", "key": "devops-capability-scan" },
-    { "label": "SAFe", "key": "safe" },
-    { "label": "ITSM", "key": "itsm" },
-    { "label": "Agile Transformation", "key": "agile-transformation" }
+    {
+      "label": "Agile in de Praktijk",
+      "key": "agile-practice"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "Agile Transformation",
+      "key": "agile-transformation"
+    }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "key": "vpc",
+  "category": "05 Visual Toolkit",
+  "title": "Value Proposition Canvas",
+  "lead": "Een visueel instrument voor het in kaart brengen van wat een organisatie biedt ten opzichte van wat klanten werkelijk nodig hebben — voor strategische aansluiting.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De Value Proposition Canvas (VPC), ontwikkeld door Alex Osterwalder, is een tweezijdig instrument. Rechts is het Klantprofiel — met klantjobs, pijnpunten en voordelen. Links is de Waardemap — met producten/diensten, pijnverlichtingen en voordeelcreators. Het doel is 'fit' te bereiken tussen beide zijden."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "In ITOM wordt de Value Proposition Canvas gebruikt om de waardepropositie van IT naar de business te definiëren. Het helpt te verwoorden hoe IT-diensten zakelijke pijnpunten verlichten en zakelijke voordelen creëren — waardoor het doel van het operating model expliciet en klantgericht wordt."
+    },
+    {
+      "heading": "Canvas-componenten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Klantjobs",
+          "desc": "Functionele, sociale en emotionele taken die de klant moet volbrengen."
+        },
+        {
+          "term": "Pijnpunten",
+          "desc": "Risico's, obstakels en frustraties bij het uitvoeren van de job."
+        },
+        {
+          "term": "Voordelen",
+          "desc": "Voordelen, uitkomsten en aspiraties die de klant nastreeft."
+        },
+        {
+          "term": "Producten & Diensten",
+          "desc": "De aanbiedingen die klanten helpen hun jobs te volbrengen."
+        },
+        {
+          "term": "Pijnverlichtingen",
+          "desc": "Hoe het aanbod klantpijnpunten vermindert of elimineert."
+        },
+        {
+          "term": "Voordeelcreators",
+          "desc": "Hoe het aanbod klantvoordelen genereert."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Value Proposition",
+      "key": "value-proposition"
+    },
+    {
+      "label": "Business Model Canvas",
+      "key": "bmc"
+    },
+    {
+      "label": "(IT)OM Canvas",
+      "key": "itom-canvas"
+    },
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    }
+  ]
+}

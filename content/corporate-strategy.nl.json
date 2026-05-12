@@ -1,0 +1,62 @@
+{
+  "key": "corporate-strategy",
+  "category": "01 Purpose",
+  "title": "Organisatiestrategie",
+  "lead": "Het langetermijnplan dat de richting, concurrentiepositie en waardecreatie van een organisatie bepaalt.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "De organisatiestrategie bepaalt de overkoepelende ambitie en richting van een organisatie — in welke markten zij opereert, welke capabilities zij nodig heeft en hoe zij duurzame waarde creëert. Het is het vertrekpunt voor alle afgeleide planning, inclusief IT en digitale strategie."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Een goed IT Operating Model moet zijn verankerd in de organisatiestrategie. ITOM-trajecten beginnen doorgaans met het begrijpen van de strategie om te garanderen dat het target operating model de juiste businessprioriteiten ondersteunt — groei, efficiency, compliance of innovatie."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Visie & Missie",
+          "desc": "De langetermijnambitie en de bestaansreden van de organisatie."
+        },
+        {
+          "term": "Strategische Doelen",
+          "desc": "Tijdgebonden doelstellingen die de visie vertalen naar meetbare resultaten."
+        },
+        {
+          "term": "Businessmodel",
+          "desc": "De manier waarop de organisatie waarde creëert, levert en vasthoudt."
+        },
+        {
+          "term": "Concurrentiepositie",
+          "desc": "De keuzes over waar en hoe te concurreren."
+        },
+        {
+          "term": "Portfoliomanagement",
+          "desc": "Prioritering van initiatieven en investeringen ter ondersteuning van strategische doelen."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Digitale Strategie",
+      "key": "digital-strategy"
+    },
+    {
+      "label": "IT Strategie",
+      "key": "it-strategy"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Value Proposition",
+      "key": "value-proposition"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": "outsourcing",
+  "category": "02 Usecases",
+  "title": "Outsourcing",
+  "lead": "Transferring the delivery of IT services or business functions to an external provider — a fundamental change to the operating model.",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Outsourcing involves contracting an external party to deliver IT services that were previously performed in-house. It ranges from selective outsourcing of specific towers (e.g. infrastructure, service desk) to full IT outsourcing. Outsourcing decisions are driven by cost, capability access, focus or transformation speed."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Outsourcing is one of the most impactful changes to an IT Operating Model. It fundamentally reshapes the organisation (retained organisation vs. supplier management), processes (contract governance, SLA management), sourcing model and governance. SIAM is frequently required when multiple suppliers are involved."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Retained Organisation",
+          "desc": "The internal IT team that manages suppliers rather than delivering services directly."
+        },
+        {
+          "term": "Governance Model",
+          "desc": "The structures, processes and relationships needed to manage an outsourced service."
+        },
+        {
+          "term": "SIAM",
+          "desc": "Service Integration and Management — coordinating multiple external providers."
+        },
+        {
+          "term": "Transition",
+          "desc": "The structured handover of services from in-house to external provider."
+        },
+        {
+          "term": "Contract Management",
+          "desc": "Managing scope, SLAs, costs and relationships across the contract lifecycle."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "SIAM",
+      "key": "siam"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Post-merger Integration",
+      "key": "post-merger"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "Transformation Management",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

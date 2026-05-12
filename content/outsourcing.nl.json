@@ -1,0 +1,66 @@
+{
+  "key": "outsourcing",
+  "category": "02 Usecases",
+  "title": "Outsourcing",
+  "lead": "Het overdragen van IT-diensten of bedrijfsfuncties aan een externe leverancier — een fundamentele verandering van het operating model.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Outsourcing houdt in dat een externe partij IT-diensten levert die voorheen intern werden uitgevoerd. Dit varieert van selectieve outsourcing van specifieke towers (bijv. infrastructuur, servicedesk) tot volledige IT-outsourcing. Outsourcingbeslissingen worden gedreven door kosten, toegang tot capabilities, focus of transformatiesnelheid."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Outsourcing is een van de meest ingrijpende veranderingen van een IT Operating Model. Het hervormt fundamenteel de organisatie (retained organisation vs. leveranciersmanagement), processen (contractgovernance, SLA-management), sourcingmodel en governance. SIAM is vaak vereist wanneer meerdere leveranciers betrokken zijn."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Retained Organisation",
+          "desc": "Het interne IT-team dat leveranciers beheert in plaats van diensten direct te leveren."
+        },
+        {
+          "term": "Governance Model",
+          "desc": "De structuren, processen en relaties voor het managen van uitbestede dienstverlening."
+        },
+        {
+          "term": "SIAM",
+          "desc": "Service Integration and Management — coördinatie van meerdere externe leveranciers."
+        },
+        {
+          "term": "Transitie",
+          "desc": "De gestructureerde overdracht van diensten van intern naar externe leverancier."
+        },
+        {
+          "term": "Contractmanagement",
+          "desc": "Beheer van scope, SLA's, kosten en relaties gedurende de contractlevenscyclus."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "SIAM",
+      "key": "siam"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    },
+    {
+      "label": "Post-merger Integratie",
+      "key": "post-merger"
+    },
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "Transformatiemanagement",
+      "key": "transformation-mgmt"
+    }
+  ]
+}

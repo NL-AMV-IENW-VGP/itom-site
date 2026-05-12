@@ -1,0 +1,62 @@
+{
+  "key": "iso-iec",
+  "category": "03 Frameworks",
+  "title": "ISO/IEC 20000",
+  "lead": "The international standard for IT service management — defines requirements for a Service Management System (SMS).",
+  "sections": [
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "ISO/IEC 20000 specifies requirements for organisations to establish, implement, maintain and continually improve a Service Management System (SMS). It is technology-agnostic and can be used alongside ITIL, SIAM or any other ITSM approach. Certification demonstrates that an organisation's service management processes meet internationally recognised standards."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "ISO/IEC 20000 certification is often a customer or regulatory requirement in ITOM engagements, particularly for outsourcing and managed services contexts. The standard provides a compliance baseline that validates the maturity of the service management operating model."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Service Management System (SMS)",
+          "desc": "The integrated set of policies, processes and resources for managing IT services."
+        },
+        {
+          "term": "Requirements",
+          "desc": "Mandatory requirements that must be met for certification."
+        },
+        {
+          "term": "Certification Audit",
+          "desc": "Third-party audit to verify conformance with the standard."
+        },
+        {
+          "term": "Continual Improvement",
+          "desc": "Ongoing measurement and improvement of the SMS."
+        },
+        {
+          "term": "Scope",
+          "desc": "The defined boundary of services and organisations covered by the SMS."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "ITSM",
+      "key": "itsm"
+    },
+    {
+      "label": "ITIL Library",
+      "key": "itil-library"
+    },
+    {
+      "label": "FitSM",
+      "key": "fitsm"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

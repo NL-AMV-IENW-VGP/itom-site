@@ -1,0 +1,66 @@
+{
+  "key": "agile-transformation",
+  "category": "02 Usecases",
+  "title": "Agile Transformatie",
+  "lead": "Organisatiebrede adoptie van agile principes en werkwijzen — voorbij teams, naar leiderschap, governance en cultuur.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Een agile transformatie is een fundamentele verandering in de manier waarop een organisatie werk plant, uitvoert en beheert. De verschuiving gaat van plangedreven naar waardegedreven levering, van hiërarchisch naar collaboratief, en van projectgebaseerd naar productgebaseerd. Een echte agile transformatie vereist wijzigingen in organisatieontwerp, leiderschapsgedrag, processen en tooling."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Agile transformatie is een van de meest voorkomende ITOM use cases. Het raakt alle dimensies van het operating model: organisatiestructuur (cross-functionele teams), processen (continuous delivery, retrospectives), mensen (nieuwe rollen, vaardigheden en gedrag), technologie (DevOps-platforms) en governance (OKR's, lean portfoliomanagement)."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Agile op Schaal",
+          "desc": "Agile principes toepassen voorbij individuele teams — SAFe, LeSS, Spotify-model."
+        },
+        {
+          "term": "Product Operating Model",
+          "desc": "Organiseren rondom stabiele productteams in plaats van tijdelijke projecten."
+        },
+        {
+          "term": "Lean Portfoliomanagement",
+          "desc": "Waardegedreven investering en prioritering op portfolioniveau."
+        },
+        {
+          "term": "Cultuur & Mindset",
+          "desc": "De gedragsverschuivingen die vereist zijn: psychologische veiligheid, transparantie, continu verbeteren."
+        },
+        {
+          "term": "Changemanagement",
+          "desc": "Beheer van de menselijke kant van de transformatie met gestructureerde aanpakken."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Agile",
+      "key": "agile"
+    },
+    {
+      "label": "SAFe",
+      "key": "safe"
+    },
+    {
+      "label": "DevOps Capability Scan",
+      "key": "devops-capability-scan"
+    },
+    {
+      "label": "Agile Maturity Scan",
+      "key": "agile-scan"
+    },
+    {
+      "label": "Operating Model",
+      "key": "operating-model"
+    }
+  ]
+}

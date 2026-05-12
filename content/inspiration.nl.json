@@ -1,0 +1,58 @@
+{
+  "key": "inspiration",
+  "category": "04 Accelerators",
+  "title": "Inspiratiesessies",
+  "lead": "Gecureerde presentaties en ervaringen die teams en leiderschap inspireren om nieuwe werkwijzen en technologiegedreven verandering te omarmen.",
+  "sections": [
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Inspiratiesessies zijn gestructureerde bijeenkomsten die zijn ontworpen om mindsets te verschuiven en bereidheid tot verandering op te bouwen. Ze combineren externe perspectieven, casestudies, opkomende trends en interactieve elementen om aannames uit te dagen en nieuwe mogelijkheden te verkennen. Ze worden doorgaans vroeg in een transformatietraject ingezet."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Inspiratiesessies worden in ITOM-trajecten gebruikt om urgentie en openheid voor verandering te creëren. Ze zijn bijzonder effectief bij leiderschapsteams die moeten begrijpen waarom het huidige operating model moet veranderen en hoe de toekomst eruit kan zien."
+    },
+    {
+      "heading": "Sessietypes",
+      "type": "list",
+      "items": [
+        {
+          "term": "Technologietrends",
+          "desc": "Overzicht van opkomende technologieën en hun zakelijke implicaties."
+        },
+        {
+          "term": "Casestudies",
+          "desc": "Praktijkvoorbeelden van operating model-transformatie van vergelijkbare organisaties."
+        },
+        {
+          "term": "KNOWvember Sessies",
+          "desc": "Atos interne kennisdelingssessies over specifieke onderwerpen."
+        },
+        {
+          "term": "Reverse Mentoring",
+          "desc": "Jonge medewerkers die nieuwe perspectieven delen met senior leiderschap."
+        }
+      ]
+    }
+  ],
+  "related": [
+    {
+      "label": "Design Thinking",
+      "key": "design-thinking"
+    },
+    {
+      "label": "Facilitatiespellen",
+      "key": "facilitation"
+    },
+    {
+      "label": "Coaching & Training",
+      "key": "coaching"
+    },
+    {
+      "label": "Agile Transformatie",
+      "key": "agile-transformation"
+    }
+  ]
+}
