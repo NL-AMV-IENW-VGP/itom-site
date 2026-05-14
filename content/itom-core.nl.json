@@ -74,5 +74,19 @@
     { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
     { "label": "(IT)OM Canvas", "key": "itom-canvas" },
     { "label": "SIAM", "key": "siam" }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/itom-core-servicenow.png",
+      "title": "ServiceNow Operating Model",
+      "alt": "Voorbeeld ITOM met ServiceNow als platformruggengraat",
+      "caption": "Een voorbeeld IT operating model met ServiceNow als centraal platform, dat illustreert hoe toolingkeuzes de ITOM-structuur bepalen."
+    },
+    {
+      "src": "assets/img/itom-core-siam.png",
+      "title": "SIAM Operating Model",
+      "alt": "Voorbeeld ITOM gestructureerd rond een SIAM-model",
+      "caption": "Een voorbeeld IT operating model ingericht rondom een Service Integration and Management (SIAM) structuur, met de governance van multi-leveranciersomgevingen."
+    }
   ]
 }

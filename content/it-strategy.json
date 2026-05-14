@@ -61,6 +61,10 @@
     {
       "label": "Enterprise Architecture",
       "key": "enterprise-architecture"
+    },
+    {
+      "label": "Wardley Mapping",
+      "key": "wardley-mapping"
     }
   ]
 }

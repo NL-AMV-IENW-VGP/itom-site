@@ -5,6 +5,13 @@
   "lead": "Een visueel instrument voor het in kaart brengen van wat een organisatie biedt ten opzichte van wat klanten werkelijk nodig hebben — voor strategische aansluiting.",
   "sections": [
     {
+      "heading": "Value Proposition Canvas",
+      "type": "image",
+      "src": "assets/img/vp-canvas.png",
+      "alt": "Value Proposition Canvas template",
+      "caption": "Het Value Proposition Canvas — afstemming tussen de Value Map (product/dienst-zijde) en het Customer Profile."
+    },
+    {
       "heading": "Overzicht",
       "type": "text",
       "body": "De Value Proposition Canvas (VPC), ontwikkeld door Alex Osterwalder, is een tweezijdig instrument. Rechts is het Klantprofiel — met klantjobs, pijnpunten en voordelen. Links is de Waardemap — met producten/diensten, pijnverlichtingen en voordeelcreators. Het doel is 'fit' te bereiken tussen beide zijden."
@@ -43,6 +50,23 @@
           "desc": "Hoe het aanbod klantvoordelen genereert."
         }
       ]
+    }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/vp-canvas-example1.png",
+      "title": "Value Proposition Canvas — Voorbeeld 1",
+      "alt": "Ingevuld Value Proposition Canvas voorbeeld 1"
+    },
+    {
+      "src": "assets/img/vp-canvas-example2.jpg",
+      "title": "Value Proposition Canvas — Voorbeeld 2",
+      "alt": "Ingevuld Value Proposition Canvas voorbeeld 2"
+    },
+    {
+      "src": "assets/img/vp-canvas-example3.jpg",
+      "title": "Value Proposition Canvas — Voorbeeld 3",
+      "alt": "Ingevuld Value Proposition Canvas voorbeeld 3"
     }
   ],
   "related": [

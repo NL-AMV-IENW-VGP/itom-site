@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examples — ITOM Deep-dive</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/auth.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/auth.js"></script>
+<style>
+  .examples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 28px;
+    margin-top: 8px;
+  }
+
+  .example-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.22s, transform 0.22s;
+    cursor: pointer;
+  }
+  .example-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .example-img-wrap {
+    width: 100%;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .example-img-wrap img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+  }
+
+  .example-body {
+    padding: 16px 20px 20px;
+    border-top: 1px solid var(--border);
+  }
+  .example-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .example-caption {
+    font-size: 0.85rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 9, 8, 0.88);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    padding: 32px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s;
+  }
+  .lightbox.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .lightbox-inner {
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+  }
+  .lightbox-inner img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.8;
+    padding: 4px 8px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .lightbox-close:hover { opacity: 1; }
+
+  .back-to-deepdive {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 28px;
+    transition: color 0.18s;
+  }
+  .back-to-deepdive:hover { color: var(--ink); }
+
+  .examples-header {
+    margin-bottom: 28px;
+  }
+  .examples-header .category-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gray);
+    margin-bottom: 8px;
+  }
+  .examples-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .examples-header .lead {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .lang-switch {
+    display: none;
+    align-items: center;
+    gap: 6px;
+  }
+  .lang-switch.visible { display: inline-flex; }
+  .lang-switch span {
+    font-size: 0.78rem;
+    color: var(--gray);
+    font-weight: 500;
+  }
+  .lang-switch span.active { color: var(--ink); font-weight: 600; }
+  .lang-toggle {
+    width: 36px;
+    height: 20px;
+    background: var(--gray);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.25s;
+    border: none;
+    padding: 0;
+  }
+  .lang-toggle.nl { background: var(--blue); }
+  .lang-toggle-thumb {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .lang-toggle.nl .lang-toggle-thumb { transform: translateX(16px); }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--gray);
+  }
+  .empty-state h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 80px 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+<script>if(/Edg\//.test(navigator.userAgent))document.body.classList.add('browser-edge');</script>
+
+<div id="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <h2>ITOM Framework Navigator</h2>
+    <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
+    <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
+    <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+</div>
+
+<div id="main-content" style="display:none">
+<div class="page">
+
+  <div id="content">
+    <div class="loading">Loading examples…</div>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+</div>
+
+</div><!-- /main-content -->
+
+<script>
+"use strict";
+
+let currentData = null;
+let currentDataNl = null;
+let currentLang = localStorage.getItem("itom_lang") || "en";
+let hasNlVersion = false;
+
+function getPageKey() {
+  return new URLSearchParams(window.location.search).get("page");
+}
+
+function localContentPath(key, lang) {
+  if (lang && lang !== "en") return `content/${key}.${lang}.json`;
+  return `content/${key}.json`;
+}
+
+function esc(str) {
+  const el = document.createElement("span");
+  el.textContent = str;
+  return el.innerHTML;
+}
+
+function renderExamples(data) {
+  const container = document.getElementById("content");
+  const key = data.key;
+  document.title = `${data.title} — Examples — ITOM`;
+
+  const examples = data.examples || [];
+  const deepdiveUrl = `deepdive.html?page=${encodeURIComponent(key)}`;
+
+  let gridHtml = "";
+  if (examples.length === 0) {
+    gridHtml = `
+      <div class="empty-state">
+        <h2>No examples yet</h2>
+        <p>Examples for this topic have not been added yet.</p>
+      </div>`;
+  } else {
+    const cards = examples.map((ex, i) => `
+      <div class="example-card" data-index="${i}" role="button" tabindex="0" aria-label="Open ${esc(ex.title || ex.alt)}">
+        <div class="example-img-wrap">
+          <img src="${esc(ex.src)}" alt="${esc(ex.alt || ex.title || '')}">
+        </div>
+        ${(ex.title || ex.caption) ? `
+        <div class="example-body">
+          ${ex.title ? `<div class="example-title">${esc(ex.title)}</div>` : ""}
+          ${ex.caption ? `<p class="example-caption">${esc(ex.caption)}</p>` : ""}
+        </div>` : ""}
+      </div>`).join("\n");
+    gridHtml = `<div class="examples-grid">${cards}</div>`;
+  }
+
+  container.innerHTML = `
+    <a href="${deepdiveUrl}" class="back-to-deepdive">← Back to ${esc(data.title)}</a>
+    <div class="header-row">
+      <div class="examples-header">
+        <div class="category-label">${esc(data.category)}</div>
+        <h1>${esc(data.title)} — Examples</h1>
+        <p class="lead">${examples.length} example${examples.length !== 1 ? "s" : ""}</p>
+      </div>
+      <div class="lang-switch" id="lang-switch">
+        <span id="lang-en" class="${currentLang === "en" ? "active" : ""}">EN</span>
+        <button class="lang-toggle ${currentLang === "nl" ? "nl" : ""}" id="lang-toggle" aria-label="Switch language">
+          <div class="lang-toggle-thumb"></div>
+        </button>
+        <span id="lang-nl" class="${currentLang === "nl" ? "active" : ""}">NL</span>
+      </div>
+    </div>
+    ${gridHtml}
+  `;
+
+  if (hasNlVersion) {
+    document.getElementById("lang-switch").classList.add("visible");
+  }
+
+  // Card click → lightbox
+  container.querySelectorAll(".example-card").forEach(card => {
+    card.addEventListener("click", () => openLightbox(parseInt(card.dataset.index)));
+    card.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") openLightbox(parseInt(card.dataset.index));
+    });
+  });
+}
+
+// --- Lightbox ---
+
+function openLightbox(index) {
+  const data = (currentLang === "nl" && currentDataNl) ? currentDataNl : currentData;
+  const ex = data.examples[index];
+  const lb = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  img.src = ex.src;
+  img.alt = ex.alt || ex.title || "";
+  lb.classList.add("open");
+  document.getElementById("lightbox-close").focus();
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("open");
+}
+
+document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+document.getElementById("lightbox").addEventListener("click", e => {
+  if (e.target === e.currentTarget) closeLightbox();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeLightbox();
+});
+
+// --- Language switch ---
+
+document.addEventListener("click", e => {
+  if (!e.target.closest("#lang-toggle") || !hasNlVersion) return;
+  currentLang = currentLang === "en" ? "nl" : "en";
+  localStorage.setItem("itom_lang", currentLang);
+  renderExamples(currentLang === "nl" ? currentDataNl : currentData);
+});
+
+// --- Init ---
+
+async function init() {
+  const key = getPageKey();
+  if (!key) {
+    document.getElementById("content").innerHTML = `<div class="loading">No page specified.</div>`;
+    return;
+  }
+
+  try {
+    const resp = await fetch(localContentPath(key, "en"));
+    if (!resp.ok) throw new Error(`Deep-dive "${key}" not found.`);
+    currentData = await resp.json();
+
+    try {
+      const nlResp = await fetch(localContentPath(key, "nl"));
+      if (nlResp.ok) {
+        currentDataNl = await nlResp.json();
+        hasNlVersion = true;
+      }
+    } catch (_) {}
+
+    renderExamples(currentLang === "nl" && currentDataNl ? currentDataNl : currentData);
+  } catch (err) {
+    document.getElementById("content").innerHTML = `<div class="loading">${esc(err.message)}</div>`;
+  }
+}
+
+init();
+initAuth();
+</script>
+</body>
+</html>

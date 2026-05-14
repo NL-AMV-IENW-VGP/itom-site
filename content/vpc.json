@@ -5,6 +5,13 @@
   "lead": "A visual tool for mapping what an organisation offers against what customers actually need — ensuring strategic fit.",
   "sections": [
     {
+      "heading": "Value Proposition Canvas",
+      "type": "image",
+      "src": "assets/img/vp-canvas.png",
+      "alt": "Value Proposition Canvas template",
+      "caption": "The Value Proposition Canvas — aligning the Value Map (product/service side) with the Customer Profile."
+    },
+    {
       "heading": "Overview",
       "type": "text",
       "body": "The Value Proposition Canvas (VPC), developed by Alex Osterwalder, is a two-sided tool. On the right is the Customer Profile — describing customer jobs, pains and gains. On the left is the Value Map — describing the products/services, pain relievers and gain creators. The goal is to achieve 'fit' between the two sides."
@@ -43,6 +50,23 @@
           "desc": "How the offering produces customer gains."
         }
       ]
+    }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/vp-canvas-example1.png",
+      "title": "Value Proposition Canvas — Example 1",
+      "alt": "Filled-in Value Proposition Canvas example 1"
+    },
+    {
+      "src": "assets/img/vp-canvas-example2.jpg",
+      "title": "Value Proposition Canvas — Example 2",
+      "alt": "Filled-in Value Proposition Canvas example 2"
+    },
+    {
+      "src": "assets/img/vp-canvas-example3.jpg",
+      "title": "Value Proposition Canvas — Example 3",
+      "alt": "Filled-in Value Proposition Canvas example 3"
     }
   ],
   "related": [

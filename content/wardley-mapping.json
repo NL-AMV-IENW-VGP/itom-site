@@ -1,0 +1,84 @@
+{
+  "key": "wardley-mapping",
+  "category": "05 Visual Toolkit",
+  "title": "Wardley Mapping",
+  "lead": "A strategic mapping technique that visualises the value chain of an organisation along axes of user visibility and component evolution — used to make explicit the landscape in which IT strategy decisions are made.",
+  "sections": [
+    {
+      "heading": "Wardley Map",
+      "type": "image",
+      "src": "assets/img/wardley-map.jpg",
+      "alt": "Example Wardley Map showing a value chain plotted along visibility and evolution axes"
+    },
+    {
+      "heading": "Overview",
+      "type": "text",
+      "body": "Wardley Mapping, developed by Simon Wardley, is a visual tool for situational awareness in strategy. A Wardley Map plots components of a value chain on a two-dimensional canvas: the vertical axis represents visibility to the user (from invisible infrastructure to front-stage customer interactions), and the horizontal axis represents the evolution of each component (from novel and uncertain genesis, through custom-built and product phases, to commodity utilities). By making the landscape explicit, organisations can reason about where to invest, what to outsource, where disruption is likely, and how to gain strategic advantage."
+    },
+    {
+      "heading": "ITOM Perspective",
+      "type": "text",
+      "body": "Wardley Mapping is a powerful input to IT strategy and operating model design. It helps answer critical questions during an ITOM engagement: which IT capabilities are differentiating (and worth building), and which have commoditised (and should be sourced or outsourced)? Where is the technology landscape moving, and how does the current operating model need to change to stay ahead? In ITOM engagements, Wardley Maps are used in strategy workshops to align stakeholders on the evolution of the IT landscape and the implications for sourcing, architecture, and organisational design."
+    },
+    {
+      "heading": "Key Concepts",
+      "type": "list",
+      "items": [
+        {
+          "term": "Value Chain",
+          "desc": "The chain of components from user need down to underlying infrastructure — each component depends on those below it."
+        },
+        {
+          "term": "Evolution Axis",
+          "desc": "The horizontal axis representing how a component evolves from novel (Genesis) through Custom-Built and Product to Commodity/Utility."
+        },
+        {
+          "term": "Anchor",
+          "desc": "The user or business need at the top of the map — the starting point from which the value chain is derived."
+        },
+        {
+          "term": "Movement",
+          "desc": "All components evolve leftward to rightward over time (toward commodity). Identifying this movement reveals where change is inevitable."
+        },
+        {
+          "term": "Climatic Patterns",
+          "desc": "Universal forces that affect all industries — such as 'everything evolves', 'efficiency enables innovation', and 'inertia increases with success'."
+        },
+        {
+          "term": "Doctrine",
+          "desc": "Universal principles for good organisational practice — independent of context — such as 'use appropriate methods' and 'think small, act big'."
+        },
+        {
+          "term": "Strategy Cycle",
+          "desc": "The five-step iterative loop at the heart of Wardley Mapping: Purpose (why the organisation exists) → Landscape (map the environment) → Climate (external forces at work) → Doctrine (apply universal principles) → Leadership (make context-specific plays) — then repeat as the landscape evolves."
+        }
+      ]
+    },
+    {
+      "heading": "How We Use It in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "IT landscape analysis — map IT capabilities to understand their evolution stage and sourcing implications" },
+        { "desc": "Make vs. buy decisions — identify commodity components for outsourcing and differentiating capabilities to build" },
+        { "desc": "Strategy workshops — create shared situational awareness among business and IT leaders" },
+        { "desc": "Operating model design — align the sourcing model and organisational structure to the evolution of IT components" },
+        { "desc": "Digital strategy — identify where platform and data capabilities need to shift to gain competitive advantage" }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/wardley-big-data.webp",
+      "title": "Wardley Map — Big Data Landscape",
+      "alt": "Wardley Map showing a Big Data landscape with components plotted along visibility and evolution axes",
+      "caption": "A Wardley Map applied to a Big Data landscape, showing how components range from genesis (novel processing techniques) to commodity (standard storage and compute). The map reveals where to invest, where to standardise, and where disruption is likely."
+    }
+  ],
+  "related": [
+    { "label": "IT Strategy", "key": "it-strategy" },
+    { "label": "Digital Strategy", "key": "digital-strategy" },
+    { "label": "Corporate Strategy", "key": "corporate-strategy" },
+    { "label": "Business Model Canvas", "key": "bmc" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" }
+  ]
+}

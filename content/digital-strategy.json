@@ -57,6 +57,10 @@
     {
       "label": "Operating Model",
       "key": "operating-model"
+    },
+    {
+      "label": "Wardley Mapping",
+      "key": "wardley-mapping"
     }
   ]
 }

@@ -54,6 +54,15 @@
     { "label": "Enterprise Architectuur", "key": "enterprise-architecture" },
     { "label": "SIAM", "key": "siam" },
     { "label": "(IT)OM Canvas", "key": "itom-canvas" },
-    { "label": "COBIT", "key": "cobit" }
+    { "label": "COBIT", "key": "cobit" },
+    { "label": "Wardley Mapping", "key": "wardley-mapping" }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/operating-model-process.png",
+      "title": "Procesgebaseerd Operating Model",
+      "alt": "Diagram van een procesgebaseerd IT operating model",
+      "caption": "Een procesgerichte weergave van het IT operating model, met de structuur en onderlinge samenhang van de belangrijkste IT-processen voor dienstlevering."
+    }
   ]
 }

@@ -1,0 +1,84 @@
+{
+  "key": "wardley-mapping",
+  "category": "05 Visuele Toolkit",
+  "title": "Wardley Mapping",
+  "lead": "Een strategische visualisatietechniek die de waardeketen van een organisatie visualiseert langs de assen zichtbaarheid voor de gebruiker en evolutie van componenten — ingezet om het landschap waarbin­nen IT-strategie­beslissingen worden genomen expliciet te maken.",
+  "sections": [
+    {
+      "heading": "Wardley Map",
+      "type": "image",
+      "src": "assets/img/wardley-map.jpg",
+      "alt": "Voorbeeld van een Wardley Map met een waardeketen uitgezet langs de assen zichtbaarheid en evolutie"
+    },
+    {
+      "heading": "Overzicht",
+      "type": "text",
+      "body": "Wardley Mapping, ontwikkeld door Simon Wardley, is een visueel hulpmiddel voor situationeel bewustzijn in strategie. Een Wardley Map plaatst componenten van een waardeketen op een tweedimensionaal canvas: de verticale as vertegenwoordigt de zichtbaarheid voor de gebruiker (van onzichtbare infrastructuur tot klantgerichte interacties), en de horizontale as de evolutie van elke component (van nieuw en onzeker via maatwerk en product naar commodity). Door het landschap expliciet te maken, kunnen organisaties redeneren over waar te investeren, wat uit te besteden, waar verstoring waarschijnlijk is en hoe strategisch voordeel te behalen."
+    },
+    {
+      "heading": "ITOM Perspectief",
+      "type": "text",
+      "body": "Wardley Mapping is een krachtige input voor IT-strategie en operating model-ontwerp. Het helpt kritische vragen te beantwoorden tijdens een ITOM-traject: welke IT-capabilities zijn onderscheidend (en de moeite waard om te bouwen), en welke zijn gecommoditiseerd (en beter te sourcen of uit te besteden)? Waar beweegt het technologielandschap naartoe, en hoe moet het huidige operating model veranderen om voor te blijven? In ITOM-trajecten worden Wardley Maps ingezet in strategieworkshops om stakeholders op één lijn te brengen over de evolutie van het IT-landschap en de implicaties voor sourcing, architectuur en organisatieontwerp."
+    },
+    {
+      "heading": "Kernconcepten",
+      "type": "list",
+      "items": [
+        {
+          "term": "Waardeketen",
+          "desc": "De keten van componenten van gebruikersbehoefte naar onderliggende infrastructuur — elke component is afhankelijk van de componenten eronder."
+        },
+        {
+          "term": "Evolutie-as",
+          "desc": "De horizontale as die de evolutie van een component weergeeft: van nieuw (Genesis) via Maatwerk en Product naar Commodity/Utility."
+        },
+        {
+          "term": "Anker",
+          "desc": "De gebruikers- of bedrijfsbehoefte bovenaan de map — het vertrekpunt waaruit de waardeketen wordt afgeleid."
+        },
+        {
+          "term": "Beweging",
+          "desc": "Alle componenten evolueren in de loop van de tijd naar commoditisering. Het identificeren van deze beweging maakt onvermijdelijke veranderingen zichtbaar."
+        },
+        {
+          "term": "Klimatologische Patronen",
+          "desc": "Universele krachten die alle industrieën beïnvloeden — zoals 'alles evolueert', 'efficiëntie maakt innovatie mogelijk' en 'inertie neemt toe met succes'."
+        },
+        {
+          "term": "Doctrine",
+          "desc": "Universele principes voor goede organisatiepraktijk — contextvrij — zoals 'gebruik passende methoden' en 'denk klein, handel groot'."
+        },
+        {
+          "term": "Strategiecyclus",
+          "desc": "De vijfstapslus die centraal staat in Wardley Mapping: Purpose (bestaansreden van de organisatie) → Landscape (breng de omgeving in kaart) → Climate (externe krachten die het landschap beïnvloeden) → Doctrine (pas universele principes toe) → Leadership (maak contextspecifieke strategische keuzes) — en herhaal naarmate het landschap evolueert."
+        }
+      ]
+    },
+    {
+      "heading": "Hoe We Het Inzetten in ITOM",
+      "type": "list",
+      "items": [
+        { "desc": "IT-landschapsanalyse — breng IT-capabilities in kaart om hun evolutiefase en sourcingimplicaties te begrijpen" },
+        { "desc": "Make vs. buy-beslissingen — identificeer commodity-componenten voor uitbesteding en onderscheidende capabilities om zelf te bouwen" },
+        { "desc": "Strategieworkshops — creëer gedeeld situationeel bewustzijn onder business- en IT-leiders" },
+        { "desc": "Operating model-ontwerp — stem het sourcingmodel en de organisatiestructuur af op de evolutie van IT-componenten" },
+        { "desc": "Digitale strategie — identificeer waar platform- en data-capabilities moeten verschuiven voor concurrentievoordeel" }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "src": "assets/img/wardley-big-data.webp",
+      "title": "Wardley Map — Big Data Landschap",
+      "alt": "Wardley Map van een Big Data landschap met componenten uitgezet langs de assen zichtbaarheid en evolutie",
+      "caption": "Een Wardley Map toegepast op een Big Data landschap, met componenten van genesis (nieuwe verwerkingstechnieken) tot commodity (standaard opslag en rekenkracht). De map maakt zichtbaar waar te investeren, waar te standaardiseren en waar verstoring waarschijnlijk is."
+    }
+  ],
+  "related": [
+    { "label": "IT Strategie", "key": "it-strategy" },
+    { "label": "Digitale Strategie", "key": "digital-strategy" },
+    { "label": "Organisatiestrategie", "key": "corporate-strategy" },
+    { "label": "Business Model Canvas", "key": "bmc" },
+    { "label": "Enterprise Architecture", "key": "enterprise-architecture" }
+  ]
+}

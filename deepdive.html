@@ -275,6 +275,26 @@
   .toast.success-toast {
     background: #2e7d52;
   }
+
+  .related-chip.examples {
+    background: #e8f0fb !important;
+    border-color: rgba(26,95,168,0.35) !important;
+    color: #1a5fa8 !important;
+    font-weight: 500;
+  }
+  .related-chip.examples:hover {
+    background: #d6e4f7 !important;
+    border-color: #1a5fa8 !important;
+  }
+  [data-theme="dark"] .related-chip.examples {
+    background: #0d1e35 !important;
+    border-color: rgba(91,155,213,0.4) !important;
+    color: #5b9bd5 !important;
+  }
+  [data-theme="dark"] .related-chip.examples:hover {
+    background: #142840 !important;
+    border-color: #5b9bd5 !important;
+  }
 </style>
 </head>
 <body>
@@ -416,16 +436,20 @@ function renderPage(data) {
   }
 
   let relatedHtml = "";
-  if (data.related && data.related.length > 0) {
-    const chips = data.related.map(r => {
+  if ((data.related && data.related.length > 0) || (data.examples && data.examples.length > 0)) {
+    const chips = (data.related || []).map(r => {
       const href = `deepdive.html?page=${encodeURIComponent(r.key)}`;
       return `<a href="${href}" class="related-chip">${esc(r.label)}</a>`;
     }).join("\n      ");
+    const examplesChip = (data.examples && data.examples.length > 0)
+      ? `<a href="examples.html?page=${encodeURIComponent(data.key)}" class="related-chip examples">Examples →</a>`
+      : "";
     relatedHtml = `
     <div class="card card-related">
       <h2>Related Elements</h2>
       <div class="related-grid">
         ${chips}
+        ${examplesChip}
         <a href="index.html" class="related-chip">← All elements</a>
       </div>
     </div>`;
