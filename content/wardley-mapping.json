@@ -65,6 +65,17 @@
         { "desc": "Digital strategy — identify where platform and data capabilities need to shift to gain competitive advantage" }
       ]
     }
+    },
+    {
+      "heading": "Tools",
+      "type": "web-links",
+      "items": [
+        {
+          "label": "Interactieve Wardley map tool",
+          "url": "https://onlinewardleymaps.com/"
+        }
+      ]
+    }
   ],
   "examples": [
     {

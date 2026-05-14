@@ -428,6 +428,11 @@ function renderPage(data) {
         return `<a href="${esc(item.url)}" target="_blank" rel="noopener" class="doc-link" data-label="${esc(item.label)}"><span class="doc-icon">🗎</span><span class="doc-name">${esc(name)}</span>${typeSpan}</a>`;
       }).join("\n      ");
       sectionsHtml += `  <div class="doc-section">\n  <p class="sharepoint-notice">⚠️ Open these links in Microsoft Edge to avoid authorisation issues.</p>\n  <div class="doc-list" data-field="items">\n      ${docLinks}\n  </div>\n  </div>\n`;
+    } else if (section.type === "web-links") {
+      const webLinks = section.items.map(item => {
+        return `<a href="${esc(item.url)}" target="_blank" rel="noopener" class="doc-link"><span class="doc-icon">🔗</span><span class="doc-name">${esc(item.label)}</span></a>`;
+      }).join("\n      ");
+      sectionsHtml += `  <div class="doc-list" data-field="items">\n      ${webLinks}\n  </div>\n`;
     } else if (section.type === "image") {
       const caption = section.caption ? `\n  <p class="img-caption">${esc(section.caption)}</p>` : "";
       sectionsHtml += `  <img src="${esc(section.src)}" alt="${esc(section.alt || section.heading)}" class="section-img">${caption}\n`;

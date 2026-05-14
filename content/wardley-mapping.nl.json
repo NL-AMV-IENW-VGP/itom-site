@@ -65,6 +65,17 @@
         { "desc": "Digitale strategie — identificeer waar platform- en data-capabilities moeten verschuiven voor concurrentievoordeel" }
       ]
     }
+    },
+    {
+      "heading": "Hulpmiddelen",
+      "type": "web-links",
+      "items": [
+        {
+          "label": "Interactieve Wardley map tool",
+          "url": "https://onlinewardleymaps.com/"
+        }
+      ]
+    }
   ],
   "examples": [
     {
