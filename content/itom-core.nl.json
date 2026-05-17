@@ -50,13 +50,6 @@
       ]
     },
     {
-      "heading": "Meer informatie",
-      "type": "links",
-      "items": [
-        { "label": "ITOM Topologieën — L2 deepdive", "key": "itom-core-L2-topologies" }
-      ]
-    },
-    {
       "heading": "Atos Diensten",
       "type": "list",
       "items": [
@@ -65,6 +58,19 @@
         { "desc": "ITOM Canvas-workshops — het operating model samen met business- en IT-stakeholders co-creëren" },
         { "desc": "Topologieselectie — de juiste ITOM-topologie bepalen op basis van organisatiecontext en digitale volwassenheid" },
         { "desc": "Transformatieroadmap — de overgang van huidig naar doeloperating model plannen" }
+      ]
+    },
+    {
+      "heading": "Engagement Model",
+      "type": "image",
+      "src": "assets/img/itom-engagement-models.png",
+      "alt": "ITOM Engagement instapmodellen — overzicht van engagement-typen en instappunten"
+    },
+    {
+      "heading": "Meer informatie",
+      "type": "links",
+      "items": [
+        { "label": "ITOM Topologieën — L2 deepdive", "key": "itom-core-L2-topologies" }
       ]
     }
   ],
@@ -87,6 +93,31 @@
       "title": "SIAM Operating Model",
       "alt": "Voorbeeld ITOM gestructureerd rond een SIAM-model",
       "caption": "Een voorbeeld IT operating model ingericht rondom een Service Integration and Management (SIAM) structuur, met de governance van multi-leveranciersomgevingen."
+    },
+    {
+      "src": "assets/img/itom-engagement-models.png",
+      "title": "Engagement instapmodellen",
+      "alt": "Overzicht van ITOM engagement-typen en instappunten"
+    },
+    {
+      "src": "assets/img/itom-engagement-plan-on-page.png",
+      "title": "Plan on a Page",
+      "alt": "ITOM engagement plan op één pagina"
+    },
+    {
+      "src": "assets/img/itom-engagement-wbs.png",
+      "title": "Work Breakdown Structure",
+      "alt": "ITOM engagement work breakdown structure"
+    },
+    {
+      "src": "assets/img/itom-engagement-transition.png",
+      "title": "Transitie & Implementatie",
+      "alt": "ITOM engagement transitie- en implementatieoverzicht"
+    },
+    {
+      "src": "assets/img/itom-engagement-functional.png",
+      "title": "Functioneel Model",
+      "alt": "ITOM engagement functioneel model"
     }
   ]
 }

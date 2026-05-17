@@ -50,13 +50,6 @@
       ]
     },
     {
-      "heading": "More Information",
-      "type": "links",
-      "items": [
-        { "label": "ITOM Topologies — L2 deepdive", "key": "itom-core-L2-topologies" }
-      ]
-    },
-    {
       "heading": "Atos Services",
       "type": "list",
       "items": [
@@ -65,6 +58,19 @@
         { "desc": "ITOM Canvas workshops — co-create the operating model with business and IT stakeholders" },
         { "desc": "Topology selection — determine the right ITOM topology based on organisational context and digital maturity" },
         { "desc": "Transformation roadmap — plan the journey from current to target operating model" }
+      ]
+    },
+    {
+      "heading": "Engagement Model",
+      "type": "image",
+      "src": "assets/img/itom-engagement-models.png",
+      "alt": "ITOM Engagement Entry Models — overview of engagement types and entry points"
+    },
+    {
+      "heading": "More Information",
+      "type": "links",
+      "items": [
+        { "label": "ITOM Topologies — L2 deepdive", "key": "itom-core-L2-topologies" }
       ]
     }
   ],
@@ -87,6 +93,31 @@
       "title": "SIAM Operating Model",
       "alt": "Example ITOM structured around a SIAM model",
       "caption": "An example IT operating model organised around a Service Integration and Management (SIAM) structure, showing how multi-supplier environments are governed."
+    },
+    {
+      "src": "assets/img/itom-engagement-models.png",
+      "title": "Engagement Entry Models",
+      "alt": "Overview of ITOM engagement entry models and types"
+    },
+    {
+      "src": "assets/img/itom-engagement-plan-on-page.png",
+      "title": "Plan on a Page",
+      "alt": "ITOM engagement plan on a page"
+    },
+    {
+      "src": "assets/img/itom-engagement-wbs.png",
+      "title": "Work Breakdown Structure",
+      "alt": "ITOM engagement work breakdown structure"
+    },
+    {
+      "src": "assets/img/itom-engagement-transition.png",
+      "title": "Transition & Implementation",
+      "alt": "ITOM engagement transition and implementation overview"
+    },
+    {
+      "src": "assets/img/itom-engagement-functional.png",
+      "title": "Functional Model",
+      "alt": "ITOM engagement functional model"
     }
   ]
 }
