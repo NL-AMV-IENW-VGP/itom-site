@@ -1,0 +1,24 @@
+{
+  "title": "Cyber Transformation Approach",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Enables execution of the security program, based on a security strategy & roadmap or a maturity assessment."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Supports execution of the cyber transformation and roadmap. Translates strategic security intent into structured delivery. Ensures alignment between security investments and business outcomes."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available"
+      ]
+    }
+  ]
+}

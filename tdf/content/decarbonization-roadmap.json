@@ -1,0 +1,17 @@
+{
+  "title": "Digital Decarbonization Roadmap",
+  "domain": "Environmental awareness",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The roadmap synthesizes insights from the ambition workshop, maturity assessment, and footprint calculation. It outlines short-, medium-, and long-term actions to reduce IT-related emissions. Recommendations are phased and prioritized based on feasibility, impact, and business alignment. The roadmap includes over 50 tailored actions and is refined in a stakeholder workshop. It is delivered as a final report and presentation."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "The roadmap offers a tailor-made plan to move towards the desired Digital Decarbonization maturity. It drives measurable sustainability outcomes and supports strategic planning. By aligning actions with business priorities, it ensures practical implementation. It also supports budgeting and resource allocation. The roadmap becomes a living document that guides continuous improvement and stakeholder engagement."
+    }
+  ]
+}

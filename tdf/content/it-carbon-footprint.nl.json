@@ -1,0 +1,24 @@
+{
+  "title": "IT Carbon Footprint (Calculator)",
+  "domain": "Environmental awareness",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Dit deliverable kwantificeert de CO₂-uitstoot van het IT-landschap op basis van gegevens uit infrastructuur, applicaties en operaties. Het vormt een aanvulling op de kwalitatieve volwassenheidsbeoordeling met kwantitatieve metrieken. De voetafdruk wordt berekend met erkende methodologieën en gevisualiseerd voor stakeholderbeoordeling. Het identificeert gebieden met hoge impact en uitstoothotspots. De output informeert de roadmap en helpt voortgang bij te houden."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "De voetafdrukberekening biedt transparantie over de milieu-impact van IT. Het maakt datagedreven beslissingen mogelijk en ondersteunt naleving van duurzaamheidsregelgeving. Door uitstoothotspots te identificeren helpt het decarbonisatieacties te prioriteren. Het ondersteunt ook interne en externe rapportagevereisten. Uiteindelijk stelt het organisaties in staat om uitstoot op een meetbare en geloofwaardige manier te verminderen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Digital Decarbonization Assessment (DDA)"
+      ]
+    }
+  ]
+}

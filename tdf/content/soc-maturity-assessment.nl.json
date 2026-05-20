@@ -1,0 +1,24 @@
+{
+  "title": "SOC Maturity Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beoordeelt de volwassenheid van het Security Operations Center (SOC) op mensen, processen en technologie. Vergelijkt met industrienormen zoals MITRE ATT&CK en NIST. Identificeert hiaten in dreigingsdetectie, incidentrespons en automatisering. Biedt een roadmap voor SOC-evolutie. Omvat doorgaans capabiliteitscoring en verbeteracties."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Helpt klanten zichtbaarheid van dreigingen en reactiesnelheid te verbeteren. Maakt strategische investering in SOC-capaciteiten mogelijk. Vermindert operationeel risico door betere monitoring en alertering. Ondersteunt continue verbetering en weerbaarheid. Versterkt de algehele cyberbeveiligingshouding."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar, inclusief sjablonen voor beoordeling, rapportage en voorstel"
+      ]
+    }
+  ]
+}

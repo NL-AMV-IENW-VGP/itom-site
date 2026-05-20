@@ -1,0 +1,24 @@
+{
+  "title": "Cyber Defense",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Encompasses proactive and reactive measures to protect digital assets from cyber threats. Includes threat hunting, endpoint protection, network monitoring, and incident response. Aligns with threat intelligence and risk models. Continuously evolves based on threat landscape. Often supported by SOC and advanced analytics."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Strengthens protection against evolving cyber threats. Enhances visibility and control across environments. Reduces risk of data loss and service disruption. Supports business continuity and resilience. Builds stakeholder confidence in security posture."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Depending on scope of client"
+      ]
+    }
+  ]
+}

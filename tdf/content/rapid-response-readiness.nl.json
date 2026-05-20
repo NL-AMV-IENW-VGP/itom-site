@@ -1,0 +1,17 @@
+{
+  "title": "Rapid Response Readiness",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Bereidt de organisatie voor om snel en effectief te reageren op cyberincidenten en crises. Omvat playbooks, escalatiepaden en communicatieprotocollen. Betrekt leiderschap, juridische zaken en technische teams. Getest via simulaties en oefeningen. Ondersteunt bedrijfscontinuïteit en reputatiebeheer."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert impact en hersteltijd tijdens incidenten. Vergroot coördinatie en besluitvorming. Bouwt vertrouwen in crisismanagementcapaciteiten. Ondersteunt regulatoire en klantverwachtingen. Versterkt de organisatorische weerbaarheid."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "IAM Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Evaluates Identity and Access Management (IAM) capabilities across systems and processes. Reviews authentication, authorization, provisioning, and governance mechanisms. Identifies gaps in role-based access control and privileged access management. Includes recommendations for improving identity lifecycle and compliance."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enhances protection against unauthorized access and insider threats. Supports compliance with privacy and security regulations. Improves operational efficiency through streamlined access provisioning. Reduces risk of data breaches and identity misuse. Builds trust in digital platforms and user management."
+    }
+  ]
+}

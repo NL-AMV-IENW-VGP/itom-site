@@ -1,0 +1,24 @@
+{
+  "title": "Digital Decarbonization Maturity Assessment",
+  "domain": "Environmental awareness",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "This step evaluates the current maturity level of the client's IT environment across nine domains (e.g., infrastructure, workplace, data). It uses interviews and qualitative analysis to benchmark against desired maturity levels defined during the ambition workshop. The assessment identifies gaps, strengths, and opportunities for improvement. Results are visualized in a maturity matrix and used to guide roadmap development. It provides a structured and objective view of the organization's digital sustainability posture."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "The maturity assessment enables targeted interventions by revealing where the organization stands and what needs to improve. It supports prioritization of decarbonization efforts based on impact and feasibility. The structured insights help align IT transformation with sustainability goals. It also provides a baseline for tracking progress over time. This clarity enhances accountability and supports transparent reporting."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Digital Decarbonization Assessment (DDA)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Security Testing Program",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Establishes a structured approach to testing security controls across systems and applications. Includes penetration testing, vulnerability scanning, and code reviews. Defines frequency, scope, and reporting standards. Integrates with development and change management processes. Supports continuous validation and improvement."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures ongoing effectiveness of security measures. Identifies and remediates vulnerabilities proactively. Supports compliance with security standards. Enhances product and service reliability. Builds customer trust through transparency and rigor."
+    }
+  ]
+}

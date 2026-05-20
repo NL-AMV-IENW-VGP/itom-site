@@ -1,0 +1,24 @@
+{
+  "title": "Security Management Framework",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Establishes a formal Information Security Management System (ISMS) based on standards like ISO 27001. Includes policies, procedures, risk management, and continuous improvement. Provides structure for managing and protecting information assets. Supports audit readiness and certification."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Helps customers achieve and maintain security certifications. Enhances governance and risk management. Builds trust with stakeholders and partners. Supports legal and regulatory compliance. Enables continuous improvement and maturity growth."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "ISMS framework (ISO 27001)"
+      ]
+    }
+  ]
+}

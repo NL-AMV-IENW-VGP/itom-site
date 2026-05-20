@@ -1,0 +1,24 @@
+{
+  "title": "Security Audit Readiness",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Bereidt de organisatie voor op interne en externe beveiligingsaudits. Omvat documentatie, bewijsverzameling en gapanalyse. Stemt af op normen zoals ISO 27001, SOC 2 en NIST. Betrekt stakeholders uit alle afdelingen. Ondersteunt continue verbetering en certificeringsinspanningen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert het risico op auditfouten en boetes. Vergroot geloofwaardigheid bij klanten en partners. Ondersteunt regulatoire en contractuele verplichtingen. Verbetert interne governance en verantwoording. Bouwt vertrouwen in beveiligingsvolwassenheid en transparantie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar"
+      ]
+    }
+  ]
+}

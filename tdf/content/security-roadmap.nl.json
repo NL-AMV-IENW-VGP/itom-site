@@ -1,0 +1,25 @@
+{
+  "title": "Security Strategy & Roadmap",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert de langetermijnvisie en tactische stappen voor het beveiligen van de digitale middelen van de organisatie. Stemt beveiligingsinitiatieven af op bedrijfsdoelen en regelgevingsvereisten. Afhankelijk van de scope kan het prioritering van investeringen, een capabiliteitsbeoordeling en bestuursstructuren omvatten. Dient als fundamentele referentie voor alle vervolgbeveiligingsactiviteiten."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt afstemming van beveiliging op bedrijfsstrategie mogelijk zodat investeringen doelgericht zijn. Vermindert risicoblootstelling door proactief kwetsbaarheden te identificeren en aan te pakken. Vergroot het vertrouwen van stakeholders door duidelijke planning en governance. Ondersteunt compliancegereedheid en auditvoorbereiding. Maakt een schaalbare en adaptieve beveiligingshouding mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar in NL, incl. voorstel",
+        "Scope af te stemmen met klant"
+      ]
+    }
+  ]
+}

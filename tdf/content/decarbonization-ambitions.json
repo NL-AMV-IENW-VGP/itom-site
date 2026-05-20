@@ -1,0 +1,24 @@
+{
+  "title": "Digital Decarbonization Ambitions",
+  "domain": "Environmental awareness",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Ambition Workshop is the first step in the Digital Decarbonization Assessment (DDA), designed to align the client's IT decarbonization goals with their CSR and digital strategies. It begins with a self-assessment across IT domains, completed by stakeholders before the session. A half-day workshop follows, where participants discuss ambition levels, innovation appetite, and short-term priorities. The session covers IT strategy, maturity targets, and organizational readiness. The output is a PowerPoint report summarizing ambition levels, maturity gaps, and actionable priorities."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "This workshop helps clients articulate a clear sustainability vision and align internal stakeholders. It fosters early engagement and ownership across departments. By identifying quick wins and long-term goals, it sets a strategic foundation for the transformation journey. It ensures that decarbonization efforts are embedded in broader IT and business strategies. The clarity gained accelerates decision-making and supports internal buy-in."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Digital Decarbonization Assessment (DDA)"
+      ]
+    }
+  ]
+}

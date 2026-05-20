@@ -1,0 +1,17 @@
+{
+  "title": "Security Incident Response Exercises",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Simuleert cyberincidenten om responsecapaciteiten en coördinatie te testen. Omvat tabletop-scenario's, live oefeningen en post-mortem reviews. Betrekt stakeholders van IT, juridische zaken, communicatie en leiderschap. Identificeert hiaten in procedures, tools en besluitvorming. Helpt playbooks en escalatieprotocollen te verfijnen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert gereedheid en vertrouwen bij het afhandelen van echte incidenten. Vermindert responstijd en impact tijdens crises. Vergroot cross-functionele samenwerking en duidelijkheid. Ondersteunt regulatoire en klantverwachtingen. Bouwt weerbaarheid en continue verbetering."
+    }
+  ]
+}

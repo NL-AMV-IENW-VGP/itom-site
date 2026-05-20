@@ -1,0 +1,24 @@
+{
+  "title": "Security Posture / Maturity Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Evaluates the current state of security capabilities across organizational and technical dimensions. Uses maturity models to benchmark against industry standards. Covers governance, processes, tools, and culture. Provides a baseline for roadmap development. Typically includes visual dashboards and prioritized recommendations. Often included in strategy assignments."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Gives customers a clear understanding of strengths and weaknesses. Enables targeted improvements and resource allocation. Supports strategic planning and transformation alignment. Enhances internal awareness and accountability. Provides measurable progress tracking over time."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available, including templates for assessment, reporting & proposing"
+      ]
+    }
+  ]
+}

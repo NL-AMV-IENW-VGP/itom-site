@@ -1,0 +1,25 @@
+{
+  "title": "Security Strategy & Roadmap",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the long-term vision and tactical steps for securing the organization's digital assets. Aligns security initiatives with business goals and regulatory requirements. Depending on scope, it can include prioritization of investments, capability assessment, and governance structures. Typically developed during the Define and Discover phases. Serves as a foundational reference for all subsequent security activities. Often combined with an assessment."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables alignment of security with business strategy, ensuring investments are purposeful. Reduces risk exposure by proactively identifying and addressing vulnerabilities. Enhances stakeholder confidence through clear planning and governance. Supports compliance readiness and audit preparation. Enables scalable and adaptive security posture over time."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available in NL, incl. proposal",
+        "Scope to be aligned with customer"
+      ]
+    }
+  ]
+}

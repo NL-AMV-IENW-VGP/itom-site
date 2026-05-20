@@ -1,0 +1,24 @@
+{
+  "title": "Cyber Transformation Approach",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Maakt de uitvoering van het beveiligingsprogramma mogelijk, gebaseerd op een beveiligingsstrategie en roadmap of een volwassenheidsbeoordeling."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Ondersteunt de uitvoering van de cybertransformatie en roadmap. Vertaalt strategische beveiligingsintenties naar gestructureerde uitlevering. Zorgt voor afstemming tussen beveiligingsinvesteringen en bedrijfsresultaten."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar"
+      ]
+    }
+  ]
+}

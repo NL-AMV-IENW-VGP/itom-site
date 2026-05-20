@@ -1,0 +1,24 @@
+{
+  "title": "Digital Decarbonization Maturity Assessment",
+  "domain": "Environmental awareness",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Deze stap evalueert het huidige volwassenheidsniveau van de IT-omgeving van de klant over negen domeinen (bijv. infrastructuur, werkplek, data). Het maakt gebruik van interviews en kwalitatieve analyse voor benchmarking tegen gewenste volwassenheidsniveaus die zijn gedefinieerd tijdens de ambitieworkshop. De beoordeling identificeert hiaten, sterktes en verbetermogelijkheden. Resultaten worden gevisualiseerd in een volwassenheidsmatrix en gebruikt voor roadmaportwikkeling."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "De volwassenheidsbeoordeling maakt gerichte interventies mogelijk door te tonen waar de organisatie staat en wat verbeterd moet worden. Het ondersteunt prioritering van decarbonisatie-inspanningen op basis van impact en haalbaarheid. De gestructureerde inzichten helpen IT-transformatie af te stemmen op duurzaamheidsdoelen. Het biedt ook een baseline voor het bijhouden van voortgang. Deze helderheid vergroot verantwoording en ondersteunt transparante rapportage."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Digital Decarbonization Assessment (DDA)"
+      ]
+    }
+  ]
+}

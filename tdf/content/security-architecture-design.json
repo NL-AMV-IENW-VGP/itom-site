@@ -1,0 +1,17 @@
+{
+  "title": "Security Architecture Design",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the structural blueprint for security controls across identity, network, and cloud domains. Incorporates principles like Zero Trust, least privilege, and secure-by-design. Aligns architecture with business and regulatory requirements. Includes diagrams, component descriptions, and integration flows. Serves as a foundation for secure solution deployment (IAM, Zero Trust, Cloud, etc.)."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables consistent and scalable security implementation. Reduces complexity and risk in multi-platform environments. Supports compliance and audit readiness. Enhances agility in responding to threats and changes. Builds trust in digital transformation initiatives."
+    }
+  ]
+}

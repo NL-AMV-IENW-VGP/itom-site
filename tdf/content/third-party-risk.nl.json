@@ -1,0 +1,17 @@
+{
+  "title": "Third Party Risk Management",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Begint met het beoordelen van het huidige vermogen om risico's van derden te beheren. Daarnaast kunnen we risico's beoordelen die worden veroorzaakt door leveranciers, partners en dienstverleners. Omvat due diligence en doorlopende monitoring."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert blootstelling aan externe bedreigingen en datalekken. Vergroot vertrouwen en verantwoording in leveranciersrelaties. Ondersteunt naleving van regelgeving rond risico's van derden. Verbetert zichtbaarheid van kwetsbaarheden in de toeleveringsketen. Maakt proactieve risicobeperking en governance mogelijk."
+    }
+  ]
+}

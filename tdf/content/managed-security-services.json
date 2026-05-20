@@ -1,0 +1,24 @@
+{
+  "title": "Managed Security Services",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Outsources security operations to specialized providers. Includes monitoring, incident response, threat intelligence, and compliance support. Offers scalability, expertise, and cost efficiency. Defined by SLAs, governance, and integration models. Supports hybrid and multi-cloud environments."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables access to advanced security capabilities. Reduces operational burden and cost. Enhances coverage and responsiveness. Supports compliance and risk management. Builds flexibility and resilience in security operations."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Depending on scope, standard approaches available across security services"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Security Strategy & Transformation Lab",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Lab session with client leadership (CISO/CIO) to dive into the strategic challenges, the role of the CISO, insights in the security capabilities, and key stakeholders required to achieve security goals. This results in a concrete 180-day plan and a high level 2–3 year roadmap."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Help customers to gain initial insight in a day for their security posture, priorities, and immediate next steps. Ideal for CISOs who are new in their role (2–4 months), CISOs who want to drive change and improve security. Provides clarity and momentum from day one."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Free session, Atos investment of 3 days per client (prep + 2 person facilitation)"
+      ]
+    }
+  ]
+}

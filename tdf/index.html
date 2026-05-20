@@ -505,11 +505,13 @@ const DOMAINS = [
   'Platform',
   'Data & AI',
   'People & Culture',
+  'Security & Safety',
+  'Environmental awareness',
 ];
 
-/* Kleuren per domein (index 0-5) */
+/* Kleuren per domein (index 0-7) */
 const DOMAIN_COLORS = [
-  '#156082', '#B84A0C', '#196B24', '#0076A3', '#7B2D8B', '#3A7A1F'
+  '#156082', '#B84A0C', '#196B24', '#0076A3', '#7B2D8B', '#3A7A1F', '#C41E3A', '#006B5E'
 ];
 
 const MATRIX = {
@@ -560,6 +562,22 @@ const MATRIX = {
     develop:  ['Training Plan', 'Network Activation'],
     deliver:  ['User Training', 'Lessons Learned'],
     drive:    ['Feedback & Surveys', 'Success Celebration'],
+  },
+  'Security & Safety': {
+    define:   ['Security Strategy Lab', 'Security Roadmap', 'Cyber Threat Assessment', 'Regulatory Impact Analysis'],
+    discover: ['Security Posture Assessment', 'Penetration Testing', 'IAM Assessment', 'SOC Maturity Assessment', 'Cloud Security Assessment'],
+    design:   ['Security Operating Model', 'Security Management Framework', 'Security Architecture Design', 'Third Party Risk', 'Policies & Standards'],
+    develop:  ['Incident Response Exercises', 'Security Testing Program', 'Security Orchestration', 'Cyber Defense', 'Security & Privacy by Design'],
+    deliver:  ['Security Audit Readiness', 'Cyber Transformation', 'Rapid Response Readiness', 'SOC Optimization'],
+    drive:    ['Security Maturity Updates', 'Managed Security Services', 'Compliance Monitoring'],
+  },
+  'Environmental awareness': {
+    define:   ['Decarbonization Ambitions'],
+    discover: ['Decarbonization Maturity'],
+    design:   ['IT Carbon Footprint'],
+    develop:  ['Decarbonization Roadmap'],
+    deliver:  [],
+    drive:    [],
   },
 };
 
@@ -765,6 +783,48 @@ const CHIP_DESCRIPTIONS = {
   // People & Culture — Drive
   'Feedback & Surveys':         'Surveys offer a non-intimidating environment leading to honest and open responses. OCM survey purposes include customer satisfaction, feedback on needs, change and KPI monitoring (change readiness, change success), and pulse & mood barometer feedback.',
   'Success Celebration':        'Celebrating success informs and brings awareness about project progress to build a positive attitude towards change. It presents success appreciatively and recognizes individuals who have contributed towards successful implementation.',
+
+  // Security & Safety — Define
+  'Security Strategy Lab':      'Lab session with client leadership (CISO/CIO) to dive into strategic challenges, the role of the CISO, insights in security capabilities, and key stakeholders. Results in a concrete 180-day plan and a high-level 2–3 year roadmap.',
+  'Security Roadmap':           'Defines the long-term vision and tactical steps for securing the organization\'s digital assets. Aligns security initiatives with business goals and regulatory requirements, including prioritization of investments and governance structures.',
+  'Cyber Threat Assessment':    'Identifies key cyber threats and evaluates their potential impact on business operations. Uses threat intelligence and risk modeling to assess exposure. Focused on strategic risks rather than technical details.',
+  'Regulatory Impact Analysis': 'Assesses the impact of security regulations (NIS2, DORA, CRA, ISO 27001, NIST CSF) on the organization, including current readiness and steps to take for compliance.',
+  // Security & Safety — Discover
+  'Security Posture Assessment':'Evaluates the current state of security capabilities across organizational and technical dimensions using maturity models. Covers governance, processes, tools, and culture. Provides a baseline for roadmap development.',
+  'Penetration Testing':        'Simulates real-world attacks to identify vulnerabilities in systems and applications. Conducted by ethical hackers using manual and automated techniques. Results include detailed reports with remediation guidance.',
+  'IAM Assessment':             'Evaluates Identity and Access Management (IAM) capabilities across systems and processes. Reviews authentication, authorization, provisioning, and governance mechanisms to identify gaps and improve identity lifecycle.',
+  'SOC Maturity Assessment':    'Assesses the maturity of the Security Operations Center (SOC) across people, processes, and technology. Benchmarks against industry standards like MITRE ATT&CK and NIST. Provides a roadmap for SOC evolution.',
+  'Cloud Security Assessment':  'Evaluates risks associated with cloud infrastructure, platforms, and services. Reviews configurations, access controls, data protection, and compliance. Identifies misconfigurations and vulnerabilities in multi-cloud environments.',
+  // Security & Safety — Design
+  'Security Operating Model':   'Defines the structure, roles, and processes for managing security across the organization. Includes governance, service delivery, and performance metrics. Serves as a blueprint for security operations, transformation and innovation.',
+  'Security Management Framework': 'Establishes a formal Information Security Management System (ISMS) based on standards like ISO 27001. Includes policies, procedures, risk management, and continuous improvement. Supports audit readiness and certification.',
+  'Security Architecture Design':  'Defines the structural blueprint for security controls across identity, network, and cloud domains. Incorporates Zero Trust, least privilege, and secure-by-design principles. Aligns architecture with business and regulatory requirements.',
+  'Third Party Risk':           'Assesses current ability to manage third-party risks posed by vendors, partners, and service providers. Includes due diligence, risk scoring, and ongoing monitoring to reduce supply chain exposure.',
+  'Policies & Standards':       'Establishes formal rules and guidelines for security practices across the organization. Covers access control, data protection, incident response, and acceptable use. Aligns with industry standards and regulatory frameworks.',
+  // Security & Safety — Develop
+  'Incident Response Exercises':'Simulates cyber incidents to test response capabilities and coordination. Includes tabletop scenarios, live drills, and post-mortem reviews. Identifies gaps in procedures, tools, and decision-making.',
+  'Security Testing Program':   'Establishes a structured approach to testing security controls across systems and applications. Includes penetration testing, vulnerability scanning, and code reviews. Integrates with development and change management processes.',
+  'Security Orchestration':     'Connects and automates security tools and workflows across the enterprise using platforms like SOAR. Enhances visibility and coordination among security systems. Reduces manual effort and response time.',
+  'Cyber Defense':              'Encompasses proactive and reactive measures to protect digital assets from cyber threats. Includes threat hunting, endpoint protection, network monitoring, and incident response. Continuously evolves based on threat landscape.',
+  'Security & Privacy by Design': 'Embeds security and privacy principles into systems and processes from the outset. Aligns with GDPR, ISO, and other privacy frameworks. Includes threat modeling, data minimization, and secure coding practices.',
+  // Security & Safety — Deliver
+  'Security Audit Readiness':   'Prepares the organization for internal and external security audits. Includes documentation, evidence collection, and gap analysis. Aligns with standards like ISO 27001, SOC 2, and NIST.',
+  'Cyber Transformation':       'Enables execution of the security program based on a security strategy & roadmap or a maturity assessment. Supports end-to-end delivery of the cyber transformation.',
+  'Rapid Response Readiness':   'Prepares the organization to respond quickly and effectively to cyber incidents. Includes playbooks, escalation paths, and communication protocols. Tested through simulations and drills.',
+  'SOC Optimization':           'Enhances the performance and efficiency of the Security Operations Center. Includes process improvements, tool rationalization, and skill development. Provides metrics and KPIs for continuous improvement.',
+  // Security & Safety — Drive
+  'Security Maturity Updates':  'Updates the organization\'s security maturity assessment and roadmap based on progress and changes. Includes re-evaluation of capabilities, risks, and priorities. Supports continuous improvement and stakeholder engagement.',
+  'Managed Security Services':  'Outsources security operations to specialized providers. Includes monitoring, incident response, threat intelligence, and compliance support. Defined by SLAs, governance, and integration models.',
+  'Compliance Monitoring':      'Implements automated tools and processes to monitor compliance with security policies and regulations. Includes dashboards, alerts, and reporting. Supports real-time visibility and audit readiness.',
+
+  // Environmental awareness — Define
+  'Decarbonization Ambitions':  'The Ambition Workshop aligns the client\'s IT decarbonization goals with their CSR and digital strategies. A half-day session covers ambition levels, innovation appetite, and short-term priorities. Output is a report summarizing ambition levels and actionable priorities.',
+  // Environmental awareness — Discover
+  'Decarbonization Maturity':   'Evaluates the current maturity level of the client\'s IT environment across nine domains (infrastructure, workplace, data, etc.). Uses interviews and qualitative analysis to benchmark against desired maturity levels and identify gaps.',
+  // Environmental awareness — Design
+  'IT Carbon Footprint':        'Quantifies the carbon emissions of the IT landscape using data from infrastructure, applications, and operations. Identifies high-impact areas and emission hotspots. The output informs the decarbonization roadmap.',
+  // Environmental awareness — Develop
+  'Decarbonization Roadmap':    'Synthesizes insights from the ambition workshop, maturity assessment, and footprint calculation into short-, medium-, and long-term actions. Recommendations are phased and prioritized based on feasibility, impact, and business alignment.',
 };
 
 /* Bestandslinks per chip — voorlopig leeg */
@@ -866,6 +926,46 @@ const CHIP_TDF_LINKS = {
   // People & Culture × Drive
   'Feedback & Surveys':            'feedback-surveys',
   'Success Celebration':           'success-celebration',
+  // Security & Safety × Define
+  'Security Strategy Lab':         'security-strategy-lab',
+  'Security Roadmap':              'security-roadmap',
+  'Cyber Threat Assessment':       'cyber-threat-assessment',
+  'Regulatory Impact Analysis':    'regulatory-impact-analysis',
+  // Security & Safety × Discover
+  'Security Posture Assessment':   'security-posture-assessment',
+  'Penetration Testing':           'penetration-testing',
+  'IAM Assessment':                'iam-assessment',
+  'SOC Maturity Assessment':       'soc-maturity-assessment',
+  'Cloud Security Assessment':     'cloud-security-assessment',
+  // Security & Safety × Design
+  'Security Operating Model':      'security-operating-model',
+  'Security Management Framework': 'security-management-framework',
+  'Security Architecture Design':  'security-architecture-design',
+  'Third Party Risk':              'third-party-risk',
+  'Policies & Standards':          'policies-standards',
+  // Security & Safety × Develop
+  'Incident Response Exercises':   'incident-response-exercises',
+  'Security Testing Program':      'security-testing-program',
+  'Security Orchestration':        'security-orchestration',
+  'Cyber Defense':                 'cyber-defense',
+  'Security & Privacy by Design':  'security-privacy-by-design',
+  // Security & Safety × Deliver
+  'Security Audit Readiness':      'security-audit-readiness',
+  'Cyber Transformation':          'cyber-transformation',
+  'Rapid Response Readiness':      'rapid-response-readiness',
+  'SOC Optimization':              'soc-optimization',
+  // Security & Safety × Drive
+  'Security Maturity Updates':     'security-maturity-updates',
+  'Managed Security Services':     'managed-security-services',
+  'Compliance Monitoring':         'compliance-monitoring',
+  // Environmental awareness × Define
+  'Decarbonization Ambitions':     'decarbonization-ambitions',
+  // Environmental awareness × Discover
+  'Decarbonization Maturity':      'decarbonization-maturity',
+  // Environmental awareness × Design
+  'IT Carbon Footprint':           'it-carbon-footprint',
+  // Environmental awareness × Develop
+  'Decarbonization Roadmap':       'decarbonization-roadmap',
 };
 
 /* ---- OVERLAY LOGICA ---- */

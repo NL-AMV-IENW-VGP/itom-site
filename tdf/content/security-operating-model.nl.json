@@ -1,0 +1,24 @@
+{
+  "title": "Security Target Operating Model",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert de structuur, rollen en processen voor het beheren van beveiliging in de hele organisatie. Stemt af op bedrijfsstrategie en operationele behoeften. Omvat governance, dienstverlening en prestatiemetrieken. Dient als blauwdruk voor beveiligingsoperaties, transformatie en innovatie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt schaalbare en consistente beveiligingsoperaties mogelijk. Verduidelijkt rollen en verantwoordelijkheden binnen teams. Verbetert efficiëntie en verantwoording. Ondersteunt strategische afstemming en transformatiedoelen. Vergroot weerbaarheid en aanpassingsvermogen aan bedreigingen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar, aan te passen aan klantbehoeften"
+      ]
+    }
+  ]
+}

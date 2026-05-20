@@ -1,0 +1,17 @@
+{
+  "title": "SOC Optimization Support",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Enhances the performance and efficiency of the Security Operations Center. Includes process improvements, tool rationalization, and skill development. Aligns with threat landscape and business needs. Supports automation and orchestration. Provides metrics and KPIs for continuous improvement."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves threat detection and response capabilities. Reduces operational costs and complexity. Enhances analyst productivity and morale. Supports strategic security goals. Builds a high-performing and adaptive SOC."
+    }
+  ]
+}

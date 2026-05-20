@@ -1,0 +1,17 @@
+{
+  "title": "Security Testing Program",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Stelt een gestructureerde aanpak vast voor het testen van beveiligingscontroles over systemen en applicaties. Omvat penetratietesten, kwetsbaarheidsscanning en codereviews. Definieert frequentie, reikwijdte en rapportagestandaarden. Integreert met ontwikkelings- en wijzigingsbeheerprocessen. Ondersteunt continue validatie en verbetering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor voortdurende effectiviteit van beveiligingsmaatregelen. Identificeert en verhelpt kwetsbaarheden proactief. Ondersteunt naleving van beveiligingsnormen. Vergroot betrouwbaarheid van producten en diensten. Bouwt klantvertrouwen door transparantie en nauwgezetheid."
+    }
+  ]
+}

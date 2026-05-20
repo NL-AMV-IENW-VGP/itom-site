@@ -1,0 +1,17 @@
+{
+  "title": "SOC Optimization Support",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Vergroot de prestaties en efficiëntie van het Security Operations Center. Omvat procesverbeteringen, toolrationalisatie en vaardigheidsontwikkeling. Stemt af op het dreigingslandschap en bedrijfsbehoeften. Ondersteunt automatisering en orkestratie. Biedt metrieken en KPI's voor continue verbetering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert dreigingsdetectie en responsecapaciteiten. Vermindert operationele kosten en complexiteit. Vergroot productiviteit en moreel van analisten. Ondersteunt strategische beveiligingsdoelen. Bouwt een hoogpresterend en adaptief SOC."
+    }
+  ]
+}

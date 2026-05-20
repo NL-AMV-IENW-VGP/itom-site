@@ -1,0 +1,24 @@
+{
+  "title": "Security Target Operating Model",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the structure, roles, and processes for managing security across the organization. Aligns with business strategy and operational needs. Includes governance, service delivery, and performance metrics. Serves as a blueprint for security operations, transformation and innovation."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables scalable and consistent security operations. Clarifies roles and responsibilities across teams. Improves efficiency and accountability. Supports strategic alignment and transformation goals. Enhances resilience and adaptability to threats."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available, to be tailored to client needs"
+      ]
+    }
+  ]
+}

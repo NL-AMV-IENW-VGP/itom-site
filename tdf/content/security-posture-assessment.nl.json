@@ -1,0 +1,24 @@
+{
+  "title": "Security Posture / Maturity Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Evalueert de huidige staat van beveiligingscapaciteiten op organisatorische en technische dimensies. Maakt gebruik van volwassenheidsmodellen voor benchmarking tegen industrienormen. Dekt governance, processen, tools en cultuur. Biedt een baseline voor roadmaportwikkeling. Omvat doorgaans visuele dashboards en geprioriteerde aanbevelingen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Geeft klanten een duidelijk inzicht in sterktes en zwaktes. Maakt gerichte verbeteringen en toewijzing van middelen mogelijk. Ondersteunt strategische planning en transformatiealignment. Vergroot intern bewustzijn en verantwoording. Biedt meetbare voortgangsbewaking in de loop van de tijd."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar, inclusief sjablonen voor beoordeling, rapportage en voorstel"
+      ]
+    }
+  ]
+}

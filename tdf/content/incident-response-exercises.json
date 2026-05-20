@@ -1,0 +1,17 @@
+{
+  "title": "Security Incident Response Exercises",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Simulates cyber incidents to test response capabilities and coordination. Includes tabletop scenarios, live drills, and post-mortem reviews. Engages stakeholders across IT, legal, communications, and leadership. Identifies gaps in procedures, tools, and decision-making. Helps refine playbooks and escalation protocols."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves readiness and confidence in handling real incidents. Reduces response time and impact during crises. Enhances cross-functional collaboration and clarity. Supports regulatory and customer expectations. Builds resilience and continuous improvement."
+    }
+  ]
+}

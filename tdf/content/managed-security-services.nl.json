@@ -1,0 +1,24 @@
+{
+  "title": "Managed Security Services",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Besteedt beveiligingsoperaties uit aan gespecialiseerde aanbieders. Omvat monitoring, incidentrespons, bedreigingsinformatie en complianceondersteuning. Biedt schaalbaarheid, expertise en kostenefficiëntie. Gedefinieerd door SLA's, governance en integratiemodellen. Ondersteunt hybride en multi-cloudomgevingen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt toegang tot geavanceerde beveiligingscapaciteiten. Vermindert operationele last en kosten. Vergroot dekking en responsiviteit. Ondersteunt naleving en risicobeheer. Bouwt flexibiliteit en weerbaarheid in beveiligingsoperaties."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Afhankelijk van de scope zijn standaardaanpakken beschikbaar over beveiligingsdiensten heen"
+      ]
+    }
+  ]
+}

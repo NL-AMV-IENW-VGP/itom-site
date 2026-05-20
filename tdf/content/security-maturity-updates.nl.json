@@ -1,0 +1,24 @@
+{
+  "title": "Security Maturity & Roadmap Updates",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Werkt de beveiligingsvolwassenheidsbeoordeling en roadmap bij op basis van voortgang en wijzigingen. Omvat herziening van capaciteiten, risico's en prioriteiten. Stemt af op bedrijfsstrategie en transformatiedoelen. Ondersteunt continue verbetering en stakeholderbetrokkenheid. Vaak jaarlijks of na grote wijzigingen uitgevoerd."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor relevantie en afstemming van beveiligingsinitiatieven. Maakt adaptieve planning en investering mogelijk. Vergroot transparantie en verantwoording. Ondersteunt strategische besluitvorming. Bouwt momentum en vertrouwen in transformatie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardaanpak beschikbaar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Regulatory Impact Analysis",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Assesses the impact of security regulations (NIS2, DORA, CRA, etc.) on the organization, including current readiness and steps to take for compliance with regulations. The same can be executed for industry standards such as ISO 27001, NIST CSF and SOC2."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides a clear understanding of the current regulatory posture and steps for improvement to comply with standards and regulations. Reduces the risk of regulatory penalties and audit failures. Supports proactive planning for compliance investments."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "NIS2, DORA, CRA & Certification readiness (ISO 27001 / SOC ISAE)",
+        "Standard approach available, including templates for assessment, reporting & proposing"
+      ]
+    }
+  ]
+}

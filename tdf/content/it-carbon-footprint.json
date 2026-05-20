@@ -1,0 +1,24 @@
+{
+  "title": "IT Carbon Footprint (Calculator)",
+  "domain": "Environmental awareness",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "This deliverable quantifies the carbon emissions of the IT landscape using data from infrastructure, applications, and operations. It complements the qualitative maturity assessment with quantitative metrics. The footprint is calculated using recognized methodologies and visualized for stakeholder review. It identifies high-impact areas and emission hotspots across IT domains. The output informs the roadmap and helps track progress over time."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "The footprint calculation provides transparency on IT's environmental impact. It enables data-driven decisions and supports compliance with sustainability regulations. By identifying emission hotspots, it helps prioritize decarbonization actions. It also supports internal and external reporting requirements. Ultimately, it empowers organizations to reduce emissions in a measurable and credible way."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Digital Decarbonization Assessment (DDA)"
+      ]
+    }
+  ]
+}

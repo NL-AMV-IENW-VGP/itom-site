@@ -1,0 +1,24 @@
+{
+  "title": "Security Maturity & Roadmap Updates",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Updates the organization's security maturity assessment and roadmap based on progress and changes. Includes re-evaluation of capabilities, risks, and priorities. Aligns with business strategy and transformation goals. Supports continuous improvement and stakeholder engagement. Often conducted annually or after major changes."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures relevance and alignment of security initiatives. Enables adaptive planning and investment. Enhances transparency and accountability. Supports strategic decision-making. Builds momentum and confidence in transformation."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available"
+      ]
+    }
+  ]
+}

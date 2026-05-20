@@ -1,0 +1,25 @@
+{
+  "title": "High Level Cyber Threat & Risk Assessment",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Identificeert de voornaamste cyberbedreigingen en evalueert hun potentiële impact op bedrijfsoperaties. Maakt gebruik van bedreigingsinformatie en risicomodellering om blootstelling te beoordelen. Richt zich op strategische risico's in plaats van technische details. Vroegtijdig uitgevoerd in de transformatie om ontwerpbeslissingen te informeren. Omvat vaak samenvattingen op directieniveau en aanbevelingen voor mitigatie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt geïnformeerde besluitvorming mogelijk door kritieke risico's te benadrukken. Helpt beveiligingsinvesteringen te prioriteren op basis van bedrijfsimpact. Verbetert weerbaarheid door dreigingsscenario's te anticiperen. Ondersteunt regulatoire en bestuursrapportage. Bouwt een proactieve beveiligingscultuur op in de organisatie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Uitvoering in samenwerking met GDN voor bedreigingsinformatie",
+        "Vereist planning in samenwerking met GDN (hoge vraag)"
+      ]
+    }
+  ]
+}

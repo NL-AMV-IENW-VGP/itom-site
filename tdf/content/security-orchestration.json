@@ -1,0 +1,17 @@
+{
+  "title": "Security Integration & Orchestration",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Connects and automates security tools and workflows across the enterprise. Uses platforms like SOAR to streamline incident response and threat intelligence. Enhances visibility and coordination among security systems. Reduces manual effort and response time. Supports scalable and adaptive security operations."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves efficiency and reduces operational overhead. Enhances detection and response capabilities. Enables faster resolution of security events. Supports strategic alignment and automation goals. Builds a resilient and responsive security ecosystem."
+    }
+  ]
+}

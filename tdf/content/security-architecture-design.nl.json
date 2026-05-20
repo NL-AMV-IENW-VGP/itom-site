@@ -1,0 +1,17 @@
+{
+  "title": "Security Architecture Design",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert de structurele blauwdruk voor beveiligingscontroles op het gebied van identiteit, netwerk en cloud. Incorporeert principes zoals Zero Trust, least privilege en secure-by-design. Stemt architectuur af op zakelijke en regulatoire vereisten. Omvat diagrammen, componentbeschrijvingen en integratiestromen. Dient als basis voor veilige oplossingsimplementatie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt consistente en schaalbare beveiligingsimplementatie mogelijk. Vermindert complexiteit en risico in multi-platformomgevingen. Ondersteunt naleving en auditgereedheid. Vergroot wendbaarheid bij het reageren op bedreigingen en wijzigingen. Bouwt vertrouwen in digitale transformatie-initiatieven."
+    }
+  ]
+}

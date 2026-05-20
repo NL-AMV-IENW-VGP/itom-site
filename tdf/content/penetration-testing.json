@@ -1,0 +1,17 @@
+{
+  "title": "Penetration Testing",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Simulates real-world attacks to identify vulnerabilities in systems and applications. Conducted by ethical hackers using manual and automated techniques. Focuses on exploitation paths and impact analysis. Results are documented in detailed reports with remediation guidance. Often repeated periodically or after major changes."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Validates the effectiveness of existing security controls. Helps customers uncover hidden risks before attackers do. Supports compliance with standards like ISO 27001 and BIO and regulations such as NIS2 and DORA. Builds confidence in digital platforms and services. Enables continuous improvement through actionable insights."
+    }
+  ]
+}

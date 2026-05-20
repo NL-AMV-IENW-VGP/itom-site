@@ -1,0 +1,24 @@
+{
+  "title": "Security Management Framework",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Stelt een formeel Information Security Management System (ISMS) in op basis van normen zoals ISO 27001. Omvat beleid, procedures, risicobeheer en continue verbetering. Biedt structuur voor het beheren en beschermen van informatieassets. Ondersteunt auditgereedheid en certificering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Helpt klanten beveiligingscertificeringen te behalen en te behouden. Vergroot governance en risicobeheer. Bouwt vertrouwen op bij stakeholders en partners. Ondersteunt juridische en regulatoire naleving. Maakt continue verbetering en groei in volwassenheid mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "ISMS-framework (ISO 27001)"
+      ]
+    }
+  ]
+}

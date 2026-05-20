@@ -1,0 +1,17 @@
+{
+  "title": "Third Party Risk Management",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Starts with assessing current ability to manage third-party risks. In addition, we can assess risks posed by vendors, partners, and service providers. Includes due diligence, and ongoing monitoring."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces exposure to external threats and data breaches. Enhances trust and accountability in supplier relationships. Supports compliance with third-party risk regulations. Improves visibility into supply chain vulnerabilities. Enables proactive risk mitigation and governance."
+    }
+  ]
+}

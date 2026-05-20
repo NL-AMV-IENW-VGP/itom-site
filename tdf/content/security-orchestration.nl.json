@@ -1,0 +1,17 @@
+{
+  "title": "Security Integration & Orchestration",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Verbindt en automatiseert beveiligingstools en workflows in de hele onderneming. Maakt gebruik van platformen zoals SOAR om incidentrespons en bedreigingsinformatie te stroomlijnen. Vergroot zichtbaarheid en coördinatie tussen beveiligingssystemen. Vermindert handmatige inspanning en responstijd. Ondersteunt schaalbare en adaptieve beveiligingsoperaties."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert efficiëntie en vermindert operationele overhead. Vergroot detectie- en responsecapaciteiten. Maakt snellere afhandeling van beveiligingsgebeurtenissen mogelijk. Ondersteunt strategische afstemming en automatiseringsdoelen. Bouwt een veerkrachtig en responsief beveiligingsecosysteem."
+    }
+  ]
+}

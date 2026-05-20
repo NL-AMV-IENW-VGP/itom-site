@@ -1,0 +1,25 @@
+{
+  "title": "High Level Cyber Threat & Risk Assessment",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Identifies key cyber threats and evaluates their potential impact on business operations. Uses threat intelligence and risk modeling to assess exposure. Focuses on strategic risks rather than technical details. Conducted early in transformation to inform design decisions. Often includes executive-level summaries and mitigation recommendations."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables informed decision-making by highlighting critical risks. Helps prioritize security investments based on business impact. Improves resilience by anticipating threat scenarios. Supports regulatory and board-level reporting. Builds a proactive security culture within the organization."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Delivery in collaboration with GDN for threat intelligence",
+        "Requires planning in collaboration with GDN (high demand)"
+      ]
+    }
+  ]
+}

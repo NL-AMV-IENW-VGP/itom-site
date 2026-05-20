@@ -1,0 +1,17 @@
+{
+  "title": "Continuous Compliance Monitoring",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Implementeert geautomatiseerde tools en processen voor het bewaken van naleving van beveiligingsbeleid en -regelgeving. Omvat dashboards, meldingen en rapportagemechanismen. Dekt interne normen en externe kaders. Ondersteunt real-time zichtbaarheid en auditgereedheid. Geïntegreerd met governance- en risicobeheerssystemen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert risico op niet-naleving en boetes. Vergroot transparantie en verantwoording. Ondersteunt proactief herstel en governance. Bouwt vertrouwen bij toezichthouders en stakeholders. Maakt schaalbare en duurzame naleving mogelijk."
+    }
+  ]
+}

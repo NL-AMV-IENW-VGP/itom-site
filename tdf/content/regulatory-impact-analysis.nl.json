@@ -1,0 +1,25 @@
+{
+  "title": "Regulatory Impact Analysis",
+  "domain": "Security & Safety",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beoordeelt de impact van beveiligingsregelgeving (NIS2, DORA, CRA, etc.) op de organisatie, inclusief de huidige gereedheid en te nemen stappen voor naleving. Hetzelfde kan worden uitgevoerd voor industrienormen zoals ISO 27001, NIST CSF en SOC2."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt een duidelijk inzicht in de huidige regelgevingspositie en stappen voor verbetering om aan normen en regelgeving te voldoen. Vermindert het risico op boetes en auditfouten. Ondersteunt proactieve planning van compliance-investeringen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "NIS2, DORA, CRA & certificeringsgereedheid (ISO 27001 / SOC ISAE)",
+        "Standaardaanpak beschikbaar, inclusief sjablonen voor beoordeling, rapportage en voorstel"
+      ]
+    }
+  ]
+}

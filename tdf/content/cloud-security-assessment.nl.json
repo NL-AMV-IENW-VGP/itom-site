@@ -1,0 +1,17 @@
+{
+  "title": "Cloud Security Risk Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Evalueert risico's verbonden aan cloudinfrastructuur, platformen en diensten. Beoordeelt configuraties, toegangscontroles, gegevensbescherming en naleving. Identificeert misconfiguraties en kwetsbaarheden in multi-cloudomgevingen. Omvat aanbevelingen voor herstel en governance. Vaak afgestemd op cloud-adoptie- of migratiefasen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor veilige cloudadoptie en -operaties. Vermindert het risico op datalekken en serviceonderbrekingen. Ondersteunt naleving van cloudspecifieke regelgeving. Vergroot zichtbaarheid en controle over cloudassets. Bouwt klantvertrouwen in cloudtransformatie."
+    }
+  ]
+}

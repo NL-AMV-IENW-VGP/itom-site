@@ -1,0 +1,17 @@
+{
+  "title": "Continuous Compliance Monitoring",
+  "domain": "Security & Safety",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Implements automated tools and processes to monitor compliance with security policies and regulations. Includes dashboards, alerts, and reporting mechanisms. Covers internal standards and external frameworks. Supports real-time visibility and audit readiness. Integrated with governance and risk management systems."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces risk of non-compliance and penalties. Enhances transparency and accountability. Supports proactive remediation and governance. Builds trust with regulators and stakeholders. Enables scalable and sustainable compliance."
+    }
+  ]
+}

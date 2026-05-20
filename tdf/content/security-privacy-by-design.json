@@ -1,0 +1,17 @@
+{
+  "title": "Security & Privacy by Design",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Embeds security and privacy principles into systems and processes from the outset. Aligns with GDPR, ISO, and other privacy frameworks. Includes threat modeling, data minimization, and secure coding practices. Promotes proactive risk management and compliance. Integrated into development and procurement lifecycles."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces cost and complexity of retroactive fixes. Enhances trust and transparency with users and regulators. Supports innovation without compromising security. Enables faster time-to-market with built-in safeguards. Builds a culture of responsible design and development."
+    }
+  ]
+}

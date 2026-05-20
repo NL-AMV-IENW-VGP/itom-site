@@ -1,0 +1,24 @@
+{
+  "title": "Policies & Standards",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Stelt formele regels en richtlijnen voor beveiligingspraktijken in de hele organisatie vast. Dekt gebieden zoals toegangscontrole, gegevensbescherming, incidentrespons en acceptabel gebruik. Stemt af op industrienormen en regelgevingskaders. Biedt een basis voor training en handhaving."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor consistent en compliant beveiligingsgedrag. Vermindert onduidelijkheid en risico in operaties. Ondersteunt audit- en certificeringsinspanningen. Vergroot bewustzijn en verantwoording van medewerkers. Bouwt een beveiligingscultuur op in de hele organisatie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Standaardsjablonen beschikbaar"
+      ]
+    }
+  ]
+}

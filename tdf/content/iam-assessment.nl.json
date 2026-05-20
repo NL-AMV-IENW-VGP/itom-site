@@ -1,0 +1,17 @@
+{
+  "title": "IAM Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Evalueert Identity and Access Management (IAM)-capaciteiten over systemen en processen. Beoordeelt authenticatie, autorisatie, provisioning en governance-mechanismen. Identificeert hiaten in rolgebaseerde toegangscontrole en beheer van bevoorrechte toegang. Omvat aanbevelingen voor het verbeteren van de identiteitslevenscyclus en naleving."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert de bescherming tegen ongeautoriseerde toegang en interne bedreigingen. Ondersteunt naleving van privacy- en beveiligingsregelgeving. Verbetert operationele efficiëntie door gestroomlijnde toegangsprovisioning. Vermindert het risico op datalekken en misbruik van identiteiten. Bouwt vertrouwen in digitale platformen en gebruikersbeheer."
+    }
+  ]
+}

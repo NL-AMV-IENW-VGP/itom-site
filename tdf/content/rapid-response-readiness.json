@@ -1,0 +1,17 @@
+{
+  "title": "Rapid Response Readiness",
+  "domain": "Security & Safety",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Prepares the organization to respond quickly and effectively to cyber incidents and crises. Includes playbooks, escalation paths, and communication protocols. Engages leadership, legal, and technical teams. Tested through simulations and drills. Supports business continuity and reputation management."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces impact and recovery time during incidents. Enhances coordination and decision-making. Builds confidence in crisis management capabilities. Supports regulatory and customer expectations. Strengthens organizational resilience."
+    }
+  ]
+}

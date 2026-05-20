@@ -1,0 +1,24 @@
+{
+  "title": "Policies & Standards",
+  "domain": "Security & Safety",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Establishes formal rules and guidelines for security practices across the organization. Covers areas like access control, data protection, incident response, and acceptable use. Aligns with industry standards and regulatory frameworks. Provides a foundation for training and enforcement."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures consistent and compliant security behavior. Reduces ambiguity and risk in operations. Supports audit and certification efforts. Enhances employee awareness and accountability. Builds a culture of security across the organization."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard templates available"
+      ]
+    }
+  ]
+}

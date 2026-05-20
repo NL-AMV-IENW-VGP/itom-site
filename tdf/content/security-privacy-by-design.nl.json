@@ -1,0 +1,17 @@
+{
+  "title": "Security & Privacy by Design",
+  "domain": "Security & Safety",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Integreert beveiligings- en privacyprincipes in systemen en processen vanaf het begin. Stemt af op AVG, ISO en andere privacykaders. Omvat dreigingsmodellering, dataminimalisatie en veilige codeerpraktijken. Bevordert proactief risicobeheer en naleving. Geïntegreerd in ontwikkelings- en inkooptrajecten."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert kosten en complexiteit van achterafoplossingen. Vergroot vertrouwen en transparantie bij gebruikers en toezichthouders. Ondersteunt innovatie zonder beveiliging in gevaar te brengen. Maakt snellere time-to-market met ingebouwde beveiliging mogelijk. Bouwt een cultuur van verantwoordelijk ontwerp en ontwikkeling."
+    }
+  ]
+}

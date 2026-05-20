@@ -1,0 +1,24 @@
+{
+  "title": "SOC Maturity Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Assesses the maturity of the Security Operations Center (SOC) across people, processes, and technology. Benchmarks against industry standards like MITRE ATT&CK and NIST. Identifies gaps in threat detection, incident response, and automation. Provides a roadmap for SOC evolution. Typically includes capability scoring and improvement actions."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Helps customers improve threat visibility and response speed. Enables strategic investment in SOC capabilities. Reduces operational risk through better monitoring and alerting. Supports continuous improvement and resilience. Strengthens overall cybersecurity posture."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Standard approach available, including templates for assessment, reporting & proposing"
+      ]
+    }
+  ]
+}

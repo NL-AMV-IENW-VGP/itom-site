@@ -1,0 +1,17 @@
+{
+  "title": "Penetration Testing",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Simuleert aanvallen uit de echte wereld om kwetsbaarheden in systemen en applicaties te identificeren. Uitgevoerd door ethische hackers met handmatige en geautomatiseerde technieken. Richt zich op exploitatiepaden en impactanalyse. Resultaten worden gedocumenteerd in gedetailleerde rapporten met herstelrichtlijnen. Vaak herhaald periodiek of na grote wijzigingen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Valideert de effectiviteit van bestaande beveiligingscontroles. Helpt klanten verborgen risico's te ontdekken voordat aanvallers dat doen. Ondersteunt naleving van normen zoals ISO 27001 en BIO en regelgeving zoals NIS2 en DORA. Bouwt vertrouwen in digitale platformen en diensten. Maakt continue verbetering door uitvoerbare inzichten mogelijk."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Cloud Security Risk Assessment",
+  "domain": "Security & Safety",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Evaluates risks associated with cloud infrastructure, platforms, and services. Reviews configurations, access controls, data protection, and compliance. Identifies misconfigurations and vulnerabilities in multi-cloud environments. Includes recommendations for remediation and governance. Often aligned with cloud adoption or migration phases."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures secure cloud adoption and operations. Reduces risk of data leakage and service disruption. Supports compliance with cloud-specific regulations. Enhances visibility and control over cloud assets. Builds customer confidence in cloud transformation."
+    }
+  ]
+}
