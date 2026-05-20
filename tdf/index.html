@@ -524,10 +524,10 @@ const MATRIX = {
   'Processes': {
     define:   ['Business capability', 'Business Process Analysis', 'Key performance indicators', 'Process Opportunities'],
     discover: ['Current Process Flow', 'Current Service Blueprint', 'Customer Journey', 'Industry Benchmarking', 'Process Design Principles', 'Process Maturity Assessment'],
-    design:   ['Future process L1–2', 'Future service blueprint', 'Monitoring indicators', 'Process automation blueprint', 'Process support model'],
-    develop:  ['Future detail process L3–4', 'Monitoring solution', 'Automation solutions'],
+    design:   ['Future Process Flow', 'Future Service Blueprint', 'Process Automation Blueprint', 'Process Monitoring Indicators', 'Process Support Model'],
+    develop:  ['Detailed Processes', 'Process Automation Solutions', 'Monitoring Solution Design'],
     deliver:  [],
-    drive:    ['Continuous improvement approach'],
+    drive:    ['Continuous Improvement'],
   },
   'Applications': {
     define:   ['Current application landscape', 'Application design principles', 'Coding standards', 'Project start architecture'],
@@ -652,15 +652,18 @@ const CHIP_DESCRIPTIONS = {
   'Industry Benchmarking':        'Industry Process Framework Benchmarking compares current business processes against recognized industry standards and best practices. It highlights performance gaps, maturity differences, and innovation opportunities.',
   'Process Design Principles':    'Process Design Principles define the guiding standards and best practices for creating or redesigning business processes. They ensure that all process improvements adhere to consistent design logic, performance goals, and customer value drivers.',
   'Process Maturity Assessment':  'The Process Maturity Assessment evaluates the effectiveness, consistency, and optimization level of business processes across key dimensions such as governance, performance, and technology enablement.',
-  'Future process L1–2':          'Ontwerp van toekomstige processen op hoofdlijnen (niveau 1 en 2).',
-  'Future service blueprint':     'Blauwdruk van de toekomstige dienstverlening, klantinteracties en ondersteunende activiteiten.',
-  'Monitoring indicators':        'Indicatoren voor het continu bewaken van procesperformance en -kwaliteit.',
-  'Process automation blueprint': 'Plan voor automatisering van processen, inclusief tooling, prioritering en te verwachten efficiency-winst.',
-  'Process support model':        'Beschrijving van hoe processen na implementatie worden ondersteund en beheerd.',
-  'Future detail process L3–4':   'Gedetailleerde beschrijving van toekomstige processen op het uitvoerend detailniveau.',
-  'Monitoring solution':          'Technische oplossing voor het monitoren van procesperformance en signalering van afwijkingen.',
-  'Automation solutions':         'Geïmplementeerde automatiseringsoplossingen, inclusief RPA, workflow-engines en scripts.',
-  'Continuous improvement approach':'Aanpak voor structurele, doorlopende verbetering van processen op basis van data en feedback.',
+  // Processes — Design
+  'Future Process Flow':             'The Future Process Flow (L1–L4) defines the target-state operating model, describing optimized processes from high-level capabilities (L1) to detailed workflows (L4). It incorporates identified improvements, automation opportunities, and best practices.',
+  'Future Service Blueprint':        'The Future Service Blueprint outlines the optimized service delivery model that integrates improved processes, systems, and customer interactions. It connects front-stage experiences with back-stage operations to ensure seamless service execution.',
+  'Process Automation Blueprint':    'The Process Automation Blueprint identifies automation opportunities within business processes and outlines the technical and operational approach for implementation. It defines scope, dependencies, and integration points between human and digital tasks.',
+  'Process Monitoring Indicators':   'Process Monitoring Indicators define the key metrics and control mechanisms used to track process performance and health over time. They link process outcomes to strategic objectives and provide early warnings for deviations or inefficiencies.',
+  'Process Support Model':           'The Process Support Model defines the organizational structure, roles, and responsibilities required to sustain redesigned or newly implemented processes. It clarifies ownership, governance, and escalation paths to ensure consistent execution and accountability.',
+  // Processes — Develop
+  'Detailed Processes':            'Detailed Processes (L1–L4) provide comprehensive documentation of workflows and activities across multiple levels—from high-level process categories (L1) to detailed task sequences (L4). Each level defines inputs, outputs, roles, and supporting systems.',
+  'Process Automation Solutions':  'Process Automation Solutions design and implement digital workflows and automation technologies to streamline manual or repetitive tasks. It defines automation scope, business rules, integration points, and technology requirements.',
+  'Monitoring Solution Design':    'Process Monitoring Solution Design defines the technical and analytical framework for tracking process performance in real time. It specifies key metrics, data sources, dashboards, and alert mechanisms that monitor efficiency, quality, and compliance.',
+  // Processes — Drive
+  'Continuous Improvement':        'The Continuous Process Improvement Approach establishes a structured framework for ongoing optimization of business processes after implementation. It defines feedback loops, monitoring routines, and governance mechanisms that promote adaptability and learning.',
 
   // Applications
   'Current application landscape': 'Inventarisatie en overzicht van het huidige applicatielandschap, inclusief afhankelijkheden en verouderde systemen.',
@@ -762,6 +765,8 @@ const CHIP_ARTIFACT_COUNTS = {
   'Business capability':       2,
   'Process Opportunities':     1,
   'Current Process Flow':      1,
+  'Future Process Flow':       2,
+  'Detailed Processes':        2,
 };
 
 /* TDF-specifieke deepdive links — verwijzen naar ./deepdive.html (binnen tdf/) */
@@ -778,6 +783,18 @@ const CHIP_TDF_LINKS = {
   'Industry Benchmarking':      'industry-benchmarking',
   'Process Design Principles':  'process-design-principles',
   'Process Maturity Assessment':'process-maturity-assessment',
+  // Processes × Design
+  'Future Process Flow':           'future-process-flow',
+  'Future Service Blueprint':      'future-service-blueprint',
+  'Process Automation Blueprint':  'process-automation-blueprint',
+  'Process Monitoring Indicators': 'process-monitoring-indicators',
+  'Process Support Model':         'process-support-model',
+  // Processes × Develop
+  'Detailed Processes':            'detailed-processes',
+  'Process Automation Solutions':  'process-automation-solutions',
+  'Monitoring Solution Design':    'monitoring-solution-design',
+  // Processes × Drive
+  'Continuous Improvement':        'continuous-improvement',
 };
 
 /* ---- OVERLAY LOGICA ---- */
@@ -975,7 +992,7 @@ build();
 </script>
 
 <div class="bottombar">
-  Atos — ITOM Framework
+  Atos — Business Transformation Framework
   <img class="atos-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
 </div>
 

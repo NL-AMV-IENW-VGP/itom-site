@@ -1,0 +1,28 @@
+{
+  "title": "Continuous Improvement",
+  "domain": "Processes",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Continuous Process Improvement Approach establishes a structured framework for ongoing optimization of business processes after implementation. It defines feedback loops, monitoring routines, and governance mechanisms that promote adaptability and learning. Guided by the ACE model and 6D methodology, it embeds a culture of ongoing enhancement."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Fosters a sustainable cycle of innovation and efficiency, allowing the organization to respond quickly to change and emerging opportunities. It drives continuous performance gains, reduces costs over time, and ensures lasting strategic alignment."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Continuous Process Improvement Approach",
+        "CPI Roadmap",
+        "Improvement Idea Log",
+        "CPI Governance Model",
+        "CPI Performance Dashboard"
+      ]
+    }
+  ]
+}

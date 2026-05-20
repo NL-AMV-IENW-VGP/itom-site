@@ -1,0 +1,28 @@
+{
+  "title": "Monitoring Solution Design",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Process Monitoring Solution Design defines the technical and analytical framework for tracking process performance in real time. It specifies key metrics, data sources, dashboards, and alert mechanisms that monitor efficiency, quality, and compliance. Aligned with the ACE model and 6D methodology, it transforms process insights into actionable intelligence."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables proactive process management by providing real-time visibility into performance and deviations. It supports faster decision-making, continuous optimization, and early issue detection, resulting in higher reliability and operational control."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Monitoring Solution Design",
+        "KPI Data Model Diagram",
+        "Monitoring Dashboard Build Plan",
+        "Alert and Threshold Definition Sheet",
+        "Monitoring Solution Summary Report"
+      ]
+    }
+  ]
+}

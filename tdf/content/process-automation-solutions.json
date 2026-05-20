@@ -1,0 +1,28 @@
+{
+  "title": "Process Automation Solutions",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Process Automation Solutions design and implement digital workflows and automation technologies to streamline manual or repetitive tasks. It defines automation scope, business rules, integration points, and technology requirements. Following the ACE model and 6D methodology, it ensures automation aligns with business goals and delivers measurable efficiency gains."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Drives productivity and accuracy by reducing human error, cycle time, and operational costs. It frees employees for higher-value work, accelerates process execution, and supports scalable digital transformation initiatives."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Automation Solutions",
+        "Automation Solution Design Document",
+        "Automation Test Plan",
+        "Automation Performance Metrics Sheet",
+        "Automation Deployment Plan"
+      ]
+    }
+  ]
+}

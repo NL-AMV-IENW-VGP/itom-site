@@ -1,0 +1,28 @@
+{
+  "title": "Process Automation Blueprint",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Process Automation Blueprint identifies automation opportunities within business processes and outlines the technical and operational approach for implementation. It defines scope, dependencies, and integration points between human and digital tasks. Built in alignment with the ACE model and 6D methodology, it ensures automation delivers sustainable value and efficiency."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Accelerates efficiency, accuracy, and scalability by reducing manual effort and enabling intelligent automation. It lowers operational costs, minimizes errors, and frees up resources for higher-value work, supporting digital transformation goals."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Automation Blueprint",
+        "Automation Opportunity Register",
+        "Automation Architecture Diagram",
+        "Automation Governance Model",
+        "Automation Roadmap"
+      ]
+    }
+  ]
+}

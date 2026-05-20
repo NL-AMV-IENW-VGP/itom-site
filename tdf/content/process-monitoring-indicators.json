@@ -1,0 +1,28 @@
+{
+  "title": "Process Monitoring Indicators",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Process Monitoring Indicators define the key metrics and control mechanisms used to track process performance and health over time. They link process outcomes to strategic objectives and provide early warnings for deviations or inefficiencies. Following the ACE model and 6D methodology, they ensure that improvement efforts remain measurable and transparent."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enables continuous performance management by providing data for proactive decision-making. It supports accountability, drives ongoing optimization, and ensures long-term alignment with business goals."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Monitoring Indicators",
+        "Indicator Mapping Sheet",
+        "Monitoring Dashboard Prototype",
+        "Data Source Mapping",
+        "Monitoring Framework Report"
+      ]
+    }
+  ]
+}

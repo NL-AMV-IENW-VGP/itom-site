@@ -1,0 +1,28 @@
+{
+  "title": "Future Service Blueprint",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Future Service Blueprint outlines the optimized service delivery model that integrates improved processes, systems, and customer interactions. It connects front-stage experiences with back-stage operations to ensure seamless service execution. Built using the ACE model and 6D methodology, it defines how future services will operate efficiently and deliver higher value."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Enhances customer experience and operational synergy by aligning people, technology, and processes around improved service outcomes. It enables scalable, consistent, and high-quality service delivery across all touchpoints."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Future Service Blueprint",
+        "Service Prototype Screens",
+        "Improvement Opportunity Matrix",
+        "Future Blueprint Validation Notes",
+        "Future Service Blueprint Summary"
+      ]
+    }
+  ]
+}

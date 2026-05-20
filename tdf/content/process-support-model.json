@@ -1,0 +1,28 @@
+{
+  "title": "Process Support Model",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Process Support Model defines the organizational structure, roles, and responsibilities required to sustain redesigned or newly implemented processes. It clarifies ownership, governance, and escalation paths to ensure consistent execution and accountability. Built in alignment with the ACE model and 6D methodology, it establishes how process management, maintenance, and performance monitoring will operate post-implementation."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves process governance and accountability, ensuring that new processes are properly supported and maintained. It enhances coordination across teams, reduces operational risks, and builds a sustainable foundation for long-term process performance and continuous improvement."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Support Model",
+        "Support RACI Matrix",
+        "Process Governance Charter",
+        "Support Workflow Diagram",
+        "Support Model Summary Report"
+      ]
+    }
+  ]
+}

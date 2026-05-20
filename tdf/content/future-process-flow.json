@@ -1,0 +1,46 @@
+{
+  "title": "Future Process Flow",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Future Process Flow (L1–L4) defines the target-state operating model, describing optimized processes from high-level capabilities (L1) to detailed workflows (L4). It incorporates identified improvements, automation opportunities, and best practices. Aligned with the ACE model and 6D methodology, it ensures the future state supports strategic goals and measurable performance outcomes."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides a clear transformation blueprint, guiding implementation teams and stakeholders toward the desired state. It reduces uncertainty, aligns investments with strategic priorities, and supports smoother change management and adoption."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Future Process Flow (L1-L4)",
+        "Process Design Workshop Notes",
+        "Process Variant Comparison",
+        "Future Flow Governance Sheet",
+        "Future Process Summary Report"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "High level processes - applications mapping",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20proceses%20-%20applications%20mapping.pptx?d=w3763afde1447450db7760d12feb05c4f&csf=1&web=1&e=h774W5"
+        },
+        {
+          "label": "High level processes - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20processes%20-%20Retail.pptx?d=wa8c91ba38ce54a17b2481dbb23d7bdaa&csf=1&web=1&e=cgv23n"
+        }
+      ]
+    }
+  ]
+}

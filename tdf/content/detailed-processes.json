@@ -1,0 +1,46 @@
+{
+  "title": "Detailed Processes",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Detailed Processes (L1–L4) provide comprehensive documentation of workflows and activities across multiple levels—from high-level process categories (L1) to detailed task sequences (L4). Each level defines inputs, outputs, roles, and supporting systems. By adhering to the ACE model and 6D methodology, it ensures process design is standardized, traceable, and ready for implementation."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Delivers clarity and precision in operational design, reducing ambiguity and improving execution consistency. It enables efficient onboarding, supports automation, and provides a baseline for performance measurement and continuous optimization."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Detailed Processes (L4)",
+        "Process Documentation Sheet",
+        "Business Rules Catalogue",
+        "Process Exception Scenarios",
+        "Detailed Process Validation Log"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Detail level processes - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20processes%20-%20Retail.pptx?d=wa8c91ba38ce54a17b2481dbb23d7bdaa&csf=1&web=1&e=cgv23n"
+        },
+        {
+          "label": "Process views (from General Summary report)",
+          "filetype": "PPT",
+          "submittedBy": "Natalie de Vries",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Process%20views%20(from%20General%20Summary%20report).pptx?d=wb01457959d8646f7bae9bd26ca85108c&csf=1&web=1&e=2dxuAo"
+        }
+      ]
+    }
+  ]
+}
