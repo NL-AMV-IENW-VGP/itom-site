@@ -25,6 +25,8 @@
     --dom3-color: #0076A3; --dom3-light: #DDF0F8;  /* Platform */
     --dom4-color: #7B2D8B; --dom4-light: #F2E3F7;  /* Data & AI */
     --dom5-color: #3A7A1F; --dom5-light: #E5F2DF;  /* People & Culture */
+    --dom6-color: #C41E3A; --dom6-light: #FAE3E7;  /* Security & Safety */
+    --dom7-color: #006B5E; --dom7-light: #DFF0ED;  /* Environmental awareness */
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -160,6 +162,8 @@
   .row-label.domain-3 { background: var(--dom3-color); }
   .row-label.domain-4 { background: var(--dom4-color); }
   .row-label.domain-5 { background: var(--dom5-color); }
+  .row-label.domain-6 { background: var(--dom6-color); }
+  .row-label.domain-7 { background: var(--dom7-color); }
 
   .cell {
     padding: 10px 8px;
@@ -219,6 +223,43 @@
   .domain-3 .chip { background: var(--dom3-light); color: var(--dom3-color); }
   .domain-4 .chip { background: var(--dom4-light); color: var(--dom4-color); }
   .domain-5 .chip { background: var(--dom5-light); color: var(--dom5-color); }
+  .domain-6 .chip { background: var(--dom6-light); color: var(--dom6-color); }
+  .domain-7 .chip { background: var(--dom7-light); color: var(--dom7-color); }
+
+  /* Inklapbare rijen (domain 6 en 7) */
+  .row-label.domain-collapsible {
+    cursor: pointer;
+    user-select: none;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .toggle-icon {
+    font-size: 0.65rem;
+    opacity: 0.8;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    line-height: 1;
+  }
+  .row-label.domain-collapsible.expanded .toggle-icon { transform: rotate(90deg); }
+  .cell.domain-collapsible-cell {
+    min-height: 0 !important;
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+    transition: max-height 0.3s ease, padding 0.25s ease, border-color 0.25s;
+  }
+  .cell.domain-collapsible-cell.expanded {
+    max-height: 600px;
+    min-height: 80px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .row-label.domain-collapsible:not(.expanded) {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
 
   /* OVERLAY */
   .overlay {
@@ -1086,15 +1127,26 @@ function build() {
   // Domeinrijen
   DOMAINS.forEach((domain, rowIdx) => {
     const rowClass = rowIdx % 2 === 1 ? 'row-even' : 'row-odd';
+    const isCollapsible = rowIdx >= 6;
 
     const label = document.createElement('div');
-    label.className = `row-label domain-${rowIdx} ${rowClass}`;
-    label.textContent = domain;
+    label.className = `row-label domain-${rowIdx} ${rowClass}${isCollapsible ? ' domain-collapsible' : ''}`;
+    if (isCollapsible) {
+      label.innerHTML = `<span>${domain}</span><span class="toggle-icon">▶</span>`;
+      label.title = 'Klik om uit te klappen';
+      label.addEventListener('click', () => {
+        const expanded = label.classList.toggle('expanded');
+        document.querySelectorAll(`.cell.domain-${rowIdx}`).forEach(c => c.classList.toggle('expanded', expanded));
+        label.title = expanded ? 'Klik om samen te vouwen' : 'Klik om uit te klappen';
+      });
+    } else {
+      label.textContent = domain;
+    }
     matrix.appendChild(label);
 
     PHASES.forEach(ph => {
       const cell = document.createElement('div');
-      cell.className = `cell domain-${rowIdx} ${rowClass}`;
+      cell.className = `cell domain-${rowIdx} ${rowClass}${isCollapsible ? ' domain-collapsible-cell' : ''}`;
       const items = (MATRIX[domain] || {})[ph.key] || [];
 
       items.forEach(item => {
