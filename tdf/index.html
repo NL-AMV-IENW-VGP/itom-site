@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DTC — Digital Transformation Delivery Framework</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/auth.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="../assets/auth.js"></script>
 <style>
   :root {
     --bg: #f5f2ed;
@@ -533,6 +536,19 @@
 </style>
 </head>
 <body>
+
+<div id="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <h2>TDF — Transformation Delivery Framework</h2>
+    <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
+    <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
+    <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+</div>
+
+<!-- Hoofdinhoud — verborgen totdat gebruiker is ingelogd -->
+<div id="main-content" style="display:none">
 
 <div class="topbar">
   <img class="topbar-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
@@ -1334,12 +1350,15 @@ function buildExtensions() {
 
 build();
 buildExtensions();
+initAuth();
 </script>
 
 <div class="bottombar">
   Atos — Business Transformation Framework
   <img class="atos-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
 </div>
+
+</div><!-- /main-content -->
 
 </body>
 </html>
