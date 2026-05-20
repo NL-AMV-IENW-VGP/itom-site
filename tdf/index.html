@@ -226,39 +226,79 @@
   .domain-6 .chip { background: var(--dom6-light); color: var(--dom6-color); }
   .domain-7 .chip { background: var(--dom7-light); color: var(--dom7-color); }
 
-  /* Inklapbare rijen (domain 6 en 7) */
-  .row-label.domain-collapsible {
+  /* Extensie-domeinen — buiten het hoofdgrid */
+  .extensions-wrap {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ext-section {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26,23,20,0.08);
+  }
+  .ext-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 16px;
     cursor: pointer;
     user-select: none;
-    justify-content: space-between;
-    gap: 6px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
   }
-  .toggle-icon {
-    font-size: 0.65rem;
-    opacity: 0.8;
-    flex-shrink: 0;
+  .ext-header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.74rem;
+    font-weight: 500;
+    opacity: 0.85;
+  }
+  .ext-toggle-icon {
+    font-size: 0.62rem;
     transition: transform 0.2s ease;
     line-height: 1;
   }
-  .row-label.domain-collapsible.expanded .toggle-icon { transform: rotate(90deg); }
-  .cell.domain-collapsible-cell {
-    min-height: 0 !important;
-    max-height: 0;
-    overflow: hidden;
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: 1px solid transparent;
-    transition: max-height 0.3s ease, padding 0.25s ease, border-color 0.25s;
+  .ext-section.expanded .ext-toggle-icon { transform: rotate(90deg); }
+  .ext-body {
+    display: none;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    background: var(--card-bg);
   }
-  .cell.domain-collapsible-cell.expanded {
-    max-height: 600px;
-    min-height: 80px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .ext-section.expanded .ext-body { display: block; }
+  .ext-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(190px, 1fr));
+    min-width: 1140px;
+  }
+  .ext-col-header {
+    background: var(--col-header-bg);
+    color: var(--col-header-ink);
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.10);
+    border-bottom: 3px solid rgba(255,255,255,0.12);
+  }
+  .ext-cell {
+    padding: 10px 8px;
+    border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-  }
-  .row-label.domain-collapsible:not(.expanded) {
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-content: flex-start;
+    min-height: 80px;
+    background: var(--card-bg);
   }
 
   /* OVERLAY */
@@ -509,6 +549,8 @@
 
 <div class="legend" id="legend"></div>
 
+<div class="extensions-wrap" id="extensions"></div>
+
 <div id="chip-tooltip" class="chip-tooltip" aria-hidden="true"></div>
 
 <!-- Overlay panel -->
@@ -546,13 +588,17 @@ const DOMAINS = [
   'Platform',
   'Data & AI',
   'People & Culture',
-  'Security & Safety',
-  'Environmental awareness',
 ];
 
-/* Kleuren per domein (index 0-7) */
+/* Kleuren per domein (index 0-5) */
 const DOMAIN_COLORS = [
-  '#156082', '#B84A0C', '#196B24', '#0076A3', '#7B2D8B', '#3A7A1F', '#C41E3A', '#006B5E'
+  '#156082', '#B84A0C', '#196B24', '#0076A3', '#7B2D8B', '#3A7A1F'
+];
+
+/* Extensie-domeinen — buiten de kernmatrix, standaard ingeklapt */
+const EXTENSION_DOMAINS = [
+  { name: 'Security & Safety',       color: '#C41E3A', colorIdx: 6 },
+  { name: 'Environmental awareness', color: '#006B5E', colorIdx: 7 },
 ];
 
 const MATRIX = {
@@ -1127,26 +1173,15 @@ function build() {
   // Domeinrijen
   DOMAINS.forEach((domain, rowIdx) => {
     const rowClass = rowIdx % 2 === 1 ? 'row-even' : 'row-odd';
-    const isCollapsible = rowIdx >= 6;
 
     const label = document.createElement('div');
-    label.className = `row-label domain-${rowIdx} ${rowClass}${isCollapsible ? ' domain-collapsible' : ''}`;
-    if (isCollapsible) {
-      label.innerHTML = `<span>${domain}</span><span class="toggle-icon">▶</span>`;
-      label.title = 'Klik om uit te klappen';
-      label.addEventListener('click', () => {
-        const expanded = label.classList.toggle('expanded');
-        document.querySelectorAll(`.cell.domain-${rowIdx}`).forEach(c => c.classList.toggle('expanded', expanded));
-        label.title = expanded ? 'Klik om samen te vouwen' : 'Klik om uit te klappen';
-      });
-    } else {
-      label.textContent = domain;
-    }
+    label.className = `row-label domain-${rowIdx} ${rowClass}`;
+    label.textContent = domain;
     matrix.appendChild(label);
 
     PHASES.forEach(ph => {
       const cell = document.createElement('div');
-      cell.className = `cell domain-${rowIdx} ${rowClass}${isCollapsible ? ' domain-collapsible-cell' : ''}`;
+      cell.className = `cell domain-${rowIdx} ${rowClass}`;
       const items = (MATRIX[domain] || {})[ph.key] || [];
 
       items.forEach(item => {
@@ -1199,6 +1234,12 @@ function build() {
     item.innerHTML = `<span class="legend-dot" style="background:${DOMAIN_COLORS[i]}"></span>${domain}`;
     legend.appendChild(item);
   });
+  EXTENSION_DOMAINS.forEach(({ name, color }) => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `<span class="legend-dot" style="background:${color}"></span>${name}`;
+    legend.appendChild(item);
+  });
 
   const sep = document.createElement('span');
   sep.className = 'legend-sep';
@@ -1211,7 +1252,88 @@ function build() {
   legend.appendChild(ll);
 }
 
+function buildExtensions() {
+  const wrap = document.getElementById('extensions');
+  EXTENSION_DOMAINS.forEach(({ name, color, colorIdx }) => {
+    const section = document.createElement('div');
+    section.className = 'ext-section';
+
+    const header = document.createElement('div');
+    header.className = 'ext-header';
+    header.style.background = color;
+    header.innerHTML =
+      `<span>${name}</span>` +
+      `<span class="ext-header-right"><span class="ext-toggle-label">Uitklappen</span><span class="ext-toggle-icon">▶</span></span>`;
+    header.addEventListener('click', () => {
+      const expanded = section.classList.toggle('expanded');
+      header.querySelector('.ext-toggle-label').textContent = expanded ? 'Inklappen' : 'Uitklappen';
+    });
+
+    const body = document.createElement('div');
+    body.className = 'ext-body';
+
+    const grid = document.createElement('div');
+    grid.className = `ext-grid domain-${colorIdx}`;
+
+    PHASES.forEach(ph => {
+      const colHead = document.createElement('div');
+      colHead.className = 'ext-col-header';
+      colHead.textContent = ph.label;
+      grid.appendChild(colHead);
+    });
+
+    PHASES.forEach(ph => {
+      const cell = document.createElement('div');
+      cell.className = 'ext-cell';
+      const items = (MATRIX[name] || {})[ph.key] || [];
+
+      items.forEach(item => {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = item;
+        chip.title = item;
+
+        if ((CHIP_LINKS[item] || []).length > 0) chip.classList.add('linked');
+
+        chip.addEventListener('click', e => {
+          e.stopPropagation();
+          if (activeChip === chip && overlay.classList.contains('active')) {
+            hideOverlay();
+          } else {
+            showOverlay(chip, item, name, colorIdx, ph.label);
+          }
+        });
+
+        chip.addEventListener('mouseenter', e => {
+          const desc = CHIP_DESCRIPTIONS[item] || '';
+          const count = CHIP_ARTIFACT_COUNTS[item] || 0;
+          const countLabel = count === 1 ? '1 artifact linked' : count > 1 ? `${count} artifacts linked` : 'No artifacts linked';
+          tooltip.innerHTML =
+            `<div class="chip-tooltip-title">${item}</div>` +
+            (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
+            `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
+          positionTooltip(e);
+          tooltip.classList.add('visible');
+        });
+
+        chip.addEventListener('mousemove', positionTooltip);
+        chip.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
+
+        cell.appendChild(chip);
+      });
+
+      grid.appendChild(cell);
+    });
+
+    body.appendChild(grid);
+    section.appendChild(header);
+    section.appendChild(body);
+    wrap.appendChild(section);
+  });
+}
+
 build();
+buildExtensions();
 </script>
 
 <div class="bottombar">
