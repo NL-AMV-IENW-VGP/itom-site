@@ -1,0 +1,45 @@
+{
+  "title": "Stakeholder Analysis",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Identificeer wie er door de verandering worden beïnvloed, hoe (in termen van impact) en welke invloed ze hebben op de uitvoering van het project. Stakeholderscategorisering helpt communicatie op maat te maken voor een specifieke groep. Deze analyse is een vereiste voor het definiëren van verandering-, communicatie- en trainingsstrategieën."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert afstemming en ondersteuning van stakeholders. Maakt gerichte communicatie en betrokkenheid mogelijk. Vermindert weerstand en vergroot adoptie. Verbetert samenwerking en vertrouwen. Ondersteunt succesvolle implementatie van verandering."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Stakeholders' engagement tool",
+        "Stakeholder analysis workshop approach",
+        "Changes and stakeholders' map",
+        "Stakeholder Management Tracking Tool"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Stakeholder analysis",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Stakeholder%20analysis.pptx?d=wb672dc69da304cff91f9c262e3d36214&csf=1&web=1&e=LC3bOw"
+        },
+        {
+          "label": "Atos Change Toolkit — Stakeholder Assessment",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=xSH6lM&CID=805aaffb%2D6116%2D4e63%2D8b95%2Df8def61bc8ef&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F01%5FDefine%20%2B%20plan%2FB%5FStakeholder%20Assessment"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Persona Definitions",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "A user-centered design is an iterative process that focuses on the end-users' understanding and their context in all stages of design and development. Persona definitions create specific user profiles to generate more transparency on existing roles and processes, identify recurring user behaviors and involve end-users at an early stage. With closer user involvement, change management measures are more likely to meet users' expectations and requirements."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves personalization of change activities. Enhances user experience and satisfaction. Supports targeted communication and training. Reduces resistance and increases adoption. Enables inclusive and effective transformation."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Persona method: create specific user profiles (research, synthesis, prioritization, representative)",
+        "Use cases: develop generic or customer-specific use cases reflecting typical daily business scenarios",
+        "User journey: a plan containing all information & training users receive at different points in time"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Persona definitions",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Persona%20definitions.pptx?d=wb07c23f0059142008c2dfb5a2120995e&csf=1&web=1&e=88JRCs"
+        }
+      ]
+    }
+  ]
+}

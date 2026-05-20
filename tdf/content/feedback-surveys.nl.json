@@ -1,0 +1,26 @@
+{
+  "title": "Feedback & Surveys",
+  "domain": "People & Culture",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Enquêtes bieden een niet-intimiderend platform dat leidt tot eerlijkere en openere antwoorden, en antwoorden blootlegt die in andere omgevingen mogelijk niet naar voren komen. Ze bieden een goede basis om resultaten te vergelijken en beslissingen te baseren op objectieve informatie. OCM-enquêtedoeleinden omvatten: klanttevredenheid (over communicatie of training), feedback over behoeften en wensen, verandering en KPI-monitoring (veranderbereidheid, verandersucces) en pulse & mood barometer feedback."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert tevredenheid en vertrouwen van stakeholders. Maakt datagedreven verandermanagement mogelijk. Ondersteunt agile respons op uitdagingen. Vergroot effectiviteit van veranderinterventies. Bouwt een cultuur van openheid en continue verbetering op."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Enquêtes kunnen anoniem of op naam, online of op papier worden afgenomen",
+        "Online tools: SurveyMonkey, survio, doodle",
+        "MS Forms (onderdeel van M365) — maakt het aanmaken van enquêtes en quizzen met Excel-export mogelijk"
+      ]
+    }
+  ]
+}

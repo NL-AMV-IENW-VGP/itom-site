@@ -1,0 +1,17 @@
+{
+  "title": "Application Design Principles",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Establishes guidelines for designing applications in alignment with business and technical goals. Promotes consistency and usability across systems. Supports scalability and maintainability. Encourages modular and service-oriented design. Facilitates collaboration between business and IT teams."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves consistency and quality of application design. Enhances user experience and system usability. Supports maintainability and scalability. Reduces development time and cost. Aligns IT solutions with business needs."
+    }
+  ]
+}

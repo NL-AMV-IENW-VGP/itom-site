@@ -1,0 +1,38 @@
+{
+  "title": "Persona Definitions",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Een gebruikersgerichte aanpak is een iteratief proces dat zich richt op het begrip van eindgebruikers en hun context in alle stadia van ontwerp en ontwikkeling. Persona-definities creëren specifieke gebruikersprofielen voor meer transparantie over bestaande rollen en processen, identificeren terugkerend gebruikersgedrag en betrekken eindgebruikers in een vroeg stadium. Met nauwere gebruikersbetrokkenheid zullen verandermanagementmaatregelen beter aansluiten bij verwachtingen en vereisten van gebruikers."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert personalisatie van veranderactiviteiten. Vergroot gebruikerservaring en tevredenheid. Ondersteunt gerichte communicatie en training. Vermindert weerstand en vergroot adoptie. Maakt inclusieve en effectieve transformatie mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Persona-methode: maak specifieke gebruikersprofielen (onderzoek, synthese, prioritering, representatie)",
+        "Use cases: ontwikkel generieke of klantspecifieke use cases die typische dagelijkse bedrijfsscenario's weerspiegelen",
+        "User journey: een plan met alle informatie & training die gebruikers op verschillende momenten ontvangen"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Persona definitions",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Persona%20definitions.pptx?d=wb07c23f0059142008c2dfb5a2120995e&csf=1&web=1&e=88JRCs"
+        }
+      ]
+    }
+  ]
+}

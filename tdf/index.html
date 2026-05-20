@@ -530,12 +530,12 @@ const MATRIX = {
     drive:    ['Continuous Improvement'],
   },
   'Applications': {
-    define:   ['Current application landscape', 'Application design principles', 'Coding standards', 'Project start architecture'],
-    discover: ['Rationalization potential', 'Prototyping approach', 'Application fit/gap', 'Functional specs / use cases', 'Software selection'],
-    design:   ['Solution design / blueprint', 'Extension specs', 'UI/UX design', 'Application prototype'],
-    develop:  ['Software release plan', 'Decommission approach', 'Software/code repository'],
-    deliver:  ['Support hand-over approach'],
-    drive:    ['Hypercare approach'],
+    define:   ['Current Application Landscape', 'Application Design Principles', 'Coding Standards', 'Project Start Architecture'],
+    discover: ['Application Rationalisation', 'Prototyping Approach', 'Application Fit/Gap', 'Functional Specifications', 'Software Selection'],
+    design:   ['Solution Blueprint', 'Extension Specifications', 'UI/UX Design', 'Application Prototype'],
+    develop:  ['Software Release Planning', 'Decommissioning Approach', 'Code Repository'],
+    deliver:  ['Handover to Support'],
+    drive:    ['Hypercare Approach'],
   },
   'Platform': {
     define:   ['Technology requirements', 'Platform strategy'],
@@ -554,12 +554,12 @@ const MATRIX = {
     drive:    ['Archive/purge policy', 'Responsible AI monitoring', 'Data ops', 'Model accuracy monitoring', 'Data/AI literacy program', 'Innovation backlog'],
   },
   'People & Culture': {
-    define:   ['Case for change', 'Change strategy', 'Culture awareness', 'Change impact assessment', 'Stakeholder analysis'],
-    discover: ['Change monitoring approach', 'Communication strategy', 'Sponsor/leader engagement', 'Persona definitions'],
-    design:   ['Training strategy', 'Change agent network definition', 'Stakeholder management approach', 'Communication plan'],
-    develop:  ['Training plan & materials', 'Change agent network activation'],
-    deliver:  ['User training', 'Lessons learned'],
-    drive:    ['Feedback loops & surveys', 'Success celebration'],
+    define:   ['Case for Change', 'Change Strategy', 'Culture Awareness', 'Change Impact Assessment', 'Stakeholder Analysis'],
+    discover: ['Change Monitoring', 'Communication Strategy', 'Sponsor Engagement', 'Persona Definitions'],
+    design:   ['Training Strategy', 'Change Agent Network', 'Stakeholder Management', 'Communications Plan'],
+    develop:  ['Training Plan', 'Network Activation'],
+    deliver:  ['User Training', 'Lessons Learned'],
+    drive:    ['Feedback & Surveys', 'Success Celebration'],
   },
 };
 
@@ -665,25 +665,30 @@ const CHIP_DESCRIPTIONS = {
   // Processes — Drive
   'Continuous Improvement':        'The Continuous Process Improvement Approach establishes a structured framework for ongoing optimization of business processes after implementation. It defines feedback loops, monitoring routines, and governance mechanisms that promote adaptability and learning.',
 
-  // Applications
-  'Current application landscape': 'Inventarisatie en overzicht van het huidige applicatielandschap, inclusief afhankelijkheden en verouderde systemen.',
-  'Application design principles': 'Richtlijnen voor het ontwerpen en bouwen van applicaties: modulariteit, herbruikbaarheid, security-by-design.',
-  'Coding standards':              'Normen en standaarden voor softwareontwikkeling, codekwaliteit en code review.',
-  'Project start architecture':    'Architectuurbeslissingen en kaders die aan het begin van het project worden vastgesteld.',
-  'Rationalization potential':     'Analyse van mogelijkheden om het applicatielandschap te vereenvoudigen door consolidatie of uitfasering.',
-  'Prototyping approach':          'Aanpak voor het snel ontwerpen, bouwen en valideren van prototypes met eindgebruikers.',
-  'Application fit/gap':           'Analyse van de mate waarin bestaande of kandidaat-applicaties aansluiten op de gewenste functionaliteit.',
-  'Functional specs / use cases':  'Gedetailleerde functionele specificaties en gebruiksscenario\'s als basis voor ontwerp en bouw.',
-  'Software selection':            'Proces en criteria voor het selecteren van de meest geschikte softwareoplossing.',
-  'Solution design / blueprint':   'Technisch en functioneel ontwerp van de gekozen oplossing.',
-  'Extension specs':               'Specificaties voor maatwerkontwikkelingen en uitbreidingen op standaardsoftware.',
-  'UI/UX design':                  'Ontwerp van gebruikersinterfaces en gebruikerservaring, gebaseerd op onderzoek en gebruikerstests.',
-  'Application prototype':         'Werkend prototype van de applicatieoplossing ten behoeve van validatie door stakeholders.',
-  'Software release plan':         'Gedetailleerde planning voor de uitrol van software-releases en versies.',
-  'Decommission approach':         'Plan voor het veilig buiten gebruik stellen en afvoeren van verouderde systemen.',
-  'Software/code repository':      'Centrale opslagplaats voor broncode, documentatie en softwareartefacten.',
-  'Support hand-over approach':    'Plan voor de gestructureerde overdracht van de oplossing naar de beheerorganisatie.',
-  'Hypercare approach':            'Plan voor intensieve begeleiding en ondersteuning direct na de go-live.',
+  // Applications — Define
+  'Current Application Landscape':  'Maps all existing applications in use across the organization. Identifies redundancies and integration points. Provides insight into application performance and usage. Serves as a baseline for transformation planning.',
+  'Application Design Principles':  'Establishes guidelines for designing applications in alignment with business and technical goals. Promotes consistency and usability across systems. Supports scalability and maintainability.',
+  'Coding Standards':               'Defines rules and conventions for writing application code. Ensures code quality, readability, and maintainability. Reduces technical debt and improves development efficiency.',
+  'Project Start Architecture':     'Defines the initial architecture for the project implementation. Sets the foundation for solution design and integration. Aligns with enterprise architecture and business goals.',
+  // Applications — Discover
+  'Application Rationalisation':    'Assesses opportunities to consolidate or eliminate redundant applications. Identifies cost-saving and efficiency improvement areas. Supports strategic decision-making for application portfolio management.',
+  'Prototyping Approach':           'Outlines the approach for creating early models of applications. Enables validation of concepts and user feedback. Supports iterative development and innovation.',
+  'Application Fit/Gap':            'Analyzes how well current or proposed applications meet business requirements. Identifies gaps and areas for improvement. Supports decision-making for customization or replacement.',
+  'Functional Specifications':      'Documents detailed functional requirements and use cases for applications. Serves as a reference for design and development. Ensures alignment with business needs.',
+  'Software Selection':             'Evaluates and selects software solutions based on business and technical criteria. Considers functionality, scalability, and vendor support. Ensures alignment with enterprise architecture.',
+  // Applications — Design
+  'Solution Blueprint':             'Provides a detailed design of the solution including components and interactions. Serves as a blueprint for implementation. Ensures alignment with requirements and architecture.',
+  'Extension Specifications':       'Specifies customizations and extensions needed for standard applications. Ensures business-specific needs are met. Supports development and configuration planning.',
+  'UI/UX Design':                   'Defines the layout and interaction design of application interfaces. Focuses on usability and user experience. Enhances accessibility and efficiency.',
+  'Application Prototype':          'Creates a working model of the application for demonstration and testing. Validates design and functionality. Supports stakeholder feedback and iteration.',
+  // Applications — Develop
+  'Software Release Planning':      'Plans the release schedule and versioning of application components. Coordinates development, testing, and deployment activities. Ensures readiness and quality of releases.',
+  'Decommissioning Approach':       'Outlines the approach for retiring obsolete applications. Ensures data migration and continuity. Minimizes disruption and risk.',
+  'Code Repository':                'A centralized storage location for source code and related development artifacts. Enables version control, collaboration, and secure access to codebases across development teams.',
+  // Applications — Deliver
+  'Handover to Support':            'Defines the process for transitioning applications to support teams. Includes documentation, training, and responsibilities. Ensures continuity and stability post-implementation.',
+  // Applications — Drive
+  'Hypercare Approach':             'Describes the support strategy immediately after go-live. Includes monitoring, issue resolution, and user assistance. Ensures smooth transition and adoption.',
 
   // Platform
   'Technology requirements':       'Vereisten voor technische infrastructuur, inclusief performance, beschikbaarheid, beveiliging en cloudgereedheid.',
@@ -735,26 +740,31 @@ const CHIP_DESCRIPTIONS = {
   'Data/AI literacy program':      'Programma voor het structureel verbeteren van data- en AI-vaardigheden in de organisatie.',
   'Innovation backlog':            'Geprioriteerde lijst van innovatie-ideeën en verbeterinitiatieven die voortvloeien uit de transformatie.',
 
-  // People & Culture
-  'Case for change':               'Heldere en overtuigende onderbouwing van de noodzaak voor verandering en de te verwachten voordelen voor de organisatie.',
-  'Change strategy':               'Strategie voor het effectief managen van de organisatieverandering, inclusief aanpak, interventies en betrokken actoren.',
-  'Culture awareness':             'Inzicht in de huidige organisatiecultuur — waarden, gedragingen, werkwijzen — als vertrekpunt voor gerichte cultuurontwikkeling.',
-  'Change impact assessment':      'Analyse van de impact van de transformatie op medewerkers, rollen, processen en werkwijzen.',
-  'Stakeholder analysis':          'Inventarisatie en analyse van betrokken partijen: belangen, invloed, houding en communicatiebehoeften.',
-  'Change monitoring approach':    'Aanpak voor het meten, volgen en bijsturen van voortgang en effectiviteit van het veranderproces.',
-  'Communication strategy':        'Strategie voor interne en externe communicatie over de transformatie: boodschappen, kanalen en timing.',
-  'Sponsor/leader engagement':     'Plan voor zichtbare betrokkenheid en actieve rol van sponsors en leidinggevenden bij de transformatie.',
-  'Persona definitions':           'Beschrijvingen van representatieve gebruikerstypen met hun specifieke behoeften, gedrag en pijnpunten.',
-  'Training strategy':             'Strategie voor het opleiden van medewerkers: doelgroepen, methoden, timing en succescriteria.',
-  'Change agent network definition':'Definitie en samenstelling van het netwerk van change agents in de organisatie.',
-  'Stakeholder management approach':'Aanpak voor het systematisch betrekken, informeren en enthousiasmeren van stakeholders.',
-  'Communication plan':            'Gedetailleerd communicatieplan met activiteiten, boodschappen, kanalen en doelgroepen per fase.',
-  'Training plan & materials':     'Opleidingsplan en bijbehorende trainingsmaterialen voor eindgebruikers en key users.',
-  'Change agent network activation':'Activering, briefing en ondersteuning van het netwerk van change agents in de organisatie.',
-  'User training':                 'Uitvoering van eindgebruikerstraining voorafgaand aan en rondom de go-live.',
-  'Lessons learned':               'Gestructureerde evaluatie van ervaringen en leerpunten uit de transformatie, gedocumenteerd voor toekomstige projecten.',
-  'Feedback loops & surveys':      'Structurele mechanismen voor het ophalen en verwerken van feedback van medewerkers en gebruikers.',
-  'Success celebration':           'Activiteiten om successen te erkennen en te vieren, en de transformatie in de organisatie te bekrachtigen.',
+  // People & Culture — Define
+  'Case for Change':            'The Case for Change explains the current situation, future state and required steps to get there. It provides a common baseline of awareness among stakeholders and a clear WIIFM (What\'s In It For Me) for each key stakeholder group.',
+  'Change Strategy':            'Create an overall Change Management Strategy for the project with local adaption of the vision and mission, covering situational awareness, supporting structures, and strategy analysis (risks, resistance, special tactics).',
+  'Culture Awareness':          'Culture Awareness identifies values, interests, behavior patterns and the general orientation of an organization. It assesses the as-is culture and compares it with the defined desired culture, including inter-cultural aspects.',
+  'Change Impact Assessment':   'The Change Impact Analysis identifies the change gap between the as-is and to-be situation across four categories — people, process, organization and technology — mapped into a Change Impact Matrix.',
+  'Stakeholder Analysis':       'Identify who is affected by the change, how (in terms of impacts) and their influence on implementation. Stakeholder categorization helps tailor communication and is a prerequisite for defining change, communication and training strategies.',
+  // People & Culture — Discover
+  'Change Monitoring':          'Change Monitoring measures the status and progress of the change implementation providing information on change readiness, acceptance, motivation and enablement of the affected stakeholders. Enables early identification of issues for timely intervention.',
+  'Communication Strategy':     'The Communication Strategy comprises the definition of stakeholder groups, communication scope, mission, vision and concrete communication measures. It delivers clearly articulated, targeted and timely messages.',
+  'Sponsor Engagement':         'Develop individual and team capacity to manage change as Sponsors or Leaders and Advocates. Enable them to energize groups impacted by change and manage change initiatives smoothly. Senior leaders must carry out sponsorship activities.',
+  'Persona Definitions':        'Persona definitions create specific user profiles to generate more transparency on existing roles and processes, identify recurring user behaviors and involve end-users at an early stage of design and development.',
+  // People & Culture — Design
+  'Training Strategy':          'The Training Approach guides the setup and usage of training as part of Business Change, covering learning interventions, early life adoption and effective delivery. It is based on three pillars: Training before GoLive, After GoLive Support, and New Hire Training.',
+  'Change Agent Network':       'The Change Agent Network is the platform for exchange and collaboration with local Change Agents. Change Agents execute operative change activities within affected organizational units, acting as role models and ambassadors for the change.',
+  'Stakeholder Management':     'Managing stakeholders is the process of listening to peoples\' views and then influencing them to ensure the success of the project and change implementation. Stakeholders should be continually reviewed, monitored and evaluated.',
+  'Communications Plan':        'A communications plan outlines the strategy for informing stakeholders about the digital transformation program. It defines key messages, communication channels, timing, stakeholder mapping and feedback mechanisms.',
+  // People & Culture — Develop
+  'Training Plan':              'The training project plan provides an overview of training offered, actions to be implemented, people and groups concerned, duration, dates, costs and other details. It plans and schedules tasks and resources.',
+  'Network Activation':         'Change agent network activation involves identifying and empowering individuals to champion the transformation. These agents facilitate communication between project teams and end users and promote adoption of new practices.',
+  // People & Culture — Deliver
+  'User Training':              'User training prepares employees to effectively use new systems and processes. It includes training needs analysis, curriculum development and delivery planning, supporting skill development and confidence in using digital solutions.',
+  'Lessons Learned':            'The Lessons Learned approach ensures the change management team and Change Agents receive feedback for their actions. It gives the team a trustful environment to provide honest feedback and define improvement measures for future steps.',
+  // People & Culture — Drive
+  'Feedback & Surveys':         'Surveys offer a non-intimidating environment leading to honest and open responses. OCM survey purposes include customer satisfaction, feedback on needs, change and KPI monitoring (change readiness, change success), and pulse & mood barometer feedback.',
+  'Success Celebration':        'Celebrating success informs and brings awareness about project progress to build a positive attitude towards change. It presents success appreciatively and recognizes individuals who have contributed towards successful implementation.',
 };
 
 /* Bestandslinks per chip — voorlopig leeg */
@@ -762,11 +772,23 @@ const CHIP_FILES = {};
 
 /* Aantal gelinkte artefacten per chip — voor hover tooltip */
 const CHIP_ARTIFACT_COUNTS = {
-  'Business capability':       2,
-  'Process Opportunities':     1,
-  'Current Process Flow':      1,
-  'Future Process Flow':       2,
-  'Detailed Processes':        2,
+  'Business capability':            2,
+  'Process Opportunities':          1,
+  'Current Process Flow':           1,
+  'Future Process Flow':            2,
+  'Detailed Processes':             2,
+  'Current Application Landscape':  1,
+  'Application Fit/Gap':            2,
+  'Functional Specifications':      1,
+  // People & Culture
+  'Case for Change':                1,
+  'Change Strategy':                3,
+  'Change Impact Assessment':       2,
+  'Stakeholder Analysis':           2,
+  'Sponsor Engagement':             1,
+  'Persona Definitions':            1,
+  'Communications Plan':            2,
+  'Success Celebration':            1,
 };
 
 /* TDF-specifieke deepdive links — verwijzen naar ./deepdive.html (binnen tdf/) */
@@ -795,6 +817,55 @@ const CHIP_TDF_LINKS = {
   'Monitoring Solution Design':    'monitoring-solution-design',
   // Processes × Drive
   'Continuous Improvement':        'continuous-improvement',
+  // Applications × Define
+  'Current Application Landscape': 'current-application-landscape',
+  'Application Design Principles': 'application-design-principles',
+  'Coding Standards':              'coding-standards',
+  'Project Start Architecture':    'project-start-architecture',
+  // Applications × Discover
+  'Application Rationalisation':   'application-rationalisation',
+  'Prototyping Approach':          'prototyping-approach',
+  'Application Fit/Gap':           'application-fit-gap',
+  'Functional Specifications':     'functional-specifications',
+  'Software Selection':            'software-selection',
+  // Applications × Design
+  'Solution Blueprint':            'solution-blueprint',
+  'Extension Specifications':      'extension-specifications',
+  'UI/UX Design':                  'ui-ux-design',
+  'Application Prototype':         'application-prototype',
+  // Applications × Develop
+  'Software Release Planning':     'software-release-planning',
+  'Decommissioning Approach':      'decommissioning-approach',
+  'Code Repository':               'code-repository',
+  // Applications × Deliver
+  'Handover to Support':           'handover-to-support',
+  // Applications × Drive
+  'Hypercare Approach':            'hypercare-approach',
+  // People & Culture × Define
+  'Case for Change':               'case-for-change',
+  'Change Strategy':               'change-strategy',
+  'Culture Awareness':             'culture-awareness',
+  'Change Impact Assessment':      'change-impact-assessment',
+  'Stakeholder Analysis':          'stakeholder-analysis',
+  // People & Culture × Discover
+  'Change Monitoring':             'change-monitoring',
+  'Communication Strategy':        'communication-strategy',
+  'Sponsor Engagement':            'sponsor-engagement',
+  'Persona Definitions':           'persona-definitions',
+  // People & Culture × Design
+  'Training Strategy':             'training-strategy',
+  'Change Agent Network':          'change-agent-network',
+  'Stakeholder Management':        'stakeholder-management',
+  'Communications Plan':           'communications-plan',
+  // People & Culture × Develop
+  'Training Plan':                 'training-plan',
+  'Network Activation':            'network-activation',
+  // People & Culture × Deliver
+  'User Training':                 'user-training',
+  'Lessons Learned':               'lessons-learned',
+  // People & Culture × Drive
+  'Feedback & Surveys':            'feedback-surveys',
+  'Success Celebration':           'success-celebration',
 };
 
 /* ---- OVERLAY LOGICA ---- */

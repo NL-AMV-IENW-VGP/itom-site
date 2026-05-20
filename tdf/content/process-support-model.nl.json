@@ -1,0 +1,28 @@
+{
+  "title": "Process Support Model",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het Procesondersteuningsmodel definieert de organisatiestructuur, rollen en verantwoordelijkheden die nodig zijn om opnieuw ontworpen of nieuw geïmplementeerde processen in stand te houden. Het verduidelijkt eigenaarschap, governance en escalatiepaden om consistente uitvoering en verantwoording te waarborgen, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert procesgovernance en verantwoording, zodat nieuwe processen goed worden ondersteund en onderhouden. Het versterkt de coördinatie tussen teams, vermindert operationele risico's en legt een duurzame basis voor langdurige procesprestaties en continue verbetering."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesondersteuningsmodel",
+        "Ondersteuning RACI-matrix",
+        "Procesgovernance Charter",
+        "Ondersteuningswerkstroom Diagram",
+        "Procesondersteuningsmodel Samenvatting"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Functional Specifications",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Documents detailed functional requirements and use cases for applications. Serves as a reference for design and development. Ensures alignment with business needs. Facilitates testing and validation. Supports traceability and change management."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides clear requirements for development and testing. Enhances alignment with business needs. Supports traceability and change management. Improves quality and efficiency. Facilitates stakeholder communication."
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "End to end use cases",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/T.%20Test%20management/T.3%20%20End%20to%20end%20use%20cases.xlsx?d=web8c42d209d54061b664b064a7b60971&csf=1&web=1&e=DtdcWJ"
+        }
+      ]
+    }
+  ]
+}

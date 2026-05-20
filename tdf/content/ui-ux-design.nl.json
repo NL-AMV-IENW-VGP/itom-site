@@ -1,0 +1,17 @@
+{
+  "title": "UI/UX Design",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert de lay-out en interactie-ontwerp van applicatie-interfaces. Richt zich op bruikbaarheid en gebruikerservaring. Ondersteunt afstemming van ontwerp en ontwikkeling. Verbetert toegankelijkheid en efficiëntie. Faciliteert gebruikersacceptatie en adoptie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert bruikbaarheid en gebruikerservaring. Vergroot adoptie en efficiëntie. Ondersteunt afstemming van ontwerp en ontwikkeling. Faciliteert toegankelijkheid en tevredenheid. Vermindert trainings- en ondersteuningsbehoeften."
+    }
+  ]
+}

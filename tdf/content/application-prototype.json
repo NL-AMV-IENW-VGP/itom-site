@@ -1,0 +1,17 @@
+{
+  "title": "Application Prototype",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Creates a working model of the application for demonstration and testing. Validates design and functionality. Supports stakeholder feedback and iteration. Reduces development risk. Enhances communication and alignment."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Validates application design and functionality. Enhances stakeholder engagement and feedback. Supports iterative development. Reduces risk and rework. Improves communication and alignment."
+    }
+  ]
+}

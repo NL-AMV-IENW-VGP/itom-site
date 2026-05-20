@@ -1,0 +1,17 @@
+{
+  "title": "User Training",
+  "domain": "People & Culture",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "User training prepares employees to effectively use new systems and processes introduced during the transformation. It includes training needs analysis, curriculum development, and delivery planning. Training ensures users understand the benefits and functionalities of new tools. It supports skill development and confidence in using digital solutions. Continuous learning and support mechanisms are also included."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves user competence and performance. Enhances adoption and reduces errors. Supports smooth transition and operational continuity. Builds confidence and engagement. Enables faster realization of transformation benefits."
+    }
+  ]
+}

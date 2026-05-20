@@ -1,0 +1,28 @@
+{
+  "title": "Process Automation Blueprint",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het Procesautomatiseringsblauwdruk identificeert automatiseringsmogelijkheden binnen bedrijfsprocessen en schetst de technische en operationele aanpak voor implementatie. Het definieert reikwijdte, afhankelijkheden en integratiepunten tussen menselijke en digitale taken, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Versnelt efficiëntie, nauwkeurigheid en schaalbaarheid door handmatige inspanning te verminderen en intelligente automatisering mogelijk te maken. Het verlaagt operationele kosten, minimaliseert fouten en maakt medewerkers vrij voor hoogwaardiger werk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesautomatiseringsblauwdruk",
+        "Automatiseringsmogelijkhedenregister",
+        "Automatiseringsarchitectuurdiagram",
+        "Automatisering Governance Model",
+        "Automatiseringsroutekaart"
+      ]
+    }
+  ]
+}

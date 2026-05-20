@@ -1,0 +1,25 @@
+{
+  "title": "Training Plan",
+  "domain": "People & Culture",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het trainingsprojectplan biedt een overzicht van het aangeboden trainingsaanbod, de te implementeren acties, de betrokken personen en groepen, de duur van de trainingen, data, locaties, kosten en overige details. Het plant taken en middelen, en met behulp van afhankelijkheden kan een vloeiende projectstroom worden opgesteld."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert prestaties en vertrouwen van gebruikers. Vergroot adoptie en vermindert ondersteuningsvraag. Ondersteunt continu leren en verbetering. Maakt snellere overgang naar nieuwe processen mogelijk. Versterkt organisatorisch vermogen en veerkracht."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Een plan/schema met activiteitsduur, voortgangsstatus, lijst van medewerkers of stakeholders, onderlinge afhankelijkheden, middelen en andere beperkingen",
+        "Nuttige tools: Jira, Confluence, Excel, Microsoft Project"
+      ]
+    }
+  ]
+}

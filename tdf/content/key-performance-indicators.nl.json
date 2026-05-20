@@ -1,0 +1,33 @@
+{
+  "title": "Key Performance Indicators",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Key Performance Indicators (KPI's) bieden een gestructureerd overzicht van de rol van meetbare prestatie-indicatoren in het transformatieproces. Ze definiëren de reikwijdte, doelstellingen en verwachte uitkomsten, en zijn afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "KPI's helpen de klant meetbare verbeteringen te realiseren door heldere doelstellingen te stellen en prestaties te bewaken. Ze ondersteunen verantwoording, sturen continue optimalisatie aan en zorgen voor langdurige afstemming op de strategische bedrijfsdoelen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "KPI Framework Rapport",
+        "KPI Catalogus (Register)",
+        "KPI Scorecard",
+        "KPI Dashboard (Prototype)",
+        "KPI Berekeningsblad",
+        "KPI Trendanalyse Rapport",
+        "KPI Volwassenheidsanalyse",
+        "KPI Databronnenkaart",
+        "KPI Governance Model",
+        "KPI Managementdashboard"
+      ]
+    }
+  ]
+}

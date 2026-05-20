@@ -1,0 +1,29 @@
+{
+  "title": "Current Application Landscape",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Brengt alle bestaande applicaties in kaart die in de organisatie in gebruik zijn. Identificeert redundanties en integratiepunten. Biedt inzicht in applicatieprestaties en gebruik. Dient als basislijn voor transformatieplanning. Helpt bij het prioriteren van moderniseringsmaatregelen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt zichtbaarheid in bestaande systemen voor beter beheer. Identificeert mogelijkheden voor optimalisatie en kostenbesparing. Ondersteunt strategische planning en transformatie. Verbetert systeemprestaties en betrouwbaarheid. Faciliteert geïnformeerde besluitvorming."
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Current application landscape",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/3.%20Applications/Current%20application%20landscape.xlsx?d=wa61f61da198545229a748bf0d1241bdb&csf=1&web=1&e=Qtsxdk"
+        }
+      ]
+    }
+  ]
+}

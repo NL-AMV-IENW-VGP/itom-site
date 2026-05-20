@@ -1,0 +1,28 @@
+{
+  "title": "Culture Awareness",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Cultuurbesef omvat het identificeren van alle waarden, belangen, gedragspatronen en de algemene oriëntatie van een organisatie en haar medewerkers. Het beoordeelt de 'as is'-cultuur — de huidige culturele voorkeuren van de organisatie — en vergelijkt deze met de gedefinieerde gewenste cultuur. Interculturele aspecten in opzet, communicatie en projectaanpak worden ook meegenomen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert afstemming van veranderinitiatieven op de organisatiecultuur. Vergroot betrokkenheid en acceptatie van medewerkers. Vermindert culturele weerstand tegen transformatie. Ondersteunt duurzame verandering via culturele integratie. Maakt gerichte communicatie- en trainingsstrategieën mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Cultuuranalyse",
+        "Interculturele samenwerking (How To Guide)",
+        "Cultureel Volwassenheidsmodel (How To Guide)",
+        "Organisatieculturen",
+        "Gevalideerde OCI-cultuurbeoordeling (certificering vereist)"
+      ]
+    }
+  ]
+}

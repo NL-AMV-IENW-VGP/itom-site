@@ -1,0 +1,29 @@
+{
+  "title": "Industry Benchmarking",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Industry Process Framework Benchmarking vergelijkt huidige bedrijfsprocessen met erkende branchenormen en best practices. Het benadrukt prestatieverschillen, volwassenheidsverschillen en innovatiemogelijkheden. Afgestemd op het ACE-model en de 6D-methodologie biedt het een objectieve basis voor strategische prioritering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Plaatst de organisatie in perspectief ten opzichte van sectorgenoten en marktleiders. Het identificeert concrete verbetermogelijkheden, versterkt de geloofwaardigheid van transformatiebeslissingen en ondersteunt het stellen van ambitieuze maar realistische doelstellingen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Benchmarkraamwerk",
+        "Branchegegevens Databronnen",
+        "Prestatiekloof Analyse",
+        "Volwassenheidsvergelijkingsmatrix",
+        "Benchmarkbevindingen Rapport",
+        "Benchmarksamenvattingsrapport"
+      ]
+    }
+  ]
+}

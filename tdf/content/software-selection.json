@@ -1,0 +1,17 @@
+{
+  "title": "Software Selection",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Evaluates and selects software solutions based on business and technical criteria. Considers functionality, scalability, and vendor support. Supports procurement and implementation planning. Ensures alignment with enterprise architecture. Reduces risk and improves ROI."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures selection of suitable software solutions. Reduces implementation risk. Enhances ROI and performance. Aligns with strategic and technical goals. Supports procurement and planning."
+    }
+  ]
+}

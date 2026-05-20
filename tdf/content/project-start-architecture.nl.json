@@ -1,0 +1,17 @@
+{
+  "title": "Project Start Architecture",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert de initiële architectuur voor de projectimplementatie. Legt de basis voor oplossingsontwerp en integratie. Stemt af op enterprise-architectuur en bedrijfsdoelen. Begeleidt ontwikkelings- en configuratieactiviteiten. Ondersteunt projectplanning en middelenallocatie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt een solide basis voor projectuitvoering. Stemt af op enterprise-architectuur en doelen. Verbetert planning en coördinatie. Ondersteunt efficiënte ontwikkeling. Vermindert implementatierisico."
+    }
+  ]
+}

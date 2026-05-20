@@ -1,0 +1,44 @@
+{
+  "title": "Change Impact Assessment",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Change Impact Analysis identifies the change gap between the as-is situation and the to-be situation expected as a result of the project. The analysis includes four general categories — people, process, organization and technology — and maps these into a Change Impact Matrix. It is used to draw the right amount of focus to areas of high impact and ensure that appropriate Change Management support is provided throughout the entire change process."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces risk and disruption during transformation. Enables proactive management of change impacts. Improves stakeholder preparedness and support. Enhances effectiveness of change interventions. Supports smoother transition to new ways of working."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Change Impact Analysis How to Guide",
+        "Change Impact Analysis High Level Template",
+        "Change Impact Analysis Template"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Change impact assessment",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Change%20impact%20assessment.pptx?d=w5fde52dda2a24b54a40df212c436b76e&csf=1&web=1&e=csqCcV"
+        },
+        {
+          "label": "Atos Change Toolkit — Change Impact Assessment",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=Kbz6hw&CID=eb6775d5%2Db655%2D462a%2D9424%2Dc9e5c8807b03&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F02%5FEngage%20%2B%20mobilize%2FA%5FChange%20Impact%20Assessment"
+        }
+      ]
+    }
+  ]
+}

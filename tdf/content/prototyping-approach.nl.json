@@ -1,0 +1,17 @@
+{
+  "title": "Prototyping Approach",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beschrijft de aanpak voor het maken van vroege modellen van applicaties. Maakt validatie van concepten en gebruikersfeedback mogelijk. Ondersteunt iteratieve ontwikkeling en innovatie. Vermindert risico door ideeën te testen vóór volledige implementatie. Vergroot betrokkenheid en afstemming van stakeholders."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Valideert concepten vroegtijdig om risico te verminderen. Vergroot betrokkenheid en feedback van stakeholders. Ondersteunt iteratieve en agile ontwikkeling. Verbetert afstemming op gebruikersbehoeften. Verkort de time-to-market."
+    }
+  ]
+}

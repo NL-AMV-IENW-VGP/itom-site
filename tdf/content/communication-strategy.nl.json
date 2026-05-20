@@ -1,0 +1,27 @@
+{
+  "title": "Communication Strategy",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Communicatiestrategie is afgestemd op de overkoepelende projectstrategie en omvat de definitie van stakeholdergroepen, communicatiescope, missie, visie en concrete communicatiemaatregelen. Het biedt geavanceerde, praktische communicatiemiddelen en diensten die duidelijk geformuleerde, gerichte en tijdige boodschappen leveren."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert duidelijkheid en vermindert onzekerheid. Vergroot vertrouwen en zekerheid van stakeholders. Ondersteunt tijdige en relevante informatie-uitwisseling. Vergroot adoptie van en deelname aan verandering. Versterkt organisatorische afstemming en moreel."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Gids voor effectieve communicatie in 6 stappen",
+        "8 gouden regels voor communicatie voor een wetenschappelijke aanpak",
+        "Communications Strategy Checklist",
+        "Communications Concept Guide"
+      ]
+    }
+  ]
+}

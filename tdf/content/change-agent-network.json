@@ -1,0 +1,27 @@
+{
+  "title": "Change Agent Network",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Change Agent Network is the platform for exchange and collaboration with local Change Agents, aiming to share experience and know-how and resolve shared issues centrally. Change Agents are responsible for executing operative change activities within affected organizational units, acting as the connection between the central project team and the business communities. They act as role models and ambassadors for the change in the wider organization."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves reach and effectiveness of change efforts. Enhances stakeholder engagement and trust. Supports faster issue resolution and adaptation. Builds internal change capability. Enables sustained transformation momentum."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Identification of potential Change Agents via Stakeholder Analysis",
+        "Check whether there are already established networks in the company",
+        "Mobilization of the network with Kick-off and regular meetings",
+        "Set-up feedback loops and get Change Agents involved in the change"
+      ]
+    }
+  ]
+}

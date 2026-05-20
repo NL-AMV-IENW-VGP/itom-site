@@ -1,0 +1,39 @@
+{
+  "title": "Case for Change",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Case for Change is a summary that explains the current situation (problem and urgency for change), the future state and the required steps to get there. It provides a common baseline of awareness and understanding among stakeholders and serves as a basis for further communications. A clear 'What's In It For Me' (WIIFM) is defined for each key stakeholder group."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Creates a shared understanding of why change is necessary. Enhances stakeholder buy-in and commitment. Reduces resistance by clarifying the value of transformation. Supports strategic alignment across the organization. Enables focused and purposeful change execution."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Make sure you understand the change",
+        "Define why the change is necessary and what happens if we don't change",
+        "Identify the benefits and 'What's In It For Me'",
+        "Case for Change Plan on a Page"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Atos Change Toolkit — Change Canvas",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=fZVb2L&CID=57dbcb32%2Dc5ba%2D4c6e%2Dbca8%2Dd584eab72ea1&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F01%5FDefine%20%2B%20plan%2FA%5FChange%20Canvas"
+        }
+      ]
+    }
+  ]
+}

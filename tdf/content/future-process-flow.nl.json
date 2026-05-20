@@ -1,0 +1,46 @@
+{
+  "title": "Future Process Flow",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Toekomstige Processtroom (L1–L4) definieert het doeloperatiemodel, met beschrijving van geoptimaliseerde processen van hoogwaardige competentiecies (L1) tot gedetailleerde werkstromen (L4). Het integreert geïdentificeerde verbeteringen, automatiseringsmogelijkheden en best practices, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt een helder transformatieblauwdruk dat implementatieteams en stakeholders naar de gewenste toestand leidt. Het vermindert onzekerheid, stemt investeringen af op strategische prioriteiten en ondersteunt soepeler verandermanagement en adoptie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Toekomstige Processtroom (L1-L4)",
+        "Procesontwerp Workshop Notities",
+        "Procesvariant Vergelijking",
+        "Toekomstige Stroom Governance Blad",
+        "Toekomstig Proces Samenvattingsrapport"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "High level processes - applications mapping",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20proceses%20-%20applications%20mapping.pptx?d=w3763afde1447450db7760d12feb05c4f&csf=1&web=1&e=h774W5"
+        },
+        {
+          "label": "High level processes - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20processes%20-%20Retail.pptx?d=wa8c91ba38ce54a17b2481dbb23d7bdaa&csf=1&web=1&e=cgv23n"
+        }
+      ]
+    }
+  ]
+}

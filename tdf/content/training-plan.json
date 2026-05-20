@@ -1,0 +1,25 @@
+{
+  "title": "Training Plan",
+  "domain": "People & Culture",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The training project plan provides an overview of training offered, the actions to be implemented, the people and groups concerned, the duration of the trainings, dates, places, costs and other details. It plans and schedules tasks as well as resources, and with the help of dependencies, a fluent project flow can be constituted."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves user performance and confidence. Enhances adoption and reduces support needs. Supports continuous learning and improvement. Enables faster transition to new processes. Strengthens organizational capability and resilience."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "A plan/schedule containing activity duration, stage of completion, list of employees or stakeholders, interdependencies, resources and other constraints",
+        "Useful Tools: Jira, Confluence, Excel, Microsoft Project"
+      ]
+    }
+  ]
+}

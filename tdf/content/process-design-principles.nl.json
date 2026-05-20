@@ -1,0 +1,28 @@
+{
+  "title": "Process Design Principles",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Procesontwerppricipes definiëren de leidende normen en best practices voor het ontwerpen of herontwerpen van bedrijfsprocessen. Ze zorgen ervoor dat alle procesverbeteringen voldoen aan consistente ontwerplogica, prestatiedoelen en klantwaardedrijvers, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgen voor consistentie en kwaliteit in procesontwerp gedurende de gehele transformatie. Ze verkorten de besluitvormingstijd, verminderen herontwerprisico's en zorgen ervoor dat alle procesverbeteringen aansluiten op de strategische richting van de organisatie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesontwerppricipes Raamwerk",
+        "Ontwerpcriteriamatrix",
+        "Procesevaluatiechecklist",
+        "Validatieworkshop Handleiding",
+        "Procesontwerppricipes Samenvattingsrapport"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Project Start Architecture",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the initial architecture for the project implementation. Sets the foundation for solution design and integration. Aligns with enterprise architecture and business goals. Guides development and configuration activities. Supports project planning and resource allocation."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides a solid foundation for project execution. Aligns with enterprise architecture and goals. Enhances planning and coordination. Supports efficient development. Reduces implementation risk."
+    }
+  ]
+}

@@ -216,6 +216,52 @@
     display: block;
   }
 
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  .nav-row .back-link { margin-bottom: 0; }
+
+  /* Language switch */
+  .lang-switch {
+    display: none;
+    align-items: center;
+    gap: 6px;
+  }
+  .lang-switch.visible { display: inline-flex; }
+  .lang-switch span {
+    font-size: 0.78rem;
+    color: var(--gray);
+    font-weight: 500;
+  }
+  .lang-switch span.active { color: var(--ink); font-weight: 600; }
+  .lang-toggle {
+    width: 36px;
+    height: 20px;
+    background: var(--gray);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.25s;
+    border: none;
+    padding: 0;
+  }
+  .lang-toggle.nl { background: var(--blue); }
+  .lang-toggle-thumb {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .lang-toggle.nl .lang-toggle-thumb { transform: translateX(16px); }
+
   .loading, .error {
     text-align: center;
     padding: 80px 24px;
@@ -241,27 +287,27 @@
 </div>
 
 <script>
-const params = new URLSearchParams(location.search);
-const pageKey = params.get('page');
+const pageKey = new URLSearchParams(location.search).get('page');
 
-if (!pageKey) {
-  document.getElementById('loading').textContent = 'No page specified.';
-} else {
-  fetch(`content/${pageKey}.json`)
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(data => render(data))
-    .catch(() => {
-      document.getElementById('loading').outerHTML =
-        `<p class="error">Deepdive niet gevonden: <strong>${pageKey}</strong></p>`;
-    });
-}
+let currentData   = null;
+let currentDataNl = null;
+let hasNlVersion  = false;
+let currentLang   = localStorage.getItem('itom_lang') || 'en';
 
 function render(data) {
   document.title = `${data.title} — TDF Deepdive`;
-
   const page = document.getElementById('page');
   page.innerHTML = `
-    <a href="./" class="back-link">TDF Matrix</a>
+    <div class="nav-row">
+      <a href="./" class="back-link">TDF Matrix</a>
+      <div class="lang-switch" id="lang-switch">
+        <span id="lang-en">EN</span>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+          <div class="lang-toggle-thumb"></div>
+        </button>
+        <span id="lang-nl">NL</span>
+      </div>
+    </div>
     <div class="breadcrumb">
       <span class="breadcrumb-domain">${data.domain}</span>
       <span class="breadcrumb-sep">—</span>
@@ -270,6 +316,16 @@ function render(data) {
     <header><h1>${data.title}</h1></header>
     ${data.sections.map(renderSection).join('')}
   `;
+  updateLangSwitch();
+}
+
+function updateLangSwitch() {
+  const sw = document.getElementById('lang-switch');
+  if (!sw || !hasNlVersion) return;
+  sw.classList.add('visible');
+  document.getElementById('lang-toggle').classList.toggle('nl', currentLang === 'nl');
+  document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
+  document.getElementById('lang-nl').classList.toggle('active', currentLang === 'nl');
 }
 
 function renderSection(s) {
@@ -306,6 +362,37 @@ function renderSection(s) {
   }
   return '';
 }
+
+async function init() {
+  if (!pageKey) {
+    document.getElementById('loading').textContent = 'No page specified.';
+    return;
+  }
+  try {
+    const r = await fetch(`content/${pageKey}.json`);
+    if (!r.ok) throw new Error(r.status);
+    currentData = await r.json();
+
+    try {
+      const nlR = await fetch(`content/${pageKey}.nl.json`);
+      if (nlR.ok) { currentDataNl = await nlR.json(); hasNlVersion = true; }
+    } catch (_) {}
+
+    render(currentLang === 'nl' && currentDataNl ? currentDataNl : currentData);
+  } catch {
+    document.getElementById('loading').outerHTML =
+      `<p class="error">Deepdive niet gevonden: <strong>${pageKey}</strong></p>`;
+  }
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#lang-toggle') || !hasNlVersion) return;
+    currentLang = currentLang === 'en' ? 'nl' : 'en';
+    localStorage.setItem('itom_lang', currentLang);
+    render(currentLang === 'nl' ? currentDataNl : currentData);
+  });
+}
+
+init();
 </script>
 </body>
 </html>

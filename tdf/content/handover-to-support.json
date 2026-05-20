@@ -1,0 +1,17 @@
+{
+  "title": "Handover to Support",
+  "domain": "Applications",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the process for transitioning applications to support teams. Includes documentation, training, and responsibilities. Ensures continuity and stability post-implementation. Supports operational readiness. Enhances support efficiency and user satisfaction."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures smooth transition to support teams. Enhances operational readiness and stability. Supports documentation and training. Improves support efficiency. Enhances user satisfaction."
+    }
+  ]
+}

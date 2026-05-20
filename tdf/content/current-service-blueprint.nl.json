@@ -1,0 +1,29 @@
+{
+  "title": "Current Service Blueprint",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Huidige Service Blueprint visualiseert de end-to-end klantervaring en de ondersteunende front- en backofficeprocessen. Het brengt interacties tussen klanten, medewerkers en systemen in kaart om servicelacunes, knelpunten en afhankelijkheidsproblemen bloot te leggen. Afgestemd op het ACE-model en de 6D-methodologie biedt het een gedeeld begrip van de huidige dienstverlening."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt zichtbaar waar servicelacunes, inefficiënties en klantfrustaties optreden. Het ondersteunt datagedreven herontwerp van services door een volledig beeld te geven van de klantinteractie en de achterliggende operationele processen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Service Blueprint Template",
+        "Klantinteractiepuntenkaart",
+        "Frontoffice/Backoffice Afstemmingsmatrix",
+        "Servicepijnpuntenrapport",
+        "Service Blueprint Validatienotes",
+        "Huidige Serviceblauwdruk Samenvattingsrapport"
+      ]
+    }
+  ]
+}

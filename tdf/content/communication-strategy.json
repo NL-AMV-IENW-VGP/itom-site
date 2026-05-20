@@ -1,0 +1,27 @@
+{
+  "title": "Communication Strategy",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Communication Strategy is aligned with the overall project strategy and comprises the definition of stakeholder groups, communication scope, mission, vision and concrete communication measures. It provides leading-edge, practical communication tools and services that deliver clearly articulated, targeted and timely messages."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves clarity and reduces uncertainty. Enhances stakeholder trust and confidence. Supports timely and relevant information sharing. Increases change adoption and participation. Strengthens organizational alignment and morale."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Guide for Effective communication in 6 steps",
+        "8 golden rules for communication to ensure a scientific approach",
+        "Communications Strategy Checklist",
+        "Communications Concept Guide"
+      ]
+    }
+  ]
+}

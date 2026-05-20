@@ -1,0 +1,29 @@
+{
+  "title": "Current Application Landscape",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Maps all existing applications in use across the organization. Identifies redundancies and integration points. Provides insight into application performance and usage. Serves as a baseline for transformation planning. Helps prioritize modernization efforts."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides visibility into existing systems for better management. Identifies opportunities for optimization and cost savings. Supports strategic planning and transformation. Enhances system performance and reliability. Facilitates informed decision-making."
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Current application landscape",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/3.%20Applications/Current%20application%20landscape.xlsx?d=wa61f61da198545229a748bf0d1241bdb&csf=1&web=1&e=Qtsxdk"
+        }
+      ]
+    }
+  ]
+}

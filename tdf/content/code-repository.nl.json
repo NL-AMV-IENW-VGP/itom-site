@@ -1,0 +1,17 @@
+{
+  "title": "Code Repository",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Een gecentraliseerde opslagplaats voor broncode en gerelateerde ontwikkelingsartefacten. Maakt versiebeheer, samenwerking en veilige toegang tot codebases mogelijk voor alle ontwikkelteams. Ondersteunt branching, merging en wijzigingsbeheer, essentieel voor agile en iteratieve ontwikkeling."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert ontwikkelingsefficiëntie en samenwerking via een gedeeld platform voor codebeheer. Vergroot traceerbaarheid en verantwoording via versiebeheer en wijzigingshistorie. Ondersteunt snellere implementatiecycli en vermindert fouten door integratie met geautomatiseerde test- en implementatietools."
+    }
+  ]
+}

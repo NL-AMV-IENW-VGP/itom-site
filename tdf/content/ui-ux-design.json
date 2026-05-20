@@ -1,0 +1,17 @@
+{
+  "title": "UI/UX Design",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines the layout and interaction design of application interfaces. Focuses on usability and user experience. Supports design and development alignment. Enhances accessibility and efficiency. Facilitates user acceptance and adoption."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves usability and user experience. Enhances adoption and efficiency. Supports design and development alignment. Facilitates accessibility and satisfaction. Reduces training and support needs."
+    }
+  ]
+}

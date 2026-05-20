@@ -1,0 +1,17 @@
+{
+  "title": "Decommissioning Approach",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Outlines the approach for retiring obsolete applications. Ensures data migration and continuity. Minimizes disruption and risk. Supports cost reduction and simplification. Aligns with transformation goals."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces costs and complexity by retiring obsolete systems. Ensures continuity and data integrity. Minimizes disruption and risk. Supports strategic transformation. Enhances agility and efficiency."
+    }
+  ]
+}

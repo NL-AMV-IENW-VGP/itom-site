@@ -1,0 +1,17 @@
+{
+  "title": "Application Design Principles",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Stelt richtlijnen vast voor het ontwerpen van applicaties in lijn met zakelijke en technische doelen. Bevordert consistentie en bruikbaarheid in alle systemen. Ondersteunt schaalbaarheid en onderhoudbaarheid. Stimuleert modulair en servicegeoriënteerd ontwerp. Faciliteert samenwerking tussen business en IT."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert de consistentie en kwaliteit van applicatieontwerp. Vergroot gebruikerservaring en systeembruikbaarheid. Ondersteunt onderhoudbaarheid en schaalbaarheid. Vermindert ontwikkelingstijd en -kosten. Stemt IT-oplossingen af op bedrijfsbehoeften."
+    }
+  ]
+}

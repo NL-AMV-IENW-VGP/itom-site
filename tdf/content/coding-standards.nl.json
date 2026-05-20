@@ -1,0 +1,17 @@
+{
+  "title": "Coding Standards",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert regels en conventies voor het schrijven van applicatiecode. Zorgt voor codekwaliteit, leesbaarheid en onderhoudbaarheid. Bevordert naleving van industriestandaarden. Vermindert technische schuld en verbetert ontwikkelingsefficiëntie. Ondersteunt onboarding en samenwerking tussen ontwikkelaars."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor hoogwaardige en onderhoudbare code. Vermindert fouten en technische schuld. Verbetert samenwerking tussen ontwikkelaars. Ondersteunt snellere onboarding en ontwikkeling. Verbetert de langetermijnstabiliteit van systemen."
+    }
+  ]
+}

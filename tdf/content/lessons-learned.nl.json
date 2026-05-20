@@ -1,0 +1,26 @@
+{
+  "title": "Lessons Learned",
+  "domain": "People & Culture",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Lessons Learned aanpak zorgt ervoor dat het verandermanagementteam en Change Agents feedback ontvangen op hun acties. Met deze feedback kunnen maatregelen worden gedefinieerd voor verdere stappen, projecten of andere zaken en kunnen processen en samenwerking worden geoptimaliseerd. Het doel is om het team een vertrouwde omgeving en ruimte te bieden voor eerlijke feedback."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert toekomstige projectplanning en -uitvoering. Verbetert verandermanagementpraktijken. Ondersteunt continue verbetering en innovatie. Bouwt organisatorische kennis en capaciteit op. Vermindert risico en vergroot slagingspercentages."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Retrospectief (halve dag tot volledige workshop, afhankelijk van de omvang)",
+        "Methoden: Starfish, Start-Stop-Continue, 4L Retrospective, Mad-Sad-Glad, Went well/To improve/Action Items",
+        "Tooling: mural.co, easyretro.io, mentimeter.com, miro.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Application Rationalisation",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Assesses opportunities to consolidate or eliminate redundant applications. Identifies cost-saving and efficiency improvement areas. Supports strategic decision-making for application portfolio management. Aligns IT capabilities with business needs. Facilitates transition to a streamlined application landscape."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Reduces costs by eliminating redundant applications. Improves efficiency and system performance. Aligns IT with business priorities. Supports strategic transformation. Enhances agility and responsiveness."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Continuous Improvement",
+  "domain": "Processes",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Aanpak Continue Procesverbetering stelt een gestructureerd raamwerk op voor voortdurende optimalisatie van bedrijfsprocessen na implementatie. Het definieert feedbacklussen, monitoringroutines en governancemechanismen die aanpassingsvermogen en leren bevorderen, begeleid door het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Bevordert een duurzame cyclus van innovatie en efficiëntie, waardoor de organisatie snel kan reageren op veranderingen en nieuwe kansen. Het stimuleert continue prestatieverbeteringen, verlaagt kosten op de lange termijn en waarborgt blijvende strategische afstemming."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Aanpak Continue Procesverbetering",
+        "CPI Routekaart",
+        "Verbeteringsideeënlog",
+        "CPI Governance Model",
+        "CPI Prestatiedashboard"
+      ]
+    }
+  ]
+}

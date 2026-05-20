@@ -1,0 +1,17 @@
+{
+  "title": "Software Release Planning",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Plans the release schedule and versioning of application components. Coordinates development, testing, and deployment activities. Ensures readiness and quality of releases. Supports change management and communication. Enhances predictability and control."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves coordination and predictability of releases. Enhances quality and readiness. Supports change management and communication. Reduces disruption and risk. Facilitates planning and control."
+    }
+  ]
+}

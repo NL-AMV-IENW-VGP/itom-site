@@ -1,0 +1,44 @@
+{
+  "title": "Process Opportunities",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het deliverable Procesverbeteringsmogelijkheden identificeert specifieke gebieden in bedrijfsprocessen waar prestaties verbeterd kunnen worden, op basis van gegevens uit KPI's. Het verbindt meetbare resultaten — zoals verwerkingssnelheid of kosten per transactie — met concrete operationele uitkomsten en laat zien hoe elk proces bijdraagt aan of afbreuk doet aan strategische doelen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vertaalt KPI-inzichten naar gerichte procesverbeteringen die de efficiëntie verhogen, kosten verlagen en de servicekwaliteit verbeteren. Door afstemming op het ACE-model en de 6D-methodologie zorgt het ervoor dat verbeteringen strategisch, meetbaar en resultaatgericht zijn."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "KPI-analyse",
+        "Procesprestatiecrapport",
+        "Procesverbeteringsmogelijkhedencatalogus",
+        "Oorzaakanalyse Rapport",
+        "Procesoverzichtskaart (Heatmap)",
+        "Procesprioriteringsmatrix",
+        "Verbeteringsinitiatiefblad",
+        "Procesverbeteringsroutekaart",
+        "Procesverbeteringsmogelijkheden Samenvattingsrapport"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Process framework - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Process%20framework%20-%20Retail.pptx?d=wc0cc041b386941f6a1cbe3210f62d3fe&csf=1&web=1&e=pgCNTk"
+        }
+      ]
+    }
+  ]
+}

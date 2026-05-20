@@ -1,0 +1,17 @@
+{
+  "title": "Application Rationalisation",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beoordeelt mogelijkheden voor het consolideren of elimineren van redundante applicaties. Identificeert kostenbesparings- en efficiëntieverbeteringsgebieden. Ondersteunt strategische besluitvorming voor beheer van de applicatieportfolio. Stemt IT-mogelijkheden af op bedrijfsbehoeften. Faciliteert de overgang naar een gestroomlijnd applicatielandschap."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verlaagt kosten door redundante applicaties te elimineren. Verbetert efficiëntie en systeemprestaties. Stemt IT af op bedrijfsprioriteiten. Ondersteunt strategische transformatie. Vergroot wendbaarheid en reactievermogen."
+    }
+  ]
+}

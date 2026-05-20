@@ -1,0 +1,28 @@
+{
+  "title": "Future Service Blueprint",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Toekomstige Service Blueprint schetst het geoptimaliseerde dienstverleningsmodel dat verbeterde processen, systemen en klantinteracties integreert. Het verbindt front-ervaringen met backoffice-operaties om naadloze service-uitvoering te garanderen, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert de klantervaring en operationele synergie door mensen, technologie en processen af te stemmen op verbeterde serviceresultaten. Het maakt schaalbare, consistente en hoogwaardige dienstverlening mogelijk via alle contactpunten."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Toekomstige Service Blueprint",
+        "Service Prototype Schermen",
+        "Verbeteringsmogelijkhedenmatrix",
+        "Toekomstige Blueprint Validatienotes",
+        "Toekomstige Service Blueprint Samenvatting"
+      ]
+    }
+  ]
+}

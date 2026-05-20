@@ -1,0 +1,26 @@
+{
+  "title": "Feedback & Surveys",
+  "domain": "People & Culture",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Surveys offer a non-intimidating environment which leads more likely to honest and open responses, uncovering answers that might not come up in other settings. They provide a good base to compare results and base decisions on objective information. OCM survey purposes include: customer satisfaction (about communications or training), feedback on needs and wishes, change and KPI monitoring (change readiness, change success), and pulse & mood barometer feedback."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves stakeholder satisfaction and trust. Enables data-driven change management. Supports agile response to challenges. Enhances effectiveness of change interventions. Builds a culture of openness and continuous improvement."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Surveys can be conducted anonymously or personalized, online or on paper",
+        "Online tools: SurveyMonkey, survio, doodle",
+        "MS Forms (part of M365) — allows creating surveys and quizzes with Excel export"
+      ]
+    }
+  ]
+}

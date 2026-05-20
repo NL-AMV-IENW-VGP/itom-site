@@ -1,0 +1,27 @@
+{
+  "title": "Change Agent Network",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het Change Agent Netwerk is het platform voor uitwisseling en samenwerking met lokale Change Agents, gericht op het delen van ervaringen en kennis en het centraal oplossen van gedeelde problemen. Change Agents zijn verantwoordelijk voor het uitvoeren van operationele veranderactiviteiten binnen de betrokken organisatie-eenheden, als verbinding tussen het centrale projectteam en de bedrijfsgemeenschappen. Ze fungeren als rolmodellen en ambassadeurs voor verandering in de bredere organisatie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert bereik en effectiviteit van veranderinspanningen. Vergroot betrokkenheid en vertrouwen van stakeholders. Ondersteunt snellere probleemoplossing en aanpassing. Bouwt interne verandercapaciteit op. Maakt duurzaam transformatiemomentum mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Identificatie van potentiële Change Agents via Stakeholderanalyse",
+        "Controleer of er al bestaande netwerken in het bedrijf zijn",
+        "Mobilisatie van het netwerk met kick-off en regelmatige bijeenkomsten",
+        "Stel feedbacklussen in en betrek Change Agents bij de verandering"
+      ]
+    }
+  ]
+}

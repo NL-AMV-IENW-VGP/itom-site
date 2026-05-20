@@ -1,0 +1,32 @@
+{
+  "title": "Business Process Analysis",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Business Process Analysis biedt een uitgebreid inzicht in hoe de huidige bedrijfsvoering functioneert en waar inefficiënties bestaan. Het brengt werkstromen, afhankelijkheden en stakeholderinteracties in kaart om verbeterpunten en prestatiedrijvers te identificeren. In lijn met het ACE-model en de 6D-methodologie zorgt het voor een consistente en gestandaardiseerde procesanalyse."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Levert inzicht in operationele prestaties, waardoor datagedreven besluitvorming mogelijk wordt. Het ondersteunt de identificatie van knelpunten, redundanties en integratielacunes die de bedrijfsvoering beïnvloeden, en vormt de basis voor gerichte verbeterinitiatieven."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesanalyse tooling (Signavio of Celonis)",
+        "Huidige procesmapping (As-Is)",
+        "Proceswalkthrough Rapport",
+        "Procesprestatieanalyse",
+        "Knelpunten & bottleneck analyse",
+        "Stakeholdermap per proces",
+        "Procescompetentieanalyse",
+        "Procesonderlinge afhankelijkheidsmap",
+        "Business Process Analysis Samenvattingsrapport"
+      ]
+    }
+  ]
+}

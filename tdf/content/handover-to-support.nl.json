@@ -1,0 +1,17 @@
+{
+  "title": "Handover to Support",
+  "domain": "Applications",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Definieert het proces voor de overdracht van applicaties aan ondersteuningsteams. Omvat documentatie, training en verantwoordelijkheden. Waarborgt continuïteit en stabiliteit na implementatie. Ondersteunt operationele gereedheid. Verbetert ondersteuningsefficiëntie en gebruikerstevredenheid."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Waarborgt een soepele overgang naar ondersteuningsteams. Verbetert operationele gereedheid en stabiliteit. Ondersteunt documentatie en training. Vergroot ondersteuningsefficiëntie. Verbetert gebruikerstevredenheid."
+    }
+  ]
+}

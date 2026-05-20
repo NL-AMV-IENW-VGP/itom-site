@@ -1,0 +1,28 @@
+{
+  "title": "Monitoring Solution Design",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het Procesmonitoring Oplossingsontwerp definieert het technische en analytische raamwerk voor het real-time volgen van procesprestaties. Het specificeert sleutelmetrieken, databronnen, dashboards en waarschuwingsmechanismen die efficiëntie, kwaliteit en compliance bewaken, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt proactief procesbeheer mogelijk door real-time zichtbaarheid in prestaties en afwijkingen te bieden. Het ondersteunt snellere besluitvorming, continue optimalisatie en vroegtijdige probleemdetectie, wat leidt tot hogere betrouwbaarheid en operationele controle."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesmonitoring Oplossingsontwerp",
+        "KPI Datamodeldiagram",
+        "Monitoringdashboard Bouwplan",
+        "Waarschuwing en Drempelwaarde Definitieblad",
+        "Monitoringoplossing Samenvattingsrapport"
+      ]
+    }
+  ]
+}

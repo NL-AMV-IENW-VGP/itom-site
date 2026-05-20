@@ -1,0 +1,17 @@
+{
+  "title": "Application Prototype",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Maakt een werkend model van de applicatie voor demonstratie en testen. Valideert ontwerp en functionaliteit. Ondersteunt stakeholdersfeedback en iteratie. Vermindert ontwikkelingsrisico. Verbetert communicatie en afstemming."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Valideert applicatieontwerp en functionaliteit. Vergroot betrokkenheid en feedback van stakeholders. Ondersteunt iteratieve ontwikkeling. Vermindert risico en herbewerkingskosten. Verbetert communicatie en afstemming."
+    }
+  ]
+}

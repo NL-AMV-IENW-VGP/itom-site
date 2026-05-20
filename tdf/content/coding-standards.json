@@ -1,0 +1,17 @@
+{
+  "title": "Coding Standards",
+  "domain": "Applications",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Defines rules and conventions for writing application code. Ensures code quality, readability, and maintainability. Promotes adherence to industry standards. Reduces technical debt and improves development efficiency. Supports onboarding and collaboration among developers."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures high-quality and maintainable code. Reduces errors and technical debt. Enhances collaboration among developers. Supports faster onboarding and development. Improves long-term system stability."
+    }
+  ]
+}

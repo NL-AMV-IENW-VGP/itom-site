@@ -1,0 +1,51 @@
+{
+  "title": "Business Capability",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Het Business Capability Model biedt een gestructureerd overzicht van de essentiële competenties die een organisatie nodig heeft om haar strategische doelen te bereiken. Het definieert wat de organisatie moet kunnen doen — en niet hóé — en dient als stabiele basis voor transformatie en verandering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Het zakelijk voordeel van het Business Capability Model ligt in het creëren van een helder, gedeeld begrip van wat de organisatie doet. Het ondersteunt strategische prioritering, investeringsbeslissingen en transformatieplanning, door een stabiele referentie te bieden die onafhankelijk is van organisatiestructuren of IT-systemen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Business Capability Map",
+        "Capability Catalogus",
+        "Capability Heatmap",
+        "Capability Assessment Rapport",
+        "Capability-naar-Proces Mapping",
+        "Capability-naar-Applicatie Mapping",
+        "Capability Gap Analyse",
+        "Doelcapabilitymodel",
+        "Capability Routekaart",
+        "Capability Samenvattingsrapport"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Business capability model - Retail",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Business%20capability%20model%20-%20Retail.xlsx?d=w2f5d89f580974f3fa022e0d2cf0f09d9&csf=1&web=1&e=hJa5hh"
+        },
+        {
+          "label": "Business capability model (application mapping)",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Business%20capability%20model%20(application%20mapping).pptx?d=w0cd5ccf6e8f44f5099e5e97b8b42f51c&csf=1&web=1&e=0iHQNT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Network Activation",
+  "domain": "People & Culture",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Change agent network activation involves identifying and empowering individuals within the organization to champion the transformation. These agents facilitate communication between project teams and end users, help address concerns and promote adoption of new practices. The network supports cultural alignment and readiness for change, and is a critical enabler for successful transformation execution."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves effectiveness and reach of change efforts. Enhances stakeholder engagement and trust. Supports faster adaptation and issue resolution. Builds internal change capability. Enables sustained transformation success."
+    }
+  ]
+}

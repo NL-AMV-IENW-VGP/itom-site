@@ -1,0 +1,17 @@
+{
+  "title": "Extension Specifications",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Specifies customizations and extensions needed for standard applications. Ensures business-specific needs are met. Supports development and configuration planning. Aligns with design principles and architecture. Facilitates documentation and support."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Meets specific business needs through customization. Enhances functionality and user satisfaction. Supports efficient development and support. Aligns with design and architecture. Improves documentation and traceability."
+    }
+  ]
+}

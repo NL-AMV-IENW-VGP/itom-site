@@ -1,0 +1,46 @@
+{
+  "title": "Detailed Processes",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Gedetailleerde Processen (L1–L4) bieden uitgebreide documentatie van werkstromen en activiteiten op meerdere niveaus — van hoogwaardige procescategorieën (L1) tot gedetailleerde taaksequenties (L4). Elk niveau definieert inputs, outputs, rollen en ondersteunende systemen, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Levert helderheid en precisie in operationeel ontwerp, wat dubbelzinnigheid vermindert en de uitvoeringsconsistentie verbetert. Het maakt efficiënte onboarding mogelijk, ondersteunt automatisering en biedt een basislijn voor prestatiemeting en continue optimalisatie."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Gedetailleerde Processen (L4)",
+        "Procesd documentatieblad",
+        "Bedrijfsregelscatalogus",
+        "Procesuitzondering Scenario's",
+        "Gedetailleerde Proces Validatielog"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Detail level processes - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20processes%20-%20Retail.pptx?d=wa8c91ba38ce54a17b2481dbb23d7bdaa&csf=1&web=1&e=cgv23n"
+        },
+        {
+          "label": "Process views (from General Summary report)",
+          "filetype": "PPT",
+          "submittedBy": "Natalie de Vries",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Process%20views%20(from%20General%20Summary%20report).pptx?d=wb01457959d8646f7bae9bd26ca85108c&csf=1&web=1&e=2dxuAo"
+        }
+      ]
+    }
+  ]
+}

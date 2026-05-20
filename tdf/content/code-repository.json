@@ -1,0 +1,17 @@
+{
+  "title": "Code Repository",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "A centralized storage location for source code and related development artifacts. Enables version control, collaboration, and secure access to codebases across development teams. Supports branching, merging, and tracking changes, which are essential for agile and iterative development. Facilitates integration with CI/CD pipelines and other development tools."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves development efficiency and collaboration by providing a shared platform for code management. Enhances traceability and accountability through version control and change history. Supports faster deployment cycles and reduces errors through integration with automated testing and deployment tools. Ensures secure and compliant handling of intellectual property and software assets."
+    }
+  ]
+}

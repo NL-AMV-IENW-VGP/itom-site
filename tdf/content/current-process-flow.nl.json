@@ -1,0 +1,45 @@
+{
+  "title": "Current Process Flow",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Huidige Processtroom (L1–L4) visualiseert bestaande processen op meerdere detailniveaus — van hoogwaardige bedrijfscompetentiecies (L1) tot gedetailleerde werkstromen (L4). Het biedt een gestructureerde weergave van de huidige operationele activiteiten, rollen en systeeminteracties, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt een heldere operationele basislijn voor het evalueren van prestaties en het identificeren van verbetermogelijkheden. Het versterkt de afstemming tussen stakeholders, versnelt diagnoses en vermindert projectrisico's door een gemeenschappelijk begrip van de huidige operaties te waarborgen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Niveau 1 – Waardeketendiagram",
+        "Niveau 2 – Proceslandschapskaart",
+        "Niveau 3 – End-to-end processchema",
+        "Niveau 4 – Gedetailleerde activiteitenworkflow",
+        "Proceshiërarchiematrix",
+        "Processtroom Documentatieblad",
+        "Stakeholder Review Log",
+        "Huidige Toestandssamenvattingsrapport",
+        "Procesinventarisatie tooling",
+        "Richtlijnen voor procesmapping"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Current process model",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Current%20process%20model.xlsx?d=w3ebf61fc27d64078a05b418261d265dc&csf=1&web=1&e=giwgb7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Prototyping Approach",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Outlines the approach for creating early models of applications. Enables validation of concepts and user feedback. Supports iterative development and innovation. Reduces risk by testing ideas before full implementation. Enhances stakeholder engagement and alignment."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Validates concepts early to reduce risk. Enhances stakeholder engagement and feedback. Supports iterative and agile development. Improves alignment with user needs. Reduces time to market."
+    }
+  ]
+}

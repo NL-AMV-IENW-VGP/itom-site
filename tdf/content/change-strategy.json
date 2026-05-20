@@ -1,0 +1,50 @@
+{
+  "title": "Change Strategy",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Create an overall Change Management Strategy for the project with local adaption of the vision and mission. The elements of a Change Strategy are: situational awareness (understand the change and who is impacted), supporting structures (team and sponsor structures), and strategy analysis (risks, resistance, and special tactics)."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures structured and consistent change management. Improves adoption and minimizes disruption. Aligns change efforts with business outcomes. Enhances readiness and resilience across the organization. Supports successful realization of transformation benefits."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Change Strategy Guide",
+        "Storyline for Change Strategy",
+        "Change management plan"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Change strategy",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Change%20strategy.pptx?d=wc23c4c22f6b2498398fe4844ff033bef&csf=1&web=1&e=JjaJdl"
+        },
+        {
+          "label": "Change strategy - vision",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Change%20strategy%20-%20vision.pptx?d=w5025e133e7a4494fbc415c12baf120c7&csf=1&web=1&e=mSM1Ud"
+        },
+        {
+          "label": "Atos Change Toolkit — Change Readiness Plan",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=qbAnaL&CID=0324877d%2Dc4c8%2D438e%2Daa63%2Da444a272b0d5&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F02%5FEngage%20%2B%20mobilize%2FD%5FChange%20Readiness%20Plan"
+        }
+      ]
+    }
+  ]
+}

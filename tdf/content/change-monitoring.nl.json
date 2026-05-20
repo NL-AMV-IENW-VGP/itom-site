@@ -1,0 +1,26 @@
+{
+  "title": "Change Monitoring",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Change Monitoring meet de status en voortgang van de veranderingsimplementatie en biedt informatie over de mate van veranderbereidheid, veranderacceptatie, motivatie en enablement van de betrokken stakeholders. Het maakt vroegtijdige identificatie van problemen mogelijk voor tijdige interventie om een succesvolle implementatie te garanderen. Het is een interactieve methode die gebruik maakt van feedback van eindgebruikers, technische data en andere methoden tijdens de implementatie- en uitrolfase."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert zichtbaarheid in de effectiviteit van verandering. Maakt datagedreven besluitvorming mogelijk. Verbetert verantwoording en transparantie. Ondersteunt agile respons op uitdagingen. Zorgt voor duurzame adoptie van verandering en realisatie van voordelen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Ambitie en doelstellingen met klanten vormen de basis voor Change Monitoring (bijv. KPI's voor communicatie en training)",
+        "Change Monitoring dient minimaal te worden uitgevoerd met eindgebruikersenquêtes; aanvullend kunnen technische gegevens worden beoordeeld",
+        "Change Wheel framework voor het uitvoeren van het monitoringproces"
+      ]
+    }
+  ]
+}

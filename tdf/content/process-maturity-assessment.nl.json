@@ -1,0 +1,29 @@
+{
+  "title": "Process Maturity Assessment",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Procesvolwassenheidsanalyse evalueert de effectiviteit, consistentie en optimalisatiegraad van bedrijfsprocessen op sleuteldimensies zoals governance, prestaties en technologische ondersteuning. Afgestemd op het ACE-model en de 6D-methodologie biedt het een gestructureerde basislijn voor gerichte verbetering."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Geeft een helder beeld van de huidige procesvolwassenheid en identificeert prioritaire verbetergebieden. Het ondersteunt strategische investeringsbeslissingen, bevordert eigenaarschap bij proceseigenaren en legt de basis voor een meetbare transformatieroutekaart."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesvolwassenheidsmodel",
+        "Volwassenheidsscorecard",
+        "Procesvolwassenheid Interviewgids",
+        "Volwassenheidsniveaubeschrijvingen",
+        "Verbeteringsprioriteitenmatrix",
+        "Procesvolwassenheid Samenvattingsrapport"
+      ]
+    }
+  ]
+}

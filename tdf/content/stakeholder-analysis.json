@@ -1,0 +1,45 @@
+{
+  "title": "Stakeholder Analysis",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Identify who is affected by the change, how (in terms of impacts) as well as their influence on the implementation of the project. Stakeholder categorization helps tailor communication in a way that is relevant to a particular group. This analysis is a prerequisite for defining change, communication and training strategies."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves stakeholder alignment and support. Enables tailored communication and engagement. Reduces resistance and increases adoption. Enhances collaboration and trust. Supports successful change implementation."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Stakeholders' engagement tool",
+        "Stakeholder analysis workshop approach",
+        "Changes and stakeholders' map",
+        "Stakeholder Management Tracking Tool"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Stakeholder analysis",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Stakeholder%20analysis.pptx?d=wb672dc69da304cff91f9c262e3d36214&csf=1&web=1&e=LC3bOw"
+        },
+        {
+          "label": "Atos Change Toolkit — Stakeholder Assessment",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=xSH6lM&CID=805aaffb%2D6116%2D4e63%2D8b95%2Df8def61bc8ef&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F01%5FDefine%20%2B%20plan%2FB%5FStakeholder%20Assessment"
+        }
+      ]
+    }
+  ]
+}

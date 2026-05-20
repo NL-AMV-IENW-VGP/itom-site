@@ -1,0 +1,17 @@
+{
+  "title": "Software Release Planning",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Plant het releaseschema en versiebeheer van applicatiecomponenten. Coördineert ontwikkelings-, test- en implementatieactiviteiten. Waarborgt gereedheid en kwaliteit van releases. Ondersteunt wijzigingsbeheer en communicatie. Verbetert voorspelbaarheid en controle."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert coördinatie en voorspelbaarheid van releases. Vergroot kwaliteit en gereedheid. Ondersteunt wijzigingsbeheer en communicatie. Vermindert verstoringen en risico. Faciliteert planning en controle."
+    }
+  ]
+}

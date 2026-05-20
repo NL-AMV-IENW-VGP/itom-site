@@ -1,0 +1,17 @@
+{
+  "title": "Hypercare Approach",
+  "domain": "Applications",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beschrijft de ondersteuningsstrategie direct na de go-live. Omvat monitoring, probleemoplossing en gebruikersassistentie. Zorgt voor een soepele overgang en adoptie. Minimaliseert verstoring en risico. Vergroot het vertrouwen en de tevredenheid van gebruikers."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Waarborgt soepele post-implementatie ondersteuning. Minimaliseert verstoring en risico. Vergroot gebruikersvertrouwen en adoptie. Ondersteunt probleemoplossing en monitoring. Verbetert tevredenheid en stabiliteit."
+    }
+  ]
+}

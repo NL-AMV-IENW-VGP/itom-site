@@ -1,0 +1,27 @@
+{
+  "title": "Training Strategy",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Training Approach guides the setup and usage of training as part of Business Change to support the transformation. It covers developing learning interventions, ensuring early life adoption and effective delivery of new systems and processes. A Training Concept considers the directives given from vision, strategy and training targets, based on three content pillars: Training before GoLive, After GoLive Support, and New Hire Training."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves user competence and confidence. Enhances adoption and performance in new processes. Reduces errors and support needs. Supports sustainable change and capability building. Enables faster realization of transformation benefits."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Training checklist covering the full lifecycle: discovery through planning, Go Live and Live Support",
+        "Power User Training Matrix (Excel for SAP projects)",
+        "Training Needs Analysis — identify gaps in current employee knowledge, skills and attitude",
+        "Training Delivery & Hosting document — approach, methodology and high-level instructions"
+      ]
+    }
+  ]
+}

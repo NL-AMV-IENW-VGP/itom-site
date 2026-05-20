@@ -1,0 +1,28 @@
+{
+  "title": "Process Automation Solutions",
+  "domain": "Processes",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Procesautomatiseringsoplossingen ontwerpen en implementeren digitale werkstromen en automatiseringstechnologieën om handmatige of repetitieve taken te stroomlijnen. Het definieert automatiseringsreikwijdte, bedrijfsregels, integratiepunten en technologievereisten, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vergroot productiviteit en nauwkeurigheid door menselijke fouten, doorlooptijd en operationele kosten te verminderen. Het maakt medewerkers vrij voor hoogwaardiger werk, versnelt procesuitvoering en ondersteunt schaalbare digitale transformatie-initiatieven."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesautomatiseringsoplossingen",
+        "Automatiseringsoplossing Ontwerpdocument",
+        "Automatisering Testplan",
+        "Automatisering Prestatiemetrieken Blad",
+        "Automatisering Implementatieplan"
+      ]
+    }
+  ]
+}

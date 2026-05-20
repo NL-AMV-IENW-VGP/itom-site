@@ -1,0 +1,29 @@
+{
+  "title": "Functional Specifications",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Documenteert gedetailleerde functionele vereisten en gebruiksscenario's voor applicaties. Dient als referentie voor ontwerp en ontwikkeling. Waarborgt afstemming op bedrijfsbehoeften. Faciliteert testen en validatie. Ondersteunt traceerbaarheid en wijzigingsbeheer."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Biedt duidelijke vereisten voor ontwikkeling en testen. Verbetert afstemming op bedrijfsbehoeften. Ondersteunt traceerbaarheid en wijzigingsbeheer. Verbetert kwaliteit en efficiëntie. Faciliteert communicatie met stakeholders."
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "End to end use cases",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/T.%20Test%20management/T.3%20%20End%20to%20end%20use%20cases.xlsx?d=web8c42d209d54061b664b064a7b60971&csf=1&web=1&e=DtdcWJ"
+        }
+      ]
+    }
+  ]
+}

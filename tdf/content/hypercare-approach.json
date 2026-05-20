@@ -1,0 +1,17 @@
+{
+  "title": "Hypercare Approach",
+  "domain": "Applications",
+  "phase": "Drive",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Describes the support strategy immediately after go-live. Includes monitoring, issue resolution, and user assistance. Ensures smooth transition and adoption. Minimizes disruption and risk. Enhances user confidence and satisfaction."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures smooth post-implementation support. Minimizes disruption and risk. Enhances user confidence and adoption. Supports issue resolution and monitoring. Improves satisfaction and stability."
+    }
+  ]
+}

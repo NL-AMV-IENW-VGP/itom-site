@@ -1,0 +1,35 @@
+{
+  "title": "Application Fit/Gap",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Analyzes how well current or proposed applications meet business requirements. Identifies gaps and areas for improvement. Supports decision-making for customization or replacement. Aligns IT solutions with business processes. Enhances functional coverage and user satisfaction."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures applications meet business requirements. Identifies gaps and improvement areas. Supports customization and optimization. Enhances user satisfaction and adoption. Aligns IT solutions with business goals."
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Functional fit-gap assessment - architecture",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/3.%20Applications/Functional%20git-gap%20assessment%20-%20architecture.pptx?d=wd98eab5c8a93444c8e61a0a82e32903c&csf=1&web=1&e=Ud2cgr"
+        },
+        {
+          "label": "Functional fit-gap assessment",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/3.%20Applications/Functional%20git-gap%20assessment.xlsx?d=w760914ebff8045919b47bbcff19c2eb0&csf=1&web=1&e=teA6Lq"
+        }
+      ]
+    }
+  ]
+}

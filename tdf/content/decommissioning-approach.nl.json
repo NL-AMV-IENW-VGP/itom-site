@@ -1,0 +1,17 @@
+{
+  "title": "Decommissioning Approach",
+  "domain": "Applications",
+  "phase": "Develop",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Beschrijft de aanpak voor het buiten gebruik stellen van verouderde applicaties. Waarborgt datamigtratie en continuïteit. Minimaliseert verstoring en risico. Ondersteunt kostenreductie en vereenvoudiging. Stemt af op transformatiedoelen."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verlaagt kosten en complexiteit door verouderde systemen te pensioneren. Waarborgt continuïteit en gegevensintegriteit. Minimaliseert verstoring en risico. Ondersteunt strategische transformatie. Vergroot wendbaarheid en efficiëntie."
+    }
+  ]
+}

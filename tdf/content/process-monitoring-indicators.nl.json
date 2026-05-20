@@ -1,0 +1,28 @@
+{
+  "title": "Process Monitoring Indicators",
+  "domain": "Processes",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Procesmonitoring-indicatoren definiëren de sleutelmetrieken en controlemechanismen voor het bewaken van procesprstataties en -gezondheid in de loop der tijd. Ze koppelen procesresultaten aan strategische doelstellingen en geven vroegtijdige waarschuwingen bij afwijkingen of inefficiënties, afgestemd op het ACE-model en de 6D-methodologie."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt continu prestatiebeheer mogelijk door gegevens te leveren voor proactieve besluitvorming. Het ondersteunt verantwoording, stimuleert continue optimalisatie en waarborgt langdurige afstemming op de bedrijfsdoelen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Procesmonitoring-indicatoren",
+        "Indicatorenmappingsblad",
+        "Monitoringdashboard Prototype",
+        "Databronnenkaart",
+        "Monitoringraamwerk Rapport"
+      ]
+    }
+  ]
+}

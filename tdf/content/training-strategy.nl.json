@@ -1,0 +1,27 @@
+{
+  "title": "Training Strategy",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Trainingsaanpak begeleidt de opzet en het gebruik van training als onderdeel van Business Change ter ondersteuning van de transformatie. Het omvat het ontwikkelen van leerinterventies, het waarborgen van vroege adoptie en effectieve levering van nieuwe systemen en processen. Een Trainingsconcept houdt rekening met de richtlijnen vanuit visie, strategie en trainingsdoelen, gebaseerd op drie inhoudelijke pijlers: Training vóór Go-Live, Ondersteuning na Go-Live en Training voor nieuwe medewerkers."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert competentie en vertrouwen van gebruikers. Vergroot adoptie en prestaties in nieuwe processen. Vermindert fouten en ondersteuningsvraag. Ondersteunt duurzame verandering en capaciteitsopbouw. Maakt snellere realisatie van transformatievoordelen mogelijk."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Trainingscontrolelijst voor de volledige levenscyclus: van ontdekking via planning tot Go Live en live-ondersteuning",
+        "Power User Training Matrix (Excel voor SAP-projecten)",
+        "Training Needs Analysis — identificeer hiaten in huidige kennis, vaardigheden en houding van medewerkers",
+        "Training Delivery & Hosting document — aanpak, methodologie en instructies op hoofdlijnen"
+      ]
+    }
+  ]
+}

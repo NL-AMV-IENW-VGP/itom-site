@@ -1,0 +1,17 @@
+{
+  "title": "Solution Blueprint",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Biedt een gedetailleerd ontwerp van de oplossing, inclusief componenten en interacties. Dient als blauwdruk voor implementatie. Waarborgt afstemming op vereisten en architectuur. Ondersteunt ontwikkelings- en testactiviteiten. Verbetert traceerbaarheid en kwaliteitsborging."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Zorgt voor een uitgebreid en afgestemd oplossingsontwerp. Ondersteunt efficiënte ontwikkeling en testen. Verbetert kwaliteit en traceerbaarheid. Stemt af op vereisten en architectuur. Vermindert implementatierisico."
+    }
+  ]
+}

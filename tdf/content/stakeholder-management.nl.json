@@ -1,0 +1,27 @@
+{
+  "title": "Stakeholder Management",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Stakeholdermanagement is het proces van luisteren naar de standpunten van mensen en hen vervolgens beïnvloeden om het succes van het project en de veranderingsimplementatie te waarborgen. Stakeholdermanagement is essentieel voor het opbouwen van projectbetrokkenheid. Stakeholders moeten voortdurend worden herzien, gevolgd en geëvalueerd om te zorgen dat aan de behoeften van alle doelgroepen wordt voldaan. Stakeholderscategorisering helpt communicatie op maat te maken voor een specifieke groep."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Verbetert tevredenheid en ondersteuning van stakeholders. Vermindert weerstand en vergroot adoptie. Ondersteunt effectieve communicatie en betrokkenheid. Verbetert projectsucces en realisatie van voordelen. Bouwt duurzame relaties met stakeholders op."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Stakeholder Engagement & Tracking tool",
+        "Stakeholder Analysis Mapping Planning tool",
+        "Stakeholder Resistance Management Overview",
+        "Communications and Stakeholder Management Manual"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Extension Specifications",
+  "domain": "Applications",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Specificeert maatwerk en uitbreidingen die nodig zijn voor standaardapplicaties. Zorgt ervoor dat bedrijfsspecifieke behoeften worden ingevuld. Ondersteunt ontwikkelings- en configuratieplanning. Stemt af op ontwerppricipes en architectuur. Faciliteert documentatie en ondersteuning."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vervult specifieke bedrijfsbehoeften via maatwerk. Verbetert functionaliteit en gebruikerstevredenheid. Ondersteunt efficiënte ontwikkeling en ondersteuning. Stemt af op ontwerp en architectuur. Verbetert documentatie en traceerbaarheid."
+    }
+  ]
+}

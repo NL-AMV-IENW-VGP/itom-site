@@ -1,0 +1,29 @@
+{
+  "title": "Customer Journey",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Customer Journey visualiseert hoe klanten de organisatie ervaren via kanalen en contactpunten. Het benadrukt pijnpunten, emotionele drijfveren en procesinteracties die de klanttevredenheid en loyaliteit bepalen. In lijn met het ACE-model en de 6D-methodologie zorgt het voor een klantgerichte benadering van procesanalyse en -ontwerp."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Maakt inzichtelijk hoe klanten de organisatie beleven en waar verbeteringen de grootste impact hebben op tevredenheid en loyaliteit. Het ondersteunt klantgerichte transformatie door een directe koppeling te leggen tussen operationele processen en klantervaringen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Customer Journey Map Template",
+        "Contactpuntenanalyse",
+        "Klantpersona's",
+        "Emotionele Curvediagram",
+        "Pijnpunten- en Kansen Inventarisatie",
+        "Customer Journey Samenvattingsrapport"
+      ]
+    }
+  ]
+}

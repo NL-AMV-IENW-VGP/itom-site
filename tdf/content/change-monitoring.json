@@ -1,0 +1,26 @@
+{
+  "title": "Change Monitoring",
+  "domain": "People & Culture",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Change Monitoring measures the status and progress of the change implementation providing information on the degree of change readiness, change acceptance, motivation and enablement of the affected stakeholders. It enables early identification of issues allowing timely intervention to guarantee a successful implementation. It is an interactive method using end-user feedback, technical data and other methods during the implementation and rollout phase."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves visibility into change effectiveness. Enables data-driven decision-making. Enhances accountability and transparency. Supports agile response to challenges. Ensures sustained change adoption and benefits realization."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Ambition and targets set up with clients form the basis for Change Monitoring (e.g., KPIs for Communication and Training)",
+        "Change Monitoring should be minimum conducted with end-user surveys; additionally technical data can be reviewed",
+        "Change Wheel framework for conducting the monitoring process"
+      ]
+    }
+  ]
+}

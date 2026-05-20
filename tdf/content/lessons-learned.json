@@ -1,0 +1,26 @@
+{
+  "title": "Lessons Learned",
+  "domain": "People & Culture",
+  "phase": "Deliver",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Lessons Learned approach ensures that the change management team and Change Agents receive feedback for their actions. With this feedback you can define measures for any further steps, projects or else and optimize processes and collaboration. The goal is to give the team a trustful environment and room to provide honest feedback."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves future project planning and execution. Enhances change management practices. Supports continuous improvement and innovation. Builds organizational knowledge and capability. Reduces risk and increases success rates."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Retrospective (half-day to full workshop, depending on scope)",
+        "Methods: Starfish, Start-Stop-Continue, 4L Retrospective, Mad-Sad-Glad, Went well/To improve/Action Items",
+        "Tooling: mural.co, easyretro.io, mentimeter.com, miro.com"
+      ]
+    }
+  ]
+}

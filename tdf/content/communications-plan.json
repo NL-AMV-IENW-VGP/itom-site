@@ -1,0 +1,35 @@
+{
+  "title": "Communications Plan",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "A communications plan outlines the strategy for informing stakeholders about the digital transformation program. It defines key messages, communication channels, and timing. The plan ensures consistent and transparent messaging throughout the project lifecycle. It includes stakeholder mapping and feedback mechanisms to foster engagement and reduce resistance to change."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves awareness and understanding of change. Enhances stakeholder trust and confidence. Supports proactive issue management. Increases participation and adoption. Strengthens organizational alignment and morale."
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Communication plan",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Communication%20plan.pptx?d=w5394dc4740e549aea9f5df0a184e1870&csf=1&web=1&e=8XD9my"
+        },
+        {
+          "label": "Atos Change Toolkit — Communication Strategy & Plan",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=f5OiEI&CID=f6db2530%2Dc1b7%2D4cf8%2Db206%2D561d0b2eed76&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F02%5FEngage%20%2B%20mobilize%2FB%5FCommunication%20Strategy%20and%20Plan"
+        }
+      ]
+    }
+  ]
+}

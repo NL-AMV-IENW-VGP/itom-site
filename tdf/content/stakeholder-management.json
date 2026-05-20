@@ -1,0 +1,27 @@
+{
+  "title": "Stakeholder Management",
+  "domain": "People & Culture",
+  "phase": "Design",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Managing stakeholders is the process of listening to peoples' views and then influencing them to ensure the success of the project and the change implementation. Stakeholder management is essential to build project commitment. Stakeholders should be continually reviewed, monitored and evaluated to ensure the needs of all audiences are met. Stakeholder categorization helps tailor communication in a way that is relevant to a particular group."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves stakeholder satisfaction and support. Reduces resistance and enhances adoption. Supports effective communication and engagement. Enhances project success and benefits realization. Builds long-term stakeholder relationships."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Stakeholder Engagement & Tracking tool",
+        "Stakeholder Analysis Mapping Planning tool",
+        "Stakeholder Resistance Management Overview",
+        "Communications and Stakeholder Management Manual"
+      ]
+    }
+  ]
+}

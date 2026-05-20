@@ -1,0 +1,44 @@
+{
+  "title": "Change Impact Assessment",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "De Veranderimpactanalyse identificeert de verandergap tussen de as-is situatie en de to-be situatie als gevolg van het project. De analyse omvat vier algemene categorieën — mensen, processen, organisatie en technologie — en verwerkt deze in een Veranderimpactmatrix. Het wordt gebruikt om de juiste aandacht te richten op gebieden met hoge impact en te waarborgen dat de juiste Change Management ondersteuning wordt geboden gedurende het gehele veranderproces."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Vermindert risico en verstoring tijdens transformatie. Maakt proactief beheer van veranderimpacten mogelijk. Verbetert gereedheid en ondersteuning van stakeholders. Vergroot effectiviteit van veranderinterventies. Ondersteunt een soepelere overgang naar nieuwe werkwijzen."
+    },
+    {
+      "type": "list",
+      "heading": "Richtlijnen & tools",
+      "items": [
+        "Change Impact Analysis How to Guide",
+        "Change Impact Analysis High Level Template",
+        "Change Impact Analysis Template"
+      ]
+    },
+    {
+      "type": "links",
+      "heading": "Artefacten",
+      "items": [
+        {
+          "label": "Change impact assessment",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/6.%20People%20%26%20culture/Change%20impact%20assessment.pptx?d=w5fde52dda2a24b54a40df212c436b76e&csf=1&web=1&e=csqCcV"
+        },
+        {
+          "label": "Atos Change Toolkit — Change Impact Assessment",
+          "filetype": "URL",
+          "submittedBy": "Jordy Hierck",
+          "url": "https://atos365.sharepoint.com/sites/100005211/SiteAssets/Forms/AllItems.aspx?csf=1&web=1&e=Kbz6hw&CID=eb6775d5%2Db655%2D462a%2D9424%2Dc9e5c8807b03&FolderCTID=0x01200042275F35348F994390492F5B49A38522&id=%2Fsites%2F100005211%2FSiteAssets%2FChange%20Toolkit%2F02%5FEngage%20%2B%20mobilize%2FA%5FChange%20Impact%20Assessment"
+        }
+      ]
+    }
+  ]
+}

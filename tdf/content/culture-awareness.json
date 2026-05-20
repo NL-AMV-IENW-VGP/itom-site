@@ -1,0 +1,28 @@
+{
+  "title": "Culture Awareness",
+  "domain": "People & Culture",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Culture Awareness comprises identifying all values, interests, behavior patterns and the general orientation of an organization and especially its employees. It assesses the 'as is' culture — the current cultural preferences of the organization — and compares it with the defined desired culture. Inter-cultural aspects in set-up, communication and project approach are also considered."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves alignment of change initiatives with organizational culture. Enhances employee engagement and acceptance. Reduces cultural resistance to transformation. Supports sustainable change through cultural integration. Enables targeted communication and training strategies."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Culture analysis",
+        "Intercultural Collaboration (How To Guide)",
+        "Cultural Maturity Model (How To Guide)",
+        "Organisational Cultures",
+        "Validated OCI culture assessment (certification required)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Software Selection",
+  "domain": "Applications",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Beschrijving",
+      "content": "Evalueert en selecteert softwareoplossingen op basis van zakelijke en technische criteria. Houdt rekening met functionaliteit, schaalbaarheid en leveranciersondersteuning. Ondersteunt inkoop en implementatieplanning. Waarborgt afstemming op enterprise-architectuur. Vermindert risico en verbetert ROI."
+    },
+    {
+      "type": "text",
+      "heading": "Bedrijfswaarde",
+      "content": "Waarborgt de selectie van geschikte softwareoplossingen. Vermindert implementatierisico. Verbetert ROI en prestaties. Stemt af op strategische en technische doelen. Ondersteunt inkoop en planning."
+    }
+  ]
+}
