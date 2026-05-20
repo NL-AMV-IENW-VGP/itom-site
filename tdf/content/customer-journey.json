@@ -1,0 +1,28 @@
+{
+  "title": "Customer Journey",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Customer Journey visualizes how customers experience the organization across channels and touchpoints. It highlights pain points, emotional drivers, and process interactions that shape customer satisfaction and loyalty. By aligning with the ACE model and 6D methodology, it integrates customer perspective into operational design and decision-making."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Strengthens customer-centric transformation by revealing where improvements have the most impact on satisfaction and retention. It helps prioritize initiatives that directly enhance experience, drive loyalty, and improve overall service quality."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Customer Journey Map",
+        "Persona Profiles",
+        "Customer Pain Point Analysis",
+        "Journey Validation Workshop Notes",
+        "Customer Journey Insights Report"
+      ]
+    }
+  ]
+}

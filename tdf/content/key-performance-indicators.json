@@ -1,0 +1,33 @@
+{
+  "title": "Key performance indicators",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Key performance indicators provides a structured overview of its role in the transformation process. It defines the scope, objectives, and expected outcomes. It aligns with the ACE model and supports the 6D methodology. It ensures consistency and clarity in project execution."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Key performance indicators helps the customer achieve measurable improvements. It enhances decision-making and operational efficiency. It supports strategic alignment and stakeholder engagement. It reduces risks and improves project outcomes. It provides a foundation for continuous improvement and scalability."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "KPI Framework Report",
+        "KPI Catalogue (Register)",
+        "KPI Scorecard",
+        "KPI Dashboard (Prototype)",
+        "KPI Calculation Sheet",
+        "KPI Trend Analysis Report",
+        "KPI Maturity Assessment",
+        "KPI Data Source Map",
+        "KPI Governance Model",
+        "KPI Executive Dashboard / Summary"
+      ]
+    }
+  ]
+}

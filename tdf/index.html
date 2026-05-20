@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DTC — Digital Transformation Delivery Framework</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f5f2ed;
@@ -15,7 +15,7 @@
     --shadow: 0 2px 10px rgba(26,23,20,0.08);
     --radius: 8px;
 
-    --col-header-bg: #0E2841;
+    --col-header-bg: #2F5496;
     --col-header-ink: #ffffff;
 
     /* Domain row colors — 6 domeinen */
@@ -37,33 +37,66 @@
     padding: 36px 24px 80px;
   }
 
-  /* HEADER */
-  header { text-align: center; margin-bottom: 36px; }
-  header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.9rem;
-    color: var(--ink);
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+  /* TOPBAR */
+  .topbar {
+    background: var(--col-header-bg);
+    text-align: center;
+    padding: 28px 32px 24px;
+    margin: -36px -24px 32px;
+    position: relative;
   }
-  header p.subtitle {
-    color: var(--gray);
-    font-size: 0.88rem;
-    margin-top: 6px;
+  .topbar .topbar-logo {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    height: 56px;
+  }
+  .topbar h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  .topbar .topbar-subtitle {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.72);
     font-weight: 400;
   }
-  header .badge {
+  .topbar .badge {
     display: inline-block;
-    margin-top: 12px;
-    background: #fff3cd;
-    border: 1px solid #e6c400;
-    color: #7a5c00;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: rgba(255,255,255,0.80);
     border-radius: 20px;
-    padding: 3px 14px;
-    font-size: 0.72rem;
+    padding: 2px 12px;
+    font-size: 0.68rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
+  }
+
+  /* BOTTOMBAR */
+  .bottombar {
+    background: var(--col-header-bg);
+    margin: 60px -24px -80px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
+  }
+  .bottombar .atos-logo {
+    position: absolute;
+    right: 28px;
+    height: 22px;
   }
 
   /* MATRIX */
@@ -263,8 +296,10 @@
   }
 
   .overlay-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.45rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     line-height: 1.25;
     margin-bottom: 12px;
     color: var(--ink);
@@ -372,13 +407,14 @@
 </head>
 <body>
 
-<a href="../index.html" class="back-link">ITOM Framework Navigator</a>
-
-<header>
+<div class="topbar">
+  <img class="topbar-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
   <h1>Digital business transformation delivery framework</h1>
-  <p class="subtitle">Best practice deliverables — Business aspects</p>
+  <p class="topbar-subtitle">Best practice deliverables — Business aspects</p>
   <span class="badge">Pre-release versie — work in progress</span>
-</header>
+</div>
+
+<a href="../index.html" class="back-link">ITOM Framework Navigator</a>
 
 <div class="matrix-scroll">
   <div class="matrix" id="matrix"></div>
@@ -438,8 +474,8 @@ const MATRIX = {
     drive:    ['Post-implementation audit'],
   },
   'Processes': {
-    define:   ["KPI's", 'Business capabilities', 'Process opportunities', 'Business process analysis'],
-    discover: ['Current process L1–4', 'Current service blueprint', 'Industry process benchmark', 'Process maturity', 'Process design principles', 'Customer journey'],
+    define:   ['Business capability', 'Business Process Analysis', 'Key performance indicators', 'Process Opportunities'],
+    discover: ['Current Process Flow', 'Current Service Blueprint', 'Customer Journey', 'Industry Benchmarking', 'Process Design Principles', 'Process Maturity Assessment'],
     design:   ['Future process L1–2', 'Future service blueprint', 'Monitoring indicators', 'Process automation blueprint', 'Process support model'],
     develop:  ['Future detail process L3–4', 'Monitoring solution', 'Automation solutions'],
     deliver:  [],
@@ -556,17 +592,18 @@ const CHIP_DESCRIPTIONS = {
   'IT support organization':      'De ingerichte organisatie voor IT-ondersteuning na implementatie, inclusief rollen en escalatielijnen.',
   'Post-implementation audit':    'Evaluatie achteraf om te beoordelen in welke mate de beoogde doelstellingen en businesswaarde zijn gerealiseerd.',
 
-  // Processes
-  "KPI's":                        'Key Performance Indicators: meetbare indicatoren om voortgang, prestaties en succes van de transformatie te bewaken.',
-  'Business capabilities':        'Gestructureerd overzicht van de zakelijke mogelijkheden (capabilities) die de organisatie nodig heeft om haar strategie uit te voeren.',
-  'Process opportunities':        'Identificatie van kansen voor procesverbetering, standaardisatie of automatisering.',
-  'Business process analysis':    'Analyse van huidige bedrijfsprocessen om inefficiënties, risico\'s en verbeterpotentieel te identificeren.',
-  'Current process L1–4':         'Documentatie van bestaande processen op vier detailniveaus: van hoofdproces tot processtap.',
-  'Current service blueprint':    'Visuele beschrijving van de huidige dienstverlening, klantinteracties en onderliggende activiteiten.',
-  'Industry process benchmark':   'Vergelijking van processen en prestaties met best practices en normen in de sector.',
-  'Process maturity':             'Beoordeling van de volwassenheid van processen op basis van een erkend referentiemodel.',
-  'Process design principles':    'Richtlijnen en ontwerpprincipes voor het (her)ontwerpen van processen.',
-  'Customer journey':             'Visualisatie van de klantervaring gedurende het volledige dienstverleningsproces, inclusief pijn- en kansenpunten.',
+  // Processes — Define
+  'Business capability':          'The Business Capability Model provides a structured overview of an organization\'s essential abilities needed to achieve its strategic goals. It defines what the business must be capable of doing—rather than how—serving as a stable foundation for transformation and change.',
+  'Business Process Analysis':    'Business Process Analysis provides a comprehensive understanding of how current operations function and where inefficiencies exist. It maps workflows, dependencies, and stakeholder interactions to identify improvement areas and performance drivers.',
+  'Key performance indicators':   'Key performance indicators provides a structured overview of its role in the transformation process. It defines the scope, objectives, and expected outcomes, aligning with the ACE model and supporting the 6D methodology.',
+  'Process Opportunities':        'The Process Opportunities deliverable pinpoints specific areas in business processes where performance can be improved, based on data from key performance indicators. It connects measurable results to real operational outcomes.',
+  // Processes — Discover
+  'Current Process Flow':         'The Current Process Flow (L1–L4) visualizes existing processes across multiple levels of detail—from high-level business capabilities (L1) to granular workflows (L4). It offers a structured representation of current-state operations, roles, and system interactions.',
+  'Current Service Blueprint':    'The Current Service Blueprint visualizes the end-to-end customer experience and the supporting front- and back-office processes. It maps interactions between customers, employees, and systems to expose service gaps, friction points, and dependency failures.',
+  'Customer Journey':             'The Customer Journey visualizes how customers experience the organization across channels and touchpoints. It highlights pain points, emotional drivers, and process interactions that shape customer satisfaction and loyalty.',
+  'Industry Benchmarking':        'Industry Process Framework Benchmarking compares current business processes against recognized industry standards and best practices. It highlights performance gaps, maturity differences, and innovation opportunities.',
+  'Process Design Principles':    'Process Design Principles define the guiding standards and best practices for creating or redesigning business processes. They ensure that all process improvements adhere to consistent design logic, performance goals, and customer value drivers.',
+  'Process Maturity Assessment':  'The Process Maturity Assessment evaluates the effectiveness, consistency, and optimization level of business processes across key dimensions such as governance, performance, and technology enablement.',
   'Future process L1–2':          'Ontwerp van toekomstige processen op hoofdlijnen (niveau 1 en 2).',
   'Future service blueprint':     'Blauwdruk van de toekomstige dienstverlening, klantinteracties en ondersteunende activiteiten.',
   'Monitoring indicators':        'Indicatoren voor het continu bewaken van procesperformance en -kwaliteit.',
@@ -672,6 +709,22 @@ const CHIP_DESCRIPTIONS = {
 /* Bestandslinks per chip — voorlopig leeg */
 const CHIP_FILES = {};
 
+/* TDF-specifieke deepdive links — verwijzen naar ./deepdive.html (binnen tdf/) */
+const CHIP_TDF_LINKS = {
+  // Processes × Define
+  'Business capability':        'business-capability',
+  'Business Process Analysis':  'business-process-analysis',
+  'Key performance indicators': 'key-performance-indicators',
+  'Process Opportunities':      'process-opportunities',
+  // Processes × Discover
+  'Current Process Flow':       'current-process-flow',
+  'Current Service Blueprint':  'current-service-blueprint',
+  'Customer Journey':           'customer-journey',
+  'Industry Benchmarking':      'industry-benchmarking',
+  'Process Design Principles':  'process-design-principles',
+  'Process Maturity Assessment':'process-maturity-assessment',
+};
+
 /* ---- OVERLAY LOGICA ---- */
 const overlay     = document.getElementById('overlay');
 const overlayClose = document.getElementById('overlay-close');
@@ -698,12 +751,20 @@ function showOverlay(chip, chipLabel, domain, domainIdx, phase) {
   const desc = CHIP_DESCRIPTIONS[chipLabel] || '';
   document.getElementById('overlay-desc').textContent = desc || '—';
 
-  // Deepdives
-  const deepdives = CHIP_LINKS[chipLabel] || [];
+  // Deepdives: TDF-specifiek (./deepdive.html) of ITOM (../deepdive.html)
   const ddContainer = document.getElementById('overlay-deepdives');
   ddContainer.innerHTML = '';
-  if (deepdives.length > 0) {
-    deepdives.forEach(key => {
+  const tdfKey = CHIP_TDF_LINKS[chipLabel];
+  const itomDepdives = CHIP_LINKS[chipLabel] || [];
+  if (tdfKey) {
+    const a = document.createElement('a');
+    a.className = 'overlay-link';
+    a.href = `deepdive.html?page=${tdfKey}`;
+    a.innerHTML = `<span>${chipLabel}</span><span class="link-icon">↗</span>`;
+    ddContainer.appendChild(a);
+    document.getElementById('overlay-deepdives-section').style.display = '';
+  } else if (itomDepdives.length > 0) {
+    itomDepdives.forEach(key => {
       const a = document.createElement('a');
       a.className = 'overlay-link';
       a.href = `../deepdive.html?page=${key}`;
@@ -712,11 +773,7 @@ function showOverlay(chip, chipLabel, domain, domainIdx, phase) {
     });
     document.getElementById('overlay-deepdives-section').style.display = '';
   } else {
-    const empty = document.createElement('p');
-    empty.className = 'overlay-empty';
-    empty.textContent = 'Geen deepdives gekoppeld';
-    ddContainer.appendChild(empty);
-    document.getElementById('overlay-deepdives-section').style.display = '';
+    document.getElementById('overlay-deepdives-section').style.display = 'none';
   }
 
   // Bestanden
@@ -831,5 +888,11 @@ function build() {
 
 build();
 </script>
+
+<div class="bottombar">
+  Atos — ITOM Framework
+  <img class="atos-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
+</div>
+
 </body>
 </html>

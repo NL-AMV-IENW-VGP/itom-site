@@ -1,0 +1,33 @@
+{
+  "title": "Current Service Blueprint",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Current Service Blueprint visualizes the end-to-end customer experience and the supporting front- and back-office processes. It maps interactions between customers, employees, and systems to expose service gaps, friction points, and dependency failures. By following the ACE model and 6D methodology, it links customer touchpoints to operational processes, ensuring a unified view of how services are delivered."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Improves service quality and customer satisfaction by identifying inefficiencies and experience gaps. It enables targeted service enhancements, aligns internal operations with customer expectations, and lays the groundwork for customer-centric transformation."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Current Service Blueprint Map",
+        "Service Blueprint Workshop Summary",
+        "Frontstage Interaction Map",
+        "Backstage Interaction Map",
+        "Service Evidence Inventory",
+        "Pain Point Heatmap (Service Layer)",
+        "Customer Emotion Curve",
+        "Service Role Matrix",
+        "Service Blueprint Data Sheet",
+        "Current Service Blueprint Summary Report"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Business capability",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Business Capability (Architecture) Model provides a structured overview of an organization's essential abilities needed to achieve its strategic goals. It defines what the business must be capable of doing—rather than how—serving as a stable foundation for transformation and change. The model outlines the scope, objectives, and expected outcomes of each capability, ensuring that all initiatives are purpose-driven and aligned with business strategy."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "The business benefit of the Business Capability (Architecture) Model lies in its ability to create a clear, shared understanding of what the organization does and what it needs to do to achieve its strategy. It enables better alignment between business and IT, ensuring that transformation initiatives directly support strategic objectives."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Business Capability Map",
+        "Capability Catalogue",
+        "Capability Heatmap",
+        "Capability Assessment Report",
+        "Capability-to-Process Mapping",
+        "Capability-to-Application Mapping",
+        "Capability Gap Analysis",
+        "Target Capability Model",
+        "Capability Roadmap",
+        "Capability Summary Report"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Process Design Principles",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Process Design Principles define the guiding standards and best practices for creating or redesigning business processes. They ensure that all process improvements adhere to consistent design logic, performance goals, and customer value drivers. Grounded in the ACE model and 6D methodology, they act as a blueprint for structured, high-quality process development."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Ensures consistency, efficiency, and scalability in process design across teams and functions. It accelerates transformation by embedding standardization and best practices, reducing rework, and improving long-term maintainability."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Design Principles",
+        "Design Principle Workshop Notes",
+        "Design Principle Summary Poster"
+      ]
+    }
+  ]
+}

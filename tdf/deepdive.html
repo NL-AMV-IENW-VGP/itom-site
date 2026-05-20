@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading… — TDF Deepdive</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f2ed;
+    --ink: #1a1714;
+    --gray: #6b6560;
+    --card-bg: #ffffff;
+    --border: rgba(26,23,20,0.10);
+    --shadow: 0 2px 12px rgba(26,23,20,0.09);
+    --radius: 10px;
+    --blue: #2F5496;
+    --blue-light: #e8f0fb;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 0 0 80px;
+  }
+
+  /* TOPBAR */
+  .topbar {
+    background: var(--blue);
+    text-align: center;
+    padding: 20px 32px 18px;
+    position: relative;
+  }
+  .topbar-wordmark {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+  .topbar .topbar-logo {
+    position: absolute;
+    top: 50%;
+    left: 28px;
+    transform: translateY(-50%);
+    height: 56px;
+  }
+
+  /* CONTENT */
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 24px 0;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-bottom: 28px;
+    transition: color 0.15s;
+  }
+  .back-link::before { content: '←'; }
+  .back-link:hover { color: var(--ink); }
+
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .breadcrumb-domain {
+    background: var(--blue);
+    color: #fff;
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .breadcrumb-sep { color: var(--gray); }
+  .breadcrumb-phase { color: var(--gray); }
+
+  header {
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .card-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 12px;
+  }
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--gray);
+  }
+  .card ul {
+    padding-left: 20px;
+    font-size: 0.92rem;
+    line-height: 1.85;
+    color: var(--gray);
+  }
+
+  /* BOTTOMBAR */
+  .bottombar {
+    background: var(--blue);
+    margin-top: 60px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
+  }
+  .bottombar .atos-logo {
+    position: absolute;
+    right: 28px;
+    height: 22px;
+  }
+
+  .loading, .error {
+    text-align: center;
+    padding: 80px 24px;
+    color: var(--gray);
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <img class="topbar-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
+  <span class="topbar-wordmark">Digital Transformation Delivery Framework</span>
+</div>
+
+<div class="page" id="page">
+  <p class="loading" id="loading">Loading…</p>
+</div>
+
+<div class="bottombar">
+  Atos — ITOM Framework
+  <img class="atos-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const pageKey = params.get('page');
+
+if (!pageKey) {
+  document.getElementById('loading').textContent = 'No page specified.';
+} else {
+  fetch(`content/${pageKey}.json`)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => render(data))
+    .catch(() => {
+      document.getElementById('loading').outerHTML =
+        `<p class="error">Deepdive niet gevonden: <strong>${pageKey}</strong></p>`;
+    });
+}
+
+function render(data) {
+  document.title = `${data.title} — TDF Deepdive`;
+
+  const page = document.getElementById('page');
+  page.innerHTML = `
+    <a href="./" class="back-link">TDF Matrix</a>
+    <div class="breadcrumb">
+      <span class="breadcrumb-domain">${data.domain}</span>
+      <span class="breadcrumb-sep">—</span>
+      <span class="breadcrumb-phase">${data.phase}</span>
+    </div>
+    <header><h1>${data.title}</h1></header>
+    ${data.sections.map(renderSection).join('')}
+  `;
+}
+
+function renderSection(s) {
+  if (s.type === 'text') {
+    return `
+      <div class="card">
+        <div class="card-heading">${s.heading}</div>
+        <p>${s.content}</p>
+      </div>`;
+  }
+  if (s.type === 'list') {
+    const items = s.items.map(i => `<li>${i}</li>`).join('');
+    return `
+      <div class="card">
+        <div class="card-heading">${s.heading}</div>
+        <ul>${items}</ul>
+      </div>`;
+  }
+  return '';
+}
+</script>
+</body>
+</html>

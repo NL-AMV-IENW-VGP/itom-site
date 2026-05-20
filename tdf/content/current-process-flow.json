@@ -1,0 +1,33 @@
+{
+  "title": "Current Process Flow",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Current Process Flow (L1–L4) visualizes existing processes across multiple levels of detail—from high-level business capabilities (L1) to granular workflows (L4). It offers a structured representation of current-state operations, roles, and system interactions. By aligning with the ACE model and 6D methodology, it ensures process understanding is consistent and standardized. This deliverable supports consultants in identifying bottlenecks, redundancies, and integration gaps that impact performance."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides a clear operational baseline for evaluating performance and identifying improvement opportunities. It enhances stakeholder alignment, accelerates diagnostics, and reduces project risk by ensuring everyone shares a common understanding of current operations."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Level 1 – Value Chain Diagram",
+        "Level 2 – Process Landscape Map",
+        "Level 3 – End-to-End Process Flow",
+        "Level 4 – Detailed Activity Workflow",
+        "Process Hierarchy Matrix",
+        "Process Flow Documentation Sheet",
+        "Stakeholder Review Log",
+        "Current State Summary Report",
+        "Process Tool Inventory",
+        "Process Mapping Guidelines Document"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Industry Benchmarking",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Industry Process Framework Benchmarking compares current business processes against recognized industry standards and best practices. It highlights performance gaps, maturity differences, and innovation opportunities. By aligning with the ACE model and 6D methodology, it provides a structured, data-driven assessment to guide improvement priorities."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Drives competitive advantage by revealing where processes fall short of industry leaders. It informs strategic decisions, supports standardization, and helps define realistic improvement targets that align with proven, high-performance frameworks."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Industry Process Framework Benchmarking",
+        "Benchmark Data Catalogue",
+        "Benchmark Heatmap",
+        "Benchmark Insights Report",
+        "Benchmark Validation Workshop Notes"
+      ]
+    }
+  ]
+}

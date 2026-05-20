@@ -1,0 +1,28 @@
+{
+  "title": "Process Maturity Assessment",
+  "domain": "Processes",
+  "phase": "Discover",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Process Maturity Assessment evaluates the effectiveness, consistency, and optimization level of business processes across key dimensions such as governance, performance, and technology enablement. It aligns with the ACE model and 6D methodology, using defined maturity criteria to assess current capabilities and identify improvement stages."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Provides a clear roadmap for process evolution, helping organizations prioritize investments and improve systematically. It strengthens governance, reduces inefficiency, and builds a foundation for sustainable process excellence and scalability."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process Maturity Assessment",
+        "Maturity Model Framework",
+        "Maturity Heatmap",
+        "Assessment Survey Results",
+        "Maturity Insights Report"
+      ]
+    }
+  ]
+}

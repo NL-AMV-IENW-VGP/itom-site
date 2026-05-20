@@ -1,0 +1,32 @@
+{
+  "title": "Process Opportunities",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "The Process Opportunities deliverable pinpoints specific areas in business processes where performance can be improved, based on data from key performance indicators. For example, if KPIs show long response times, high error rates, or low customer satisfaction, this deliverable identifies the root causes and recommends targeted actions such as automation, process redesign, or clearer role definitions. It connects measurable results—like processing speed or cost per transaction—to real operational outcomes, showing how each process supports or hinders strategic goals."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Transforms KPI insights into targeted process improvements that enhance efficiency, reduce costs, and improve service quality. By aligning with the ACE model and 6D methodology, it ensures improvements are strategic, measurable, and results-driven, delivering clear operational and business value."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "KPI assessment",
+        "Process Performance Report",
+        "Process Opportunity Catalogue",
+        "Root-Cause Analysis Report",
+        "Process Heatmap",
+        "Process Prioritization Matrix",
+        "Improvement Initiative Sheet",
+        "Process Opportunity Roadmap",
+        "Process Opportunities Summary Report"
+      ]
+    }
+  ]
+}

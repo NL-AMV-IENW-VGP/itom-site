@@ -1,0 +1,32 @@
+{
+  "title": "Business Process Analysis",
+  "domain": "Processes",
+  "phase": "Define",
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Description",
+      "content": "Business Process Analysis provides a comprehensive understanding of how current operations function and where inefficiencies exist. It maps workflows, dependencies, and stakeholder interactions to identify improvement areas and performance drivers. Aligned with the ACE model and 6D methodology, it structures analysis around clear objectives and measurable outcomes. Tailored for experienced consultants, it establishes a fact-based foundation for transformation initiatives, ensuring consistency, transparency, and alignment across business and IT."
+    },
+    {
+      "type": "text",
+      "heading": "Business Value",
+      "content": "Delivers insight into operational performance, enabling data-driven decisions that enhance efficiency, agility, and service quality. It strengthens alignment between business goals and execution, reduces risks through clarity, and provides a solid baseline for continuous improvement and scalability."
+    },
+    {
+      "type": "list",
+      "heading": "Related Guidelines & Tools",
+      "items": [
+        "Process mining tooling (e.g. Signavio or Celonis)",
+        "As-Is Process Maps",
+        "Process Walkthrough Report",
+        "Process Performance Assessment",
+        "Pain Point & Bottleneck Analysis",
+        "Process Stakeholder Map",
+        "Process Capability Assessment",
+        "Process Interdependency Map",
+        "Business Process Analysis Summary Report"
+      ]
+    }
+  ]
+}
