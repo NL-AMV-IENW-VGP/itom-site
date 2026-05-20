@@ -389,6 +389,52 @@
   }
   .legend-linked .chip-ex::after { content: ' ↗'; font-size: 0.58rem; opacity: 0.6; }
 
+  /* CHIP HOVER TOOLTIP */
+  .chip-tooltip {
+    position: fixed;
+    z-index: 2000;
+    pointer-events: none;
+    background: #1a1714;
+    color: #f0ece6;
+    border-radius: 8px;
+    padding: 10px 14px;
+    max-width: 260px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    opacity: 0;
+    transition: opacity 0.12s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .chip-tooltip.visible { opacity: 1; }
+  .chip-tooltip-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  .chip-tooltip-desc {
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: rgba(240,236,230,0.75);
+    margin-bottom: 8px;
+  }
+  .chip-tooltip-meta {
+    font-size: 0.72rem;
+    color: rgba(240,236,230,0.5);
+    border-top: 1px solid rgba(240,236,230,0.12);
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .chip-tooltip-meta .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5b9bd5;
+    flex-shrink: 0;
+  }
+
   /* BACK LINK */
   .back-link {
     display: inline-flex;
@@ -421,6 +467,8 @@
 </div>
 
 <div class="legend" id="legend"></div>
+
+<div id="chip-tooltip" class="chip-tooltip" aria-hidden="true"></div>
 
 <!-- Overlay panel -->
 <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
@@ -709,6 +757,13 @@ const CHIP_DESCRIPTIONS = {
 /* Bestandslinks per chip — voorlopig leeg */
 const CHIP_FILES = {};
 
+/* Aantal gelinkte artefacten per chip — voor hover tooltip */
+const CHIP_ARTIFACT_COUNTS = {
+  'Business capability':       2,
+  'Process Opportunities':     1,
+  'Current Process Flow':      1,
+};
+
 /* TDF-specifieke deepdive links — verwijzen naar ./deepdive.html (binnen tdf/) */
 const CHIP_TDF_LINKS = {
   // Processes × Define
@@ -808,6 +863,21 @@ overlay.addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') hideOverlay(); });
 
+/* ---- CHIP TOOLTIP ---- */
+const tooltip = document.getElementById('chip-tooltip');
+function positionTooltip(e) {
+  const gap = 14;
+  const tw = tooltip.offsetWidth;
+  const th = tooltip.offsetHeight;
+  let x = e.clientX + gap;
+  let y = e.clientY - th / 2;
+  if (x + tw > window.innerWidth - 8) x = e.clientX - tw - gap;
+  if (y < 8) y = 8;
+  if (y + th > window.innerHeight - 8) y = window.innerHeight - th - 8;
+  tooltip.style.left = x + 'px';
+  tooltip.style.top  = y + 'px';
+}
+
 /* ---- MATRIX OPBOUWEN ---- */
 function build() {
   const matrix = document.getElementById('matrix');
@@ -858,6 +928,21 @@ function build() {
             showOverlay(chip, item, domain, rowIdx, ph.label);
           }
         });
+
+        chip.addEventListener('mouseenter', e => {
+          const desc = CHIP_DESCRIPTIONS[item] || '';
+          const count = CHIP_ARTIFACT_COUNTS[item] || 0;
+          const countLabel = count === 1 ? '1 artifact linked' : count > 1 ? `${count} artifacts linked` : 'No artifacts linked';
+          tooltip.innerHTML =
+            `<div class="chip-tooltip-title">${item}</div>` +
+            (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
+            `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
+          positionTooltip(e);
+          tooltip.classList.add('visible');
+        });
+
+        chip.addEventListener('mousemove', positionTooltip);
+        chip.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
 
         cell.appendChild(chip);
       });

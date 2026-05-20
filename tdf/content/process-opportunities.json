@@ -27,6 +27,18 @@
         "Process Opportunity Roadmap",
         "Process Opportunities Summary Report"
       ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Process framework - Retail",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Process%20framework%20-%20Retail.pptx?d=wc0cc041b386941f6a1cbe3210f62d3fe&csf=1&web=1&e=pgCNTk"
+        }
+      ]
     }
   ]
 }

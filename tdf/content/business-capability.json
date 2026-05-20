@@ -28,6 +28,24 @@
         "Capability Roadmap",
         "Capability Summary Report"
       ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Business capability model - Retail",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Detail%20level%20processes%20-%20Retail.pptx?d=wde6cb481a5fe43ecbe008e2460f02aa3&csf=1&web=1&e=2WLpSw"
+        },
+        {
+          "label": "Business capability model (application mapping)",
+          "filetype": "PPT",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:p:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/High%20level%20proceses%20-%20applications%20mapping.pptx?d=w3763afde1447450db7760d12feb05c4f&csf=1&web=1&e=dWxmUk"
+        }
+      ]
     }
   ]
 }

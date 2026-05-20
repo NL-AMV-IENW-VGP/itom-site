@@ -28,6 +28,18 @@
         "Process Tool Inventory",
         "Process Mapping Guidelines Document"
       ]
+    },
+    {
+      "type": "links",
+      "heading": "Artifacts",
+      "items": [
+        {
+          "label": "Current process model",
+          "filetype": "XLS",
+          "submittedBy": "Bob Corman",
+          "url": "https://atos365.sharepoint.com/:x:/r/sites/onedtcapproach_migrated/Shared%20Documents/General/Deliverables%20collection/2.%20Processes/Current%20process%20model.xlsx?d=w3ebf61fc27d64078a05b418261d265dc&csf=1&web=1&e=giwgb7"
+        }
+      ]
     }
   ]
 }
