@@ -1220,7 +1220,6 @@ function build() {
         const chip = document.createElement('span');
         chip.className = 'chip';
         chip.textContent = item;
-        chip.title = item;
 
         const deepdives = CHIP_LINKS[item];
         if (deepdives && deepdives.length > 0) {
@@ -1323,7 +1322,6 @@ function buildExtensions() {
         const chip = document.createElement('span');
         chip.className = 'chip';
         chip.textContent = item;
-        chip.title = item;
 
         if ((CHIP_LINKS[item] || []).length > 0) chip.classList.add('linked');
 
