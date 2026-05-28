@@ -1,9 +1,6 @@
 // ITOM Auth — Supabase magic-link login
-// Configureer hieronder jouw Supabase project credentials.
-// Deze waarden zijn veilig voor client-side gebruik (anon key is by design publiek).
-//
-// Aanmaken via: https://supabase.com
-// Project URL en anon key vind je in: Project Settings → API
+// Credentials worden bij deployment injecteerd via GitHub Actions secrets.
+// Zie .github/workflows/publish.yml en GitHub repo secrets: SUPABASE_URL, SUPABASE_KEY.
 
 const SUPABASE_URL = 'https://ojjdstkuuhwgvusqomsm.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_bZn3MVoZh4qGrxgr_tM9JQ_GXjfh6Ij';

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAP Activate — Deliverable Matrix</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/auth.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="../assets/auth.js"></script>
+<style>
+  :root {
+    --bg: #f0f4f8;
+    --ink: #0f1923;
+    --gray: #5a6677;
+    --card-bg: #ffffff;
+    --border: rgba(15,25,35,0.10);
+    --border-strong: rgba(15,25,35,0.16);
+    --radius: 8px;
+
+    --header-bg: #1C3D5A;
+    --header-ink: #ffffff;
+
+    /* Swimlane kleuren */
+    --lane0-color: #005A9E;   /* On Premise */
+    --lane0-mid:   #C8DDEF;
+    --lane0-light: #EBF3FA;
+    --lane1-color: #5A2D82;   /* Private Cloud */
+    --lane1-mid:   #D9CEF0;
+    --lane1-light: #F0EAF8;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 36px 24px 80px;
+  }
+
+  /* ─── TOPBAR ─── */
+  .topbar {
+    background: var(--header-bg);
+    text-align: center;
+    padding: 28px 32px 24px;
+    margin: -36px -24px 32px;
+    position: relative;
+  }
+  .topbar .topbar-logo {
+    position: absolute;
+    top: 50%; left: 28px;
+    transform: translateY(-50%);
+    height: 56px;
+  }
+  .topbar h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 6px;
+  }
+  .topbar .topbar-subtitle {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.72);
+    font-weight: 400;
+  }
+  .topbar .badge {
+    display: inline-block;
+    margin-top: 10px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: rgba(255,255,255,0.80);
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .topbar-submit {
+    position: absolute;
+    right: 28px; top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255,255,255,0.78);
+    font-size: 0.78rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.15s ease;
+  }
+  .topbar-submit:hover { color: #ffffff; }
+
+  /* ─── BOTTOMBAR ─── */
+  .bottombar {
+    background: var(--header-bg);
+    margin: 60px -24px -80px;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+  .bottombar .atos-logo {
+    position: absolute; right: 28px;
+    height: 22px;
+  }
+
+  /* ─── BACK LINK ─── */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    font-size: 0.82rem;
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--ink); }
+  .back-link::before { content: '←'; }
+
+  /* ─── MATRIX CONTAINER ─── */
+  .matrix-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(15,25,35,0.10);
+  }
+  .matrix {
+    display: grid;
+    /* Rijlabel (160px) + 6 fase-kolommen */
+    grid-template-columns: 160px repeat(6, minmax(180px, 1fr));
+    min-width: 1240px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: var(--card-bg);
+  }
+
+  /* ─── HEADER ─── */
+  .corner {
+    background: var(--header-bg);
+    border-right: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 3px solid rgba(255,255,255,0.12);
+    padding: 10px 12px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .corner-label {
+    font-size: 0.60rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.40);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
+
+  .col-header {
+    background: var(--header-bg);
+    color: var(--header-ink);
+    padding: 14px 12px 12px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.10);
+    border-bottom: 3px solid rgba(255,255,255,0.12);
+  }
+  .col-header .ph-num {
+    font-size: 0.60rem;
+    font-weight: 700;
+    opacity: 0.48;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .col-header .ph-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.15;
+  }
+  .col-header .ph-desc {
+    font-size: 0.65rem;
+    font-weight: 400;
+    opacity: 0.58;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+
+  /* ─── SWIMLANE RIJLABELS ─── */
+  .row-label {
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.35;
+    gap: 5px;
+    border-right: 3px solid rgba(255,255,255,0.22);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    min-height: 90px;
+  }
+  .row-label .lane-tag {
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    opacity: 0.70;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 2px 7px;
+  }
+  .lane-0 .row-label { background: var(--lane0-color); }
+  .lane-1 .row-label { background: var(--lane1-color); }
+
+  /* ─── SWIMLANE BODY — CSS subgrid voor fase-overspanning ─── */
+  /*
+   * De swimlane-body spant kolommen 2-7 (alle 6 fasen) in de parent grid.
+   * Met display:grid + grid-template-columns:subgrid erven we de ouder-kolommen,
+   * zodat chips met grid-column:X/Y meerdere fasen kunnen beslaan.
+   * Geen horizontale padding om de subgrid-kolommen exact uit te lijnen met de kolomkoppen.
+   */
+  .swimlane-body {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-auto-rows: auto;
+    align-content: start;
+    row-gap: 4px;
+    column-gap: 0;
+    padding: 8px 0;
+    min-height: 90px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+
+    /* Fase-kolomscheiders als achtergrondpatroon (uitlijning op subgrid-kolommen) */
+    background-image:
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent calc(100% / 6 - 1px),
+        var(--border-strong) calc(100% / 6 - 1px),
+        var(--border-strong) calc(100% / 6)
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent calc(100% / 6),
+        rgba(0,0,0,0.022) calc(100% / 6),
+        rgba(0,0,0,0.022) calc(200% / 6),
+        transparent calc(200% / 6)
+      );
+  }
+  .lane-0 .swimlane-body { background-color: var(--lane0-light); }
+  .lane-1 .swimlane-body { background-color: var(--lane1-light); }
+
+  /* ─── CHIPS ─── */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 9px;
+    border-radius: 5px;
+    font-size: 0.70rem;
+    font-weight: 500;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: transform 0.14s ease, box-shadow 0.14s ease, filter 0.14s ease;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 6px;
+    max-width: calc(100% - 12px);
+  }
+  .chip:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    filter: brightness(0.92);
+  }
+  .chip.active-overlay {
+    box-shadow: 0 0 0 2px currentColor;
+    opacity: 1;
+  }
+
+  .lane-0 .chip { background: var(--lane0-mid); color: var(--lane0-color); }
+  .lane-1 .chip { background: var(--lane1-mid); color: var(--lane1-color); }
+
+  /* ─── SPANNING CHIP — deliverable die meerdere fasen beslaat ─── */
+  /*
+   * Overspannende chips worden via grid-column: X / Y in de subgrid geplaatst,
+   * waardoor ze visueel meerdere fase-kolommen beslaan.
+   * De dashed border en span-badge maken de fase-overloop expliciet zichtbaar.
+   */
+  .chip.spanning {
+    white-space: normal;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    overflow: visible;
+    border: 1.5px dashed currentColor;
+    border-radius: 7px;
+    padding: 6px 10px;
+    margin: 0 6px;
+    max-width: none;
+    font-weight: 600;
+    background: transparent;
+  }
+  .lane-0 .chip.spanning { background: rgba(0,90,158,0.07); }
+  .lane-1 .chip.spanning { background: rgba(90,45,130,0.07); }
+
+  .chip.spanning .span-badge {
+    display: block;
+    font-size: 0.56rem;
+    font-weight: 600;
+    opacity: 0.55;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  /* ─── OVERLAY ─── */
+  .overlay {
+    position: fixed; inset: 0;
+    background: rgba(15,25,35,0.52);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.20s;
+  }
+  .overlay.active { opacity: 1; pointer-events: all; }
+  .overlay-card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 36px 40px 32px;
+    max-width: 520px; width: 90%;
+    max-height: 85vh; overflow-y: auto;
+    box-shadow: 0 24px 80px rgba(15,25,35,0.22);
+    transform: translateY(16px) scale(0.97);
+    transition: transform 0.22s cubic-bezier(.4,0,.2,1);
+    position: relative;
+  }
+  .overlay.active .overlay-card { transform: translateY(0) scale(1); }
+  .overlay-close {
+    position: absolute; top: 16px; right: 18px;
+    background: none; border: none;
+    font-size: 1.4rem; cursor: pointer;
+    color: var(--gray); line-height: 1;
+    padding: 4px 8px; border-radius: 6px;
+    transition: background 0.12s;
+  }
+  .overlay-close:hover { background: var(--bg); color: var(--ink); }
+
+  .overlay-breadcrumb {
+    display: flex; align-items: center; gap: 6px;
+    margin-bottom: 14px; flex-wrap: wrap;
+  }
+  .breadcrumb-lane {
+    display: inline-block; padding: 3px 10px;
+    border-radius: 20px; font-size: 0.64rem;
+    font-weight: 700; color: #fff;
+    letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .breadcrumb-sep { color: var(--gray); font-size: 0.75rem; opacity: 0.5; }
+  .breadcrumb-phase {
+    font-size: 0.68rem; font-weight: 600;
+    color: var(--gray); text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .overlay-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem; font-weight: 600;
+    letter-spacing: -0.01em; line-height: 1.25;
+    margin-bottom: 12px; color: var(--ink);
+    padding-right: 24px;
+  }
+  .overlay-desc {
+    color: var(--gray); line-height: 1.65;
+    font-size: 0.90rem; margin-bottom: 26px;
+  }
+  .overlay-section { margin-bottom: 18px; }
+  .overlay-section-label {
+    font-size: 0.66rem; font-weight: 700;
+    color: var(--gray); text-transform: uppercase;
+    letter-spacing: 0.12em; margin-bottom: 8px;
+    padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+  .overlay-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 10px; border-radius: 8px;
+    text-decoration: none; color: var(--ink);
+    font-size: 0.82rem; font-weight: 500;
+    margin-bottom: 4px; background: var(--bg);
+    transition: background 0.12s;
+  }
+  .overlay-link:hover { background: #dce4ec; }
+  .overlay-link .link-icon { font-size: 0.72rem; opacity: 0.45; margin-left: auto; flex-shrink: 0; }
+  .overlay-empty {
+    font-size: 0.78rem; color: var(--gray);
+    opacity: 0.5; font-style: italic; padding: 4px 0;
+  }
+
+  /* ─── CHIP TOOLTIP ─── */
+  .chip-tooltip {
+    position: fixed; z-index: 2000;
+    pointer-events: none;
+    background: #0f1923; color: #f0f4f8;
+    border-radius: 8px; padding: 10px 14px;
+    max-width: 280px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.28);
+    opacity: 0; transition: opacity 0.12s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .chip-tooltip.visible { opacity: 1; }
+  .chip-tooltip-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.78rem; font-weight: 600;
+    margin-bottom: 5px; color: #ffffff;
+  }
+  .chip-tooltip-desc {
+    font-size: 0.76rem; line-height: 1.5;
+    color: rgba(240,244,248,0.75); margin-bottom: 8px;
+  }
+  .chip-tooltip-meta {
+    font-size: 0.70rem; color: rgba(240,244,248,0.50);
+    border-top: 1px solid rgba(240,244,248,0.12);
+    padding-top: 6px; display: flex; align-items: center; gap: 5px;
+  }
+  .chip-tooltip-meta .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #5b9bd5; flex-shrink: 0;
+  }
+
+  /* ─── LEGENDA ─── */
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 18px;
+    margin-top: 24px; justify-content: center; align-items: center;
+  }
+  .legend-item {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 0.75rem; color: var(--gray); font-weight: 500;
+  }
+  .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+  .legend-sep { color: var(--border); font-size: 1.2rem; line-height: 1; }
+  .legend-span-item {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 0.75rem; color: var(--gray);
+  }
+  .legend-span-chip {
+    display: inline-block;
+    padding: 2px 9px; border-radius: 4px;
+    font-size: 0.66rem; font-weight: 600;
+    border: 1.5px dashed var(--lane0-color);
+    color: var(--lane0-color);
+  }
+</style>
+</head>
+<body>
+
+<!-- Auth overlay (zelfde patroon als TDF) -->
+<div id="auth-overlay" style="display:none">
+  <div class="auth-card">
+    <h2>SAP Activate — Deliverable Matrix</h2>
+    <p class="auth-subtitle">Log in met je Atos-e-mailadres om toegang te krijgen.</p>
+    <input id="auth-email" type="email" placeholder="naam@atos.net" autocomplete="email">
+    <button id="auth-btn" onclick="sendMagicLink()">Stuur inloglink</button>
+    <p id="auth-msg" class="auth-msg"></p>
+  </div>
+</div>
+
+<!-- Hoofdinhoud — verborgen totdat gebruiker is ingelogd -->
+<div id="main-content" style="display:none">
+
+<div class="topbar">
+  <img class="topbar-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
+  <h1>SAP Activate — Deliverable Matrix</h1>
+  <p class="topbar-subtitle">Project deliverables per fase en implementatiescenario</p>
+  <span class="badge">Pre-release versie — work in progress</span>
+  <a class="topbar-submit" href="#" target="_blank" rel="noopener">&#8593; Submit a document</a>
+</div>
+
+<a href="../index.html" class="back-link">ITOM Framework Navigator</a>
+
+<div class="matrix-scroll">
+  <div class="matrix" id="matrix"></div>
+</div>
+
+<div class="legend" id="legend"></div>
+
+<!-- Tooltip -->
+<div id="chip-tooltip" class="chip-tooltip" aria-hidden="true"></div>
+
+<!-- Overlay panel -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title">
+  <div class="overlay-card">
+    <button class="overlay-close" id="overlay-close" aria-label="Sluiten">&#10005;</button>
+    <div class="overlay-breadcrumb" id="overlay-breadcrumb"></div>
+    <h2 class="overlay-title" id="overlay-title"></h2>
+    <p class="overlay-desc" id="overlay-desc"></p>
+    <div class="overlay-section" id="overlay-files-section">
+      <div class="overlay-section-label">Accelerators &amp; bestanden</div>
+      <div id="overlay-files"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   DATA — SAP Activate fasen en swimlanes
+   ═══════════════════════════════════════════════════════════════ */
+
+const PHASES = [
+  { key: 'discover', label: 'Discover', num: '1', desc: 'Scope, fit & business case' },
+  { key: 'prepare',  label: 'Prepare',  num: '2', desc: 'Project setup & planning' },
+  { key: 'explore',  label: 'Explore',  num: '3', desc: 'Fit-to-standard & design' },
+  { key: 'realize',  label: 'Realize',  num: '4', desc: 'Configure, develop & test' },
+  { key: 'deploy',   label: 'Deploy',   num: '5', desc: 'Cutover & go-live' },
+  { key: 'run',      label: 'Run',      num: '6', desc: 'Hypercare & operations' },
+];
+
+const SWIMLANES = [
+  {
+    key:   'onpremise',
+    label: 'On Premise',
+    tag:   'SAP ECC / S/4 on-prem',
+    color: '#005A9E',
+    idx:   0,
+  },
+  {
+    key:   'privatecloud',
+    label: 'Private Cloud',
+    tag:   'RISE with SAP / PCE',
+    color: '#5A2D82',
+    idx:   1,
+  },
+];
+
+/*
+ * TIJDELIJKE PROTOTYPE-ARTEFACTEN — te vervangen zodra de echte deliverables-lijst beschikbaar is.
+ *
+ * Formaat: { lane, label, phases, desc }
+ *   phases: array met één of meerdere phase-keys.
+ *   Meerdere phase-keys = spanning deliverable (beslaat meerdere fasen).
+ *
+ * Let op het voorbeeld van System Integration Testing (On Premise):
+ *   phases: ['explore', 'realize'] — visueel overspant het twee kolommen via CSS subgrid.
+ */
+const DELIVERABLES = [
+  /* ─── On Premise ─── */
+  {
+    lane: 'onpremise',
+    label: 'Fit-to-Standard Workshop',
+    phases: ['discover'],
+    desc: 'Verkenning van het standaard SAP-procesmodel versus de bedrijfsspecifieke vereisten. Identificeert gaps en bepaalt de customization-behoefte.',
+  },
+  {
+    lane: 'onpremise',
+    label: 'System Landscape Design',
+    phases: ['prepare'],
+    desc: 'Ontwerp van de drie-track systeemomgeving (DEV / QA / PROD) inclusief transportroutes, autorisatiescenario en beheermodel.',
+  },
+  {
+    lane: 'onpremise',
+    label: 'System Integration Testing',
+    phases: ['explore', 'realize'],   /* ← SPANNING: beslaat twee opeenvolgende fasen */
+    desc: 'Integratietests die starten in Explore (proof-of-concept scenario\'s op basis van de fit-to-standard-bevindingen) en doorlopen in Realize (volledige end-to-end ketenvalidatie inclusief interfaces en migratie). Een typisch voorbeeld van een deliverable die twee fasen beslaat.',
+  },
+  {
+    lane: 'onpremise',
+    label: 'Cutover Plan',
+    phases: ['deploy'],
+    desc: 'Gedetailleerd plan voor de migratie van het legacy-systeem naar SAP: tijdlijn, go/no-go criteria, back-out procedure en communicatiematrix.',
+  },
+  {
+    lane: 'onpremise',
+    label: 'Hypercare Support',
+    phases: ['run'],
+    desc: 'Intensieve ondersteuning direct na go-live: verhoogde servicedesk-bezetting, verhoogd monitoringsniveau en afgesproken responstijden voor critical issues.',
+  },
+
+  /* ─── Private Cloud ─── */
+  {
+    lane: 'privatecloud',
+    label: 'Cloud Readiness Assessment',
+    phases: ['discover'],
+    desc: 'Beoordeling van de gereedheid voor RISE with SAP / Private Cloud Edition: connectiviteit, data-soevereiniteit, compliancevereisten en netwerkarchitectuur.',
+  },
+  {
+    lane: 'privatecloud',
+    label: 'Tenant Provisioning',
+    phases: ['prepare'],
+    desc: 'Activering en basisconfiguratie van de SAP BTP / Private Cloud-tenant: identiteitskoppeling (SSO/IDP), basisrollen en transport-landscape.',
+  },
+  {
+    lane: 'privatecloud',
+    label: 'Configuration Workbooks',
+    phases: ['explore'],
+    desc: 'Gestructureerde werkboeken per bedrijfsproces waarin fit-to-standard-beslissingen, afwijkingen en oplossingsrichting worden vastgelegd.',
+  },
+  {
+    lane: 'privatecloud',
+    label: 'Data Migration Testing',
+    phases: ['realize'],
+    desc: 'Test-runs voor datamigiratie naar de cloudomgeving: validatie van mappings, volumecontrole, datakwaliteitsregels en herstelscenario\'s.',
+  },
+  {
+    lane: 'privatecloud',
+    label: 'Go-Live Execution',
+    phases: ['deploy'],
+    desc: 'Gecoördineerde go-live: activering van de productie-tenant, finale datamigiratie, gebruikersactivering en eerste procesvalidatie door keyusers.',
+  },
+  {
+    lane: 'privatecloud',
+    label: 'Operations Handover',
+    phases: ['run'],
+    desc: 'Overdracht van het systeem naar de staande operationsorganisatie: runbooks, monitoringafspraken, escalatiemodel en kennisoverdracht aan beheer.',
+  },
+];
+
+/* Bestandslinks per deliverable — later te vullen met accelerator-URLs */
+const CHIP_FILES = {};
+
+/* ═══════════════════════════════════════════════════════════════
+   OVERLAY LOGICA
+   ═══════════════════════════════════════════════════════════════ */
+
+const overlay      = document.getElementById('overlay');
+const overlayClose = document.getElementById('overlay-close');
+let activeChip = null;
+
+function showOverlay(chip, del, lane) {
+  if (activeChip) activeChip.classList.remove('active-overlay');
+  activeChip = chip;
+  chip.classList.add('active-overlay');
+
+  const phaseLabel = del.phases
+    .map(pk => PHASES.find(p => p.key === pk).label)
+    .join(' → ');
+
+  document.getElementById('overlay-breadcrumb').innerHTML =
+    `<span class="breadcrumb-lane" style="background:${lane.color}">${lane.label}</span>` +
+    `<span class="breadcrumb-sep">—</span>` +
+    `<span class="breadcrumb-phase">${phaseLabel}</span>`;
+
+  document.getElementById('overlay-title').textContent = del.label;
+  document.getElementById('overlay-desc').textContent  = del.desc || '—';
+
+  const files         = CHIP_FILES[del.label] || [];
+  const filesContainer = document.getElementById('overlay-files');
+  filesContainer.innerHTML = '';
+  if (files.length > 0) {
+    files.forEach(f => {
+      const a = document.createElement('a');
+      a.className = 'overlay-link';
+      a.href = f.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      a.innerHTML = `<span>${f.label}</span><span class="link-icon">&#8599;</span>`;
+      filesContainer.appendChild(a);
+    });
+  } else {
+    filesContainer.innerHTML = '<p class="overlay-empty">Nog geen accelerators gekoppeld.</p>';
+  }
+  document.getElementById('overlay-files-section').style.display = '';
+
+  overlay.classList.add('active');
+  overlayClose.focus();
+}
+
+function hideOverlay() {
+  overlay.classList.remove('active');
+  if (activeChip) { activeChip.classList.remove('active-overlay'); activeChip = null; }
+}
+
+overlayClose.addEventListener('click', hideOverlay);
+overlay.addEventListener('click', e => { if (e.target === overlay) hideOverlay(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') hideOverlay(); });
+
+/* ═══════════════════════════════════════════════════════════════
+   CHIP TOOLTIP
+   ═══════════════════════════════════════════════════════════════ */
+
+const tooltip = document.getElementById('chip-tooltip');
+
+function positionTooltip(e) {
+  const gap = 14;
+  const tw  = tooltip.offsetWidth;
+  const th  = tooltip.offsetHeight;
+  let x = e.clientX + gap;
+  let y = e.clientY - th / 2;
+  if (x + tw > window.innerWidth  - 8) x = e.clientX - tw - gap;
+  if (y < 8) y = 8;
+  if (y + th > window.innerHeight - 8) y = window.innerHeight - th - 8;
+  tooltip.style.left = x + 'px';
+  tooltip.style.top  = y + 'px';
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MATRIX OPBOUWEN
+   ═══════════════════════════════════════════════════════════════ */
+
+function buildMatrix() {
+  const matrix = document.getElementById('matrix');
+
+  /* Hoekcel */
+  const corner = document.createElement('div');
+  corner.className = 'corner';
+  corner.innerHTML = '<span class="corner-label">Scenario<br>&#8595; &nbsp; Fase &nbsp;&#8594;</span>';
+  matrix.appendChild(corner);
+
+  /* Fase-kolomkoppen */
+  PHASES.forEach(ph => {
+    const div = document.createElement('div');
+    div.className = 'col-header';
+    div.innerHTML =
+      `<div class="ph-num">Fase ${ph.num}</div>` +
+      `<div class="ph-name">${ph.label}</div>` +
+      `<div class="ph-desc">${ph.desc}</div>`;
+    matrix.appendChild(div);
+  });
+
+  /* Swimlane rijen */
+  SWIMLANES.forEach(lane => {
+    /* ── Rijlabel ── */
+    const label = document.createElement('div');
+    label.className = `row-label lane-${lane.idx}`;
+    label.innerHTML =
+      `<span>${lane.label}</span>` +
+      `<span class="lane-tag">${lane.tag}</span>`;
+    matrix.appendChild(label);
+
+    /* ── Swimlane body (subgrid) ── */
+    const body = document.createElement('div');
+    body.className = `swimlane-body lane-${lane.idx}`;
+
+    /* Filter deliverables voor deze lane */
+    const laneDeliverables = DELIVERABLES.filter(d => d.lane === lane.key);
+
+    laneDeliverables.forEach(del => {
+      const startIdx   = PHASES.findIndex(p => p.key === del.phases[0]);
+      const endIdx     = PHASES.findIndex(p => p.key === del.phases[del.phases.length - 1]);
+      const isSpanning = del.phases.length > 1;
+
+      const chip = document.createElement('span');
+      chip.className = 'chip' + (isSpanning ? ' spanning' : '');
+
+      /*
+       * Subgrid-plaatsing: kolom-index is 1-gebaseerd binnen de subgrid (= de 6 fase-kolommen).
+       * Fase 1 (Discover) = kolom 1, Fase 6 (Run) = kolom 6.
+       * gridColumn: "start / end+1" voor subgrid auto-placement over meerdere kolommen.
+       */
+      chip.style.gridColumn = `${startIdx + 1} / ${endIdx + 2}`;
+
+      if (isSpanning) {
+        const spanLabel = del.phases
+          .map(pk => PHASES.find(p => p.key === pk).label)
+          .join(' → ');
+        chip.innerHTML =
+          `${del.label}` +
+          `<span class="span-badge">${spanLabel}</span>`;
+      } else {
+        chip.textContent = del.label;
+      }
+
+      /* Tooltip */
+      chip.addEventListener('mouseenter', e => {
+        const phaseLabel = del.phases
+          .map(pk => PHASES.find(p => p.key === pk).label)
+          .join(' → ');
+        const desc = del.desc || '';
+        tooltip.innerHTML =
+          `<div class="chip-tooltip-title">${del.label}</div>` +
+          (desc ? `<div class="chip-tooltip-desc">${desc.length > 135 ? desc.slice(0, 132) + '…' : desc}</div>` : '') +
+          `<div class="chip-tooltip-meta"><span class="dot"></span>${phaseLabel}</div>`;
+        positionTooltip(e);
+        tooltip.classList.add('visible');
+      });
+      chip.addEventListener('mousemove', positionTooltip);
+      chip.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
+
+      /* Click → overlay */
+      chip.addEventListener('click', e => {
+        e.stopPropagation();
+        if (activeChip === chip && overlay.classList.contains('active')) {
+          hideOverlay();
+        } else {
+          showOverlay(chip, del, lane);
+        }
+      });
+
+      body.appendChild(chip);
+    });
+
+    matrix.appendChild(body);
+  });
+
+  /* ── Legenda ── */
+  const legend = document.getElementById('legend');
+
+  SWIMLANES.forEach(lane => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `<span class="legend-dot" style="background:${lane.color}"></span>${lane.label}`;
+    legend.appendChild(item);
+  });
+
+  const sep = document.createElement('span');
+  sep.className = 'legend-sep';
+  sep.textContent = '|';
+  legend.appendChild(sep);
+
+  const spanItem = document.createElement('div');
+  spanItem.className = 'legend-span-item';
+  spanItem.innerHTML =
+    `<span class="legend-span-chip">deliverable</span>` +
+    `<span>= beslaat meerdere fasen</span>`;
+  legend.appendChild(spanItem);
+}
+
+buildMatrix();
+initAuth();
+</script>
+
+<div class="bottombar">
+  Atos &mdash; SAP Activate Deliverable Matrix
+  <img class="atos-logo" src="../assets/img/atos-logo-white.svg" alt="Atos">
+</div>
+
+</div><!-- /main-content -->
+
+</body>
+</html>
