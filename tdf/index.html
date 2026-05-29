@@ -1175,6 +1175,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') hideOverlay(
 
 /* ---- CHIP TOOLTIP ---- */
 const tooltip = document.getElementById('chip-tooltip');
+let tooltipTimer = null;
 function positionTooltip(e) {
   const gap = 14;
   const tw = tooltip.offsetWidth;
@@ -1242,16 +1243,21 @@ function build() {
           const desc = CHIP_DESCRIPTIONS[item] || '';
           const count = CHIP_ARTIFACT_COUNTS[item] || 0;
           const countLabel = count === 1 ? '1 artifact linked' : count > 1 ? `${count} artifacts linked` : 'No artifacts linked';
-          tooltip.innerHTML =
-            `<div class="chip-tooltip-title">${item}</div>` +
-            (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
-            `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
-          positionTooltip(e);
-          tooltip.classList.add('visible');
+          tooltipTimer = setTimeout(() => {
+            tooltip.innerHTML =
+              `<div class="chip-tooltip-title">${item}</div>` +
+              (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
+              `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
+            positionTooltip(e);
+            tooltip.classList.add('visible');
+          }, 1000);
         });
 
         chip.addEventListener('mousemove', positionTooltip);
-        chip.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
+        chip.addEventListener('mouseleave', () => {
+          clearTimeout(tooltipTimer);
+          tooltip.classList.remove('visible');
+        });
 
         cell.appendChild(chip);
       });
@@ -1341,16 +1347,21 @@ function buildExtensions() {
           const desc = CHIP_DESCRIPTIONS[item] || '';
           const count = CHIP_ARTIFACT_COUNTS[item] || 0;
           const countLabel = count === 1 ? '1 artifact linked' : count > 1 ? `${count} artifacts linked` : 'No artifacts linked';
-          tooltip.innerHTML =
-            `<div class="chip-tooltip-title">${item}</div>` +
-            (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
-            `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
-          positionTooltip(e);
-          tooltip.classList.add('visible');
+          tooltipTimer = setTimeout(() => {
+            tooltip.innerHTML =
+              `<div class="chip-tooltip-title">${item}</div>` +
+              (desc ? `<div class="chip-tooltip-desc">${desc.length > 120 ? desc.slice(0, 117) + '…' : desc}</div>` : '') +
+              `<div class="chip-tooltip-meta"><span class="dot"></span>${countLabel}</div>`;
+            positionTooltip(e);
+            tooltip.classList.add('visible');
+          }, 1000);
         });
 
         chip.addEventListener('mousemove', positionTooltip);
-        chip.addEventListener('mouseleave', () => tooltip.classList.remove('visible'));
+        chip.addEventListener('mouseleave', () => {
+          clearTimeout(tooltipTimer);
+          tooltip.classList.remove('visible');
+        });
 
         cell.appendChild(chip);
       });
