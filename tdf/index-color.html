@@ -21,15 +21,15 @@
     --col-header-bg: #2F5496;
     --col-header-ink: #ffffff;
 
-    /* Domain row colors — blauw verloop donker→licht (Atos huisstijl) */
-    --dom0-color: #081828; --dom0-light: #D2DCEC;  /* Organization & Identity */
-    --dom1-color: #0B2E56; --dom1-light: #CADEF2;  /* Processes */
-    --dom2-color: #0F4888; --dom2-light: #C2E0F5;  /* Applications */
-    --dom3-color: #1264B4; --dom3-light: #BADFF8;  /* Platform */
-    --dom4-color: #1480C4; --dom4-light: #B2DAF8;  /* Data & AI */
-    --dom5-color: #1A8CBC; --dom5-light: #A8D6F6;  /* People & Culture */
-    --dom6-color: #1E7AA8; --dom6-light: #A0D0F0;  /* Security & Safety */
-    --dom7-color: #227098; --dom7-light: #98CCE8;  /* Environmental awareness */
+    /* Domain row colors — 6 domeinen */
+    --dom0-color: #156082; --dom0-light: #E3EEF5;  /* Organization & Identity */
+    --dom1-color: #B84A0C; --dom1-light: #FAE8DC;  /* Processes */
+    --dom2-color: #196B24; --dom2-light: #E3F0E5;  /* Applications */
+    --dom3-color: #0076A3; --dom3-light: #DDF0F8;  /* Platform */
+    --dom4-color: #7B2D8B; --dom4-light: #F2E3F7;  /* Data & AI */
+    --dom5-color: #3A7A1F; --dom5-light: #E5F2DF;  /* People & Culture */
+    --dom6-color: #C41E3A; --dom6-light: #FAE3E7;  /* Security & Safety */
+    --dom7-color: #006B5E; --dom7-light: #DFF0ED;  /* Environmental awareness */
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -89,9 +89,9 @@
   .topbar .badge {
     display: inline-block;
     margin-top: 10px;
-    background: #FFF9C4;
-    border: 1px solid #F0D800;
-    color: #5A4A00;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.28);
+    color: rgba(255,255,255,0.80);
     border-radius: 20px;
     padding: 2px 12px;
     font-size: 0.68rem;
@@ -179,9 +179,9 @@
   .row-label.domain-2 { background: var(--dom2-color); }
   .row-label.domain-3 { background: var(--dom3-color); }
   .row-label.domain-4 { background: var(--dom4-color); }
-  .row-label.domain-5 { background: var(--dom5-color); color: #081828; }
-  .row-label.domain-6 { background: var(--dom6-color); color: #081828; }
-  .row-label.domain-7 { background: var(--dom7-color); color: #081828; }
+  .row-label.domain-5 { background: var(--dom5-color); }
+  .row-label.domain-6 { background: var(--dom6-color); }
+  .row-label.domain-7 { background: var(--dom7-color); }
 
   .cell {
     padding: 10px 8px;
